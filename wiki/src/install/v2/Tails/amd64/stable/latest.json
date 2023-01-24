@@ -7,9 +7,9 @@
                 {
                     "target-files": [
                         {
-                            "sha256": "82fd7c1f8162a2b299970e4bd3f7cc0fea5fb29e71f370150339ce9c2d9e3411",
-                            "size": 1318060032,
-                            "url": "https://download.tails.net/tails/stable/tails-amd64-5.7/tails-amd64-5.7.img"
+                            "sha256": "6e5ec07352155940191e1c522281cc508358ea67a293e5a764316caa42c2c330",
+                            "size": 1342177280,
+                            "url": "https://download.tails.net/tails/stable/tails-amd64-5.9/tails-amd64-5.9.img"
                         }
                     ],
                     "type": "img"
@@ -17,15 +17,15 @@
                 {
                     "target-files": [
                         {
-                            "sha256": "69c6915c18670aa92095f861e0229abd8477aeac42e9c754880d222b9e4ed674",
-                            "size": 1307820032,
-                            "url": "https://download.tails.net/tails/stable/tails-amd64-5.7/tails-amd64-5.7.iso"
+                            "sha256": "2569c84eaf205588ce684966edf5edbb835a4ee7f60c3d077a2d643a7a933adb",
+                            "size": 1332496384,
+                            "url": "https://download.tails.net/tails/stable/tails-amd64-5.9/tails-amd64-5.9.iso"
                         }
                     ],
                     "type": "iso"
                 }
             ],
-            "version": "5.7"
+            "version": "5.9"
         }
     ],
     "product-name": "Tails"

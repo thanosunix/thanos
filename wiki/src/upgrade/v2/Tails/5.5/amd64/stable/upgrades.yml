@@ -4,17 +4,17 @@ channel: stable
 initial-install-version: '5.5'
 product-name: Tails
 upgrades:
-- details-url: https://tails.boum.org/news/version_5.7/
+- details-url: https://tails.boum.org/news/version_5.9/
   type: major
   upgrade-paths:
   - target-files:
-    - sha256: 69c6915c18670aa92095f861e0229abd8477aeac42e9c754880d222b9e4ed674
-      size: 1307820032
-      url: http://dl.amnesia.boum.org/tails/stable/tails-amd64-5.7/tails-amd64-5.7.iso
+    - sha256: 2569c84eaf205588ce684966edf5edbb835a4ee7f60c3d077a2d643a7a933adb
+      size: 1332496384
+      url: https://download.tails.net/tails/stable/tails-amd64-5.9/tails-amd64-5.9.iso
     type: full
   - target-files:
-    - sha256: 05a82e68b6d87e1fda76303075181b96f6b95f55f04ad7c0ec5af93b83dc3ae8
-      size: 322232320
-      url: http://dl.amnesia.boum.org/tails/stable/iuk/v2/Tails_amd64_5.5_to_5.7.iuk
+    - sha256: fbce8c4ecfe7c897a6d5ac22162e03eb72774ba1cb6bc9231263bd2e26fe607e
+      size: 497405952
+      url: https://download.tails.net/tails/stable/iuk/v2/Tails_amd64_5.5_to_5.9.iuk
     type: incremental
-  version: '5.7'
+  version: '5.9'
