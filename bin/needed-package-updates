@@ -140,26 +140,20 @@ class Madison:
 
         # There is no stable-security suite in madison, checked different sources by hand to find
         # the correct suite name.
-        for suite in ('stable', 'stable-new', 'proposed-updates', 'testing', 'unstable'):
+
+        # We alsways want to make sure, that we have the stable-security version installed, if available.
+        # The rest of the list follows the Debians package flow.
+        for suite in ('stable-new', 'stable', 'proposed-updates', 'testing', 'unstable'):
             try:
                 suite_version = self.source_version(name, suite)
             except NotFoundError:
-                if found:   # Always check for stable-security not stop at stable version
-                    return found
-                else:
-                    continue
+                continue
             if suite == "stable-new":
                 suite = "stable-security"
-            if version < suite_version:
+            if version <= suite_version:
                 return (suite, suite_version)
-            elif version == suite_version:
-                found = (suite, suite_version)
-                if suite != "stable":    # Always check for stable-security not stop for stable version
-                    return found
         else:
             Exception(f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})")
-
-
 
 
 def strip_tails_version(version:str) -> Version:
