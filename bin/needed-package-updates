@@ -144,9 +144,9 @@ class Madison:
             try:
                 suite_version = self.source_version(name, suite)
             except NotFoundError:
-#                if found:   # Always check for proposed-updates not stop at stable version
-#                    return found
-#                else:
+                if found:   # Always check for stable-security not stop at stable version
+                    return found
+                else:
                     continue
             if suite == "stable-new":
                 suite = "stable-security"
@@ -154,9 +154,8 @@ class Madison:
                 return (suite, suite_version)
             elif version == suite_version:
                 found = (suite, suite_version)
-                return found
-#                if suite != "stable":    # Always check for proposed-updates not stop for stable version
-#                    return found
+                if suite != "stable":    # Always check for stable-security not stop for stable version
+                    return found
         else:
             Exception(f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})")
 
