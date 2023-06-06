@@ -134,7 +134,7 @@ class Madison:
     def version(self, name:str, suite:str) -> Version:
         return Version(self._item(name, suite)[0])
 
-    def get_debian_version(self, name: str, version:str) -> tuple:
+    def get_debian_version(self, name: str, version: Version) -> tuple:
         found = None
         suite_version = None
 
