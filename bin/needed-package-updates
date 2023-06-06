@@ -137,7 +137,10 @@ class Madison:
     def get_debian_version(self, name: str, version:str) -> tuple:
         found = None
         suite_version = None
-        for suite in ('stable', 'proposed-updates', 'testing', 'unstable'):
+
+        # There is no stable-security suite in madison, checked different sources by hand to find
+        # the correct suite name.
+        for suite in ('stable', 'stable-new', 'proposed-updates', 'testing', 'unstable'):
             try:
                 suite_version = self.source_version(name, suite)
             except NotFoundError:
@@ -145,6 +148,8 @@ class Madison:
 #                    return found
 #                else:
                     continue
+            if suite == "stable-new":
+                suite = "stable-security"
             if version < suite_version:
                 return (suite, suite_version)
             elif version == suite_version:
