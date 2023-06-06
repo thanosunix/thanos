@@ -120,13 +120,13 @@ class Madison:
         else:
             raise NotFoundError(f"{name} not found in {suite}")
 
-        for arch in ("amd64", "all", "source"):
+        for arch in ("source","amd64", "all"):
             try:
                 return next(filter(lambda i: arch in i[1]['architectures'], _suite.items()))
             except StopIteration:
                 continue
         else:
-            raise NotFoundError(f"{name} in {suite} no known arch (amd64, all, source)")
+            raise NotFoundError(f"{name} in {suite} no known arch (source, amd64, all)")
 
     def source_version(self, name:str, suite:str) -> Version:
         return Version(self._item(name, suite)[1]['source_version'])
