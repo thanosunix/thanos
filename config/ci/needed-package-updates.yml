@@ -1,4 +1,5 @@
 ---
+distribution: bullseye
 ignore:
   temporary:
     PKG_NAME:
