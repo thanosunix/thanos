@@ -215,8 +215,9 @@ def get_issues(package_dict: dict[str,Version]) -> list[NewVersionIssue]:
     return ret
 
 def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> dict:
-    general_overwrite = config.get('general',[])
-    tmp_overwrite = config.get('temporary', dict())
+    ignore = config.get('ignore',dict())
+    general_overwrite = ignore.get('general',[])
+    tmp_overwrite = ignore.get('temporary', dict())
     ret = True
 
     sources = get_source_pkgs(build_manifest)

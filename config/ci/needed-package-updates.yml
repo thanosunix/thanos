@@ -1,8 +1,9 @@
 ---
-temporary:
-  PKG_NAME:
-    version: "VERSION_STRING"
-    reason: "see #XXXX"
-general:
-  - tor
-  - live-boot
+ignore:
+  temporary:
+    PKG_NAME:
+      version: "VERSION_STRING"
+      reason: "see #XXXX"
+  general:
+    - tor
+    - live-boot
