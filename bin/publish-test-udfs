@@ -32,6 +32,7 @@ for version in ${previous_versions}; do
     echo "Signing ${test_udf:?}"
     gpg -u "${TAILS_SIGNATURE_KEY:?}" --armor --detach-sign "${test_udf:?}"
     mv "${test_udf:?}".asc "${test_udf:?}".pgp
+    "${MASTER_CHECKOUT:?}/config/chroot_local-includes/usr/src/iuk/bin/tails-iuk-check-upgrade-description-file" "${test_udf:?}"
     git add "${test_udf:?}"*
 done
 git commit -m "Add incremental upgrades on the test channel for Tails ${VERSION:?}"
