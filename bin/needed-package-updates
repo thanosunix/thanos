@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate a list of packages that should be updated from Debian.
-It use the API of https://api.ftp-master.debian.org/madison to get a
+It use the API of https://qa.debian.org/cgi-bin/madison.cgi to get a
 list of version in the Debian repository.
 
 By default it will get the last successfull build manifest file from testing or stable from here:
@@ -93,7 +93,7 @@ class NotFoundError(Exception):
     pass
 
 class Madison:
-    """ to manage output of https://api.ftp-master.debian.org/madison.
+    """ to manage output of https://qa.debian.org/cgi-bin/madison.cgi.
     Normally you give a list of packages you want to check and get the versions on different suites."""
     def __init__(self, packages):
         self.packages = self._request(packages)
