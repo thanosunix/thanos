@@ -15,14 +15,16 @@ import itertools
 import logging
 import operator
 import re
-import requests
 import sys
 import urllib
+
+import requests
 import yaml
 
-from debian.debian_support import Version
-import distro_info
 import apt
+import distro_info
+from debian.debian_support import Version
+
 apt_cache = apt.Cache()
 
 logger = logging.getLogger()
