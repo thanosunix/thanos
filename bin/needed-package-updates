@@ -276,8 +276,9 @@ def get_suites(min_codename: str) -> list:
         if suite in (testing, "sid", "experimental"):
             suites.append(suite)
         else:
-            # We always want to make sure, that we have the stable-security version installed, if available.
-            # The rest of the list follows the Debians package flow.
+            # We always want to make sure that we have the stable-security
+            # version installed, if available.
+            # The rest of the list follows the Debian package flow.
             suites.extend(
                 [f"{suite}-security", suite, f"{suite}-p-u", f"{suite}-backports"]
             )
