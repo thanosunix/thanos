@@ -207,29 +207,29 @@ def get_issues(package_dict: dict[str, Version]) -> list[NewVersionIssue]:
 
 def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> dict:
     ignore = config.get('ignore', {})
-    general_overwrite = ignore.get('general', [])
-    tmp_overwrite = ignore.get('temporary', {})
+    general_ignore = ignore.get('general', [])
+    tmp_ignore = ignore.get('temporary', {})
     ret = True
 
     sources = get_source_pkgs(build_manifest)
     issues = get_issues(sources)
 
-    def _is_overwritten(issue):
-        if issue.name in general_overwrite:
+    def _is_ignored(issue):
+        if issue.name in general_ignore:
             return True
-        if str(issue.suite_version) == tmp_overwrite.get(issue.name, {'version': None})['version']:
+        if str(issue.suite_version) == tmp_ignore.get(issue.name, {'version': None})['version']:
             return True
         return False
 
     if not verbose:
-        issues = itertools.filterfalse(_is_overwritten, issues)
+        issues = itertools.filterfalse(_is_ignored, issues)
 
     non_forked, forked = partition(operator.attrgetter('tails_fork'), sorted(issues, key=operator.attrgetter('name')))
 
     def _log_issue(issue):
-        if _is_overwritten(issue):
-            if issue.name in general_overwrite:
-                return f"(overwritten) {issue}"
+        if _is_ignored(issue):
+            if issue.name in general_ignore:
+                return f"(always ignored) {issue}"
             return f"(known) {issue}"
         else:
             ret = True
