@@ -29,25 +29,28 @@ apt_cache = apt.Cache()
 
 logger = logging.getLogger()
 
+MADISON = None
+SUITES = None
 
-def batched(iterable, n):
+def batched(iterable, max_length):
     "Batch data into tuples of length n. The last batch may be shorter."
     # see https://docs.python.org/3/library/itertools.html#itertools-recipes
     # batched('ABCDEFG', 3) --> ABC DEF G
-    if n < 1:
+    if max_length < 1:
         raise ValueError('n must be at least one')
-    it = iter(iterable)
-    while batch := tuple(itertools.islice(it, n)):
+    iterator = iter(iterable)
+    while batch := tuple(itertools.islice(iterator, max_length)):
         yield batch
 
-def partition(pred, l):
+
+def partition(pred, iterable):
     "Use a predicate to partition entries into false entries and true entries"
     # partition(is_odd, range(10)) --> 0 2 4 6 8   and  1 3 5 7 9
 
-    match = list()
-    non_match = list()
+    match = []
+    non_match = []
 
-    for i in l:
+    for i in iterable:
         if pred(i)():
             match.append(i)
         else:
@@ -59,39 +62,42 @@ def partition(pred, l):
 class NoBuildManifest(Exception):
     pass
 
+
 def add_metadata(yml, name):
     yml['file_name'] = name
-    m = re.match(r".*@([0-9a-f]+)-([0-9T]+Z).build-manifest", name)
-    if m:
-        yml['git_hash'] = m.group(1)
-        yml['timestamp'] = m.group(2)
+    match = re.match(r".*@([0-9a-f]+)-([0-9T]+Z).build-manifest", name)
+    if match:
+        yml['git_hash'] = match.group(1)
+        yml['timestamp'] = match.group(2)
 
 
-def get_build_manifest(suite:str) -> dict:
+def get_build_manifest(suite: str) -> dict:
     base_url = f"https://nightly.tails.boum.org/build_Tails_ISO_{suite}/lastSuccessful/archive/build-artifacts/"
 
-    r = requests.get(urllib.parse.urljoin(base_url,"tails-build-artifacts.shasum"))
+    shasum_response = requests.get(urllib.parse.urljoin(base_url, "tails-build-artifacts.shasum"))
 
     try:
-        r.raise_for_status()
+        shasum_response.raise_for_status()
     except requests.HTTPError as e:
         raise NoBuildManifest(f"build-manifest file for {suite} not found!") from e
 
-    for i in r.text.splitlines():
-        shasum, name = i.split()
+    for i in shasum_response.text.splitlines():
+        _, name = i.split()
 
         if name.endswith(".build-manifest"):
             url = urllib.parse.urljoin(base_url, name)
-            bn = requests.get(url)
-            ret = yaml.safe_load(bn.text)
+            bm_response = requests.get(url, timeout=60)
+            ret = yaml.safe_load(bm_response.text)  # type: dict
             ret['url'] = url
             add_metadata(ret, name)
             return ret
-    else:
-        raise NoBuildManifest(f"build-manifest file for {suite} not found!")
+
+    raise NoBuildManifest(f"build-manifest file for {suite} not found!")
+
 
 class NotFoundError(Exception):
     pass
+
 
 class Madison:
     """ to manage output of https://qa.debian.org/cgi-bin/madison.cgi.
@@ -100,22 +106,24 @@ class Madison:
         self.packages = self._request(packages)
 
     def _request(self, packages: list[str]) -> dict:
-        ret = dict()
+        ret = {}
         for pkgs in batched(packages, 100):
-            r = requests.get("https://qa.debian.org/cgi-bin/madison.cgi", {
-                "package":" ".join(pkgs),
-                "yaml":"on",
-            })
+            r = requests.get("https://qa.debian.org/cgi-bin/madison.cgi",
+                             {
+                                 "package":" ".join(pkgs),
+                                 "yaml":"on",
+                             },
+                             timeout=60)
             ret |= yaml.safe_load(r.text)
         return ret
 
-    def version(self, name:str, suite:str) -> Version:
+    def version(self, name: str, suite: str) -> Version:
         v = None
-        package  = self.packages[name]
-        channels = set([suite, suite+"/contrib", suite+"/non-free", suite+"/non-free-firmware"])
-        for version,suite_info in package.items():
+        package = self.packages[name]
+        channels = {suite, suite+"/contrib", suite+"/non-free", suite+"/non-free-firmware"}
+        for version, suite_info in package.items():
             for s in set(suite_info.keys()) & channels:
-                if not "source" in suite_info[s]:
+                if "source" not in suite_info[s]:
                     continue
                 if not v or v < Version(version):
                     v = Version(version)
@@ -135,18 +143,19 @@ class Madison:
         else:
             raise Exception(f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})")
 
-def strip_tails_version(version:str) -> Version:
-    """ if we have a tails own fork get the Debian version."""
-    m = re.match(r"^(.*)(\.0tails[0-9]+)$", version)
-    if m:
-        return Version(m[1])
+
+def strip_tails_version(version: str) -> Version:
+    """ if we have a Tails own fork get the Debian version."""
+    match = re.match(r"^(.*)(\.0tails[0-9]+)$", version)
+    if match:
+        return Version(match[1])
     else:
        return Version(version)
 
 
 def get_source_pkgs(build_manifest: dict) -> dict:
     """ binary package names to source package names."""
-    ret = dict()
+    ret = {}
 
     for pkg in build_manifest['packages']['binary']:
         try:
@@ -157,8 +166,7 @@ def get_source_pkgs(build_manifest: dict) -> dict:
             if re.fullmatch(r'linux-image-.*-amd64', pkg['package']):
                 ret["linux-signed-amd64"] = Version(pkg['version'])
                 continue
-            else:
-                raise
+            raise
         try:
             version = a_pkg.versions[pkg['version']]
         except KeyError as e:
@@ -167,6 +175,7 @@ def get_source_pkgs(build_manifest: dict) -> dict:
         else:
             ret[version.source_name] = Version(version.source_version)
     return ret
+
 
 @dataclass
 class NewVersionIssue:
@@ -179,25 +188,27 @@ class NewVersionIssue:
         return f"{self.name} ({self.version}) to Debian {self.suite} ({self.suite_version})"
 
     def tails_fork(self):
-        return re.search('.0tails[0-9]+$', str(self.version)) != None
+        return re.search('.0tails[0-9]+$', str(self.version)) is not None
 
-def get_issues(package_dict: dict[str,Version]) -> list[NewVersionIssue]:
+
+def get_issues(package_dict: dict[str, Version]) -> list[NewVersionIssue]:
     """Get a issue list of updateable packages."""
-    ret = list()
-    global madison
-    madison = Madison(package_dict.keys())
+    ret = []
+    global MADISON
+    MADISON = Madison(package_dict.keys())
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
-        suite, suite_version = madison.get_debian_version(package, striped_version)
+        suite, suite_version = MADISON.get_debian_version(package, striped_version)
 
         if striped_version < suite_version:
             ret.append(NewVersionIssue(package, version, suite, suite_version))
     return ret
 
+
 def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> dict:
-    ignore = config.get('ignore',dict())
-    general_overwrite = ignore.get('general',[])
-    tmp_overwrite = ignore.get('temporary', dict())
+    ignore = config.get('ignore', {})
+    general_overwrite = ignore.get('general', [])
+    tmp_overwrite = ignore.get('temporary', {})
     ret = True
 
     sources = get_source_pkgs(build_manifest)
@@ -206,7 +217,7 @@ def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> d
     def _is_overwritten(issue):
         if issue.name in general_overwrite:
             return True
-        elif str(issue.suite_version) == tmp_overwrite.get(issue.name, {'version':None})['version']:
+        if str(issue.suite_version) == tmp_overwrite.get(issue.name, {'version': None})['version']:
             return True
         return False
 
@@ -219,25 +230,24 @@ def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> d
         if _is_overwritten(issue):
             if issue.name in general_overwrite:
                 return f"(overwritten) {issue}"
-            else:
-                return f"(known) {issue}"
+            return f"(known) {issue}"
         else:
             ret = True
             return str(issue)
 
     if forked:
-        l ="\n  - ".join(map(_log_issue, forked))
+        l = "\n  - ".join(map(_log_issue, forked))
         logger.info(f'Need to upgrade our own forked package:\n  - {l}')
 
     if non_forked:
-        l ="\n  - ".join(map(_log_issue, non_forked))
+        l = "\n  - ".join(map(_log_issue, non_forked))
         logger.info(f'Need to upgrade to a new APT snapshot:\n  - {l}')
 
     return ret
 
 
 def get_suites(min_codename: str) -> list:
-    suites = list()
+    suites = []
     ddi = distro_info.DebianDistroInfo()
     ddi_s = ddi.supported()
     codename_pos = ddi_s.index(min_codename)
@@ -252,6 +262,7 @@ def get_suites(min_codename: str) -> list:
 
     return suites
 
+
 def main():
     logging.basicConfig(
         level=logging.DEBUG,
@@ -260,12 +271,12 @@ def main():
     logging.getLogger("urllib3.connectionpool").setLevel(logging.WARNING)
 
     parser = argparse.ArgumentParser(description='list all packages that ')
-    parser.add_argument('-v', '--verbose', action = 'store_true', help = 'Give more infos')
-    parser.add_argument('--debug', action = 'store_true', help = 'Show all debug messages')
-    parser.add_argument('-c', '--config', type=argparse.FileType('r'), default="config/ci/needed-package-updates.yml", help = 'Config file')
+    parser.add_argument('-v', '--verbose', action='store_true', help='Give more infos')
+    parser.add_argument('--debug', action='store_true', help='Show all debug messages')
+    parser.add_argument('-c', '--config', type=argparse.FileType('r'), default="config/ci/needed-package-updates.yml", help='Config file')
     group = parser.add_mutually_exclusive_group()
-    group.add_argument( '--suite', help = 'build manifest suite name.')
-    group.add_argument( '--file', type=argparse.FileType('r'), help = 'local file name.')
+    group.add_argument( '--suite', help='build manifest suite name.')
+    group.add_argument( '--file', type=argparse.FileType('r'), help='local file name.')
 
     args = parser.parse_args()
 
@@ -282,19 +293,19 @@ def main():
     if args.file:
         build_manifest = yaml.safe_load(args.file)
         add_metadata(build_manifest, args.file.name)
-        logger.info(f"Check local file {build_manifest['file_name']}")
+        logger.info("Check local file %s", build_manifest['file_name'])
     elif args.suite:
         build_manifest = get_build_manifest(args.suite)
-        logger.info(f"Check {build_manifest['file_name']}")
+        logger.info("Check %s", build_manifest['file_name'])
     else:
         err = None
         for suite in ("testing", "stable"):
             try:
                 build_manifest = get_build_manifest(suite)
-                logger.info(f"Check {build_manifest['file_name']}")
+                logger.info("Check %s", build_manifest['file_name'])
                 break
             except NoBuildManifest as e:
-                logger.debug(f'No build manifest found for {suite}.')
+                logger.debug("No build manifest found for %s.", suite)
                 err = e
         else:
             raise err
@@ -305,6 +316,7 @@ def main():
         sys.exit(1)
     else:
         logger.debug("Nothing to do.")
+
 
 if __name__ == "__main__":
     main()
