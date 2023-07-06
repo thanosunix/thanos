@@ -32,12 +32,13 @@ logger = logging.getLogger()
 MADISON = None
 SUITES = None
 
+
 def batched(iterable, max_length):
     "Batch data into tuples of length n. The last batch may be shorter."
     # see https://docs.python.org/3/library/itertools.html#itertools-recipes
     # batched('ABCDEFG', 3) --> ABC DEF G
     if max_length < 1:
-        raise ValueError('n must be at least one')
+        raise ValueError("n must be at least one")
     iterator = iter(iterable)
     while batch := tuple(itertools.islice(iterator, max_length)):
         yield batch
@@ -64,17 +65,19 @@ class NoBuildManifest(Exception):
 
 
 def add_metadata(yml, name):
-    yml['file_name'] = name
+    yml["file_name"] = name
     match = re.match(r".*@([0-9a-f]+)-([0-9T]+Z).build-manifest", name)
     if match:
-        yml['git_hash'] = match.group(1)
-        yml['timestamp'] = match.group(2)
+        yml["git_hash"] = match.group(1)
+        yml["timestamp"] = match.group(2)
 
 
 def get_build_manifest(suite: str) -> dict:
     base_url = f"https://nightly.tails.boum.org/build_Tails_ISO_{suite}/lastSuccessful/archive/build-artifacts/"
 
-    shasum_response = requests.get(urllib.parse.urljoin(base_url, "tails-build-artifacts.shasum"))
+    shasum_response = requests.get(
+        urllib.parse.urljoin(base_url, "tails-build-artifacts.shasum")
+    )
 
     try:
         shasum_response.raise_for_status()
@@ -88,7 +91,7 @@ def get_build_manifest(suite: str) -> dict:
             url = urllib.parse.urljoin(base_url, name)
             bm_response = requests.get(url, timeout=60)
             ret = yaml.safe_load(bm_response.text)  # type: dict
-            ret['url'] = url
+            ret["url"] = url
             add_metadata(ret, name)
             return ret
 
@@ -100,27 +103,36 @@ class NotFoundError(Exception):
 
 
 class Madison:
-    """ to manage output of https://qa.debian.org/cgi-bin/madison.cgi.
-    Normally you give a list of packages you want to check and get the versions on different suites."""
+    """to manage output of https://qa.debian.org/cgi-bin/madison.cgi.
+    Normally you give a list of packages you want to check and get the versions on different suites.
+    """
+
     def __init__(self, packages):
         self.packages = self._request(packages)
 
     def _request(self, packages: list[str]) -> dict:
         ret = {}
         for pkgs in batched(packages, 100):
-            r = requests.get("https://qa.debian.org/cgi-bin/madison.cgi",
-                             {
-                                 "package":" ".join(pkgs),
-                                 "yaml":"on",
-                             },
-                             timeout=60)
+            r = requests.get(
+                "https://qa.debian.org/cgi-bin/madison.cgi",
+                {
+                    "package": " ".join(pkgs),
+                    "yaml": "on",
+                },
+                timeout=60,
+            )
             ret |= yaml.safe_load(r.text)
         return ret
 
     def version(self, name: str, suite: str) -> Version:
         v = None
         package = self.packages[name]
-        channels = {suite, suite+"/contrib", suite+"/non-free", suite+"/non-free-firmware"}
+        channels = {
+            suite,
+            suite + "/contrib",
+            suite + "/non-free",
+            suite + "/non-free-firmware",
+        }
         for version, suite_info in package.items():
             for s in set(suite_info.keys()) & channels:
                 if "source" not in suite_info[s]:
@@ -141,37 +153,39 @@ class Madison:
             if version <= suite_version:
                 return (suite, suite_version)
         else:
-            raise Exception(f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})")
+            raise Exception(
+                f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})"
+            )
 
 
 def strip_tails_version(version: str) -> Version:
-    """ if we have a Tails own fork get the Debian version."""
+    """if we have a Tails own fork get the Debian version."""
     match = re.match(r"^(.*)(\.0tails[0-9]+)$", version)
     if match:
         return Version(match[1])
     else:
-       return Version(version)
+        return Version(version)
 
 
 def get_source_pkgs(build_manifest: dict) -> dict:
-    """ binary package names to source package names."""
+    """binary package names to source package names."""
     ret = {}
 
-    for pkg in build_manifest['packages']['binary']:
+    for pkg in build_manifest["packages"]["binary"]:
         try:
-            a_pkg = apt_cache[pkg['package']]
+            a_pkg = apt_cache[pkg["package"]]
         except KeyError:
             # The better approch instead of explit binary -> source names
             # would be to add the apt snapshot to apt source /etc/apt/sources.list.d/
-            if re.fullmatch(r'linux-image-.*-amd64', pkg['package']):
-                ret["linux-signed-amd64"] = Version(pkg['version'])
+            if re.fullmatch(r"linux-image-.*-amd64", pkg["package"]):
+                ret["linux-signed-amd64"] = Version(pkg["version"])
                 continue
             raise
         try:
-            version = a_pkg.versions[pkg['version']]
+            version = a_pkg.versions[pkg["version"]]
         except KeyError as e:
             for v in a_pkg.versions:
-                ret[v.source_name] = Version(pkg['version'])
+                ret[v.source_name] = Version(pkg["version"])
         else:
             ret[version.source_name] = Version(version.source_version)
     return ret
@@ -188,7 +202,7 @@ class NewVersionIssue:
         return f"{self.name} ({self.version}) to Debian {self.suite} ({self.suite_version})"
 
     def tails_fork(self):
-        return re.search('.0tails[0-9]+$', str(self.version)) is not None
+        return re.search(".0tails[0-9]+$", str(self.version)) is not None
 
 
 def get_issues(package_dict: dict[str, Version]) -> list[NewVersionIssue]:
@@ -206,9 +220,9 @@ def get_issues(package_dict: dict[str, Version]) -> list[NewVersionIssue]:
 
 
 def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> dict:
-    ignore = config.get('ignore', {})
-    general_ignore = ignore.get('general', [])
-    tmp_ignore = ignore.get('temporary', {})
+    ignore = config.get("ignore", {})
+    general_ignore = ignore.get("general", [])
+    tmp_ignore = ignore.get("temporary", {})
     ret = True
 
     sources = get_source_pkgs(build_manifest)
@@ -217,14 +231,20 @@ def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> d
     def _is_ignored(issue):
         if issue.name in general_ignore:
             return True
-        if str(issue.suite_version) == tmp_ignore.get(issue.name, {'version': None})['version']:
+        if (
+            str(issue.suite_version)
+            == tmp_ignore.get(issue.name, {"version": None})["version"]
+        ):
             return True
         return False
 
     if not verbose:
         issues = itertools.filterfalse(_is_ignored, issues)
 
-    non_forked, forked = partition(operator.attrgetter('tails_fork'), sorted(issues, key=operator.attrgetter('name')))
+    non_forked, forked = partition(
+        operator.attrgetter("tails_fork"),
+        sorted(issues, key=operator.attrgetter("name")),
+    )
 
     def _log_issue(issue):
         if _is_ignored(issue):
@@ -237,11 +257,11 @@ def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> d
 
     if forked:
         l = "\n  - ".join(map(_log_issue, forked))
-        logger.info(f'Need to upgrade our own forked package:\n  - {l}')
+        logger.info(f"Need to upgrade our own forked package:\n  - {l}")
 
     if non_forked:
         l = "\n  - ".join(map(_log_issue, non_forked))
-        logger.info(f'Need to upgrade to a new APT snapshot:\n  - {l}')
+        logger.info(f"Need to upgrade to a new APT snapshot:\n  - {l}")
 
     return ret
 
@@ -253,12 +273,14 @@ def get_suites(min_codename: str) -> list:
     codename_pos = ddi_s.index(min_codename)
     testing = ddi.testing()
     for suite in ddi_s[codename_pos:]:
-        if suite in (testing, 'sid', 'experimental'):
+        if suite in (testing, "sid", "experimental"):
             suites.append(suite)
         else:
             # We always want to make sure, that we have the stable-security version installed, if available.
             # The rest of the list follows the Debians package flow.
-            suites.extend([f'{suite}-security', suite, f'{suite}-p-u', f'{suite}-backports'])
+            suites.extend(
+                [f"{suite}-security", suite, f"{suite}-p-u", f"{suite}-backports"]
+            )
 
     return suites
 
@@ -266,17 +288,23 @@ def get_suites(min_codename: str) -> list:
 def main():
     logging.basicConfig(
         level=logging.DEBUG,
-        format='%(levelname)s: %(message)s',
+        format="%(levelname)s: %(message)s",
     )
     logging.getLogger("urllib3.connectionpool").setLevel(logging.WARNING)
 
-    parser = argparse.ArgumentParser(description='list all packages that ')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Give more infos')
-    parser.add_argument('--debug', action='store_true', help='Show all debug messages')
-    parser.add_argument('-c', '--config', type=argparse.FileType('r'), default="config/ci/needed-package-updates.yml", help='Config file')
+    parser = argparse.ArgumentParser(description="list all packages that ")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Give more infos")
+    parser.add_argument("--debug", action="store_true", help="Show all debug messages")
+    parser.add_argument(
+        "-c",
+        "--config",
+        type=argparse.FileType("r"),
+        default="config/ci/needed-package-updates.yml",
+        help="Config file",
+    )
     group = parser.add_mutually_exclusive_group()
-    group.add_argument( '--suite', help='build manifest suite name.')
-    group.add_argument( '--file', type=argparse.FileType('r'), help='local file name.')
+    group.add_argument("--suite", help="build manifest suite name.")
+    group.add_argument("--file", type=argparse.FileType("r"), help="local file name.")
 
     args = parser.parse_args()
 
@@ -288,21 +316,21 @@ def main():
     config = yaml.safe_load(args.config)
 
     global SUITES
-    SUITES = tuple(get_suites(config.get('distribution')))
+    SUITES = tuple(get_suites(config.get("distribution")))
 
     if args.file:
         build_manifest = yaml.safe_load(args.file)
         add_metadata(build_manifest, args.file.name)
-        logger.info("Check local file %s", build_manifest['file_name'])
+        logger.info("Check local file %s", build_manifest["file_name"])
     elif args.suite:
         build_manifest = get_build_manifest(args.suite)
-        logger.info("Check %s", build_manifest['file_name'])
+        logger.info("Check %s", build_manifest["file_name"])
     else:
         err = None
         for suite in ("testing", "stable"):
             try:
                 build_manifest = get_build_manifest(suite)
-                logger.info("Check %s", build_manifest['file_name'])
+                logger.info("Check %s", build_manifest["file_name"])
                 break
             except NoBuildManifest as e:
                 logger.debug("No build manifest found for %s.", suite)
