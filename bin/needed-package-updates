@@ -4,7 +4,7 @@ Generate a list of packages that should be updated from Debian.
 It use the API of https://qa.debian.org/cgi-bin/madison.cgi to get a
 list of version in the Debian repository.
 
-By default it will get the last successfull build manifest file from testing or stable from here:
+By default it will get the last successful build manifest file from testing or stable from here:
 https://nightly.tails.boum.org/build_Tails_ISO_testing/lastSuccessful/archive/build-artifacts/
 https://nightly.tails.boum.org/build_Tails_ISO_stable/lastSuccessful/archive/build-artifacts/
 """
