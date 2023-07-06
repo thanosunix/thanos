@@ -11,7 +11,6 @@ https://nightly.tails.boum.org/build_Tails_ISO_stable/lastSuccessful/archive/bui
 
 import argparse
 from dataclasses import dataclass
-import datetime
 import itertools
 import logging
 import operator
