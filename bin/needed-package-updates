@@ -30,7 +30,7 @@ apt_cache = apt.Cache()
 logger = logging.getLogger()
 
 MADISON = None
-SUITES = None
+SUITES = ()
 
 
 def batched(iterable, max_length):
