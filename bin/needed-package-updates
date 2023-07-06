@@ -239,7 +239,7 @@ def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> d
         return False
 
     if not verbose:
-        issues = itertools.filterfalse(_is_ignored, issues)
+        issues = list(itertools.filterfalse(_is_ignored, issues))
 
     non_forked, forked = partition(
         operator.attrgetter("tails_fork"),
