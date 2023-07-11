@@ -204,22 +204,20 @@ class NewVersionIssue:
 
 def get_issues(package_dict: dict[str, Version], suites:tuple[str]) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
-    ret = []
     madison = Madison(package_dict.keys(), suites) # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
         suite, suite_version = madison.get_debian_version(package, striped_version)
 
         if striped_version < suite_version:
-            ret.append(NewVersionIssue(package, version, suite, suite_version))
-    return ret
+            yield NewVersionIssue(package, version, suite, suite_version)
 
 
 def check_build_manifest(build_manifest: dict, config: dict, suites:tuple[str], verbose: bool) -> bool:
     ignore = config.get("ignore", {})
     general_ignore = ignore.get("general", [])
     tmp_ignore = ignore.get("temporary", {})
-    ret = True
+    issue_found = False
 
     sources = get_source_pkgs(build_manifest)
     issues = get_issues(sources, suites)
@@ -248,7 +246,7 @@ def check_build_manifest(build_manifest: dict, config: dict, suites:tuple[str], 
                 return f"(always ignored) {issue}"
             return f"(known) {issue}"
         else:
-            ret = True
+            issue_found = True
             return str(issue)
 
     if forked:
@@ -259,7 +257,7 @@ def check_build_manifest(build_manifest: dict, config: dict, suites:tuple[str], 
         l = "\n  - ".join(map(_log_issue, non_forked))
         logger.info(f"Need to upgrade to a new APT snapshot:\n  - {l}")
 
-    return ret
+    return issue_found
 
 
 def get_suites(min_codename: str) -> list:
