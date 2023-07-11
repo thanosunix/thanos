@@ -16,13 +16,14 @@ import logging
 import operator
 import re
 import sys
+from typing import Iterator, Sequence
 import urllib
 
 import requests
 import yaml
 
 import apt
-import distro_info
+import distro_info  #type: ignore[import]
 from debian.debian_support import Version
 
 apt_cache = apt.Cache()
@@ -107,8 +108,8 @@ class Madison:
         self.packages = self._request(packages)
         self.suites = suites
 
-    def _request(self, packages: list[str]) -> dict:
-        ret = {}
+    def _request(self, packages: Sequence[str]) -> dict[str,dict]:
+        ret:dict[str,dict] = dict()
         for pkgs in batched(packages, 100):
             r = requests.get(
                 "https://qa.debian.org/cgi-bin/madison.cgi",
@@ -233,7 +234,7 @@ def check_build_manifest(build_manifest: dict, config: dict, suites:tuple[str], 
         return False
 
     if not verbose:
-        issues = list(itertools.filterfalse(_is_ignored, issues))
+        issues = itertools.filterfalse(_is_ignored, issues)
 
     non_forked, forked = partition(
         operator.attrgetter("tails_fork"),
