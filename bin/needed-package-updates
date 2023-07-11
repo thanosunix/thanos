@@ -29,9 +29,6 @@ apt_cache = apt.Cache()
 
 logger = logging.getLogger()
 
-SUITES = ()
-
-
 def batched(iterable, max_length):
     "Batch data into tuples of length n. The last batch may be shorter."
     # see https://docs.python.org/3/library/itertools.html#itertools-recipes
@@ -106,8 +103,9 @@ class Madison:
     Normally you give a list of packages you want to check and get the versions on different suites.
     """
 
-    def __init__(self, packages):
+    def __init__(self, packages:Sequence[str], suites:Sequence[str]):
         self.packages = self._request(packages)
+        self.suites = suites
 
     def _request(self, packages: list[str]) -> dict:
         ret = {}
@@ -144,7 +142,7 @@ class Madison:
         return v
 
     def get_debian_version(self, name: str, version: Version) -> tuple:
-        for suite in SUITES:
+        for suite in self.suites:
             try:
                 suite_version = self.version(name, suite)
             except NotFoundError:
@@ -204,10 +202,10 @@ class NewVersionIssue:
         return re.search(".0tails[0-9]+$", str(self.version)) is not None
 
 
-def get_issues(package_dict: dict[str, Version]) -> list[NewVersionIssue]:
+def get_issues(package_dict: dict[str, Version], suites:tuple[str]) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
     ret = []
-    madison = Madison(package_dict.keys())
+    madison = Madison(package_dict.keys(), suites) # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
         suite, suite_version = madison.get_debian_version(package, striped_version)
@@ -217,14 +215,14 @@ def get_issues(package_dict: dict[str, Version]) -> list[NewVersionIssue]:
     return ret
 
 
-def check_build_manifest(build_manifest: dict, config: dict, verbose: bool) -> dict:
+def check_build_manifest(build_manifest: dict, config: dict, suites:tuple[str], verbose: bool) -> bool:
     ignore = config.get("ignore", {})
     general_ignore = ignore.get("general", [])
     tmp_ignore = ignore.get("temporary", {})
     ret = True
 
     sources = get_source_pkgs(build_manifest)
-    issues = get_issues(sources)
+    issues = get_issues(sources, suites)
 
     def _is_ignored(issue):
         if issue.name in general_ignore:
@@ -314,8 +312,7 @@ def main():
 
     config = yaml.safe_load(args.config)
 
-    global SUITES
-    SUITES = tuple(get_suites(config.get("distribution")))
+    suites = tuple(get_suites(config.get("distribution")))
 
     if args.file:
         build_manifest = yaml.safe_load(args.file)
@@ -337,7 +334,7 @@ def main():
         else:
             raise err
 
-    propose_update = check_build_manifest(build_manifest, config, args.verbose)
+    propose_update = check_build_manifest(build_manifest, config, suites, args.verbose)
 
     if propose_update:
         sys.exit(1)
