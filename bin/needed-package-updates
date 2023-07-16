@@ -223,10 +223,9 @@ def check_build_manifest(
     ignore = config.get("ignore", {})
     general_ignore = ignore.get("general", [])
     tmp_ignore = ignore.get("temporary", {})
-    issue_found = False
 
     sources = get_source_pkgs(build_manifest)
-    issues = get_issues(sources, suites)
+    issues = list(get_issues(sources, suites))
 
     def _is_ignored(issue):
         if issue.name in general_ignore:
@@ -239,7 +238,7 @@ def check_build_manifest(
         return False
 
     if not verbose:
-        issues = itertools.filterfalse(_is_ignored, issues)
+        issues = list(itertools.filterfalse(_is_ignored, issues))
 
     non_forked, forked = partition(
         operator.attrgetter("tails_fork"),
@@ -252,7 +251,6 @@ def check_build_manifest(
                 return f"(always ignored) {issue}"
             return f"(known) {issue}"
         else:
-            issue_found = True
             return str(issue)
 
     if forked:
@@ -263,7 +261,14 @@ def check_build_manifest(
         l = "\n  - ".join(map(_log_issue, non_forked))
         logger.info(f"Need to upgrade to a new APT snapshot:\n  - {l}")
 
-    return issue_found
+    # Check if we have at least one non ignored issue
+    try:
+        next(itertools.filterfalse(_is_ignored, issues))
+        return True
+    except StopIteration:
+        pass
+
+    return False
 
 
 def get_suites(min_codename: str) -> list:
