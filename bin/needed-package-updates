@@ -23,12 +23,13 @@ import requests
 import yaml
 
 import apt
-import distro_info  #type: ignore[import]
+import distro_info  # type: ignore[import]
 from debian.debian_support import Version
 
 apt_cache = apt.Cache()
 
 logger = logging.getLogger()
+
 
 def batched(iterable, max_length):
     "Batch data into tuples of length n. The last batch may be shorter."
@@ -104,7 +105,7 @@ class Madison:
     Normally you give a list of packages you want to check and get the versions on different suites.
     """
 
-    def __init__(self, packages:Sequence[str], suites:Sequence[str]):
+    def __init__(self, packages: Sequence[str], suites: Sequence[str]):
         self.packages = self._request(packages)
         self.suites = suites
 
@@ -203,9 +204,11 @@ class NewVersionIssue:
         return re.search(".0tails[0-9]+$", str(self.version)) is not None
 
 
-def get_issues(package_dict: dict[str, Version], suites: tuple[str]) -> Iterator[NewVersionIssue]:
+def get_issues(
+    package_dict: dict[str, Version], suites: tuple[str]
+) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
-    madison = Madison(package_dict.keys(), suites) # type: ignore[arg-type]
+    madison = Madison(package_dict.keys(), suites)  # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
         suite, suite_version = madison.get_debian_version(package, striped_version)
@@ -214,7 +217,9 @@ def get_issues(package_dict: dict[str, Version], suites: tuple[str]) -> Iterator
             yield NewVersionIssue(package, version, suite, suite_version)
 
 
-def check_build_manifest(build_manifest: dict, config: dict, suites: tuple[str], verbose: bool) -> bool:
+def check_build_manifest(
+    build_manifest: dict, config: dict, suites: tuple[str], verbose: bool
+) -> bool:
     ignore = config.get("ignore", {})
     general_ignore = ignore.get("general", [])
     tmp_ignore = ignore.get("temporary", {})
