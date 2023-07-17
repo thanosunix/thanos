@@ -182,7 +182,7 @@ def get_source_pkgs(build_manifest: dict) -> dict:
             raise
         try:
             version = a_pkg.versions[pkg["version"]]
-        except KeyError as e:
+        except KeyError:
             for v in a_pkg.versions:
                 ret[v.source_name] = Version(pkg["version"])
         else:
