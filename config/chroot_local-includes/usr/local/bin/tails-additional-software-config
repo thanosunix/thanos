@@ -21,10 +21,15 @@ from tailslib.persistence import (                          # NOQA: E402
     has_persistence,
     is_tails_media_writable)
 
-from tailslib.additionalsoftware import (                   # NOQA: E402
+from additional_software import (                   # NOQA: E402
     get_additional_packages,
     get_packages_list_path,
     filter_package_details)
+
+
+gettext.install("tails")
+_ = gettext.gettext
+
 
 UI_FILE = "/usr/share/tails/additional-software/configuration-window.ui"
 
@@ -108,7 +113,7 @@ class ASPConfigApplicationWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
     def cb_persistence_button_clicked(self, button, data=None):
-        subprocess.Popen(["/usr/local/bin/tps-frontend-wrapper"],
+        subprocess.Popen(["/usr/local/bin/tails-persistent-storage"],
                          stderr=subprocess.PIPE,
                          universal_newlines=True)
         print("Waiting for Persistent Storage to be ready")
@@ -267,7 +272,7 @@ class ASPConfigApplication(Gtk.Application):
 
     def remove_additional_software(self, package_name):
         subprocess.run(["pkexec",
-                        "/usr/local/sbin/tails-additional-software-remove",
+                        "/usr/local/lib/additional-software/asp-remove-package",
                         package_name],
                        check=True)
 

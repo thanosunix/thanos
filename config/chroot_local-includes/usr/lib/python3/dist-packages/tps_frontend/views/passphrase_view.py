@@ -25,7 +25,7 @@ def wordlist():
 def get_passphrase_suggestion():
     passphrase = ''
     try:
-        p = subprocess.run(["/usr/bin/diceware", "-d", " ", "--wordlist", wordlist()],
+        p = subprocess.run(["/usr/bin/diceware", "--no-caps", "-d", " ", "--wordlist", wordlist()],
                            stdout=subprocess.PIPE,
                            check=True,
                            text=True)
@@ -112,6 +112,7 @@ class PassphraseView(View):
         if not verify:
             # Don't display anything if the verify entry is empty
             self.verify_hint_box.set_visible(False)
+            self.create_button.set_sensitive(False)
             return
 
         match = verify == self.passphrase_entry.get_text()

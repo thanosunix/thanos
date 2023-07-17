@@ -2,6 +2,18 @@ def browser
   Dogtail::Application.new('Firefox')
 end
 
+def save_page_as
+  browser.child(
+    description: 'Open application menu',
+    roleName:    'push button'
+  ).press
+  browser.child(
+    name:        'Save page as\u2026',
+    roleName:    'push button'
+  ).press
+  browser.child('Save As', roleName: 'file chooser')
+end
+
 When /^I (?:try to )?start the Unsafe Browser$/ do
   # XXX:Bookworm: switch to "gio launch" and drop the whole
   # language_has_non_latin_input_source / switch_input_source system.
@@ -153,13 +165,12 @@ def page_has_loaded_in_the_tor_browser(page_titles)
     # is only shown when a page has loaded, so once we see the
     # expected title *and* this button has appeared, then we can be sure
     # that the page has fully loaded.
-    @torbrowser.children(roleName: 'frame', showingOnly: true).any? do |frame|
+    @torbrowser.children(roleName: 'frame').any? do |frame|
       page_titles
         .map  { |page_title| "#{page_title} #{separator} #{browser_name}" }
         .any? { |page_title| page_title == frame.name }
     end &&
-      @torbrowser.child(reload_action, roleName:    'push button',
-                                       showingOnly: true)
+      @torbrowser.child(reload_action, roleName: 'push button')
   end
 end
 
@@ -231,13 +242,12 @@ end
 
 When /^I download some file in the Tor Browser$/ do
   @some_file = 'tails-signing.key'
-  some_url = "https://tails.boum.org/#{@some_file}"
+  some_url = "https://tails.net/#{@some_file}"
   step "I open the address \"#{some_url}\" in the Tor Browser without waiting"
-end
-
-When /^I save the file to the default Tor Browser download directory$/ do
-  @screen.wait('Gtk3SaveFileDialog.png', 20)
-  @screen.press('Return')
+  @torbrowser
+    .child(@some_file, roleName: 'label')
+    .parent
+    .children('Completed.*', roleName: 'label')
 end
 
 Then /^the file is saved to the default Tor Browser download directory$/ do
@@ -247,7 +257,7 @@ Then /^the file is saved to the default Tor Browser download directory$/ do
 end
 
 When /^I open the Tails homepage in the (.+)$/ do |browser|
-  step "I open the address \"https://tails.boum.org\" in the #{browser}"
+  step "I open the address \"https://tails.net\" in the #{browser}"
 end
 
 Then /^the Tails homepage loads in the Unsafe Browser$/ do
@@ -346,6 +356,30 @@ Then(/^the screen keyboard works in Tor Browser$/) do
   step 'I open a new tab in the Tor Browser'
   @screen.wait(xul_application_info('Tor Browser')[:address_bar_image], 10).click
   @screen.wait('ScreenKeyboard.png', 20)
-  @screen.wait_any(osk_key_images, 20)[:match].click
+  @screen.wait_any(osk_key_images, 20).click
   @screen.wait(browser_bar_x, 20)
+end
+
+When /^I log-in to the Captive Portal$/ do
+  step 'a web server is running on the LAN'
+  captive_portal_page = "#{@web_server_url}/captive"
+  step "I open the address \"#{captive_portal_page}\" in the Unsafe Browser"
+
+  try_for(30) do
+    File.exist?(@captive_portal_login_file)
+  end
+
+  step 'I close the Unsafe Browser'
+end
+
+Then /^Tor Browser's circuit view is working$/ do
+  @torbrowser.child('Tor Circuit', roleName: 'push button').click
+  nodes = @torbrowser.child('This browser', roleName: 'list item')
+            .parent.children(roleName: 'list item')
+  url = @torbrowser.child('Navigation', roleName: 'tool bar')
+          .parent.child(roleName: 'entry').text
+  domain = URI.parse(url).host.split('.')[-2..-1].join('.')
+  assert_equal('This browser', nodes.first.name)
+  assert_equal(domain, nodes.last.name)
+  assert_equal(5, nodes.size)
 end

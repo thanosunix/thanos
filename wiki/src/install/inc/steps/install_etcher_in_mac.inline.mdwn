@@ -9,7 +9,7 @@ image that you downloaded earlier.</p>
 
 1. Click on the following button to download <em>balenaEtcher</em>:
 
-   <a href="https://tails.boum.org/etcher/balenaEtcher.dmg" class="button">Download balenaEtcher for macOS</a>
+   <a href="https://tails.net/etcher/balenaEtcher.dmg" class="button">Download balenaEtcher for macOS</a>
 
 1. Open the <span class="application">balenaEtcher</span> download (DMG disk image).
 
@@ -55,7 +55,7 @@ line"]].
     3:                      EFI              134.1 GB  disk0s3
     4:     Microsoft Basic Data BOOTCAMP     115.5 GB  disk0s4</p>
 
-1. Plug your USB stick in the computer.
+1. Plug your USB stick into the computer.
 
 1. Execute again the same command:
 

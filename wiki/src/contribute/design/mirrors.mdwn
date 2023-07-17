@@ -16,7 +16,7 @@ A web service redirects clients to the nearest mirror based on IP
 geolocation data:
 
 - The list of mirrors is automatically and periodically loaded from [a JSON
-  file on our website](https://tails.boum.org/mirrors.json). See the [[Mirror
+  file on our website](https://tails.net/mirrors.json). See the [[Mirror
   pool configuration|mirrors#configuration]] section below for details.
 - IP geolocation data is automatically and periodically updated from [MaxMind's
   GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en)
@@ -34,22 +34,18 @@ geolocation data:
 
 ## DNS pool
 
-A DNS Round Robin pool points to a few fast and
-reliable mirrors. It is used as a fallback for the versions
-of *Tails Upgrader* included up to Tails 5.8, inclusive. So we still
-have a DNS dynamic update system, re-purposed from the one we already had
-(`dl.amnesia.boum.org`).
-
-It's configured via this Git repository:
-
-    tails_git@65wwrbljzca2cxztur6xz652c2zvhvj3ebgyestpgvfbzaamkamf57yd.onion:/srv/repositories/mirrors.git
+A DNS Round Robin pool (at `dl.amnesia.boum.org`) points to a few fast and
+reliable mirrors. It is used as a fallback for the versions of *Tails Upgrader*
+included up to Tails 5.8, inclusive. The DNS entries are managed by
+[[Sysadmins|contribute/working_together/roles/sysadmins/services#mirror-pool]]
+in the same way all the other DNS entries are managed.
 
 <a id="configuration"></a>
 
 # Mirror pool configuration
 
 The server-side redirector fetches the mirror pool configuration file
-from our website: <https://tails.boum.org/mirrors.json>
+from our website: <https://tails.net/mirrors.json>
 
 The configuration file is written in JSON, to avoid the
 need to use a third-party parser.
@@ -92,6 +88,4 @@ model, better see
 
 # Documentation for mirror pool administrators
 
-See `README.mdwn` in this Git repository:
-
-    tails_git@65wwrbljzca2cxztur6xz652c2zvhvj3ebgyestpgvfbzaamkamf57yd.onion:/srv/repositories/mirrors.git
+Documentation is maintained in the Sysadmins private documentation repository.

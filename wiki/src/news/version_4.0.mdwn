@@ -143,7 +143,7 @@ especially for non-English users:
 ## New documentation pages
 
 - [[How to securely erasing an entire
-  device|doc/encryption_and_privacy/secure_deletion#erase-device]],
+  device|doc/encryption_and_privacy/secure_deletion#erase]],
   including USB sticks and SSDs.
 
 - How to backup your persistent
@@ -208,10 +208,10 @@ Tails 4.0:
 
 # What's coming up?
 
-Tails 4.1 is scheduled for December 3.
+Tails 4.1 is [[scheduled|contribute/calendar]] for December 3.
 
 Have a look at our [[!tails_roadmap]] to see where we are heading to.
 
 We need your help and there are many ways to [[contribute to
-Tails|contribute]] (<a href="https://tails.boum.org/donate/?r=4.0">donating</a> is only one of
+Tails|contribute]] (<a href="https://tails.net/donate/?r=4.0">donating</a> is only one of
 them). Come [[talk to us|about/contact#tails-dev]]!

@@ -31,7 +31,13 @@ module Dogtail
       @app_name = app_name
       @opts = opts
       @opts[:user] ||= LIVE_USER
-      @find_code = "dogtail.tree.root.application('#{@app_name}')"
+      @opts[:retry] = true unless @opts.key?(:retry)
+
+      @find_code = if @opts[:retry] == false
+                     "dogtail.tree.root.application('#{@app_name}', retry=False)"
+                   else
+                     "dogtail.tree.root.application('#{@app_name}')"
+                   end
 
       init = []
       if @opts[:user] == LIVE_USER
@@ -51,6 +57,10 @@ module Dogtail
       init += [
         'import dogtail.tree',
         'import dogtail.predicate',
+        'import dogtail.config',
+        'dogtail.config.config.searchShowingOnly = True',
+        'dogtail.config.config.logDebugToFile = False',
+        'dogtail.config.config.logDebugToStdOut = False',
       ]
       code = [
         "#{@var} = #{@find_code}",
@@ -88,13 +98,13 @@ module Dogtail
     end
 
     def exist?
-      run('dogtail.config.searchCutoffCount = 0')
+      run('dogtail.config.config.searchCutoffCount = 0')
       run(@find_code)
       true
     rescue StandardError
       false
     ensure
-      run('dogtail.config.searchCutoffCount = 20')
+      run('dogtail.config.config.searchCutoffCount = 20')
     end
 
     def self.value_to_s(value)
@@ -107,7 +117,9 @@ module Dogtail
       elsif value.instance_of?(String)
         # Since we use single-quote the string we have to escape any
         # occurrences inside.
-        "'#{value.gsub("'", "\\\\'")}'"
+        # We also prefix the string with 'r' to make it a raw string,
+        # which means we don't have to escape backslashes.
+        "r'#{value.gsub("'", "\\\\'")}'"
       elsif [Integer, Float].include?(value.class)
         value.to_s
       else
@@ -121,21 +133,9 @@ module Dogtail
     # into the parentheses of a Python function call.
     # Example: 42, :foo: 'bar' => "42, foo = 'bar'"
     def self.args_to_s(*args, **kwargs)
-      return '' if args.empty? && kwargs.empty?
-
       (
-        (if args.nil?
-           []
-         else
-           args.map { |e| value_to_s(e) }
-         end
-        ) +
-        (if kwargs.nil?
-           []
-         else
-           kwargs.map { |k, v| "#{k}=#{value_to_s(v)}" }
-         end
-        )
+        args.map   { |e| value_to_s(e) } +
+        kwargs.map { |k, v| "#{k}=#{value_to_s(v)}" }
       ).join(', ')
     end
 
@@ -177,7 +177,7 @@ module Dogtail
         '    def describeSearchResult(self):',
         "        return 'focused'",
         '',
-        "#{node_var} = #{@var}.findChild(IsFocused(), recursive=True, showingOnly=True)",
+        "#{node_var} = #{@var}.findChild(IsFocused(), recursive=True)",
       ]
       run(find_script_lines)
       Node.new(node_var.to_s, **@opts)

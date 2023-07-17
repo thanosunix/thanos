@@ -23,7 +23,7 @@ Both a bugfix release and a major release are called "final". A release candidat
 Sections that only apply to some of those types of release, we'll have it written clearly in the title.
 
 If you want to know whether the release you are doing is a major or not, you need to check
-our calendar, and use these criteria:
+our [[release calendar|contribute/calendar]], and use these criteria:
 
  - if nothing is specified about being a major, then it's most probably a bugfix release
  - if it is a major, there has to be a release candidate before the final
@@ -89,7 +89,7 @@ Packages
 
 To release Tails you'll need some packages installed:
 
-* `gitlab-cli j2cli jq tidy libnotify-bin mktorrent podman python3-bs4 python3-debian python3-gitlab python3-jinja2 python3-html2text python3-voluptuous transmission-cli`
+* `gitlab-cli j2cli jq tidy libnotify-bin mktorrent podman python3-bs4 python3-debian python3-gitlab python3-jinja2 python3-html2text python3-voluptuous transmission-cli moreutils wl-clipboard`
   - Note: if the Debian version you are running does not include all required
     Go packages, such as [[!debpts podman]], you should be able to install
     them from a more recent Debian release with APT pinning.
@@ -255,8 +255,12 @@ Freeze
 This section ensures freezing is done. Freezing is relevant for Release Candidates and for bugfix releases.
 You can skip this if you're releasing a final major version.
 
-Only for RC
--------------
+If preparing a RC
+-------------------
+
+Check that you are indeed preparing a RC:
+
+    [ "$DIST" = alpha ]
 
 Follow this part ONLY if you are preparing the release candidate for a major release.
 
@@ -294,8 +298,12 @@ Follow this part ONLY if you are preparing the release candidate for a major rel
         git checkout "$RELEASE_BRANCH" && \
         ./bin/bump-APT-snapshots-expiration-date 183
 
-Only for Bugfix release
-------------------------
+If preparing a Bugfix release
+------------------------------
+
+Check that you are indeed preparing a Bugfix:
+
+    [ "$DIST" = stable ] && [ "$MAJOR" -eq 0 ]
 
 Follow this part ONLY if you are preparing a bugfix release.
 
@@ -360,6 +368,7 @@ and commit the result, including new PO files:
      ./import-translations || err "importing translations"
      ./refresh-translations || err "refreshing translations"
      ./submodules/jenkins-tools/slaves/lint_po || err "in lint"
+     ./bin/check-po-msgfmt || err "in msgfmt"
      git add po && git commit -m 'Update PO files.'
     )
 
@@ -393,16 +402,24 @@ If preparing a final release
 If we're about to prepare the images for a final (non-RC) release, then
 follow these instructions:
 
-Only for Major release
--------------------------
+If preparing a Major release
+----------------------------
+
+Check that you are indeed preparing a major release:
+
+    [ "$DIST" = stable ] && [ "$MAJOR" -eq 1 ]
 
 Merge each APT overlay suite listed in the `testing` branch's
 `config/APT_overlays.d/` into the `testing` custom APT suite:
 
         ./bin/merge-APT-overlays testing
 
-Only for Bugfix release
-------------------------
+If preparing a Bugfix release
+-----------------------------
+
+Check that you are indeed preparing a bugfix release:
+
+    [ "$DIST" = stable ] && [ "$MAJOR" -eq 0 ]
 
 <div class="note">
 For bugfix releases, we generally do not put any RC out, so freeze time
@@ -455,8 +472,11 @@ Update other base branches
 
         for branch in ${RELEASE_BRANCH} devel feature/bookworm; do
             git switch ${branch}
+            echo "{{{ ${branch}"
             ls config/APT_overlays.d/
+            echo "}}}"
         done
+
 
 4. Ensure that the `$RELEASE_BRANCH`, `devel` and `feature/bookworm` (if it exists) branches
    have the expected content in `config/APT_overlays.d/`: e.g. it must
@@ -482,11 +502,13 @@ Update the Changelog entry for the release you're preparing:
 
 If you're preparing a release candidate:
 
+ - `[ "$DIST" = alpha ]`
  - Set the version for the new entry in `debian/changelog` to `$VERSION`: the
    above code has incorrectly set it to `$MILESTONE`.
 
 If you're preparing a release candidate or a major release:
 
+ - `[ "$DIST" = alpha ] || [ "$MAJOR" -eq 1 ]`
  - For each merge request listed in the new Changelog entry,
    copy the "Closes: #NNNNNN" string from the MR description into the relevant
    section of the Changelog.
@@ -505,7 +527,7 @@ version's `.packages` file and the one from the to-be-released images:
        diff --color=never -u \
            "wiki/src/torrents/files/tails-amd64-${PREVIOUS_STABLE_VERSION}.packages" \
            <(curl --silent "https://nightly.tails.boum.org/build_Tails_ISO_${NEW_BRANCH}/lastSuccessful/archive/latest.packages") \
-        | wdiff --diff-input  --terminal
+        | wdiff --diff-input  --terminal | grep -v --perl-regexp '^[~.:+a-zA-Z_0-9 \t\s-]*$'
 
 2. In the diff, look for:
 
@@ -535,6 +557,13 @@ documentation:
          echo "Dear @technical-writers,\n"
          echo "- The changelog entry is ready: https://gitlab.tails.boum.org/tails/tails/-/blob/${RELEASE_BRANCH:?}/debian/changelog"
          echo "- The latest corresponding images built by Jenkins are there: https://nightly.tails.boum.org/build_Tails_ISO_${NEW_BRANCH}/lastSuccessful/archive/build-artifacts"
+
+    (
+             echo "Dear @technical-writers,\n"
+             echo "- The changelog entry is ready: https://gitlab.tails.boum.org/tails/tails/-/blob/${RELEASE_BRANCH:?}/debian/changelog"
+             echo "- The latest corresponding images built by Jenkins are there: https://nightly.tails.boum.org/build_Tails_ISO_${NEW_BRANCH}/lastSuccessful/archive/build-artifacts"
+    ) | pee cat wl-copy
+
 
 Included website
 ----------------
@@ -903,16 +932,13 @@ and the build of every branch based on it, which would effectively
 block other development work. So the final steps towards publishing
 the release will be done in a new, dedicated branch.
 
-If preparing anything but a final release (e.g. an alpha, beta
-or RC):
-
+    if [ "$DIST" = alpha ]; then
         git checkout -b "${WEBSITE_RELEASE_BRANCH:?}" origin/master && \
         git push -u origin "${WEBSITE_RELEASE_BRANCH:?}"
-
-Else, if preparing a final release:
-
+    else
         git checkout -b "${WEBSITE_RELEASE_BRANCH:?}" "${TAG:?}" && \
         git push -u origin "${WEBSITE_RELEASE_BRANCH:?}"
+    fi
 
 Generate the OpenPGP signatures and Torrents
 ============================================
@@ -1278,7 +1304,9 @@ Prepare upgrade-description files
 Prepare the image description file for the download verification
 ----------------------------------------------------------------
 
-If preparing a RC, skip this part.
+If preparing a RC, skip this part:
+
+    [ "$DIST" = stable ]
 
 Update the image description file (IDF) used by the verification JavaScript:
 
@@ -1322,7 +1350,9 @@ above).
 Delete obsolete IUKs
 --------------------
 
-Skip this section if you're preparing a non-final release (beta, RC).
+Skip this section if you're preparing a non-final release (beta, RC):
+
+    [ "$DIST" = stable ]
 
 Delete the IUKs that upgrade to any beta or RC corresponding to the version you
 are preparing:
@@ -1634,10 +1664,12 @@ Make sure to:
 
 The technical writers will update the release notes after the release.
 
-If preparing a major or a bugfix release
--------------------------------------------
+If preparing a final release
+-------------------------------
 
 Skip this part if preparing a RC.
+
+    [ "$DIST" = alpha ]
 
 Rename, copy, garbage collect and update various files:
 
@@ -1671,10 +1703,12 @@ Remove obsolete bits from `wiki/src/home/testing.html`. For example,
 remove any text that's specific to a release candidate we may have
 published for the version you are preparing.
 
-If preparing a release candidate
---------------------------------
+If preparing a RC
+------------------
 
-Skip this part if preparing a final release.
+Skip this part if preparing a final release:
+
+    [ "$DIST" = alpha ]
 
 Copy the signatures and the Torrents into the website repository:
 
@@ -1716,7 +1750,7 @@ Write the announcement for the release:
 In `wiki/src/home/testing.html`, in the "Current calls for testing" section,
 add a bullet point with a pointer to
 the call for testing for this release candidate
-(<https://tails.boum.org/news/test_$TAG/>, that you just wrote).
+(<https://tails.net/news/test_$TAG/>, that you just wrote).
 
 In any case
 -----------
@@ -1754,6 +1788,7 @@ Feel free to skip this if you are not preparing a major release.
   - Follow the
     [Tor documentation](https://gitlab.torproject.org/tpo/tpa/team/-/wikis/service/blog#how-to-write-a-new-blog-post-in-gitlab).
     It's OK to create the MR on the command line instead of in the GitLab Web IDE.
+  - Take inspiration from [previous MR](https://gitlab.torproject.org/tpo/web/blog/-/merge_requests/190)
   - Reuse our existing lead image:
     - `cd` into the directory you created for the new blog post
     - Create a symlink to the existing lead image:
@@ -1833,22 +1868,32 @@ website:
 Wait for the release to be fully published, that is for the website to have been
 fully refreshed. To do so:
 
-### If you're publishing a final release,
+### If you're publishing a final release
+
+Check:
+
+    [ "$DIST" = stable ]
 
 wait until all these conditions are met:
- - <https://tails.boum.org/news/> includes the release notes
- - <https://tails.boum.org/news/index.de.html> includes the release notes
- - <https://tails.boum.org/torrents/files/> includes the files
+ - <https://tails.net/news/> includes the release notes
+ - <https://tails.net/news/index.de.html> includes the release notes
+ - <https://tails.net/torrents/files/> includes the files
    for the new release
 
-### Else
+### If you're publishing a RC
 
-wait until <https://tails.boum.org/news/test_$TAG/> is live.
+Check:
 
-Bug tracker
------------
+    [ "$DIST" = alpha ]
 
-Skip this part if preparing a release candidate.
+wait until <https://tails.net/news/test_$TAG/> is live.
+
+Bug tracker [if preparing a final release]
+--------------------------------------------
+
+Skip this part if preparing a release candidate:
+
+    [ "$DIST" = stable ]
 
 1. Ensure you have an up-to-date `tails:gitlab-triage-stable` container image:
 
@@ -1908,7 +1953,7 @@ Check in the comments of the issue for the release notes if the
 technical writers have prepared a tweet. Otherwise tweet a simple link
 to the release notes:
 
-    echo "Tails ${VERSION:?} is out: https://tails.boum.org/news/version_${TAG:?}/"
+    echo "Tails ${VERSION:?} is out: https://tails.net/news/version_${TAG:?}/"
 
 The credentials are in keyringer in `rm.git`.
 
@@ -1934,6 +1979,10 @@ Prepare for the next development cycle
 
 If you just released a final release
 ------------------------------------
+
+Check that you are indeed preparing a final release:
+
+    [ "$DIST" = stable ]
 
 1. If you just released a new stable release, remove the previous
    stable release from:
@@ -2106,6 +2155,9 @@ If you just released a final release
 
         git push origin stable testing devel
 
+1. In our release calendar, mark the entries about the version that you've
+   just released as released by appending " - Released" to the title.
+
 1. Check the Mozilla and Tor Browser release calendars:
 
    * [Tor Browser release calendar](https://gitlab.torproject.org/tpo/applications/tor-browser/-/wikis/Release-Schedule)
@@ -2117,26 +2169,29 @@ If you just released a final release
    * [Release schedule](https://wiki.mozilla.org/Release_Management/Calendar)
 
    If the upcoming release dates in the Mozilla calendar does not match
-   what we have in our calendar, then alert
+   what we have in our release calendar, then alert
    <tails-dev@boum.org>, <tails-rm@boum.org>, and explicitly Cc the
    designated RM for that upcoming release.
 
 1. Announce the date of the next release on <tails-dev@boum.org> and
    <tails-l10n@boum.org>.
-   - Cc <tails-manual-testers@boum.org>,
-     asking them to privately tell the RM for that release
-     _how much_ manual testing they can do on release day.
-   - `echo Subject: "Release schedule for Tails ${NEXT_PLANNED_VERSION:?}"`
-   - If you use Thunderbird, you can use this:
 
-         thunderbird -compose "to=tails-dev@boum.org,tails-l10n@boum.org,cc=tails-manual-testers@boum.org,subject=Release schedule for Tails ${NEXT_PLANNED_VERSION:?}"
+         cat <<EOF | ./bin/automailer.py
+         To: tails-dev@boum.org,tails-l10n@boum.org
+         Cc: tails-manual-testers@boum.org
+         Subject: Release schedule for Tails ${NEXT_PLANNED_VERSION:?}
 
-     Else, if you use *notmuch*, you can use this:
+         Hi,
 
-         notmuch-emacs-mua --client --create-frame \
-            --cc=tails-manual-testers@boum.org \
-            --subject="Release schedule for Tails ${NEXT_PLANNED_VERSION:?}" \
-            tails-dev@boum.org tails-l10n@boum.org
+         XXX will be the RM for Tails ${NEXT_PLANNED_VERSION:?}
+
+         The current plan is:
+          - Monday, XXX: build images, start testing
+          - Tuesday, XXX: releasing
+
+         @testers, please let me know how much time you'll have for manual QA 
+         from Monday 17:00 to Tuesday 11:00 (Europe/Berlin)
+         EOF
 
    - If a release candidate is planned, include it in the release schedule
      and the call for manual testers.
@@ -2149,9 +2204,9 @@ If you just released a final release
 
    - Send an email to the next RM with:
      - subject "RM for Tails NEXT_PLANNED_VERSION"
-     - body: "This is a reminder that you will be RM for Tails NEXT_PLANNED_VERSION. Please see https://tails.boum.org/contribute/working_together/roles/release_manager/#shift".
+     - body: "This is a reminder that you will be RM for Tails NEXT_PLANNED_VERSION. Please see https://tails.net/contribute/working_together/roles/release_manager/#shift".
 
-           thunderbird -compose "subject='RM for Tails ${NEXT_PLANNED_VERSION}',format=text,body='This is a reminder that you will be RM for Tails ${NEXT_PLANNED_VERSION}. Please see https://tails.boum.org/contribute/working_together/roles/release_manager/#shift'"
+           thunderbird -compose "subject='RM for Tails ${NEXT_PLANNED_VERSION}',format=text,body='This is a reminder that you will be RM for Tails ${NEXT_PLANNED_VERSION}. Please see https://tails.net/contribute/working_together/roles/release_manager/#shift'"
 
    - If there's a release candidate scheduled before our next release,
      do the same for the release manager of that release candidate.
@@ -2169,6 +2224,10 @@ If you just released a final release
 
 If you just released an RC
 --------------------------
+
+Check that you are indeed preparing a RC:
+
+    [ "$DIST" = alpha ]
 
 1. If this command outputs anything:
 
@@ -2224,6 +2283,9 @@ If you just released an RC
 
 1. Follow the "Verify that the snapshots used in the release branch
    are ok" step for final releases, above.
+
+1. In our release calendar, mark the entry about the version that you've
+   just released as released by adding " - Released" to the title.
 
 1. Put aside the configuration file used for this release:
 

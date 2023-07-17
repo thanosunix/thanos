@@ -124,13 +124,13 @@ class Screen
     cmd_helper(['xdotool'] + args.map(&:to_s))
   end
 
-  def match_screen(image, sensitivity, show_image)
+  def match_screen(image, sensitivity, show_image, show_old)
     screenshot = "#{$config['TMPDIR']}/screenshot.png"
     debug_log('Screen[match_screen]: taking screenshot')
     $vm.display.screenshot(screenshot)
     debug_log('Screen[match_screen]: matching template to screenshot')
     OpenCV.matchTemplate("#{OPENCV_IMAGE_PATH}/#{image}",
-                         screenshot, sensitivity, show_image)
+                         screenshot, sensitivity, show_image, show_old)
   end
 
   def real_find(pattern, **opts)
@@ -144,7 +144,7 @@ class Screen
       raise "unsupported type: #{pattern.class}"
     end
     debug_log("Screen: trying to find #{image}") if opts[:log]
-    p = match_screen(image, opts[:sensitivity], false)
+    p = match_screen(image, opts[:sensitivity], false, false)
 
     if p.nil?
       raise FindFailed, "cannot find #{image} on the screen"
@@ -202,10 +202,7 @@ class Screen
       debug_log("Screen: trying to find any of #{patterns.join(', ')}")
     end
     patterns.each do |pattern|
-      return {
-        found_pattern: pattern,
-        match:         real_find(pattern, **opts.clone.update(log: false)),
-      }
+      return real_find(pattern, **opts.clone.update(log: false))
     rescue FindFailed
       # Ignore. We'll throw an appropriate exception after having
       # looped through all patterns and found none of them.
@@ -382,12 +379,15 @@ class ImageBumpingScreen
   # rubocop:disable Metrics/CyclomaticComplexity
   # rubocop:disable Metrics/MethodLength
   # rubocop:disable Metrics/PerceivedComplexity
-  def interactive_image_bump(image, **opts)
+  def interactive_image_bump(images, **opts)
     opts[:sensitivity] ||= OPENCV_MIN_SIMILARITY
     $interactive_image_bump_ignores ||= []
-    raise ImageBumpFailed if $interactive_image_bump_ignores.include?(image)
+    if !images.instance_of?(Array)
+      images = [images]
+    end
+    raise ImageBumpFailed if images.any? { |i| $interactive_image_bump_ignores.include?(i) }
 
-    message = "Failed to find #{image}"
+    message = "Failed to find #{images.size == 1 ? images.first : images}"
     notify_user(message)
     warn("Screen: #{message}, entering interactive image bumping mode")
     # Ring the ASCII bell for a helpful notification in most terminal
@@ -396,9 +396,9 @@ class ImageBumpingScreen
     loop do
       warn(
         "\n" \
-        "a: Automatic bump\n" \
-        "r: Retry image (pro tip: manually update the image first!)\n" \
-        "i: Ignore this image for the remaining of the run\n" \
+        "a: Automatic bump (match in green, old image in red)\n" \
+        "r: Retry images (pro tip: manually update the images first!)\n" \
+        "i: Ignore these image for the remaining of the run\n" \
         "d: Debugging REPL\n" \
         'q: Abort (to the FindFailed exception)'
       )
@@ -407,34 +407,48 @@ class ImageBumpingScreen
       when 'a'
         [0.80, 0.70, 0.60, 0.50, 0.40, 0.30].each do |sensitivity|
           warn "Trying with sensitivity #{sensitivity}..."
-          p = @screen.match_screen(image, sensitivity, true)
-          next unless p
+          m = nil
+          images.each do |i|
+            p = @screen.match_screen(i, sensitivity, true, true)
+            if p
+              m = Match.new(i, @screen, *p)
+              break
+            end
+          end
+          next if m.nil?
 
           warn 'Found match! Accept? (y/n)'
           loop do
             c = STDIN.getch
             if c == 'y'
               FileUtils.cp("#{$config['TMPDIR']}/last_opencv_match.png",
-                           "#{OPENCV_IMAGE_PATH}/#{image}")
-              return Match.new(image, @screen, *p)
+                           "#{OPENCV_IMAGE_PATH}/#{m.image}")
+              return m
             elsif ['n', 3.chr].include?(c) # Ctrl+C => 3
               break
             end
           end
           break if c == 3.chr # Ctrl+C => 3
         end
-        warn 'Failed to automatically bump image'
+        warn 'Failed to automatically bump images'
       when 'r'
-        p = @screen.match_screen(image, opts[:sensitivity], true)
-        if p.nil?
-          warn 'Failed to find image'
+        m = nil
+        images.each do |i|
+          p = @screen.match_screen(i, opts[:sensitivity], true, false)
+          if p
+            m = Match.new(i, @screen, *p)
+            break
+          end
+        end
+        if m.nil?
+          warn 'Failed to find images'
         else
           warn 'Found match! Accept? (y/n)'
           c = STDIN.getch
-          return Match.new(image, @screen, *p) if c == 'y'
+          return m if c == 'y'
         end
       when 'i'
-        $interactive_image_bump_ignores << image
+        $interactive_image_bump_ignores += images
         raise ImageBumpFailed
       when 'q', 3.chr # Ctrl+C => 3
         raise ImageBumpFailed
