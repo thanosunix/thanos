@@ -1,8 +1,8 @@
-[[!meta title="Tails Installer"]]
+[[!meta title="Tails Cloner"]]
 
 Tails is easily installed to a USB storage device
 by cloning an existing Tails system that is running from DVD or USB.
-Tails Installer also supports upgrades from an ISO image or from
+Tails Cloner also supports upgrades from an ISO image or from
 the currently running Tails system.
 
 The choice between possible destination
@@ -19,7 +19,7 @@ Related documents
 Upgrades
 ========
 
-Tails Installer can perform a full upgrade of an already installed
+Tails Cloner can perform a full upgrade of an already installed
 USB stick. During this process, nothing is modified on the target
 drive but the Tails system partition and the [[!wikipedia Master boot record]].
 
@@ -32,9 +32,9 @@ modules that are shipped by the version of Tails the target drive was
 just upgraded to.
 
 Security discussion: with this mechanism in place, anyone who can feed
-an arbitrary ISO into Tails Installer can run arbitrary code (stored
+an arbitrary ISO into Tails Cloner can run arbitrary code (stored
 in the ISO filesystem as `utils/linux/syslinux`) as the user running
-Tails Installer. We have no mechanism to run Tails Installer with
+Tails Cloner. We have no mechanism to run Tails Cloner with
 elevated privileges currently, so this should not be a problem: being
 able to run `tails-installer` with arbitrary arguments is equivalent
 to being able to run arbitrary code already.
@@ -122,5 +122,5 @@ future upstream of ours.
 Source code
 ===========
 
-The Tails Installer source code lives in the [[!tails_gitweb_repo installer]]
+The Tails Cloner source code lives in the [[!tails_gitweb_repo installer]]
 Git repository.

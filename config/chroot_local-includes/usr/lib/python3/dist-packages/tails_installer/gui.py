@@ -293,7 +293,7 @@ class TailsInstallerWindow(Gtk.ApplicationWindow):
         # Set windows properties
         self.set_deletable(True)
         self.connect('delete-event', Gtk.main_quit)
-        self.set_title(_('Tails Installer'))
+        self.set_title(_('Tails Cloner'))
 
         # Import window content from UI file
         builder = Gtk.Builder.new_from_file(os.path.join(_get_datadir(), 'tails-installer.ui'))

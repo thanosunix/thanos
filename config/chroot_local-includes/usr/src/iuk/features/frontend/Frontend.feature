@@ -27,7 +27,7 @@ Feature: upgrade frontend
     When I run tails-upgrade-frontend in batch mode
     Then it should succeed
     And I should be proposed to download this full upgrade
-    And I should be told "your device was not created using a USB image or Tails Installer"
+    And I should be told "your device was not created using a USB image or Tails Cloner"
 
   Scenario: DVD: no upgrade is available
     Given Tails is running from a DVD

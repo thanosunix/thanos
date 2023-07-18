@@ -69,7 +69,7 @@ class BootDevice(object):
             logger.debug(f"Partition table type: {partition_table_type}")
             raise InvalidBootDeviceError(
                 "You can only create a Persistent Storage on a USB stick "
-                "installed with a USB image or Tails Installer."
+                "installed with a USB image or Tails Cloner."
             )
         self.block = self.udisks_object.get_block()
         if not self.block:
@@ -103,7 +103,7 @@ class BootDevice(object):
             logger.debug(f"Partition name: {partition_name}")
             raise InvalidBootDeviceError(
                 "You can only create a Persistent Storage on a USB stick "
-                "installed with a USB image or Tails Installer."
+                "installed with a USB image or Tails Cloner."
             )
 
         return BootDevice(udisks.get_object(partition.props.table))

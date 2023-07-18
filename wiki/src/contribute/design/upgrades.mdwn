@@ -430,7 +430,7 @@ Resources:
 
 ### full upgrade
 
-The Tails installer is still in charge of performing full upgrades.
+The Tails Cloner is still in charge of performing full upgrades.
 It deletes any `live/*.squashfs` file other than the one shipped
 in the new ISO.
 

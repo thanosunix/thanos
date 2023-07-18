@@ -80,7 +80,7 @@ Let's see how we can help you picking up a task. A few tips:
    - Python:
       - *Onion Circuits*
       - Welcome Screen
-      - *Tails Installer*
+      - *Tails Cloner*
       - *WhisperBack*
       - Persistent Storage
    - Perl:

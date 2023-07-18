@@ -178,7 +178,7 @@ To secure your [[backup Tails|doc/persistent_storage/backup]], if you have one:
 
 1. Update your main Tails USB stick to Tails 5.14.
 
-1. Create a new backup Tails using *Tails Installer*
+1. Create a new backup Tails using *Tails Cloner*
 
    If you created your Persistent Storage with Tails 5.12 or earlier, we
    recommend you create your new backup Tails on a different USB stick and
@@ -307,7 +307,7 @@ To secure your [[backup Tails|doc/persistent_storage/backup]], if you have one:
 
 1. Update your main Tails USB stick to Tails 5.14.
 
-1. Update your backup or create a new backup Tails using *Tails Installer*.
+1. Update your backup or create a new backup Tails using *Tails Cloner*.
 
    If you created your backup Tails with Tails 5.12 or earlier and are worried
    about a very powerful adversary, consider creating your new backup Tails on a
@@ -404,7 +404,7 @@ If you want to upgrade your backup Tails to LUKS2 anyway:
 
 1. Update your main Tails USB stick to Tails 5.14.
 
-1. Update your backup using *Tails Installer*.
+1. Update your backup using *Tails Cloner*.
 
    [[!toggle id="6_backup_tails_installer" text="Display the instructions to update your backup."]]
    [[!toggleable id="6_backup_tails_installer" text="""

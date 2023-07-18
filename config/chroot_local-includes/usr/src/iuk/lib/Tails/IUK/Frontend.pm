@@ -361,7 +361,7 @@ method no_incremental_explanation (Str $no_incremental_reason) {
     }
     elsif ($no_incremental_reason eq 'not-installed-with-tails-installer') {
         $explanation = __(
-            q{your device was not created using a USB image or Tails Installer}
+            q{your device was not created using a USB image or Tails Cloner}
         );
     }
     elsif ($no_incremental_reason eq 'non-writable-device') {

@@ -122,7 +122,7 @@ version becomes 4.8, and then:
 
 [[!img manual.svg link="no" alt=""]]
 
-<h1 id="manual">Manual upgrade using <i>Tails Installer</i></h1>
+<h1 id="manual">Manual upgrade using <i>Tails Cloner</i></h1>
 
 It might not always be possible to do an automatic upgrade as described [[above|upgrade#automatic]].
 For example, when:
@@ -142,7 +142,7 @@ For example, when:
     Internet connection.
 
 After connecting to Tor, a dialog informs you if you have to
-upgrade your USB stick using <span class="application">Tails Installer</span>
+upgrade your USB stick using <span class="application">Tails Cloner</span>
 to a newer version of Tails.
 
 [[!img upgrader_manual.png link=no]]
