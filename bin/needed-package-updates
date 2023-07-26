@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate a list of packages that should be updated from Debian.
-It use the API of https://qa.debian.org/cgi-bin/madison.cgi to get a
+It use the the Ultimate Debian Database (UDD) to get a
 list of version in the Debian repository.
 
 By default it will get the last successful build manifest file from testing or stable from here:
@@ -10,6 +10,7 @@ https://nightly.tails.boum.org/build_Tails_ISO_stable/lastSuccessful/archive/bui
 """
 
 import argparse
+import collections
 from dataclasses import dataclass
 import itertools
 import logging
@@ -19,27 +20,14 @@ import sys
 from typing import Iterator, Sequence
 import urllib
 
+import psycopg2
 import requests
 import yaml
 
-import apt
 import distro_info  # type: ignore[import]
 from debian.debian_support import Version
 
-apt_cache = apt.Cache()
-
 logger = logging.getLogger()
-
-
-def batched(iterable, max_length):
-    "Batch data into tuples of length n. The last batch may be shorter."
-    # see https://docs.python.org/3/library/itertools.html#itertools-recipes
-    # batched('ABCDEFG', 3) --> ABC DEF G
-    if max_length < 1:
-        raise ValueError("n must be at least one")
-    iterator = iter(iterable)
-    while batch := tuple(itertools.islice(iterator, max_length)):
-        yield batch
 
 
 def partition(pred, iterable):
@@ -100,48 +88,80 @@ class NotFoundError(Exception):
     pass
 
 
-class Madison:
-    """to manage output of https://qa.debian.org/cgi-bin/madison.cgi.
+@dataclass
+class UDDPackageRow:
+    package: str
+    version: Version
+    release: str
+    component: str
+    distribution: str
+    source: str
+    source_version: Version
+
+
+class UDD:
+    """to manage output of the Ultimate Debian Database (UDD).
     Normally you give a list of packages you want to check and get the versions on different suites.
     """
 
     def __init__(self, packages: Sequence[str], suites: Sequence[str]):
-        self.packages = self._request(packages)
         self.suites = suites
+        self.packages = self._request(packages)
 
-    def _request(self, packages: Sequence[str]) -> dict[str, dict]:
-        ret: dict[str, dict] = dict()
-        for pkgs in batched(packages, 100):
-            r = requests.get(
-                "https://qa.debian.org/cgi-bin/madison.cgi",
-                {
-                    "package": " ".join(pkgs),
-                    "yaml": "on",
-                },
-                timeout=60,
-            )
-            ret |= yaml.safe_load(r.text)
+    def _request(self, packages: Sequence[str]) -> dict[str, dict[str, UDDPackageRow]]:
+        ret: dict[str, dict[str, UDDPackageRow]] = collections.defaultdict(dict)
+        with psycopg2.connect("postgresql://udd-mirror:udd-mirror@udd-mirror.debian.net/udd") as conn:
+            with conn.cursor() as curs:
+                archs = ('all','amd64')
+                components = ('main','contrib','non-free','non-free-firmware')
+                pkgs = tuple(packages)
+                fields = ", ".join(UDDPackageRow.__dataclass_fields__.keys())
+
+                curs.execute(f"SELECT {fields}"
+                               " FROM packages"
+                               " WHERE distribution = 'debian'"
+                                     " and release in %s"
+                                     " and architecture in %s"
+                                     " and component in %s"
+                                     " and package in %s;",
+                               (self.suites, archs, components, pkgs)
+                )
+                for r in curs:
+                    row = UDDPackageRow(*r)
+                    row.version = Version(row.version)
+                    row.source_version = Version(row.source_version)
+                    if row.release in ret[row.package]:
+                        if ret[row.package][row.release].version > row.version:
+                            continue
+                    ret[row.package][row.release] = row
         return ret
 
-    def version(self, name: str, suite: str) -> Version:
-        v = None
-        package = self.packages[name]
-        channels = {
-            suite,
-            suite + "/contrib",
-            suite + "/non-free",
-            suite + "/non-free-firmware",
-        }
-        for version, suite_info in package.items():
-            for s in set(suite_info.keys()) & channels:
-                if "source" not in suite_info[s]:
-                    continue
-                if not v or v < Version(version):
-                    v = Version(version)
-        if v is None:
+    def package(self, name: str) -> dict[str, UDDPackageRow]:
+        return self.packages[name]
+
+    def source(self, name: str, suite: str) -> str:
+        package = self.package(name)
+
+        if suite not in package:
             raise NotFoundError(f"{name} not found in {suite}")
 
-        return v
+        return package[suite].source
+
+    def source_version(self, name: str, suite: str) -> Version:
+        package = self.package(name)
+
+        if suite not in package:
+            raise NotFoundError(f"{name} not found in {suite}")
+
+        return package[suite].source_version
+
+    def version(self, name: str, suite: str) -> Version:
+        package = self.package(name)
+
+        if suite not in package:
+            raise NotFoundError(f"{name} not found in {suite}")
+
+        return package[suite].version
 
     def get_debian_version(self, name: str, version: Version) -> tuple:
         for suite in self.suites:
@@ -166,39 +186,17 @@ def strip_tails_version(version: str) -> Version:
         return Version(version)
 
 
-def get_source_pkgs(build_manifest: dict) -> dict:
-    """binary package names to source package names."""
-    ret = {}
-
-    for pkg in build_manifest["packages"]["binary"]:
-        try:
-            a_pkg = apt_cache[pkg["package"]]
-        except KeyError:
-            # The better approch instead of explit binary -> source names
-            # would be to add the apt snapshot to apt source /etc/apt/sources.list.d/
-            if re.fullmatch(r"linux-image-.*-amd64", pkg["package"]):
-                ret["linux-signed-amd64"] = Version(pkg["version"])
-                continue
-            raise
-        try:
-            version = a_pkg.versions[pkg["version"]]
-        except KeyError:
-            for v in a_pkg.versions:
-                ret[v.source_name] = Version(pkg["version"])
-        else:
-            ret[version.source_name] = Version(version.source_version)
-    return ret
-
-
 @dataclass
 class NewVersionIssue:
     name: str
+    source: str
     version: Version
     suite: str
     suite_version: Version
+    suite_source_version: Version
 
     def __str__(self):
-        return f"{self.name} ({self.version}) to Debian {self.suite} ({self.suite_version})"
+        return f"{self.source} ({self.version}) to Debian {self.suite} ({self.suite_source_version})"
 
     def tails_fork(self):
         return re.search(".0tails[0-9]+$", str(self.version)) is not None
@@ -208,13 +206,16 @@ def get_issues(
     package_dict: dict[str, Version], suites: tuple[str]
 ) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
-    madison = Madison(package_dict.keys(), suites)  # type: ignore[arg-type]
+    udd = UDD(package_dict.keys(), suites) # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
-        suite, suite_version = madison.get_debian_version(package, striped_version)
+        suite, suite_version = udd.get_debian_version(package, striped_version)
 
         if striped_version < suite_version:
-            yield NewVersionIssue(package, version, suite, suite_version)
+            issue =  NewVersionIssue(package, udd.source(package, suite), version, suite, suite_version, udd.source_version(package, suite))
+            if issue.tails_fork() and striped_version >= issue.suite_source_version:
+                continue
+            yield issue
 
 
 def check_build_manifest(
@@ -224,15 +225,24 @@ def check_build_manifest(
     general_ignore = ignore.get("general", [])
     tmp_ignore = ignore.get("temporary", {})
 
-    sources = get_source_pkgs(build_manifest)
-    issues = list(get_issues(sources, suites))
+    pkg_dict: dict[str, Version]  = dict()
+    for pkg in build_manifest['packages']['binary']:
+        p = pkg['package']
+        v = Version(pkg['version'])
+        if pkg_dict.get(p):
+            logger.debug(f'multiple entries for {p}: select min({v}, {pkg_dict[p]}).')
+        if pkg_dict.get(p) < v:
+            continue
+        pkg_dict[p] = v
+
+    issues = list(get_issues(pkg_dict, suites))
 
     def _is_ignored(issue):
-        if issue.name in general_ignore:
+        if issue.source in general_ignore:
             return True
         if (
-            str(issue.suite_version)
-            == tmp_ignore.get(issue.name, {"version": None})["version"]
+            str(issue.suite_source_version)
+            == tmp_ignore.get(issue.source, {"version": None})["version"]
         ):
             return True
         return False
@@ -242,23 +252,23 @@ def check_build_manifest(
 
     non_forked, forked = partition(
         operator.attrgetter("tails_fork"),
-        sorted(issues, key=operator.attrgetter("name")),
+        issues,
     )
 
     def _log_issue(issue):
         if _is_ignored(issue):
-            if issue.name in general_ignore:
+            if issue.source in general_ignore:
                 return f"(always ignored) {issue}"
             return f"(known) {issue}"
         else:
             return str(issue)
 
     if forked:
-        l = "\n  - ".join(map(_log_issue, forked))
+        l = "\n  - ".join(sorted(set(map(_log_issue, forked))))
         logger.info(f"Need to upgrade our own forked package:\n  - {l}")
 
     if non_forked:
-        l = "\n  - ".join(map(_log_issue, non_forked))
+        l = "\n  - ".join(sorted(set(map(_log_issue, non_forked))))
         logger.info(f"Need to upgrade to a new APT snapshot:\n  - {l}")
 
     # Check if we have at least one non ignored issue
@@ -285,7 +295,7 @@ def get_suites(min_codename: str) -> list:
             # version installed, if available.
             # The rest of the list follows the Debian package flow.
             suites.extend(
-                [f"{suite}-security", suite, f"{suite}-p-u", f"{suite}-backports"]
+                [f"{suite}-security", suite, f"{suite}-updates", f"{suite}-proposed-updates", f"{suite}-backports"]
             )
 
     return suites
