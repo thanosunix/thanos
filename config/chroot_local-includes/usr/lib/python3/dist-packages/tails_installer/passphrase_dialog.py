@@ -48,6 +48,7 @@ class PassphraseDialog(Gtk.Dialog):
             style_provider,
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
         )
+        set_passphrase_strength_hint(self.passphrase_hint_progress_bar, '')
 
     def run(self):
         self.passphrase_entry.grab_focus()
