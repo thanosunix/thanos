@@ -110,21 +110,24 @@ class UDD:
 
     def _request(self, packages: Sequence[str]) -> dict[str, dict[str, UDDPackageRow]]:
         ret: dict[str, dict[str, UDDPackageRow]] = collections.defaultdict(dict)
-        with psycopg2.connect("postgresql://udd-mirror:udd-mirror@udd-mirror.debian.net/udd") as conn:
+        with psycopg2.connect(
+            "postgresql://udd-mirror:udd-mirror@udd-mirror.debian.net/udd"
+        ) as conn:
             with conn.cursor() as curs:
-                archs = ('all','amd64')
-                components = ('main','contrib','non-free','non-free-firmware')
+                archs = ("all", "amd64")
+                components = ("main", "contrib", "non-free", "non-free-firmware")
                 pkgs = tuple(packages)
                 fields = ", ".join(UDDPackageRow.__dataclass_fields__.keys())
 
-                curs.execute(f"SELECT {fields}"
-                               " FROM packages"
-                               " WHERE distribution = 'debian'"
-                                     " and release in %s"
-                                     " and architecture in %s"
-                                     " and component in %s"
-                                     " and package in %s;",
-                               (self.suites, archs, components, pkgs)
+                curs.execute(
+                    f"SELECT {fields}"
+                    " FROM packages"
+                    " WHERE distribution = 'debian'"
+                    " and release in %s"
+                    " and architecture in %s"
+                    " and component in %s"
+                    " and package in %s;",
+                    (self.suites, archs, components, pkgs),
                 )
                 for r in curs:
                     row = UDDPackageRow(*r)
@@ -206,13 +209,20 @@ def get_issues(
     package_dict: dict[str, Version], suites: tuple[str]
 ) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
-    udd = UDD(package_dict.keys(), suites) # type: ignore[arg-type]
+    udd = UDD(package_dict.keys(), suites)  # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
         suite, suite_version = udd.get_debian_version(package, striped_version)
 
         if striped_version < suite_version:
-            issue =  NewVersionIssue(package, udd.source(package, suite), version, suite, suite_version, udd.source_version(package, suite))
+            issue = NewVersionIssue(
+                package,
+                udd.source(package, suite),
+                version,
+                suite,
+                suite_version,
+                udd.source_version(package, suite),
+            )
             if issue.tails_fork() and striped_version >= issue.suite_source_version:
                 continue
             yield issue
@@ -225,12 +235,12 @@ def check_build_manifest(
     general_ignore = ignore.get("general", [])
     tmp_ignore = ignore.get("temporary", {})
 
-    pkg_dict: dict[str, Version]  = dict()
-    for pkg in build_manifest['packages']['binary']:
-        p = pkg['package']
-        v = Version(pkg['version'])
+    pkg_dict: dict[str, Version] = dict()
+    for pkg in build_manifest["packages"]["binary"]:
+        p = pkg["package"]
+        v = Version(pkg["version"])
         if pkg_dict.get(p):
-            logger.debug(f'multiple entries for {p}: select min({v}, {pkg_dict[p]}).')
+            logger.debug(f"multiple entries for {p}: select min({v}, {pkg_dict[p]}).")
         if pkg_dict.get(p) < v:
             continue
         pkg_dict[p] = v
@@ -295,7 +305,13 @@ def get_suites(min_codename: str) -> list:
             # version installed, if available.
             # The rest of the list follows the Debian package flow.
             suites.extend(
-                [f"{suite}-security", suite, f"{suite}-updates", f"{suite}-proposed-updates", f"{suite}-backports"]
+                [
+                    f"{suite}-security",
+                    suite,
+                    f"{suite}-updates",
+                    f"{suite}-proposed-updates",
+                    f"{suite}-backports",
+                ]
             )
 
     return suites
