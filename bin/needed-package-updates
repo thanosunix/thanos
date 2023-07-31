@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate a list of packages that should be updated from Debian.
-It use the the Ultimate Debian Database (UDD) to get a
+It uses the the Ultimate Debian Database (UDD) to get a
 list of version in the Debian repository.
 
 By default it will get the last successful build manifest file from testing or stable from here:
