@@ -50,6 +50,7 @@ class PassphraseView(View):
         self.example_label = self.builder.get_object("placeholder_label3")
         self.refresh_image = self.builder.get_object("refresh_image")
         self.set_new_passphrase_hint()
+        set_passphrase_strength_hint(self.progress_bar, '')
 
     def show(self):
         super().show()
