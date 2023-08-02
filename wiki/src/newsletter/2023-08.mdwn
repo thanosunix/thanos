@@ -9,16 +9,33 @@ Dear {FIRSTNAME},
 In this newsletter, we share inspiring stories of Tails users around the world,
 privacy tips, and the latest from our team with our supporters.
 
-# VPN vs. messaging
+# Help us shape the future of Tails!
 
-All Tails workers met earlier this year to plan improvements to the product and
-the project. We decided to introduce one big feature this year, but can’t pick
-between bringing VPN functionality to Tails or adding messaging tools.
+In 2021&ndash;2023, we focused on improving the usability of core features of
+Tails. We redesigned the [Tor Connection](https://tails.net/news/version_4.28)
+to make it easier to circumvent censorship and the [Persistent
+Storage](https://tails.net/news/version_5.8) to make it easier to store
+encrypted data in Tails.
 
-Help us decide by sharing your preference in this survey:
-https://survey.tails.boum.org/index.php/184541
+What shall we work on next?
 
-We'll do the losing option next!
+Our team has identified the need for better communication tools as a priority
+for our users. We are considering 2 main options:
+
+- Make it possible to use a VPN instead of Tor in some cases
+- Add support for better messaging applications
+
+In the coming months, we will do some research to understand the needs of our
+users and decide which of these features to work on first.
+
+As a start, we wanted your opinion as supporters of Tails. Help us decide by
+answering this 5-minute survey.
+
+<div class="cfa">
+
+<a href="https://survey.tails.boum.org/index.php/184541">Take the survey</a>
+
+</div>
 
 # Encryption is under attack
 
