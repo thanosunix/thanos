@@ -1,0 +1,104 @@
+[[!meta title="XXX"]]
+
+[[!pagetemplate template="newsletter.tmpl"]]
+
+<a id="view-in-browser" href="https://tails.net/newsletter/2023-08/">View in your browser<span class="hidden">: https://tails.net/newsletter/2023-08/</span></a>
+
+Dear {FIRSTNAME},
+
+In this newsletter, we share inspiring stories of Tails users around the world,
+privacy tips, and the latest from our team with our supporters.
+
+**Encryption is under attack.**
+
+French law enforcement now has the power to snoop by remotely controlling
+unsuspecting people’s electronic devices. It’s not clear how they plan to
+execute this. Perhaps they
+[already](https://www.tomsguide.com/us/nsa-remotely-turn-on-phones,news-18854.html)
+have? Of course, the Justice Minister has been adamant that this is
+[nothing](https://www.lemonde.fr/en/france/article/2023/07/06/france-set-to-allow-police-to-spy-through-phones_6044269_7.html)
+like the surveillance society that Orwell described in 1984. And of course, the
+lawmakers were quick to exempt themselves from the invasive law.
+
+The French authorities aren't alone in wanting backdoors in digital devices. On
+the other side of the English Channel, lawmakers in the United Kingdom are
+about to mandate backdoors in all end-to-end encrypted messaging systems. The
+proposed [Online Safety
+Bill](https://bills.parliament.uk/bills/3137/publications) mandates private
+messaging services to monitor the messages of users. This perpetual wiretap
+will, allegedly, make the United Kingdom “[the safest place in the world to be
+online while defending free
+expression](https://www.gov.uk/government/publications/online-safety-bill-supporting-documents)”.
+Similar moves are underway in
+[Spain](https://www.wired.com/story/europe-break-encryption-leaked-document-csa-law/)
+and the [United States of America](https://en.wikipedia.org/wiki/EARN_IT_Act).
+
+Back in France, digital surveillance of dissenting socio-political movements
+had been intensifying for years now. Comrades in environmental groups
+(https://lessoulevementsdelaterre.org/blog/un-traceur-gps-retrouve-sous-le-vehicule-du-porte-parolede-bassines-non-merci),
+or just at an anarchist library
+(https://bibliothequelibertad.noblogs.org/post/2022/04/02/un-micro-trouve-a-la-bibliotheque-anarchiste-libertad/)
+are being surveilled with military-grade equipment. As if that wasn’t enough,
+the mere use of privacy-preserving tools like Tails and Tor is being treated as
+evidence of criminal behaviour to muzzle dissenting political groups. In the
+French senate, the Minister of Interior
+[desired](https://www.laquadrature.net/en/2023/06/05/criminalization-of-encryption-the-8-december-case/)
+the power to hack into the phones of environmental activists using Signal,
+WhatsApp, or Telegram. In the “8 December” case, the suspects’ use of Tails,
+and apparent distrust of GAFAM was used to support an already nebulous case.
+
+In 2009, we created Tails exactly this context: so that activists wouldn't get
+in troubles merely because of how they used computers.
+
+In 2023, not much has changed. It’s saddening and enraging that digital privacy
+and safety are rapidly getting out of reach. Tails’s mission as important now,
+if not more, as it was 15 years ago.
+
+On that note, we’d like to thank our sponsors: Nym Technologies, Look to the
+Right, Exam Success, Think Penguin ,and freiheitsfoo. They have all supported
+our work over the last year, and have renewed their support. If you too would
+like to sponsor Tails, get in touch with us at tails-fundraising@boum.org.
+
+**VPN vs. messaging**
+
+All Tails workers met earlier this year to plan improvements to the product and
+the project. We decided to introduce one big feature this year, but can’t pick
+between bringing VPN functionality to Tails or adding messaging tools.
+
+Help us decide by sharing your preference in this survey:
+https://survey.tails.boum.org/index.php/184541
+
+We'll do the losing option next!
+
+**Tails.net**
+
+Tails has a cool, new domain: tails.net.
+
+After 14 years of using a subdomain of `boum.org` , we finally found a new home
+that will be easier for everybody to remember and type.
+
+`tails.boum.org` will continue working while we migrate. Thank you to
+`boum.org` , for supporting us all these years. Their support was and continues
+to be very valuable!
+
+**What we’re reading**
+
+* In India, the state of Manipur has spiralled into intense communal and ethnic
+  conflict. A 3-month internet shutdown led to the silencing of the minority Kuki
+  community. Internet access was permitted for people with broadband connections
+  who undertook to only use static IP and not use any VPNs. Mobile internet
+  remains inaccessible, and is the dominant way to access the internet for the
+  Kuki community. The dystopian [undertaking](https://i.redd.it/g329xvb6ueeb1.jpg)
+  makes for a ~~fun~~ chilling read.
+
+* In this article from 15 years ago, Cory Doctorow decries the intrusive data
+  collection tendencies of law enforcement around the word. A seasoned advocate
+  of individuals’ privacy rights and critic of surveillance capitalism, he argues
+  that law enforcement doesn't know what to do with the data it already has. As
+  countries around the world lust after collecting more and more data, this
+  article is both prescient and timeless:
+  https://www.theguardian.com/technology/2008/jun/17/surveillance.database
+
+* And here’s something to keep an eye out for. A guide is being built to resist
+  the weaponization of digital tools by using some of your own:
+  https://www.anarsec.guide/
