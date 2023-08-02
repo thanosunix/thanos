@@ -25,8 +25,6 @@ libgetopt-long-descriptive-perl
 libtry-tiny-perl
 # needed by our chroot_local-hooks
 live-build
-# needed by tordate
-inotify-tools
 # needed by 20-time.sh
 libnotify-bin
 # needed by tails-documentation
