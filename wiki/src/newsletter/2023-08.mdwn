@@ -9,6 +9,17 @@ Dear {FIRSTNAME},
 In this newsletter, we share inspiring stories of Tails users around the world,
 privacy tips, and the latest from our team with our supporters.
 
+# VPN vs. messaging
+
+All Tails workers met earlier this year to plan improvements to the product and
+the project. We decided to introduce one big feature this year, but can’t pick
+between bringing VPN functionality to Tails or adding messaging tools.
+
+Help us decide by sharing your preference in this survey:
+https://survey.tails.boum.org/index.php/184541
+
+We'll do the losing option next!
+
 # Encryption is under attack
 
 French law enforcement now has the power to snoop by remotely controlling
@@ -58,17 +69,6 @@ On that note, we’d like to thank our sponsors: Nym Technologies, Look to the
 Right, Exam Success, Think Penguin ,and freiheitsfoo. They have all supported
 our work over the last year, and have renewed their support. If you too would
 like to sponsor Tails, get in touch with us at tails-fundraising@boum.org.
-
-# VPN vs. messaging
-
-All Tails workers met earlier this year to plan improvements to the product and
-the project. We decided to introduce one big feature this year, but can’t pick
-between bringing VPN functionality to Tails or adding messaging tools.
-
-Help us decide by sharing your preference in this survey:
-https://survey.tails.boum.org/index.php/184541
-
-We'll do the losing option next!
 
 # Tails.net
 
