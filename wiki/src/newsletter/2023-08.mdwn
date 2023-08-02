@@ -64,10 +64,9 @@ and the [United States of America](https://en.wikipedia.org/wiki/EARN_IT_Act).
 # Amidst repression in France, using Tails is not a crime
 
 Back in France, digital surveillance of dissenting socio-political movements
-had been intensifying for years now. Comrades in environmental groups
-(https://lessoulevementsdelaterre.org/blog/un-traceur-gps-retrouve-sous-le-vehicule-du-porte-parolede-bassines-non-merci),
-or just at an anarchist library
-(https://bibliothequelibertad.noblogs.org/post/2022/04/02/un-micro-trouve-a-la-bibliotheque-anarchiste-libertad/)
+had been intensifying for years now. Comrades in
+[environmental groups](https://lessoulevementsdelaterre.org/blog/un-traceur-gps-retrouve-sous-le-vehicule-du-porte-parolede-bassines-non-merci),
+or just at an [anarchist library](https://bibliothequelibertad.noblogs.org/post/2022/04/02/un-micro-trouve-a-la-bibliotheque-anarchiste-libertad/)
 are being surveilled with military-grade equipment. As if that wasn’t enough,
 the mere use of privacy-preserving tools like Tails and Tor is being treated as
 evidence of criminal behaviour to muzzle dissenting political groups. In the
@@ -84,14 +83,18 @@ In 2023, not much has changed. It’s saddening and enraging that digital privac
 and safety are rapidly getting out of reach. Tails’s mission as important now,
 if not more, as it was 15 years ago.
 
-On that note, we’d like to thank our sponsors: Nym Technologies, Look to the
-Right, Exam Success, Think Penguin ,and freiheitsfoo. They have all supported
+On that note, we’d like to thank our sponsors:
+[Nym](https://nymtech.net/),
+[ThinkPenguin](https://www.thinkpenguin.com/),
+[Look to the Right](https://looktotheright.com/),
+[Exam Success](https://www.examsuccess.com.au/), and
+[freiheitsfoo](https://freiheitsfoo.de/). They have all supported
 our work over the last year, and have renewed their support. If you too would
 like to sponsor Tails, get in touch with us at tails-fundraising@boum.org.
 
 # Welcome to tails.net
 
-Tails has a cool, new domain: tails.net.
+Tails has a cool, new domain: <a href="https://tails.net/">tails.net</a>.
 
 After 14 years of using a subdomain of `boum.org` , we finally found a new home
 that will be easier for everybody to remember and type.
@@ -108,16 +111,15 @@ to be very valuable!
   who undertook to only use static IP and not use any VPNs. Mobile internet
   remains inaccessible, and is the dominant way to access the internet for the
   Kuki community. The dystopian [undertaking](https://i.redd.it/g329xvb6ueeb1.jpg)
-  makes for a ~~fun~~ chilling read.
+  makes for a <strike>fun</strike> chilling read.
 
-* In this article from 15 years ago, Cory Doctorow decries the intrusive data
+* In [Surveillance: You can know too much](https://www.theguardian.com/technology/2008/jun/17/surveillance.database),
+  Cory Doctorow decries the intrusive data
   collection tendencies of law enforcement around the word. A seasoned advocate
   of individuals’ privacy rights and critic of surveillance capitalism, he argues
   that law enforcement doesn't know what to do with the data it already has. As
   countries around the world lust after collecting more and more data, this
-  article is both prescient and timeless:
-  https://www.theguardian.com/technology/2008/jun/17/surveillance.database
+  article is both prescient and timeless.
 
-* And here’s something to keep an eye out for. A guide is being built to resist
-  the weaponization of digital tools by using some of your own:
-  https://www.anarsec.guide/
+* And here’s something to keep an eye out for. A [guide](https://www.anarsec.guide/) is being built to resist
+  the weaponization of digital tools by using some of your own.
