@@ -37,7 +37,7 @@ answering this 5-minute survey.
 
 </div>
 
-# Encryption is under attack
+# Encryption is under attack in France, the UK, Spain, and the USA
 
 French law enforcement now has the power to snoop by remotely controlling
 unsuspecting people’s electronic devices. It’s not clear how they plan to
@@ -60,6 +60,8 @@ expression](https://www.gov.uk/government/publications/online-safety-bill-suppor
 Similar moves are underway in
 [Spain](https://www.wired.com/story/europe-break-encryption-leaked-document-csa-law/)
 and the [United States of America](https://en.wikipedia.org/wiki/EARN_IT_Act).
+
+# Amidst repression in France, using Tails is not a crime
 
 Back in France, digital surveillance of dissenting socio-political movements
 had been intensifying for years now. Comrades in environmental groups
@@ -87,7 +89,7 @@ Right, Exam Success, Think Penguin ,and freiheitsfoo. They have all supported
 our work over the last year, and have renewed their support. If you too would
 like to sponsor Tails, get in touch with us at tails-fundraising@boum.org.
 
-# Tails.net
+# Welcome to tails.net
 
 Tails has a cool, new domain: tails.net.
 
