@@ -240,8 +240,8 @@ def check_build_manifest(
         p = pkg["package"]
         v = Version(pkg["version"])
         if pkg_dict.get(p):
-            logger.debug(f"multiple entries for {p}: select min({v}, {pkg_dict[p]}).")
-        if pkg_dict.get(p) < v:
+            logger.debug(f"multiple entries for {p}: select max({v}, {pkg_dict[p]}).")
+        if pkg_dict.get(p) > v:
             continue
         pkg_dict[p] = v
 
