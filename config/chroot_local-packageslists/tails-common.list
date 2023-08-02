@@ -25,7 +25,7 @@ libgetopt-long-descriptive-perl
 libtry-tiny-perl
 # needed by our chroot_local-hooks
 live-build
-# needed by 20-time.sh
+# We use notify-send in a number of places, either directly or via tails-notify-user
 libnotify-bin
 # needed by tails-documentation
 libgtk-3-bin
