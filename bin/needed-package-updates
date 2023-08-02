@@ -175,7 +175,7 @@ class UDD:
             if version <= suite_version:
                 return (suite, suite_version)
         else:
-            raise Exception(
+            raise NotFoundError(
                 f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})"
             )
 
@@ -212,7 +212,11 @@ def get_issues(
     udd = UDD(package_dict.keys(), suites)  # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
-        suite, suite_version = udd.get_debian_version(package, striped_version)
+        try:
+            suite, suite_version = udd.get_debian_version(package, striped_version)
+        except NotFoundError as e:
+            logger.error(e)
+            continue
 
         if striped_version < suite_version:
             issue = NewVersionIssue(
