@@ -39,7 +39,7 @@ answering this 5-minute survey.
 
 </div>
 
-# End-to-end encryption under attack in France, the UK, the EU, and the USA
+# End-to-end encryption is under attack
 
 French law enforcement is now allowed to spy on suspects by [remotely activating
 the camera, microphone, and GPS](https://www.lemonde.fr/en/france/article/2023/07/06/france-set-to-allow-police-to-spy-through-phones_6044269_7.html) of their electronic devices. It’s not clear how they plan to execute this, but malware like [Pegasus](https://en.wikipedia.org/wiki/Pegasus_(spyware) could do the trick.
