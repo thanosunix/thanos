@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-06-04 08:38+0200\n"
-"PO-Revision-Date: 2022-12-19 19:07+0000\n"
+"PO-Revision-Date: 2023-07-29 23:22+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ca\n"
@@ -25,7 +25,7 @@ msgstr "[[!meta robots=\"noindex\"]]\n"
 #. type: Plain text
 #, no-wrap
 msgid "[[!meta stylesheet=\"unsafe_browser_warning\" rel=\"stylesheet\"]]\n"
-msgstr ""
+msgstr "[[!meta stylesheet=\"unsafe_browser_warning\" rel=\"stylesheet\"]]\n"
 
 #. type: Plain text
 #, no-wrap
@@ -56,6 +56,8 @@ msgstr ""
 #, no-wrap
 msgid "[[!inline pages=\"doc/anonymous_internet/unsafe_browser/security_implications.inline\" raw=\"yes\" sort=\"age\"]]\n"
 msgstr ""
+"[[!inline pages=\"doc/anonymous_internet/unsafe_browser/security_implications"
+".inline.ca\" raw=\"yes\" sort=\"age\"]]\n"
 
 #. type: Title =
 #, no-wrap
@@ -66,6 +68,8 @@ msgstr ""
 #, no-wrap
 msgid "[[!inline pages=\"doc/anonymous_internet/unsafe_browser/captive_portal.inline\" raw=\"yes\" sort=\"age\"]]\n"
 msgstr ""
+"[[!inline pages=\"doc/anonymous_internet/unsafe_browser/captive_portal.inline"
+".ca\" raw=\"yes\" sort=\"age\"]]\n"
 
 #. type: Title =
 #, no-wrap
@@ -76,6 +80,8 @@ msgstr ""
 #, no-wrap
 msgid "[[!inline pages=\"doc/anonymous_internet/unsafe_browser/signing_in.inline\" raw=\"yes\" sort=\"age\"]]\n"
 msgstr ""
+"[[!inline pages=\"doc/anonymous_internet/unsafe_browser/signing_in.inline."
+"ca\" raw=\"yes\" sort=\"age\"]]\n"
 
 #~ msgid ""
 #~ "You are currently using the Unsafe Browser. As its name suggests, the "
