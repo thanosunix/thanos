@@ -102,14 +102,16 @@ like to sponsor Tails, get in touch with us at tails-fundraising@boum.org.
 
 # Welcome to tails.net
 
-Tails has a cool, new domain: <a href="https://tails.net/">tails.net</a>.
+Tails has a cool, new domain: <a href="https://tails.net/">`tails.net`</a>.
 
 After 14 years of using a subdomain of `boum.org` , we finally found a new home
-that will be easier for everybody to remember and type.
+that will be easier for everybody to remember and type. Tails
+will become easier to find by the people who need it the most.
 
-`tails.boum.org` will continue working while we migrate. Thank you to
-`boum.org` , for supporting us all these years. Their support was and continues
-to be very valuable!
+The `tails.boum.org` domain will continue working for some time.
+
+Thank you to
+`boum.org`, for supporting us all these years!
 
 # What we’re reading
 
