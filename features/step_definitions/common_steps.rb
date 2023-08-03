@@ -1604,3 +1604,8 @@ Given /^I write (|an old version of )the Tails (ISO|USB) image to disk "([^"]+)"
     g.copy_device_to_device(src_disk_handle, dest_disk_handle, {})
   end
 end
+
+Then /^running "([^"]+)" as user "([^"]+)" succeeds$/ do |command, user|
+  c = $vm.execute(command, user: user)
+  assert(c.success?, "Failed to run command:\n#{c.stdout}\n#{c.stderr}")
+end
