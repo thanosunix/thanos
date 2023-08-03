@@ -129,5 +129,14 @@ to be very valuable!
   countries around the world lust after collecting more and more data, this
   article is both prescient and timeless.
 
-* And here’s something to keep an eye out for. A [guide](https://www.anarsec.guide/) is being built to resist
-  the weaponization of digital tools by using some of your own.
+* The IETF, the international organization responsible for all the standards
+  that make the Internet work, has recently published a new standard for the
+  end-to-end encryption of messages for 2 people or more. [MSL (Messaging Layer
+  Security)](https://blog.phnx.im/rfc-9420-mls/) will make it easier and safer
+  to add end-to-end encryption to more Internet applications.
+
+* The Tor project is calling for more *obfs4* bridges to [help people in
+  Turkmenistan circumvent
+  censorship](https://forum.torproject.org/t/tor-relays-help-turkmens-to-bypass-internet-censorship-run-an-obfs4-bridge/7002/7).
+  If you have access to an IP address that hasn't run a Tor bridge yet, you can
+  help thousands of people in Turkmenistan connect to the Internet.
