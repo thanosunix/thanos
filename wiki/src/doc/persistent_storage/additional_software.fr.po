@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-03-18 14:36+0100\n"
+"POT-Creation-Date: 2023-07-28 15:05+0000\n"
 "PO-Revision-Date: 2023-02-09 20:27+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -98,8 +98,8 @@ msgstr "Parcourir les paquets par sections depuis la barre latérale gauche."
 
 #. type: Bullet: '     - '
 msgid ""
-"Search on titles and descriptions of packages with the <span "
-"class=\"bold\">Search</span> button."
+"Search on titles and descriptions of packages with the <span class=\"bold"
+"\">Search</span> button."
 msgstr ""
 "Chercher dans les titres et les descriptions des paquets avec le bouton "
 "<span class=\"bold\">Rechercher</span>."
@@ -231,10 +231,18 @@ msgstr ""
 "des photos et des vidéos depuis votre webcam."
 
 #. type: Plain text
-msgid "- [*Mumble*](https://www.mumble.info/) is a voice chat application."
+#, fuzzy
+#| msgid "- [*Mumble*](https://www.mumble.info/) is a voice chat application."
+msgid "- [*Mumble*](https://www.mumble.info/), a voice chat application."
 msgstr ""
 "- [*Mumble*](https://www.mumble.info/) est une application de discussion "
 "vocale."
+
+#. type: Plain text
+msgid ""
+"- [*Calibre*](https://calibre-ebook.com/), an EPUB reader and library "
+"manager."
+msgstr ""
 
 #. type: Plain text
 #, no-wrap
@@ -248,23 +256,19 @@ msgstr "Packs de langue"
 
 #. type: Bullet: '- '
 msgid ""
-"for <span class=\"application\">LibreOffice</span>: <span "
-"class=\"command\">libreoffice-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"for <span class=\"application\">LibreOffice</span>: <span class=\"command"
+"\">libreoffice-l10n-<span class=\"command-placeholder\">lang</span></span>"
 msgstr ""
-"pour <span class=\"application\">LibreOffice</span> : <span "
-"class=\"command\">libreoffice-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"pour <span class=\"application\">LibreOffice</span> : <span class=\"command"
+"\">libreoffice-l10n-<span class=\"command-placeholder\">lang</span></span>"
 
 #. type: Bullet: '- '
 msgid ""
-"for <span class=\"application\">Thunderbird</span>: <span "
-"class=\"command\">thunderbird-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"for <span class=\"application\">Thunderbird</span>: <span class=\"command"
+"\">thunderbird-l10n-<span class=\"command-placeholder\">lang</span></span>"
 msgstr ""
-"pour <span class=\"application\">Thunderbird</span> : <span "
-"class=\"command\">thunderbird-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"pour <span class=\"application\">Thunderbird</span> : <span class=\"command"
+"\">thunderbird-l10n-<span class=\"command-placeholder\">lang</span></span>"
 
 #. type: Plain text
 #, no-wrap
@@ -349,8 +353,8 @@ msgid ""
 "Installation</span>."
 msgstr ""
 "Faites un clic droit (sur Mac, cliquez avec deux doigts) sur le nom du "
-"paquet dans les résultats de recherche et choisissez <span "
-"class=\"guimenuitem\">Sélectionner pour installation</span>."
+"paquet dans les résultats de recherche et choisissez <span class="
+"\"guimenuitem\">Sélectionner pour installation</span>."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -409,8 +413,8 @@ msgid ""
 "Install the package using *Synaptic* or the <span class=\"command\">apt</"
 "span> command."
 msgstr ""
-"Installez le paquet en utilisant *Synaptic* ou la commande <span "
-"class=\"command\">apt</span>."
+"Installez le paquet en utilisant *Synaptic* ou la commande <span class="
+"\"command\">apt</span>."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -463,22 +467,158 @@ msgstr ""
 "Le même paquet peut être réinstallé plus rapidement pendant quelques temps "
 "car vous n'aurez pas à le télécharger à nouveau."
 
+#. type: Title =
+#, fuzzy, no-wrap
+#| msgid "Installing additional software"
+msgid "Using additional software"
+msgstr "Installation de logiciels supplémentaires"
+
+#. type: Plain text
+msgid ""
+"Once installed, applications that don't use the network usually work out of "
+"the box.  However, Tails has some differences in terms of additional "
+"configuration and network access."
+msgstr ""
+
 #. type: Title -
 #, no-wrap
 msgid "Additional configuration"
 msgstr "Configuration supplémentaire"
 
 #. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "Some packages require additional configuration to work. To keep their "
+#| "configuration across Tails sessions, advanced users can use the "
+#| "[[Dotfiles|persistent_storage/configure#dotfiles]] feature of the "
+#| "Persistent Storage."
 msgid ""
-"Some packages require additional configuration to work. To keep their "
-"configuration across Tails sessions, advanced users can use the [[Dotfiles|"
-"persistent_storage/configure#dotfiles]] feature of the Persistent Storage."
+"To save the configuration of additional software across different Tails "
+"sessions, you can use the [[Dotfiles|persistent_storage/configure#dotfiles]] "
+"feature of the Persistent Storage."
 msgstr ""
 "Certains paquets nécessitent une configuration supplémentaire pour "
 "fonctionner. Pour conserver leur configuration à travers plusieurs sessions "
 "de Tails, vous pouvez utiliser la fonctionnalité [[Dotfiles|"
 "persistent_storage/configure#dotfiles]] du stockage persistant (utilisation "
 "avancée)."
+
+#. type: Plain text
+msgid ""
+"Each application handles its configuration very differently, so we cannot "
+"give general instructions on which files have to be saved using the Dotfiles "
+"features."
+msgstr ""
+
+#. type: Title -
+#, no-wrap
+msgid "Network access"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Tails only allows connections to the Tor network. Additional software that "
+"uses the Internet must be configured to go through the Tor network "
+"otherwise, their connections are blocked by default for security."
+msgstr ""
+
+#. type: Plain text
+msgid "To make an application use the Tor network, you can either:"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"A. Configure the application to use Tor as a proxy with the following "
+"parameters:"
+msgstr ""
+
+#. type: Bullet: '   * '
+msgid "Type: SOCKS5"
+msgstr ""
+
+#. type: Bullet: '   * '
+msgid "Host: 127.0.0.1"
+msgstr ""
+
+#. type: Bullet: '   * '
+msgid "Port: 9050"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   For example, to use *Mumble* in Tails, you can configure Tor as proxy in the\n"
+"   network configuration of *Mumble*:\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "   [[!img mumble.png link=\"no\" alt=\"Network configuration of Mumble with proxy settings\"]]\n"
+msgstr ""
+
+#. type: Plain text
+msgid "B. Run the application using `torsocks` on the command line."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   Execute the following command in a *Terminal*. Replace <span\n"
+"   class=\"command-placeholder\">[application]</span> with the command line of the\n"
+"   application that you want to run:\n"
+msgstr ""
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid "<span class=\"command\">hunspell-<span class=\"command-placeholder\">lang</span></span>"
+msgid "   <p class=\"pre command\">torsocks <span class=\"command-placeholder\">[application]</span></p>\n"
+msgstr "<span class=\"command\">hunspell-<span class=\"command-placeholder\">lang</span></span>"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   For example, to use *Mumble* in Tails, you can also execute the following\n"
+"   command:\n"
+msgstr ""
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid "       apt clean\n"
+msgid "    torsocks mumble\n"
+msgstr "       apt clean\n"
+
+#. type: Title ###
+#, no-wrap
+msgid "Technical networking considerations"
+msgstr ""
+
+#. type: Plain text
+msgid "- Only TCP connections can go through the Tor network."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"UDP connections, for example in many VoIP applications, and ICMP "
+"connections, for example in the `ping` utility, cannot go through the Tor "
+"network and are blocked in Tails."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"DNS requests go through the Tor network if the application uses the system "
+"configuration otherwise, DNS requests will fail to resolve."
+msgstr ""
+
+#. type: Plain text
+msgid "- IPv6 connections are blocked in Tails."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"The default Tor port in Tails (9050) forces the use of different Tor "
+"circuits for each different destination IP and port, also called \"*stream "
+"isolation*\"."
+msgstr ""
 
 #. type: Title =
 #, no-wrap
@@ -559,12 +699,11 @@ msgstr ""
 
 #. type: Bullet: '    1. '
 msgid ""
-"Click the <span class=\"bold\">[[!img lib/window-close.png "
-"class=\"symbolic\" link=\"no\" alt=\"\"]]</span> to the right of the name of "
-"the package."
+"Click the <span class=\"bold\">[[!img lib/window-close.png class=\"symbolic"
+"\" link=\"no\" alt=\"\"]]</span> to the right of the name of the package."
 msgstr ""
-"Cliquez sur le bouton <span class=\"bold\">[[!img lib/window-close.png "
-"class=\"symbolic\" link=\"no\" alt=\"\"]]</span> à droite du nom du paquet."
+"Cliquez sur le bouton <span class=\"bold\">[[!img lib/window-close.png class="
+"\"symbolic\" link=\"no\" alt=\"\"]]</span> à droite du nom du paquet."
 
 #. type: Bullet: '  - '
 msgid "Using <span class=\"application\">Synaptic</span>:"
@@ -577,8 +716,8 @@ msgid ""
 "span>."
 msgstr ""
 "Faites un clic droit (sur Mac, cliquez avec deux doigts) sur le nom du "
-"paquet dans les résultats de recherche et choisissez <span "
-"class=\"guimenuitem\">Sélectionner pour suppression</span>."
+"paquet dans les résultats de recherche et choisissez <span class="
+"\"guimenuitem\">Sélectionner pour suppression</span>."
 
 #. type: Bullet: '    1. '
 msgid "Click <span class=\"bold\">Apply</span> to remove the package."
@@ -622,8 +761,8 @@ msgstr ""
 msgid ""
 "Choose <span class=\"menuchoice\"> <span class=\"guimenu\">Applications</"
 "span>&nbsp;▸ <span class=\"guisubmenu\">System Tools</span>&nbsp;▸ <span "
-"class=\"guimenuitem\">Root Terminal</span> </span> to open a <span "
-"class=\"application\">Root Terminal</span>."
+"class=\"guimenuitem\">Root Terminal</span> </span> to open a <span class="
+"\"application\">Root Terminal</span>."
 msgstr ""
 "Choisir <span class=\"menuchoice\"> <span class=\"guimenu\">Applications</"
 "span>&nbsp;▸ <span class=\"guisubmenu\">Outils système</span>&nbsp;▸ <span "
@@ -712,10 +851,10 @@ msgstr "       /etc/apt/sources.list.d\tsource=apt-sources.list.d,link\n"
 
 #. type: Bullet: '1. '
 msgid ""
-"Write your additional `sources.list` files in the <span "
-"class=\"filename\">apt-sources.list.d</span> folder. For example, to add the "
-"`non-free` sections of Debian 10 (Buster), backports, and security updates, "
-"you can create a file named <span class=\"filename\">/live/persistence/"
+"Write your additional `sources.list` files in the <span class=\"filename"
+"\">apt-sources.list.d</span> folder. For example, to add the `non-free` "
+"sections of Debian 10 (Buster), backports, and security updates, you can "
+"create a file named <span class=\"filename\">/live/persistence/"
 "TailsData_unlocked/apt-sources.list.d/non-free.list</span> with the "
 "following content:"
 msgstr ""
@@ -796,8 +935,8 @@ msgstr "Redémarrez Tails pour appliquer les changements."
 #~ "Software</span> persistence feature|persistence/"
 #~ "configure#additional_software]].\n"
 #~ msgstr ""
-#~ "Pour ce faire, vous devez activer l'option de persistance [[<span "
-#~ "class=\"guilabel\">Logiciels\n"
+#~ "Pour ce faire, vous devez activer l'option de persistance [[<span class="
+#~ "\"guilabel\">Logiciels\n"
 #~ "additionnels</span>|persistence/configure#additional_software]].\n"
 
 #~ msgid ""
@@ -807,8 +946,8 @@ msgstr "Redémarrez Tails pour appliquer les changements."
 #~ "want to install this package\n"
 #~ "every time you start Tails in the future.\n"
 #~ msgstr ""
-#~ "Après qu'un paquet a été installé avec <span "
-#~ "class=\"application\">Synaptic</span> ou\n"
+#~ "Après qu'un paquet a été installé avec <span class=\"application"
+#~ "\">Synaptic</span> ou\n"
 #~ "<span class=\"command\">apt</span>, une notification apparaît pour "
 #~ "demander si vous voulez à l'avenir installer ce paquet\n"
 #~ "à chaque fois que vous démarrez Tails.\n"
@@ -923,8 +1062,8 @@ msgstr "Redémarrez Tails pour appliquer les changements."
 #~ "Packages</span> features.\n"
 #~ msgstr ""
 #~ "Pour utiliser cette option, vous devez activer la persistance des <span\n"
-#~ "class=\"guilabel\">Listes d'APT</span> et des <span "
-#~ "class=\"guilabel\">Paquets APT</span>.\n"
+#~ "class=\"guilabel\">Listes d'APT</span> et des <span class=\"guilabel"
+#~ "\">Paquets APT</span>.\n"
 
 #~ msgid ""
 #~ "If you are offline and your additional software packages don't install, "

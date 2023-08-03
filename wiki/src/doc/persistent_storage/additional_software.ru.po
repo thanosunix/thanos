@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-03-18 14:36+0100\n"
+"POT-Creation-Date: 2023-07-28 15:05+0000\n"
 "PO-Revision-Date: 2021-12-24 19:20+0000\n"
 "Last-Translator: dedmoroz <cj75300@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #. type: Plain text
@@ -82,8 +82,8 @@ msgid ""
 "class=\"guimenuitem\">Synaptic Package Manager</span></span>."
 msgstr ""
 "Выберите <span class=\"menuchoice\"> <span class=\"guimenu\">Приложения</"
-"span>&nbsp;▸ <span class=\"guisubmenu\">Системные</span>&nbsp;▸ <span "
-"class=\"guimenuitem\">Менеджер пакетов Synaptic</span></span>."
+"span>&nbsp;▸ <span class=\"guisubmenu\">Системные</span>&nbsp;▸ <span class="
+"\"guimenuitem\">Менеджер пакетов Synaptic</span></span>."
 
 #. type: Bullet: '  1. '
 msgid ""
@@ -103,8 +103,8 @@ msgstr "выбрать из пакетов в левой панели;"
 
 #. type: Bullet: '     - '
 msgid ""
-"Search on titles and descriptions of packages with the <span "
-"class=\"bold\">Search</span> button."
+"Search on titles and descriptions of packages with the <span class=\"bold"
+"\">Search</span> button."
 msgstr ""
 "поискать интересующий пакет по названию и описанию с помощью  кнопки <span "
 "class=\"bold\">Поиск</span>."
@@ -229,7 +229,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-msgid "- [*Mumble*](https://www.mumble.info/) is a voice chat application."
+msgid "- [*Mumble*](https://www.mumble.info/), a voice chat application."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"- [*Calibre*](https://calibre-ebook.com/), an EPUB reader and library "
+"manager."
 msgstr ""
 
 #. type: Plain text
@@ -244,23 +250,19 @@ msgstr "Языковые пакеты"
 
 #. type: Bullet: '- '
 msgid ""
-"for <span class=\"application\">LibreOffice</span>: <span "
-"class=\"command\">libreoffice-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"for <span class=\"application\">LibreOffice</span>: <span class=\"command"
+"\">libreoffice-l10n-<span class=\"command-placeholder\">lang</span></span>"
 msgstr ""
-"Для <span class=\"application\">LibreOffice</span>: <span "
-"class=\"command\">libreoffice-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"Для <span class=\"application\">LibreOffice</span>: <span class=\"command"
+"\">libreoffice-l10n-<span class=\"command-placeholder\">lang</span></span>"
 
 #. type: Bullet: '- '
 msgid ""
-"for <span class=\"application\">Thunderbird</span>: <span "
-"class=\"command\">thunderbird-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"for <span class=\"application\">Thunderbird</span>: <span class=\"command"
+"\">thunderbird-l10n-<span class=\"command-placeholder\">lang</span></span>"
 msgstr ""
-"Для <span class=\"application\">Thunderbird</span>: <span "
-"class=\"command\">thunderbird-l10n-<span class=\"command-placeholder\">lang</"
-"span></span>"
+"Для <span class=\"application\">Thunderbird</span>: <span class=\"command"
+"\">thunderbird-l10n-<span class=\"command-placeholder\">lang</span></span>"
 
 #. type: Plain text
 #, no-wrap
@@ -353,8 +355,8 @@ msgid ""
 "Installation</span>."
 msgstr ""
 "Щёлкните правой кнопкой мыши (на компьютере Mac щёлкните двумя пальцами) по "
-"названию пакета в результатах поиска и выберите <span "
-"class=\"guimenuitem\">Отметить для установки</span>."
+"названию пакета в результатах поиска и выберите <span class=\"guimenuitem"
+"\">Отметить для установки</span>."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -416,8 +418,8 @@ msgid ""
 "Install the package using *Synaptic* or the <span class=\"command\">apt</"
 "span> command."
 msgstr ""
-"Установите нужный пакет с помощью *Synaptic* или команды <span "
-"class=\"command\">apt</span>."
+"Установите нужный пакет с помощью *Synaptic* или команды <span class="
+"\"command\">apt</span>."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -469,6 +471,19 @@ msgstr ""
 "Какое-то время пакет будет устанавливаться быстрее, потому что его не "
 "придется снова скачивать из сети."
 
+#. type: Title =
+#, fuzzy, no-wrap
+#| msgid "Installing additional software"
+msgid "Using additional software"
+msgstr "Установка дополнительных программ"
+
+#. type: Plain text
+msgid ""
+"Once installed, applications that don't use the network usually work out of "
+"the box.  However, Tails has some differences in terms of additional "
+"configuration and network access."
+msgstr ""
+
 #. type: Title -
 #, no-wrap
 msgid "Additional configuration"
@@ -482,13 +497,130 @@ msgstr "Дополнительные настройки"
 #| "[[Dotfiles|first_steps/persistence#dotfiles]] feature of the Persistent "
 #| "Storage."
 msgid ""
-"Some packages require additional configuration to work. To keep their "
-"configuration across Tails sessions, advanced users can use the [[Dotfiles|"
-"persistent_storage/configure#dotfiles]] feature of the Persistent Storage."
+"To save the configuration of additional software across different Tails "
+"sessions, you can use the [[Dotfiles|persistent_storage/configure#dotfiles]] "
+"feature of the Persistent Storage."
 msgstr ""
 "Некоторым пакетам нужна дополнительная настройка. Чтобы сохранить свои "
 "настройки для будущих сессий Tails, опытные пользователи могут использовать "
 "функцию [[Dotfiles|first_steps/persistence#dotfiles]] Постоянного хранилища."
+
+#. type: Plain text
+msgid ""
+"Each application handles its configuration very differently, so we cannot "
+"give general instructions on which files have to be saved using the Dotfiles "
+"features."
+msgstr ""
+
+#. type: Title -
+#, no-wrap
+msgid "Network access"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Tails only allows connections to the Tor network. Additional software that "
+"uses the Internet must be configured to go through the Tor network "
+"otherwise, their connections are blocked by default for security."
+msgstr ""
+
+#. type: Plain text
+msgid "To make an application use the Tor network, you can either:"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"A. Configure the application to use Tor as a proxy with the following "
+"parameters:"
+msgstr ""
+
+#. type: Bullet: '   * '
+msgid "Type: SOCKS5"
+msgstr ""
+
+#. type: Bullet: '   * '
+msgid "Host: 127.0.0.1"
+msgstr ""
+
+#. type: Bullet: '   * '
+msgid "Port: 9050"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   For example, to use *Mumble* in Tails, you can configure Tor as proxy in the\n"
+"   network configuration of *Mumble*:\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "   [[!img mumble.png link=\"no\" alt=\"Network configuration of Mumble with proxy settings\"]]\n"
+msgstr ""
+
+#. type: Plain text
+msgid "B. Run the application using `torsocks` on the command line."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   Execute the following command in a *Terminal*. Replace <span\n"
+"   class=\"command-placeholder\">[application]</span> with the command line of the\n"
+"   application that you want to run:\n"
+msgstr ""
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid "<span class=\"command\">hunspell-<span class=\"command-placeholder\">lang</span></span>"
+msgid "   <p class=\"pre command\">torsocks <span class=\"command-placeholder\">[application]</span></p>\n"
+msgstr "<span class=\"command\">hunspell-<span class=\"command-placeholder\">lang</span></span>"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   For example, to use *Mumble* in Tails, you can also execute the following\n"
+"   command:\n"
+msgstr ""
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid "       apt clean\n"
+msgid "    torsocks mumble\n"
+msgstr "       apt clean\n"
+
+#. type: Title ###
+#, no-wrap
+msgid "Technical networking considerations"
+msgstr ""
+
+#. type: Plain text
+msgid "- Only TCP connections can go through the Tor network."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"UDP connections, for example in many VoIP applications, and ICMP "
+"connections, for example in the `ping` utility, cannot go through the Tor "
+"network and are blocked in Tails."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"DNS requests go through the Tor network if the application uses the system "
+"configuration otherwise, DNS requests will fail to resolve."
+msgstr ""
+
+#. type: Plain text
+msgid "- IPv6 connections are blocked in Tails."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"The default Tor port in Tails (9050) forces the use of different Tor "
+"circuits for each different destination IP and port, also called \"*stream "
+"isolation*\"."
+msgstr ""
 
 #. type: Title =
 #, no-wrap
@@ -574,14 +706,13 @@ msgid ""
 "class=\"guimenuitem\">Additional Software</span></span>."
 msgstr ""
 "Выберите <span class=\"menuchoice\"> <span class=\"guimenu\">Приложения</"
-"span>&nbsp;▸ <span class=\"guisubmenu\">Системные</span>&nbsp;▸ <span "
-"class=\"guimenuitem\">Additional Software</span></span>."
+"span>&nbsp;▸ <span class=\"guisubmenu\">Системные</span>&nbsp;▸ <span class="
+"\"guimenuitem\">Additional Software</span></span>."
 
 #. type: Bullet: '    1. '
 msgid ""
-"Click the <span class=\"bold\">[[!img lib/window-close.png "
-"class=\"symbolic\" link=\"no\" alt=\"\"]]</span> to the right of the name of "
-"the package."
+"Click the <span class=\"bold\">[[!img lib/window-close.png class=\"symbolic"
+"\" link=\"no\" alt=\"\"]]</span> to the right of the name of the package."
 msgstr ""
 "Нажмите <span class=\"bold\">[[!img lib/window-close.png class=\"symbolic\" "
 "link=\"no\" alt=\"\"]]</span> справа от названия пакета."
@@ -607,8 +738,8 @@ msgstr "Нажмите <span class=\"bold\">Применить</span> для у�
 #. type: Bullet: '  - '
 msgid "From the command line using <span class=\"application\">apt</span>."
 msgstr ""
-"Можно также удалить пакет из командной строки, используя <span "
-"class=\"application\">apt</span>."
+"Можно также удалить пакет из командной строки, используя <span class="
+"\"application\">apt</span>."
 
 #. type: Plain text
 #, no-wrap
@@ -643,18 +774,18 @@ msgstr ""
 #| msgid ""
 #| "Choose <span class=\"menuchoice\"> <span class=\"guimenu\">Applications</"
 #| "span>&nbsp;▸ <span class=\"guisubmenu\">System Tools</span>&nbsp;▸ <span "
-#| "class=\"guimenuitem\">Root Terminal</span> </span> to open a <span "
-#| "class=\"application\">Root Terminal</span>."
+#| "class=\"guimenuitem\">Root Terminal</span> </span> to open a <span class="
+#| "\"application\">Root Terminal</span>."
 msgid ""
 "Choose <span class=\"menuchoice\"> <span class=\"guimenu\">Applications</"
 "span>&nbsp;▸ <span class=\"guisubmenu\">System Tools</span>&nbsp;▸ <span "
-"class=\"guimenuitem\">Root Terminal</span> </span> to open a <span "
-"class=\"application\">Root Terminal</span>."
+"class=\"guimenuitem\">Root Terminal</span> </span> to open a <span class="
+"\"application\">Root Terminal</span>."
 msgstr ""
 "Выберите <span class=\"menuchoice\"> <span class=\"guimenu\">Приложения</"
-"span>&nbsp;▸ <span class=\"guisubmenu\">Системные</span>&nbsp;▸ <span "
-"class=\"guimenuitem\">Root Terminal</span> </span>. Откроется <span "
-"class=\"application\">Root Terminal</span>."
+"span>&nbsp;▸ <span class=\"guisubmenu\">Системные</span>&nbsp;▸ <span class="
+"\"guimenuitem\">Root Terminal</span> </span>. Откроется <span class="
+"\"application\">Root Terminal</span>."
 
 #. type: Bullet: '1. '
 msgid "Execute the following command:"
@@ -731,19 +862,19 @@ msgstr "       /etc/apt/sources.list.d\tsource=apt-sources.list.d,link\n"
 
 #. type: Bullet: '1. '
 msgid ""
-"Write your additional `sources.list` files in the <span "
-"class=\"filename\">apt-sources.list.d</span> folder. For example, to add the "
-"`non-free` sections of Debian 10 (Buster), backports, and security updates, "
-"you can create a file named <span class=\"filename\">/live/persistence/"
+"Write your additional `sources.list` files in the <span class=\"filename"
+"\">apt-sources.list.d</span> folder. For example, to add the `non-free` "
+"sections of Debian 10 (Buster), backports, and security updates, you can "
+"create a file named <span class=\"filename\">/live/persistence/"
 "TailsData_unlocked/apt-sources.list.d/non-free.list</span> with the "
 "following content:"
 msgstr ""
-"Сохраните ваши дополнительные файлы `sources.list` в папке <span "
-"class=\"filename\">apt-sources.list.d</span>. Например, чтобы добавить "
-"разделы `non-free` Debian 10 (Buster), резервные копии и обновления для "
-"системы безопасности, вы можете создать файл с именем <span "
-"class=\"filename\">/live/persistence/TailsData_unlocked/apt-sources.list.d/"
-"non-free.list</span> со следующим содержимым:"
+"Сохраните ваши дополнительные файлы `sources.list` в папке <span class="
+"\"filename\">apt-sources.list.d</span>. Например, чтобы добавить разделы "
+"`non-free` Debian 10 (Buster), резервные копии и обновления для системы "
+"безопасности, вы можете создать файл с именем <span class=\"filename\">/live/"
+"persistence/TailsData_unlocked/apt-sources.list.d/non-free.list</span> со "
+"следующим содержимым:"
 
 #. type: Plain text
 #, no-wrap

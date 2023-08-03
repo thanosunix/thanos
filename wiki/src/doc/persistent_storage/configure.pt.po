@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-04-18 17:46+0200\n"
-"PO-Revision-Date: 2023-07-11 20:33+0000\n"
-"Last-Translator: Saulo <saulomcm@outlook.com>\n"
+"POT-Creation-Date: 2023-07-28 16:04+0000\n"
+"PO-Revision-Date: 2023-08-01 15:22+0000\n"
+"Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -87,10 +87,8 @@ msgstr ""
 "papel de parede,\n"
 "configurações de mouse e touchpad,\n"
 "e assim por diante. Veja a [[!tails_gitlab\n"
-"groups/tails/-/issues?scope=all&utf8=✓&state=opened&label_name%5B%5D=C%"
-"3APersistence\n"
-"desc=\"lista de tíquetes sobre o Armazenamento Persistente no nosso GitLab\""
-"]].<p>\n"
+"groups/tails/-/issues?scope=all&utf8=✓&state=opened&label_name%5B%5D=C%3APersistence\n"
+"desc=\"lista de tíquetes sobre o Armazenamento Persistente no nosso GitLab\"]].<p>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -132,8 +130,7 @@ msgid ""
 "When the Persistent Folder feature is turned on, you can save your personal files and working\n"
 "documents in the <span class=\"filename\">Persistent</span> folder.\n"
 msgstr ""
-"Quando a funcionalidade de Pasta Persistente está ativada, você pode salvar "
-"seus arquivos pessoais e documentos\n"
+"Quando a funcionalidade de Pasta Persistente está ativada, você pode salvar seus arquivos pessoais e documentos\n"
 "de trabalho na pasta <span class=\"filename\">Persistent</span>.\n"
 
 #. type: Plain text
@@ -158,10 +155,8 @@ msgid ""
 "folder first.\n"
 msgstr ""
 "O *Navegador Tor* somente pode acessar a subpasta *Tor Browser* na pasta\n"
-"*Persistent*. Você somente pode salvar seus downloads na pasta *Persistent/"
-"Tor Browser*.\n"
-"Para fazer upload de um arquivo, você precisa primeiro copiá-lo para a "
-"pasta\n"
+"*Persistent*. Você somente pode salvar seus downloads na pasta *Persistent/Tor Browser*.\n"
+"Para fazer upload de um arquivo, você precisa primeiro copiá-lo para a pasta\n"
 "*Persistent/Tor Browser*.\n"
 
 #. type: Title =
@@ -353,19 +348,14 @@ msgstr ""
 "</div>\n"
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "When the Bitcoin Client feature is turned on, the bitcoin wallet and "
-#| "preferences of the [[*Electrum* bitcoin client|anonymous_internet/"
-#| "electrum]] are saved in the Persistent Storage."
 msgid ""
 "When the Electrum Bitcoin Wallet feature is turned on, the bitcoin wallet "
 "and preferences of the [[*Electrum* bitcoin client|anonymous_internet/"
 "electrum]] are saved in the Persistent Storage."
 msgstr ""
-"Quando a funcionalidade de cliente de Bitcoin for ativada, a carteira "
-"bitcoin e configurações do [[cliente bitcoin *Electrum*|anonymous_internet/"
-"electrum]] serão salvas no armazenamento persistente."
+"Quando a funcionalidade de Carteira de Bitcoin Electrum é ativada, a "
+"carteira de bitcoin e as configurações do [[cliente bitcoin *Electrum*|"
+"anonymous_internet/electrum]] são salvas no Armazenamento Persistente."
 
 #. type: Plain text
 #, no-wrap
@@ -378,31 +368,23 @@ msgid "[[!img lib/apps/thunderbird.png link=\"no\" alt=\"\"]]\n"
 msgstr "[[!img lib/apps/thunderbird.png link=\"no\" alt=\"\"]]\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<div class=\"text\"><h2>Thunderbird</h2></div>\n"
-#| "</div>\n"
+#, no-wrap
 msgid ""
 "<div class=\"text\"><h2>Thunderbird Email Client</h2></div>\n"
 "</div>\n"
 msgstr ""
-"<div class=\"text\"><h2>Thunderbird</h2></div>\n"
+"<div class=\"text\"><h2>Cliente de Email Thunderbird</h2></div>\n"
 "</div>\n"
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "When the Thunderbird feature is turned on, the email, feeds, and OpenPGP "
-#| "keys in the [[*Thunderbird* email client|doc/anonymous_internet/"
-#| "thunderbird]] are saved in the Persistent Storage."
 msgid ""
 "When the Thunderbird Email Client feature is turned on, the email, feeds, "
 "and OpenPGP keys in the [[*Thunderbird* email client|doc/anonymous_internet/"
 "thunderbird]] are saved in the Persistent Storage."
 msgstr ""
-"Quando a funcionalidade do Thunderbird for ativada, emails, feeds e chaves "
-"OpenPGP no  [[cliente de email *Thunderbird*|doc/anonymous_internet/"
-"thunderbird]] serão salvos no armazenamento persistente."
+"Quando a funcionalidade do Cliente de Email Thunderbird é ativada, emails, "
+"feeds e chaves OpenPGP no  [[cliente de email *Thunderbird*|doc/"
+"anonymous_internet/thunderbird]] são salvos no Armazenamento Persistente."
 
 #. type: Plain text
 #, no-wrap
@@ -424,17 +406,14 @@ msgstr ""
 "</div>\n"
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "When the GnuPG feature is turned on, the OpenPGP keys that you create or "
-#| "import in *GnuPG* and *Kleopatra* are saved in the Persistent Storage."
 msgid ""
 "When the GnuPG feature is turned on, the OpenPGP keys that you create or "
 "import in *GnuPG* and [[*Kleopatra*|doc/encryption_and_privacy/kleopatra]] "
 "are saved in the Persistent Storage."
 msgstr ""
-"Quando a funcionalidade GnuPG está ativa, as chaves OpenPGP que você cria ou "
-"importa no *GnuPG* e *Kleopatra* são salvas no Armazenamento Persistente."
+"Quando a funcionalidade GnuPG é ativada, as chaves OpenPGP que você cria ou "
+"importa no *GnuPG* e [[*Kleopatra*|doc/encryption_and_privacy/kleopatra]] "
+"são salvas no Armazenamento Persistente."
 
 #. type: Plain text
 #, no-wrap
@@ -460,66 +439,49 @@ msgid "[[!img lib/apps/pidgin.png link=\"no\" alt=\"\"]]\n"
 msgstr "[[!img lib/apps/pidgin.png link=\"no\" alt=\"\"]]\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<div class=\"text\"><h2>Printers</h2></div>\n"
-#| "</div>\n"
+#, no-wrap
 msgid ""
 "<div class=\"text\"><h2>Pidgin Internet Messenger</h2></div>\n"
 "</div>\n"
 msgstr ""
-"<div class=\"text\"><h2>Impressoras</h2></div>\n"
+"<div class=\"text\"><h2>Mensageiro de Internet Pidgin</h2></div>\n"
 "</div>\n"
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "When the Pidgin feature is turned on, all the configuration files of the "
-#| "[[*Pidgin* internet messenger|doc/anonymous_internet/pidgin]] are saved "
-#| "in the Persistent Storage:"
 msgid ""
 "When the Pidgin Internet Messenger feature is turned on, all the "
 "configuration files of the [[*Pidgin* internet messenger|doc/"
 "anonymous_internet/pidgin]] are saved in the Persistent Storage:"
 msgstr ""
-"Quando a funcionalidade do Pidgin for ativada, todos os arquivos de "
-"configurações do [[mensageiro de internet *Pidgin*|doc/anonymous_internet/"
-"pidgin]] serão salvas no armazenamento persistente:"
+"Quando a funcionalidade Mensageiro de Internet Pidgin é ativada, todos os "
+"arquivos de configurações do [[mensageiro de Internet *Pidgin*|doc/"
+"anonymous_internet/pidgin]] são salvas no Armazenamento Persistente:"
 
 #. type: Plain text
-#, fuzzy
-#| msgid "The configuration of your accounts, buddies and chats."
 msgid ""
 "- The configuration of your accounts, contacts, and chats - Your OTR "
 "encryption keys and keyring"
-msgstr "A configuração das suas contas, contatos e conversas."
+msgstr ""
+"- A configuração das suas contas, contatos e conversas\n"
+"- Suas chaves e chaveiro de criptografia OTR"
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "The content of the discussions is not saved unless you configure <span "
-#| "class=\"application\">Pidgin</span> to do so."
 msgid ""
 "The content of the discussions is not saved, unless you configure *Pidgin* "
 "to do so."
 msgstr ""
-"O conteúdo das conversas não é salvo a menos que você configure o <span "
-"class=\"application\">Pidgin</span> para fazê-lo."
+"Os conteúdos das conversas não são salvos, a menos que você configure o "
+"*Pidgin* para salvá-los."
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "All the configuration options are available from the graphical interface "
-#| "of *Pidgin*. There is no need to manually edit or overwrite the "
-#| "configuration files."
 msgid ""
 "All the configuration options are available from the graphical interface of "
-"*Pidgin*. You don't need to automatically edit or overwrite the "
-"configuration files."
+"*Pidgin*. You don't need to manually edit or overwrite the configuration "
+"files."
 msgstr ""
 "Todas as opções de configuração estão disponíveis na interface gráfica do "
-"*Pidgin*. Não há necessidade de editar manualmente ou sobrescrever os "
-"arquivos de configuração."
+"*Pidgin*. Você não precisa editar manualmente ou sobrescrever os arquivos de "
+"configuração."
 
 #. type: Plain text
 #, no-wrap
@@ -541,17 +503,13 @@ msgstr ""
 "</div>\n"
 
 #. type: Plain text
-#, fuzzy
-#| msgid ""
-#| "When the SSH Client feature is turned on, all the files related to the "
-#| "secure-shell (SSH) client are saved in the Persistent Storage:"
 msgid ""
 "When the SSH Client feature is turned on, all the files related to the "
 "Secure Shell (SSH) client are saved in the Persistent Storage:"
 msgstr ""
-"Quando a funcionalidade do cliente SSH for ativada, todos os arquivos "
-"relacionados ao cliente secure-shell (SSH) serão salvas no armazenamento "
-"persistente:"
+"Quando a funcionalidade do cliente SSH está ativa, todos os arquivos "
+"relacionados ao cliente Secure Shell (SSH) são salvos no Armazenamento "
+"Persistente:"
 
 #. type: Bullet: '  - '
 msgid "The SSH keys that you create or import"
@@ -569,10 +527,9 @@ msgstr ""
 "span>"
 
 #. type: Title =
-#, fuzzy, no-wrap
-#| msgid "Some settings"
+#, no-wrap
 msgid "Advanced Settings"
-msgstr "Algumas configurações"
+msgstr "Configurações Avançadas"
 
 #. type: Plain text
 #, no-wrap
@@ -758,6 +715,8 @@ msgid ""
 "<p>Be careful if you use the Dotfiles feature to overwrite the default\n"
 "settings.</p>\n"
 msgstr ""
+"<p>Tenha cuidado ao usar a funcionalidade Dotfiles para sobrescrever as\n"
+"configurações padrão.</p>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -765,6 +724,9 @@ msgid ""
 "<p>The programs included in Tails are carefully configured with security in\n"
 "mind. You can weaken your security if you change the defaults.</p>\n"
 msgstr ""
+"<p>Os programas incluídos no Tails são cuidadosamente configurados pensando\n"
+"em segurança. Vocẽ pode enfraquecer sua segurança ao alterar as\n"
+"configurações para algo diferente do padrão.</p>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -773,6 +735,11 @@ msgid ""
 "Tails user from another. In some cases, changing the default settings can break\n"
 "your anonymity.</p>\n"
 msgstr ""
+"<p>A anonimidade do Tor e do Tails dependem de tornar mais difícil a "
+"distinção entre\n"
+"diferentes usuários do Tails. Em alguns casos, alterar as configurações "
+"padrão\n"
+"pode acabar com a sua anonimidade.</p>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -804,10 +771,12 @@ msgid ""
 "Choose **Applications**&nbsp;▸ **System Tools**&nbsp;▸ **Settings** to open "
 "the *Settings* utility."
 msgstr ""
+"Escolha **Aplicativos**&nbsp;▸ **Ferramentas de sistema**&nbsp;▸ "
+"Configurações para abrir a aplicação de *Configurações*."
 
 #. type: Bullet: '1. '
 msgid "Choose **Displays** in the *Settings* utility."
-msgstr ""
+msgstr "Escolha **Telas** no utilitário de *Configurações*."
 
 #. type: Bullet: '1. '
 msgid "Configure your displays."
@@ -819,8 +788,8 @@ msgid ""
 "live/persistence/TailsData_unlocked/dotfiles</span> folder in the <span "
 "class=\"application\">Files</span> browser."
 msgstr ""
-"Escolha **Locais**&nbsp;▸ **Dotfiles** para abrir a pasta <span "
-"class=\"filename\">/live/persistence/TailsData_unlocked/dotfiles</span> no "
+"Escolha **Locais**&nbsp;▸ **Dotfiles** para abrir a pasta <span class="
+"\"filename\">/live/persistence/TailsData_unlocked/dotfiles</span> no "
 "gerenciador de <span class=\"application\">Arquivos</span>."
 
 #. type: Bullet: '1. '
@@ -835,11 +804,11 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Create a folder called <span class=\"filename\">.config</span> (<span "
-"class=\"filename\">config</span> preceded by a dot)."
+"Create a folder called <span class=\"filename\">.config</span> (<span class="
+"\"filename\">config</span> preceded by a dot)."
 msgstr ""
-"Crie uma pasta chamada <span class=\"filename\">.config</span> (<span "
-"class=\"filename\">config</span> com um ponto no inicio)."
+"Crie uma pasta chamada <span class=\"filename\">.config</span> (<span class="
+"\"filename\">config</span> com um ponto no inicio)."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -848,57 +817,52 @@ msgid ""
 "live/persistence/TailsData_unlocked/dotfiles/.config</span>."
 msgstr ""
 "Copie o arquivo <span class=\"filename\">.config/monitors.xml</span> da sua "
-"<span class=\"filename\">Pasta pessoal</span> para o <span "
-"class=\"filename\">/live/persistence/TailsData_unlocked/dotfiles/.config</"
-"span>."
+"<span class=\"filename\">Pasta pessoal</span> para o <span class=\"filename"
+"\">/live/persistence/TailsData_unlocked/dotfiles/.config</span>."
 
 #. type: Title =
-#, fuzzy, no-wrap
-#| msgid "<p>To delete the files corresponding to a feature:</p>\n"
+#, no-wrap
 msgid "Deleting the data corresponding to a feature"
-msgstr "<p>Para apagar os arquivos correspondentes a uma funcionalidade:</p>\n"
+msgstr "Apagando os dados correspondentes a uma funcionalidade"
 
 #. type: Plain text
-#, fuzzy
-#| msgid "How to use the Persistent Storage"
 msgid "When you turn off a feature of the Persistent Storage:"
-msgstr "Como usar o Armazenamento Persistente"
+msgstr "Quando você desliga a funcionalidade de Armazenamento Persistente:"
 
 #. type: Plain text
 msgid "- The data of the feature is not available anymore in Tails."
-msgstr ""
+msgstr "- Os dados da funcionalidade não ficam mais disponíveis no Tails."
 
 #. type: Plain text
 #, no-wrap
 msgid "  For example:\n"
-msgstr ""
+msgstr "  Por exemplo:\n"
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "Your personal files in the *Persistent* folder are accessible from "
-#| "**Places**&nbsp;▸ **Persistent**."
 msgid ""
 "If you turn off the Persistent Folder feature, the documents saved in "
 "**Places** &nbsp;▸ **Persistent** are not available anymore."
 msgstr ""
-"Seus arquivos pessoais na pasta *Persistente* são acessíveis à partir de "
-"**Locais**&nbsp;▸ **Persistente**."
+"Se você desliga a funcionalidade de Pasta Persistente, os documentos salvos "
+"em **Locais** &nbsp;▸ **Persistent** não ficam mais disponíveis."
 
 #. type: Bullet: '  - '
 msgid ""
 "If you turn off the Electrum Bitcoin Wallet feature, the wallet used by "
 "*Electrum* is not available anymore."
 msgstr ""
+"Se você desliga a funcionalidade de Carteira de Bitcoin Electrum, a carteira "
+"usada pelo *Electrum* não fica mais disponível."
 
 #. type: Plain text
 msgid "- The data of the feature is still saved in the USB stick."
-msgstr ""
+msgstr "- Os dados da funcionalidade ainda ficam salvos no pendrive USB."
 
 #. type: Plain text
 #, no-wrap
 msgid "  A **Delete Data** button appears in the setting of the feature.\n"
 msgstr ""
+"  Um botão **Apagar Dados** aparece nas configurações da funcionalidade.\n"
 
 #. type: Plain text
 #, no-wrap
@@ -910,12 +874,16 @@ msgid ""
 "Click the **Delete Data** button to delete the corresponding data from the "
 "USB stick."
 msgstr ""
+"Clique no botão **Apagar Dados** para apagar do pendrive USB os dados "
+"correspondentes."
 
 #. type: Bullet: '  * '
 msgid ""
 "Turn on the feature again to restore the data and make it available in Tails "
 "again."
 msgstr ""
+"Ligue a funcionalidade novamente para restaurar os dados e torná-los "
+"novamente disponíveis para o Tails."
 
 #, no-wrap
 #~ msgid "<!-- Remove after #8447. -->\n"
@@ -1494,8 +1462,8 @@ msgstr ""
 #~ "span>\n"
 #~ "são linkadas na <span class=\"filename\">Pasta Home</span> (arquivos nas\n"
 #~ "subpastas da pasta <span class=\"filename\">dotfiles</span> também são\n"
-#~ "linkadas na subpasta correspondente da sua <span "
-#~ "class=\"filename\">Pasta\n"
+#~ "linkadas na subpasta correspondente da sua <span class=\"filename"
+#~ "\">Pasta\n"
 #~ "Home</span>).\n"
 
 #~ msgid ""
@@ -1666,15 +1634,15 @@ msgstr ""
 #~ "1. The persistent volume is an encrypted partition protected by a "
 #~ "passphrase.\n"
 #~ "Specify a passphrase of your choice in both the\n"
-#~ "<span class=\"guilabel\">Passphrase</span> and <span "
-#~ "class=\"guilabel\">Verify\n"
+#~ "<span class=\"guilabel\">Passphrase</span> and <span class=\"guilabel"
+#~ "\">Verify\n"
 #~ "Passphrase</span> text boxes.\n"
 #~ msgstr ""
 #~ "1. O volume persistente é uma partição criptografada protegida por uma "
 #~ "senha.\n"
 #~ "Especifique uma senha de sua escolha nas caixas de texto\n"
-#~ "<span class=\"guilabel\">Senha</span> e <span "
-#~ "class=\"guilabel\">Verifique a senha</span>.\n"
+#~ "<span class=\"guilabel\">Senha</span> e <span class=\"guilabel"
+#~ "\">Verifique a senha</span>.\n"
 
 #~ msgid "Wait for the creation to finish."
 #~ msgstr "Espera que a criação termine."
@@ -1767,8 +1735,8 @@ msgstr ""
 #~ "  <span class=\"guimenu\">Arquivo</span>&nbsp;▸\n"
 #~ "  <span class=\"guimenu\">Adicionar caixa de email</span>&nbsp;▸\n"
 #~ "  <span class=\"guimenuitem\">MH...</span></span> e altere o local da "
-#~ "caixa de email de <span class=\"filename\">Mail</span> para <span "
-#~ "class=\"filename\">.claws-mail/Mail</span>.</p>\n"
+#~ "caixa de email de <span class=\"filename\">Mail</span> para <span class="
+#~ "\"filename\">.claws-mail/Mail</span>.</p>\n"
 
 #, fuzzy
 #~| msgid ""

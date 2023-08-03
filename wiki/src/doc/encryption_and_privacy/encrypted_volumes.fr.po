@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-06-09 07:47+0200\n"
-"PO-Revision-Date: 2023-03-12 19:28+0000\n"
+"PO-Revision-Date: 2023-07-24 17:37+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
 "Language: fr\n"
@@ -29,10 +29,10 @@ msgid "[[!toc levels=2]]\n"
 msgstr "[[!toc levels=2]]\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Introduction to <span class=\"application\">LUKS</span>"
+#, no-wrap
 msgid "<h1 id=\"luks\">Introduction to <span class=\"application\">LUKS</span></h1>\n"
-msgstr "Introduction à <span class=\"application\">LUKS</span>"
+msgstr ""
+"<h1 id=\"luks\">Introduction à <span class=\"application\">LUKS</span></h1>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -83,10 +83,11 @@ msgid "The GNOME desktop allows you to open encrypted volumes."
 msgstr "Le bureau GNOME vous permet d'ouvrir des supports chiffrés."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Comparison between <span class=\"application\">LUKS</span> and <span class=\"application\">VeraCrypt</span>"
+#, no-wrap
 msgid "<h2 id=\"comparison\">Comparison between <span class=\"application\">LUKS</span> and <span class=\"application\">VeraCrypt</span></h2>\n"
-msgstr "Comparaison entre <span class=\"application\">LUKS</span> et <span class=\"application\">VeraCrypt</span>"
+msgstr ""
+"<h2 id=\"comparison\">Comparaison entre <span class=\"application\">LUKS</"
+"span> et <span class=\"application\">VeraCrypt</span></h2>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -107,10 +108,9 @@ msgid "[[!inline pages=\"doc/encryption_and_privacy/luks_vs_veracrypt.inline\" r
 msgstr "[[!inline pages=\"doc/encryption_and_privacy/luks_vs_veracrypt.inline.fr\" raw=\"yes\" sort=\"age\"]]\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "<h2 class=\"bullet-number-three\">Create a new encrypted partition</h2>\n"
+#, no-wrap
 msgid "<h1 id=\"creating\">Creating an encrypted partition</h1>\n"
-msgstr "<h2 class=\"bullet-number-three\">Créer une nouvelle partition chiffrée</h2>\n"
+msgstr "<h1 id=\"creating\">Créer une partition chiffrée</h1>\n"
 
 #. type: Plain text
 msgid ""
@@ -121,10 +121,11 @@ msgstr ""
 "ouvrir *Disques*."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Identify your external storage device"
+#, no-wrap
 msgid "<h2 id=\"identifying\">Identifying your external storage device</h2>\n"
-msgstr "Identifier votre périphérique de stockage externe"
+msgstr ""
+"<h2 id=\"identifying\">Identifier votre périphérique de stockage externe</h2>"
+"\n"
 
 #. type: Plain text
 #, no-wrap
@@ -163,7 +164,7 @@ msgstr ""
 #, fuzzy, no-wrap
 #| msgid "<h2 class=\"bullet-number-two\">Format the device</h2>\n"
 msgid "<h2 id=\"formatting\">Formatting the device</h2>\n"
-msgstr "<h2 class=\"bullet-number-two\">Formater le périphérique</h2>\n"
+msgstr "<h2 id=\"formatting\">Formater le périphérique</h2>\n"
 
 #. type: Bullet: '  1. '
 msgid ""
@@ -229,7 +230,7 @@ msgstr ""
 #, fuzzy, no-wrap
 #| msgid "<h2 class=\"bullet-number-three\">Create a new encrypted partition</h2>\n"
 msgid "<h2 id=\"partition\">Creating a new encrypted partition</h2>\n"
-msgstr "<h2 class=\"bullet-number-three\">Créer une nouvelle partition chiffrée</h2>\n"
+msgstr "<h2 id=\"partition\">Créer une nouvelle partition chiffrée</h2>\n"
 
 #. type: Plain text
 msgid ""
@@ -358,10 +359,9 @@ msgstr ""
 "confirmer."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "<div class=\"tip\">\n"
+#, no-wrap
 msgid "         <div class=\"tip\">\n"
-msgstr "<div class=\"tip\">\n"
+msgstr "         <div class=\"tip\">\n"
 
 #. type: Plain text
 #, no-wrap
@@ -372,10 +372,9 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "</div>\n"
+#, no-wrap
 msgid "         </div>\n"
-msgstr "</div>\n"
+msgstr "         </div>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -425,10 +424,9 @@ msgstr ""
 "class=\"symbolic\" link=\"no\"]]</span>."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "<h2 class=\"bullet-number-four\">Use the new partition</h2>\n"
+#, no-wrap
 msgid "<h2 id=\"using\">Using the new partition</h2>\n"
-msgstr "<h2 class=\"bullet-number-four\">Utiliser la nouvelle partition</h2>\n"
+msgstr "<h2 id=\"using\">Utiliser la nouvelle partition</h2>\n"
 
 #. type: Plain text
 msgid ""
@@ -448,10 +446,9 @@ msgstr ""
 "depuis le menu <span class=\"guimenu\">Emplacements</span>.\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Open an existing encrypted partition"
+#, no-wrap
 msgid "<h1 id=\"opening\">Opening an existing encrypted partition</h1>\n"
-msgstr "Ouvrir une partition chiffrée existante"
+msgstr "<h1 id=\"opening\">Ouvrir une partition chiffrée existante</h1>\n"
 
 #. type: Plain text
 msgid ""
@@ -518,10 +515,9 @@ msgstr ""
 "panneau latéral du  navigateur de fichier."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Storing sensitive documents"
+#, no-wrap
 msgid "<h1 id=\"storing\">Storing sensitive documents</h1>\n"
-msgstr "Stocker des documents sensibles"
+msgstr "<h1 id=\"storing\">Stocker des documents sensibles</h1>\n"
 
 #. type: Plain text
 msgid ""
@@ -535,10 +531,11 @@ msgstr ""
 "pour obtenir la phrase de passe protégeant ce volume."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Opening encrypted volumes from other operating systems"
+#, no-wrap
 msgid "<h1 id=\"os\">Opening encrypted volumes from other operating systems</h1>\n"
-msgstr "Ouvrir des volumes chiffrés depuis d'autres systèmes d'exploitation"
+msgstr ""
+"<h1 id=\"os\">Ouvrir des volumes chiffrés depuis d'autres systèmes "
+"d'exploitation</h1>\n"
 
 #. type: Plain text
 msgid ""
@@ -560,10 +557,11 @@ msgstr ""
 "indexé par l'autre système."
 
 #. type: Plain text
-#, fuzzy, no-wrap
-#| msgid "Change the passphrase of an existing encrypted partition"
+#, no-wrap
 msgid "<h1 id=\"changing\">Changing the passphrase of an existing encrypted partition</h1>\n"
-msgstr "Changer la phrase de passe d'une partition chiffrée existante"
+msgstr ""
+"<h1 id=\"changing\">Changer la phrase de passe d'une partition chiffrée "
+"existante</h1>\n"
 
 #. type: Plain text
 #, no-wrap

@@ -3,43 +3,45 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-07-12 10:57+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-07-24 17:37+0000\n"
+"Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "[[!meta title=\"Tails 5.15.1\"]]\n"
-msgstr ""
+msgstr "[[!meta title=\"Tails 5.15.1\"]]\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "[[!meta date=\"Tue, 11 Jul 2023 12:34:56 +0000\"]]\n"
-msgstr ""
+msgstr "[[!meta date=\"Tue, 11 Jul 2023 12:34:56 +0000\"]]\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "[[!pagetemplate template=\"news.tmpl\"]]\n"
-msgstr ""
+msgstr "[[!pagetemplate template=\"news.tmpl\"]]\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "[[!tag announce]]\n"
-msgstr ""
+msgstr "[[!tag announce]]\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "<h1 id=\"changes\">Changes and updates</h1>\n"
-msgstr ""
+msgstr "<h1 id=\"changes\">Changements et mises à jour</h1>\n"
 
 #. type: Plain text
 #, markdown-text
@@ -47,6 +49,8 @@ msgid ""
 "- Update *Tor Browser* to "
 "[12.5](https://blog.torproject.org/new-release-tor-browser-125)."
 msgstr ""
+"- Mise à jour du *Navigateur Tor* vers la version [12.5](https://blog."
+"torproject.org/new-release-tor-browser-125)."
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -55,16 +59,23 @@ msgid ""
 "12.5](https://blog.torproject.org/new-release-tor-browser-125)\n"
 "  has a new circuit view and better information about onion services.\n"
 msgstr ""
+"  Le [Navigateur Tor 12.5](https://blog.torproject.org/new-release-tor-"
+"browser-125)\n"
+"  a une nouvelle vue du circuit et de meilleures informations sur les "
+"services onion.\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "  [[!img doc/anonymous_internet/Tor_Browser/circuit-view.png link=\"no\"]]\n"
 msgstr ""
+"  [[!img doc/anonymous_internet/Tor_Browser/circuit-view.png link=\"no\"]]\n"
 
 #. type: Plain text
 #, markdown-text
 msgid "- Support onion service authentication in *Tor Browser*."
 msgstr ""
+"- Prise en charge de l'authentification des services onion dans le *"
+"Navigateur Tor*."
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -73,6 +84,9 @@ msgid ""
 "of\n"
 "  Tails.\n"
 msgstr ""
+"  Par exemple, l'authentification des services onion est utilisée par "
+"*OnionShare* en dehors de\n"
+"  Tails.\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -80,11 +94,13 @@ msgid ""
 "  [[!img authentication.png link=\"no\" alt=\"Tor Browser asking for a "
 "private key to connect to an onion service\"]]\n"
 msgstr ""
+"  [[!img authentication.png link=\"no\" alt=\"Nativateur Tor demandant une "
+"clé privée pour se connecter à un service onion\"]]\n"
 
 #. type: Plain text
 #, markdown-text
 msgid "- Display the version of Tails in the Boot Loader"
-msgstr ""
+msgstr "- Affichage de la version de Tails dans le chargeur d'amorçage"
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -92,11 +108,13 @@ msgid ""
 "  [[!img version.png link=\"no\" alt=\"SYSLINUX Boot Loader displaying "
 "'Tails 5.15.1'\"]]\n"
 msgstr ""
+"  [[!img version.png link=\"no\" alt=\"Chargeur d'amorçage SYSLINUX "
+"affichant 'Tails 5.15.1'\"]]\n"
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "<h1 id=\"fixes\">Fixed problems</h1>\n"
-msgstr ""
+msgstr "<h1 id=\"fixes\">Problèmes corrigés</h1>\n"
 
 #. type: Plain text
 #, markdown-text
@@ -104,6 +122,8 @@ msgid ""
 "- Fix the search of some languages and keyboard layouts. ([[!tails_ticket "
 "19200]])"
 msgstr ""
+"- Corrige la recherche de certaines langues et dispositions de clavier. ([["
+"!tails_ticket 19200]])"
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -111,11 +131,13 @@ msgid ""
 "  [[!img language.png link=\"no\" alt=\"Searching for 'esp' now returns "
 "'Español'\"]]\n"
 msgstr ""
+"  [[!img language.png link=\"no\" alt=\"Faire une recherche de 'esp' "
+"retourne maintenant 'Español'\"]]\n"
 
 #. type: Plain text
 #, markdown-text
 msgid "- Make the upgrade of the Persistent Storage more reliable:"
-msgstr ""
+msgstr "- Rend la mise à jour du stockage persistant plus fiable :"
 
 #. type: Bullet: '  * '
 #, markdown-text
@@ -124,6 +146,9 @@ msgid ""
 "displayed every time in Tails 5.14 when Tails failed to upgrade one of the "
 "cryptographic parameters. ([[!tails_ticket 19734]])"
 msgstr ""
+"Sur certains systèmes, le message « *Mettre à jour le stockage persistant* » "
+"est affiché à chaque fois dans Tails 5.14 lorsque Tails échoue dans la mise "
+"à jour de l'un des paramètres cryptographiques. ([[!tails_ticket 19734]])"
 
 #. type: Bullet: '  * '
 #, markdown-text
@@ -139,6 +164,8 @@ msgid ""
 "- Fix opening documentation links from *Tails Installer*. ([[!tails_ticket "
 "19870]])"
 msgstr ""
+"- Corrige l'ouverture des liens vers la documentation dans le *Programme "
+"d'installation de Tails*. ([[!tails_ticket 19870]])"
 
 #. type: Bullet: '- '
 #, markdown-text
@@ -160,11 +187,13 @@ msgid ""
 "For more details, read our [[!tails_gitweb debian/changelog "
 "desc=\"changelog\"]]."
 msgstr ""
+"Pour plus de détails, lisez notre [[!tails_gitweb debian/changelog desc="
+"\"liste des changements\"]]."
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "<h1 id=\"issues\">Known issues</h1>\n"
-msgstr ""
+msgstr "<h1 id=\"issues\">Problèmes connus</h1>\n"
 
 #. type: Plain text
 #, markdown-text
@@ -178,21 +207,25 @@ msgstr ""
 #, markdown-text
 msgid "See the list of [[long-standing issues|support/known_issues]]."
 msgstr ""
+"Voir la liste des [[problèmes connus de longue date|support/known_issues]]."
 
 #. type: Plain text
 #, markdown-text, no-wrap
 msgid "<h1 id=\"get\">Get Tails 5.15.1</h1>\n"
-msgstr ""
+msgstr "<h1 id=\"get\">Obtenir Tails 5.15.1</h1>\n"
 
 #. type: Title ##
 #, markdown-text, no-wrap
 msgid "To upgrade your Tails USB stick and keep your persistent storage"
 msgstr ""
+"Pour mettre à jour votre clé USB Tails et conserver votre stockage persistant"
 
 #. type: Plain text
 #, markdown-text
 msgid "- Automatic upgrades are available from Tails 5.0 or later to 5.15.1."
 msgstr ""
+"- Mises à jour automatiques disponibles depuis Tails 5.0 ou plus récent vers "
+"la version 5.15.1."
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -200,6 +233,10 @@ msgid ""
 "  You can [[reduce the size of the download|doc/upgrade#reduce]] of future\n"
 "  automatic upgrades by doing a manual upgrade to the latest version.\n"
 msgstr ""
+"  Vous pouvez [[réduire la taille du téléchargement|doc/upgrade#reduce]] des "
+"futures\n"
+"  mises à jours automatiques en effectuant une mise à jour manuelle vers la "
+"dernière version.\n"
 
 #. type: Bullet: '- '
 #, markdown-text
@@ -208,31 +245,34 @@ msgid ""
 "automatic upgrade, please try to do a [[manual "
 "upgrade|doc/upgrade/#manual]]."
 msgstr ""
+"Si vous ne pouvez pas faire une mise à jour automatique ou si le démarrage "
+"de Tails échoue après une mise à jour automatique, merci d'essayer de faire "
+"une [[mise à jour manuelle|doc/upgrade/#manual]]."
 
 #. type: Title ##
 #, markdown-text, no-wrap
 msgid "To install Tails on a new USB stick"
-msgstr ""
+msgstr "Pour installer Tails sur une nouvelle clé USB"
 
 #. type: Plain text
 #, markdown-text
 msgid "Follow our installation instructions:"
-msgstr ""
+msgstr "Suivez nos instructions d'installation :"
 
 #. type: Bullet: '  - '
 #, markdown-text
 msgid "[[Install from Windows|install/windows]]"
-msgstr ""
+msgstr "[[Installer depuis Windows|install/windows]]"
 
 #. type: Bullet: '  - '
 #, markdown-text
 msgid "[[Install from macOS|install/mac]]"
-msgstr ""
+msgstr "[[Installer depuis macOS|install/mac]]"
 
 #. type: Bullet: '  - '
 #, markdown-text
 msgid "[[Install from Linux|install/linux]]"
-msgstr ""
+msgstr "[[Installer depuis Linux|install/linux]]"
 
 #. type: Bullet: '  - '
 #, markdown-text
@@ -240,6 +280,8 @@ msgid ""
 "[[Install from Debian or Ubuntu using the command line and "
 "GnuPG|install/expert]]"
 msgstr ""
+"[[Installer depuis Debian ou Ubuntu en utilisant la ligne de commande et "
+"GnuPG|install/expert]]"
 
 #. type: Plain text
 #, markdown-text, no-wrap
@@ -248,11 +290,14 @@ msgid ""
 "lost if\n"
 "you install instead of upgrading.</p></div>\n"
 msgstr ""
+"<div class=\"caution\"><p>Le stockage persistant de la clé USB sera perdu "
+"si\n"
+"vous faites une installation au lieu d'une mise à jour.</p></div>\n"
 
 #. type: Title ##
 #, markdown-text, no-wrap
 msgid "To download only"
-msgstr ""
+msgstr "Pour seulement télécharger"
 
 #. type: Plain text
 #, markdown-text
@@ -260,13 +305,15 @@ msgid ""
 "If you don't need installation or upgrade instructions, you can download "
 "Tails 5.15.1 directly:"
 msgstr ""
+"Si vous n'avez pas besoin d'instructions d'installation ou de mise à jour, "
+"vous pouvez télécharger directement Tails 5.15.1 :"
 
 #. type: Bullet: '  - '
 #, markdown-text
 msgid "[[For USB sticks (USB image)|install/download]]"
-msgstr ""
+msgstr "[[Pour clés USB (image USB)|install/download]]"
 
 #. type: Bullet: '  - '
 #, markdown-text
 msgid "[[For DVDs and virtual machines (ISO image)|install/download-iso]]"
-msgstr ""
+msgstr "[[Pour DVD et machines virtuelles (image ISO)|install/download-iso]]"
