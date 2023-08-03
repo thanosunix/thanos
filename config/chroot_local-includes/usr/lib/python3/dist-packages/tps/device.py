@@ -22,7 +22,7 @@ logger = tps.logging.get_logger(__name__)
 TAILS_MOUNTPOINT = "/lib/live/mount/medium"
 PARTITION_GUID = "8DA63339-0007-60C0-C436-083AC8230908" # Linux reserved
 TPS_PARTITION_LABEL = "TailsData"
-VERSION_REGEX = re.compile(r'^Version:\s*(\d+)$')
+VERSION_REGEX = re.compile(r'^Version:\s*(\d+)$', re.M)
 PBKDF_REGEX = re.compile(r'^\s*PBKDF:\s*(\S+)$')
 MEMORY_COST_REGEX = re.compile(r'^\s*Memory:\s*(\d+)$')
 
@@ -176,41 +176,51 @@ class TPSPartition(object):
             return False
 
     def is_upgraded(self) -> bool:
+        logger.debug("Calling is_upgraded()")
         cmd = ["cryptsetup", "luksDump", self.device_path]
         try:
             luks_dump = executil.check_output(cmd)
         except subprocess.CalledProcessError:
             logger.exception("Command 'cryptsetup luksDump' failed")
             return False
+        logger.debug(f"### Beginning of LUKS dump ###\n"
+                     f"{luks_dump}\n"
+                     f"### End of LUKS dump ###")
 
         version = str()
-        pbkdf = str()
-        memory_cost_kib = int()
-        for line in luks_dump.splitlines():
-            match = VERSION_REGEX.match(line)
-            if match:
-                version = match.group(1)
-            match = PBKDF_REGEX.match(line)
-            if match:
-                pbkdf = match.group(1)
-            match = MEMORY_COST_REGEX.match(line)
-            if match:
-                memory_cost_kib = int(match.group(1))
+        if match := VERSION_REGEX.search(luks_dump):
+            version = match.group(1)
+        logger.debug(f"version = {version}")
 
         # LUKS version 1 does not print the PBKDF because it only
         # supports PBKDF2.
         if version == "1":
             return False
 
-        err_msg = str()
-        if not version and not pbkdf:
-            err_msg = "Could not get LUKS version and PBKDF from LUKS dump"
-        elif not version:
-            err_msg = "Could not get LUKS version from LUKS dump"
-        elif not pbkdf:
-            err_msg = "Could not get PBKDF from LUKS dump"
-        if err_msg:
-            logger.error(f"{err_msg}\n"
+        try:
+            keyslots_section = luks_dump.split("Keyslots:\n")[1].split("Tokens:\n")[0]
+        except KeyError:
+            return False
+        keyslots = dict()
+        slot = None
+        for line in keyslots_section.splitlines():
+            if match := re.match("^  (\d+): (.+)$", line):
+                slot = int(match.group(1))
+                keyslots[slot] = dict()
+                keyslots[slot]["type"] = match.group(2)
+            elif match := PBKDF_REGEX.match(line):
+                keyslots[slot]["pbkdf"] = match.group(1)
+            elif match := MEMORY_COST_REGEX.match(line):
+                keyslots[slot]["memory_cost_kib"] = int(match.group(1))
+        logger.debug(f"keyslots = {keyslots}")
+
+        errors = list()
+        if not version:
+            errors.append("LUKS version")
+        if len(keyslots) == 0:
+            errors.append("keyslots")
+        if errors:
+            logger.error(f"Could not get {' and '.join(errors)} from LUKS dump\n"
                          f"### Beginning of LUKS dump ###\n"
                          f"{luks_dump}\n"
                          f"### End of LUKS dump ###")
@@ -230,11 +240,25 @@ class TPSPartition(object):
         #   • cryptsetup-2.3.7/lib/utils_pbkdf.c:64:static uint32_t adjusted_phys_memory(void)
         cryptsetup_adjusted_memory_kib = os.sysconf('SC_PAGESIZE') // 1024 * os.sysconf('SC_PHYS_PAGES') // 2
         required_memory_cost_kib = min(cryptsetup_adjusted_memory_kib, DESIRED_PBKDF_MEMORY_KIB)
+        logger.debug(f"cryptsetup_adjusted_memory_kib = {cryptsetup_adjusted_memory_kib}")
 
-        logger.debug("The encrypted partition has %d memory cost (cryptsetup_adjusted_memory_kib = %d)", memory_cost_kib, cryptsetup_adjusted_memory_kib)
+        def keyslot_is_upgraded(keyslot):
+            try:
+                return keyslot["type"] == "luks2" and \
+                    keyslot["pbkdf"] == "argon2id" and \
+                    keyslot["memory_cost_kib"] >= required_memory_cost_kib
+            except KeyError:
+                return False
 
-        return version == "2" and pbkdf == "argon2id" and \
-            memory_cost_kib >= required_memory_cost_kib
+        updated_keyslots = [slot for slot in keyslots if keyslot_is_upgraded(keyslots[slot])]
+        logger.debug(f"updated_keyslots = {updated_keyslots}")
+
+        # We only require a single key to be upgraded until we
+        # properly solve tails/tails#19728.
+        upgraded = version == "2" and len(updated_keyslots) > 0
+        logger.debug(f"is_upgraded() = {upgraded}")
+
+        return upgraded
 
     @classmethod
     def exists(cls) -> bool:
