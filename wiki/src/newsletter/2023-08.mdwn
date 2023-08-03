@@ -1,4 +1,4 @@
-[[!meta title="XXX"]]
+[[!meta title="Using Tails is not a crime!"]]
 
 [[!pagetemplate template="newsletter.tmpl"]]
 
@@ -21,7 +21,7 @@ encrypted data in Tails.
 
 What shall we work on next?
 
-Our team has identified the need for better communication tools as a priority
+We have identified the need for better communication tools as a priority
 for our users. We are considering 2 main options:
 
 - Make it possible to use a VPN instead of Tor in some cases
@@ -69,13 +69,13 @@ also threatens the possibility for companies to provide end-to-end encryption.
 
 [[!img encryption.png]]
 
-It's in this context that Tails signed, together with other 130 people and
-organizations, a [call to defend our right to
+Tails, together with another 130 people and
+organizations, signed a [call to defend our right to
 encryption](https://www.laquadrature.net/2023/06/15/tribune-attaches-aux-libertes-fondamentales-dans-lespace-numerique-nous-defendons-le-droit-au-chiffrement-de-nos-communications/),
 written by La Quadrature du Net.
 
 Digital surveillance of dissenting socio-political movements
-had been intensifying in France for years.
+has been intensifying in France for years.
 [Environmental activists](https://lessoulevementsdelaterre.org/blog/un-traceur-gps-retrouve-sous-le-vehicule-du-porte-parolede-bassines-non-merci)
 are being surveilled with military-grade equipment and Emmanuel Macron [blames social media for the uprising](https://www.laquadrature.net/2023/06/15/tribune-attaches-aux-libertes-fondamentales-dans-lespace-numerique-nous-defendons-le-droit-au-chiffrement-de-nos-communications/) that followed the racist killing of a 17-year-old by the police.
 
