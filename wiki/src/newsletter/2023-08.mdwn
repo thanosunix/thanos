@@ -13,7 +13,7 @@ privacy tips, and the latest from our team with our supporters.
 
 [[!img workshop.jpg]]
 
-In 2021&ndash;2023, we focused on improving the usability of core features of
+In 2021&ndash;2023, we focused on improving the usability of some core features of
 Tails. We redesigned the [Tor Connection](https://tails.net/news/version_4.28)
 to make it easier to circumvent censorship and the [Persistent
 Storage](https://tails.net/news/version_5.8) to make it easier to store
@@ -63,7 +63,7 @@ service providers from implementing end-to-end encryption*”.
 
 In the USA, the return of the [EARN IT
 Act](https://www.internetsociety.org/resources/2022/internet-impact-brief-how-the-us-earn-it-act-threatens-security-confidentiality-and-safety-online/)
-also threatens the possiblity for companies to provide end-to-end encryption.
+also threatens the possibility for companies to provide end-to-end encryption.
 
 # Amidst repression in France, using Tails is not a crime
 
@@ -81,15 +81,15 @@ are being surveilled with military-grade equipment and Emmanuel Macron [blames s
 
 As if that wasn’t enough,
 the mere use of privacy-preserving tools like Tor and [Tails is being treated as
-evidence of criminal behaviour](https://www.laquadrature.net/en/2023/06/05/criminalization-of-encryption-the-8-december-case/) to muzzle dissenting political groups. In the
+evidence of criminal behavior](https://www.laquadrature.net/en/2023/06/05/criminalization-of-encryption-the-8-december-case/) to muzzle dissenting political groups. In the
 French senate, the Minister of Interior
 begged for
 the power to hack into the phones of demonstrators who use Signal,
 WhatsApp, or Telegram. In this “8 December” case, the suspects’ use of Tails,
-and apparent distrust of GAFAM was used to support an already nebulous case.
+and apparent distrust of GAFAM were used to support an already nebulous case.
 
-In 2009, we created Tails exactly this context: so that activists wouldn't get
-in troubles merely because of how they used computers.
+In 2009, in a similar wave of repression, we created Tails precisely to avoid activists getting
+in trouble merely because of how they used computers.
 
 In 2023, not much has changed. It’s saddening and enraging that digital privacy
 and safety are rapidly getting out of reach. Tails’s mission as important now,
@@ -119,17 +119,17 @@ Thank you to
 
 # What we’re reading
 
-* In India, the state of [Manipur has spiralled into intense communal and ethnic
+* In India, the state of [Manipur has spiraled into intense communal and ethnic
   conflict](https://www.theguardian.com/world/2023/jul/21/manipur-india-why-is-there-conflict-and-how-is-the-government-responding). A 3-month internet shutdown led to the silencing of the minority Kuki
   community. Internet access was permitted for people with broadband connections
   who undertook to only use static IP and not use any VPNs. [Mobile internet
-  remains inaccessible](https://www.thehindu.com/news/national/other-states/manipur-partially-withdraws-ban-on-broadband-mobile-internet-remains-suspended/article67119748.ece), and is the dominant way to access the internet for the
+  remains inaccessible](https://www.thehindu.com/news/national/other-states/manipur-partially-withdraws-ban-on-broadband-mobile-internet-remains-suspended/article67119748.ece) and is the dominant way to access the internet for the
   Kuki community. The dystopian [undertaking](https://i.redd.it/g329xvb6ueeb1.jpg)
   makes for a <strike>fun</strike> chilling read.
 
 * In [Surveillance: You can know too much](https://www.theguardian.com/technology/2008/jun/17/surveillance.database),
   Cory Doctorow decries the intrusive data
-  collection tendencies of law enforcement around the word. A seasoned advocate
+  collection tendencies of law enforcement around the world. A seasoned advocate
   of individuals’ privacy rights and critic of surveillance capitalism, he argues
   that law enforcement doesn't know what to do with the data it already has. As
   countries around the world lust after collecting more and more data, this
