@@ -115,11 +115,11 @@ Thank you to
 
 # What we’re reading
 
-* In India, the state of Manipur has spiralled into intense communal and ethnic
-  conflict. A 3-month internet shutdown led to the silencing of the minority Kuki
+* In India, the state of [Manipur has spiralled into intense communal and ethnic
+  conflict](https://www.theguardian.com/world/2023/jul/21/manipur-india-why-is-there-conflict-and-how-is-the-government-responding). A 3-month internet shutdown led to the silencing of the minority Kuki
   community. Internet access was permitted for people with broadband connections
-  who undertook to only use static IP and not use any VPNs. Mobile internet
-  remains inaccessible, and is the dominant way to access the internet for the
+  who undertook to only use static IP and not use any VPNs. [Mobile internet
+  remains inaccessible](https://www.thehindu.com/news/national/other-states/manipur-partially-withdraws-ban-on-broadband-mobile-internet-remains-suspended/article67119748.ece), and is the dominant way to access the internet for the
   Kuki community. The dystopian [undertaking](https://i.redd.it/g329xvb6ueeb1.jpg)
   makes for a <strike>fun</strike> chilling read.
 
