@@ -11,6 +11,8 @@ privacy tips, and the latest from our team with our supporters.
 
 # Help us shape the future of Tails!
 
+[[!img workshop.jpg]]
+
 In 2021&ndash;2023, we focused on improving the usability of core features of
 Tails. We redesigned the [Tor Connection](https://tails.net/news/version_4.28)
 to make it easier to circumvent censorship and the [Persistent
@@ -64,6 +66,8 @@ Act](https://www.internetsociety.org/resources/2022/internet-impact-brief-how-th
 also threatens the possiblity for companies to provide end-to-end encryption.
 
 # Amidst repression in France, using Tails is not a crime
+
+[[!img encryption.png]]
 
 It's in this context that Tails signed, together with other 130 people and
 organizations, a [call to defend our right to
