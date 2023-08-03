@@ -73,7 +73,9 @@ written by La Quadrature du Net.
 Digital surveillance of dissenting socio-political movements
 had been intensifying in France for years.
 [Environmental activists](https://lessoulevementsdelaterre.org/blog/un-traceur-gps-retrouve-sous-le-vehicule-du-porte-parolede-bassines-non-merci)
-are being surveilled with military-grade equipment and Emmanuel Macron [blames social media for the uprising](https://www.laquadrature.net/2023/06/15/tribune-attaches-aux-libertes-fondamentales-dans-lespace-numerique-nous-defendons-le-droit-au-chiffrement-de-nos-communications/) that followed the racist killing of a 17-year-old by the police. As if that wasn’t enough,
+are being surveilled with military-grade equipment and Emmanuel Macron [blames social media for the uprising](https://www.laquadrature.net/2023/06/15/tribune-attaches-aux-libertes-fondamentales-dans-lespace-numerique-nous-defendons-le-droit-au-chiffrement-de-nos-communications/) that followed the racist killing of a 17-year-old by the police.
+
+As if that wasn’t enough,
 the mere use of privacy-preserving tools like Tor and [Tails is being treated as
 evidence of criminal behaviour](https://www.laquadrature.net/en/2023/06/05/criminalization-of-encryption-the-8-december-case/) to muzzle dissenting political groups. In the
 French senate, the Minister of Interior
