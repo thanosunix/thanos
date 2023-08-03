@@ -65,7 +65,12 @@ also threatens the possiblity for companies to provide end-to-end encryption.
 
 # Amidst repression in France, using Tails is not a crime
 
-Back in France, digital surveillance of dissenting socio-political movements
+It's in this context that Tails signed, together with other 130 people and
+organizations, a [call to defend our right to
+encryption](https://www.laquadrature.net/2023/06/15/tribune-attaches-aux-libertes-fondamentales-dans-lespace-numerique-nous-defendons-le-droit-au-chiffrement-de-nos-communications/),
+written by La Quadrature du Net.
+
+Digital surveillance of dissenting socio-political movements
 had been intensifying for years now. Comrades in
 [environmental groups](https://lessoulevementsdelaterre.org/blog/un-traceur-gps-retrouve-sous-le-vehicule-du-porte-parolede-bassines-non-merci),
 or just at an [anarchist library](https://bibliothequelibertad.noblogs.org/post/2022/04/02/un-micro-trouve-a-la-bibliotheque-anarchiste-libertad/)
