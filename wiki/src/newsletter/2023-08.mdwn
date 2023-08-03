@@ -37,29 +37,31 @@ answering this 5-minute survey.
 
 </div>
 
-# Encryption is under attack in France, the UK, Spain, and the USA
+# End-to-end encryption under attack in France, the UK, the EU, and the USA
 
-French law enforcement now has the power to snoop by remotely controlling
-unsuspecting people’s electronic devices. It’s not clear how they plan to
-execute this. Perhaps they
-[already](https://www.tomsguide.com/us/nsa-remotely-turn-on-phones,news-18854.html)
-have? Of course, the Justice Minister has been adamant that this is
-[nothing](https://www.lemonde.fr/en/france/article/2023/07/06/france-set-to-allow-police-to-spy-through-phones_6044269_7.html)
-like the surveillance society that Orwell described in 1984. And of course, the
+French law enforcement is now allowed to spy on suspects by [remotely activating
+the camera, microphone, and GPS](https://www.lemonde.fr/en/france/article/2023/07/06/france-set-to-allow-police-to-spy-through-phones_6044269_7.html) of their electronic devices. It’s not clear how they plan to execute this, but malware like [Pegasus](https://en.wikipedia.org/wiki/Pegasus_(spyware) could do the trick.
+
+The Justice Minister has been adamant that
+“*we're far away from the totalitarianism of 1984*” George Orwell's novel about a society under total surveillance.
+And of course, the
 lawmakers were quick to exempt themselves from the invasive law.
 
-The French authorities aren't alone in wanting backdoors in digital devices. On
-the other side of the English Channel, lawmakers in the United Kingdom are
-about to mandate backdoors in all end-to-end encrypted messaging systems. The
-proposed [Online Safety
-Bill](https://bills.parliament.uk/bills/3137/publications) mandates private
-messaging services to monitor the messages of users. This perpetual wiretap
-will, allegedly, make the United Kingdom “[the safest place in the world to be
+The French authorities aren't alone in wanting backdoors in encrypted communications. On
+the other side of the English Channel, lawmakers with the United Kingdom are
+about to [mandate backdoors in all end-to-end encrypted messaging systems](https://www.eff.org/deeplinks/2023/07/uk-government-very-close-eroding-encryption-worldwide) and erode encryption worldwide in the [Online Safety Bill](https://bills.parliament.uk/bills/3137/publications). This perpetual wiretap
+will, allegedly, make the United Kingdom “[*the safest place in the world to be
 online while defending free
-expression](https://www.gov.uk/government/publications/online-safety-bill-supporting-documents)”.
-Similar moves are underway in
-[Spain](https://www.wired.com/story/europe-break-encryption-leaked-document-csa-law/)
-and the [United States of America](https://en.wikipedia.org/wiki/EARN_IT_Act).
+expression*](https://www.gov.uk/government/publications/online-safety-bill-supporting-documents)”.
+
+In a [document from the European Council](https://www.wired.com/story/europe-break-encryption-leaked-document-csa-law/) leaked to WIRED, a majority of
+EU countries are in favor of some form of scanning of encrypted messages. Spain
+has the most extreme position and proposes to “*legislatively prevent EU-based
+service providers from implementing end-to-end encryption*”.
+
+In the USA, the return of the [EARN IT
+Act](https://www.internetsociety.org/resources/2022/internet-impact-brief-how-the-us-earn-it-act-threatens-security-confidentiality-and-safety-online/)
+also threatens the possiblity for companies to provide end-to-end encryption.
 
 # Amidst repression in France, using Tails is not a crime
 
