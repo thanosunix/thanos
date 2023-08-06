@@ -1,4 +1,4 @@
-tails (5.16) UNRELEASED; urgency=medium
+tails (5.16) unstable; urgency=medium
 
   * Upgrade to Thunderbird 1:102.14.0-1~deb11u1
 
@@ -80,7 +80,7 @@ tails (5.16) UNRELEASED; urgency=medium
       - tbb upgrade: chdir in subshell
       - tbb upgrade: add ma1 repository
 
- -- Tails developers <tails@boum.org>  Sun, 06 Aug 2023 08:45:42 +0000
+ -- Tails developers <tails@boum.org>  Sun, 06 Aug 2023 10:32:57 +0000
 
 tails (5.15.1) unstable; urgency=medium
 
