@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-07-06 09:16+0000\n"
-"PO-Revision-Date: 2022-11-21 12:06+0000\n"
+"PO-Revision-Date: 2023-08-06 11:22+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: Portuguese <LL@li.org>\n"
 "Language: pt\n"
@@ -459,12 +459,10 @@ msgstr ""
 "Tor_Connection]]"
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid "Tips to develop and debug [[contribute/Tor_Connection]]"
 msgid "Tips to develop [[contribute/Persistent_Storage]]"
 msgstr ""
-"Dicas para desenvolver e debugar [[conexões à rede Tor|contribute/"
-"Tor_Connection]]"
+"Dicas para desenvolver o [[Armazenamento Persistente|contribute/"
+"Persistent_Storage]]"
 
 #. type: Bullet: '  - '
 msgid "[[Glossary for contributors|contribute/glossary]]"
@@ -542,14 +540,8 @@ msgid "Collective process"
 msgstr "Processo coletivo"
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Calendar|contribute/calendar]] of releases, meetings, working sessions, "
-#| "etc."
 msgid "[[Calendar|contribute/calendar]] of releases"
-msgstr ""
-"[[Calendário|contribute/calendar]] de lançamentos, reuniões, sessões de "
-"trabalho, etc."
+msgstr "[[Calendário|contribute/calendar]] de lançamentos."
 
 #. type: Bullet: '  - '
 msgid "[[Code of conduct|contribute/working_together/code_of_conduct]]"
@@ -607,13 +599,11 @@ msgid "[[Accounting team|contribute/working_together/roles/accounting]]"
 msgstr "[[Time de Contabilidade|contribute/working_together/roles/accounting]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid ""
-#| "[[Foundations team|contribute/working_together/roles/foundations_team]]"
 msgid ""
 "[[Community Health team|contribute/working_together/roles/community_health]]"
 msgstr ""
-"[[Time de Fundamentos|contribute/working_together/roles/foundations_team]]"
+"[[Time de Saúde da Comunidade|contribute/working_together/roles/"
+"community_health]]"
 
 #. type: Bullet: '    - '
 msgid "[[Foundations team|contribute/working_together/roles/foundations_team]]"
@@ -625,10 +615,8 @@ msgid "[[Fundraising team|contribute/working_together/roles/fundraising]]"
 msgstr "[[Time de Captação|contribute/working_together/roles/fundraising]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Help desk|contribute/working_together/roles/help_desk]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr "[[Central de ajuda|contribute/working_together/roles/help_desk]]"
 
 #. type: Bullet: '    - '
 #, fuzzy
