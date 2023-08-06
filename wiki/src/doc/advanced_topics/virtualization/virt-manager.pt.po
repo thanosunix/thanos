@@ -8,16 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-01-27 18:26+0100\n"
-"PO-Revision-Date: 2020-12-25 11:43+0000\n"
-"Last-Translator: Halley Pacheco de Oliveira <halley.oliveira@protonmail."
-"com>\n"
+"PO-Revision-Date: 2023-08-05 23:22+0000\n"
+"Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #. type: Plain text
 #, no-wrap
@@ -31,6 +30,10 @@ msgid ""
 "*VirtualBox* or *GNOME Boxes* but it also has a more complete set of "
 "features."
 msgstr ""
+"[*virt-manager*](http://virt-manager.org/) é uma solução de virtualização em "
+"software livre Linux. *virt-manager* tem uma interface mais complexa do que "
+"o *VirtualBox* ou *GNOME Boxes* mas também tem um conjunto de recursos mais "
+"completo."
 
 #. type: Plain text
 #, no-wrap
@@ -87,6 +90,10 @@ msgid ""
 "processor. This terminology is a bit confusing and other documentation\n"
 "might mention the following tools:\n"
 msgstr ""
+"*virt-manager* é baseado em ferramentas de virtualização de baixo nível,\n"
+"indo da interface do usuário até as interações do hardware com o\n"
+"processador. Esta terminologia é um tanto confusa e outras documentações\n"
+"podem mencionar as seguintes ferramentas:\n"
 
 #. type: Bullet: '  - '
 msgid ""

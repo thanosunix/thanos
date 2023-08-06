@@ -86,9 +86,9 @@ Updating LimeSurvey
 
    Should return:
 
-       commit 94c49fea62feba9158360346ec9b15e16f1531f8
+       commit 894643ab3752766f46fa3fcbf5634936e9908da2 (HEAD)
        Author: www-data <www-data@survey.lizard>
-       Date:   Tue Oct 27 01:24:06 2020 +0000
+       Date:   Thu Aug 3 18:53:17 2023 +0000
 
            Use a more generic message (fundraising#17704)
 

@@ -21,7 +21,8 @@ Resources for user research
   - [[Preparing video clips|user_experience/clip]]
   - Consent form and research information sheet (adapted from [Bernard Tyers](https://www.ei8fdb.org/thoughts/)):
     - [Consent form ODT](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/consent_form.fodt) ([Spanish](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/consent_form_spanish.fodt))
-    - [Research information sheet ODT](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/research_information_sheet.fodt) ([Spanish](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/research_information_sheet_spanish.fodt))
+    - [Research information sheet ODT (for usability tests)](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/research_information_sheet_for_tests.fodt) ([Spanish](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/research_information_sheet_for_tests_spanish.fodt))
+    - [Research information sheet ODT (for user interviews)](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/research_information_sheet_for_interviews.fodt)
   - System Usability Scale (SUS) questionnaire:
     - [English ODT](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/SUS.en.fodt)
     - [Spanish ODT](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/SUS.es.fodt)

@@ -175,7 +175,7 @@ We cannot use such a server directly, so we need to (at least temporarily) self-
         -m "Upgrade Tor Browser to ${TBB_VERSION:?}" && \
     git show
 
-Please refer to [[Self-hosted Tor Browser tarballs archive|#self-host]] section.
+Please refer to [[Self-hosted Tor Browser tarballs archive|tor-browser#self-host]] section.
 
 #### If you can't access it
 
