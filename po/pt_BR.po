@@ -38,9 +38,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 10:08+0200\n"
-"PO-Revision-Date: 2023-05-26 08:51+0000\n"
-"Last-Translator: Scallop <scallop@users.noreply.hosted.weblate.org>\n"
+"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"PO-Revision-Date: 2023-07-19 17:05+0000\n"
+"Last-Translator: Kaio <kaiod@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/tor/"
 "tails-gui/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -49,7 +49,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. Translators: Don't translate {details}, it's a placeholder and will
 #. be replaced.
@@ -237,13 +237,13 @@ msgstr ""
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:135
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:185
 msgid ""
-"To add more, install some software using <a href=\"synaptic.desktop"
-"\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal.desktop"
-"\">APT on the command line</a>."
+"To add more, install some software using <a href=\"synaptic."
+"desktop\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal."
+"desktop\">APT on the command line</a>."
 msgstr ""
-"Para adicionar outros, instale programas usando o <a href=\"synaptic.desktop"
-"\">Gerenciador de pacotes Synaptic</a> ou o <a href=\"org.gnome.Terminal."
-"desktop\">APT na linha de comandos</a>."
+"Para adicionar outros, instale programas usando o <a href=\"synaptic."
+"desktop\">Gerenciador de pacotes Synaptic</a> ou o <a href=\"org.gnome."
+"Terminal.desktop\">APT na linha de comandos</a>."
 
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:154
 msgid "_Create persistent storage"
@@ -258,6 +258,12 @@ msgid ""
 "<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">How "
 "we spend our money.</a>"
 msgstr ""
+"Tails precisa de doações para manter todos livres e seguros on-line.\n"
+"\n"
+"Cada pedacinho ajuda em nossa luta contra a vigilância e a censura!\n"
+"\n"
+"<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">Como "
+"nos gastamos o seu dinheiro</a>"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:101
 msgid ""
@@ -268,22 +274,28 @@ msgid ""
 "<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">How "
 "we spend our money.</a>"
 msgstr ""
+"Tails protege a sua carteira\n"
+"\n"
+"Ajude-nos a manter seus bitcoins seguros!\n"
+"\n"
+"<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">Como "
+"nos gastamos o seu dinheiro.</a>"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:112
 msgid "Donate Now"
-msgstr ""
+msgstr "Doe Agora"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:113
 msgid "Later"
-msgstr ""
+msgstr "Depois"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:123
 msgid "Opening Electrum with our donation address..."
-msgstr ""
+msgstr "Abrindo a Electrum com nosso endereço de doação..."
 
 #: config/chroot_local-includes/usr/local/bin/electrum:124
 msgid "Thank you for making the Internet a safer place!"
-msgstr ""
+msgstr "Obrigado por fazer a internet um espaço seguro!"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:157
 msgid "Persistence is disabled for Electrum"
@@ -411,10 +423,10 @@ msgstr ""
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:289
 msgid ""
 "<b>An error occured while updating the signing key.</b>\\n\\n<b>This "
-"prevents determining whether an upgrade is available from our website.</b>\\n"
-"\\nCheck your network connection, and restart Tails to try upgrading again."
-"\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/website/doc/"
-"upgrade/error/check.en.html"
+"prevents determining whether an upgrade is available from our website.</"
+"b>\\n\\nCheck your network connection, and restart Tails to try upgrading "
+"again.\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/check.en.html"
 msgstr ""
 "<b>Um erro ocorreu ao atualizar a chave de assinatura.</b>\\n\\n<b>Por isso, "
 "não foi possível determinar se há uma atualização disponível em nosso site.</"
@@ -858,7 +870,7 @@ msgstr "Desbloqueando…"
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:135
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:505
 msgid "Unlock Encryption"
-msgstr ""
+msgstr "Desbloquear Criptografia"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:113
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:41
@@ -893,7 +905,7 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:143
 msgid "Upgrading the Persistent Storage. This may take a while…"
-msgstr ""
+msgstr "Atualizando o armazenamento persistente. Isso pode demorar um pouco…"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:154
 #, fuzzy
@@ -1184,6 +1196,8 @@ msgid ""
 "Clone the current Persistent Storage\n"
 "Impossible to clone the Persistent Storage because it is locked."
 msgstr ""
+"Clonar o armazenamento persistente atual\n"
+"Não é possível clonar o armazenamento persistente porque ele está bloqueado."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:491
 #: ../config/chroot_local-includes/usr/share/tails-installer/tails-installer.ui.in:180
@@ -1499,9 +1513,9 @@ msgid ""
 "Package Manager</a> or <a href=\"org.gnome.Terminal.desktop\">APT on the "
 "command line</a>."
 msgstr ""
-"Para fazê-lo, instale programas usando o <a href=\"synaptic.desktop"
-"\">Gerenciador de pacotes Synaptic</a> ou o <a href=\"org.gnome.Terminal."
-"desktop\">APT na linha de comando</a>."
+"Para fazê-lo, instale programas usando o <a href=\"synaptic."
+"desktop\">Gerenciador de pacotes Synaptic</a> ou o <a href=\"org.gnome."
+"Terminal.desktop\">APT na linha de comando</a>."
 
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:201
 msgid ""
@@ -2058,7 +2072,7 @@ msgstr "Excluir Armazenamento Persistente"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:160
 #, fuzzy
-msgid "Deleting your Persistent Storage"
+msgid "Deleting your Persistent Storage..."
 msgstr "Excluir Armazenamento Persistente"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:177
