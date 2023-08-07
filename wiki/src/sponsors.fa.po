@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-03 17:30+0000\n"
+"POT-Creation-Date: 2023-08-07 21:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,7 +153,7 @@ msgid "Anonymous donation - 1 337€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Freiheitsfoo - 1 205€"
+msgid "freiheitsfoo - 1 250€"
 msgstr ""
 
 #. type: Content of: <div><p>
@@ -214,6 +214,10 @@ msgstr ""
 
 #. type: Content of: <div><p>
 msgid "[[!img nym.png link=\"no\" alt=\"\"]]"
+msgstr ""
+
+#. type: Content of: <div><p>
+msgid "[[!img freiheitsfoo.png link=\"no\" alt=\"\"]]"
 msgstr ""
 
 #. type: Content of: <div><p>
@@ -285,11 +289,7 @@ msgid "[[!img word-solver.png link=\"no\" alt=\"\"]]"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Freiheitsfoo - 1 100€"
-msgstr ""
-
-#. type: Content of: <div><p>
-msgid "[[!img freiheitsfoo.png link=\"no\" alt=\"\"]]"
+msgid "freiheitsfoo - 1 100€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
@@ -341,7 +341,7 @@ msgid "Anonymous donation - 2.8 ethereums = 1 463€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Freiheitsfoo - 1 200€"
+msgid "freiheitsfoo - 1 200€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
