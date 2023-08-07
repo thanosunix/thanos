@@ -20,7 +20,7 @@ call for testing email sent by the Release Manager after the images
 have been built.
 
     /usr/bin/diff -u \
-            ${ISOS:?}/tails-amd64-${PREVIOUS_VERSION:?}/tails-amd64-${PREVIOUS_VERSION:?}.packages \
+            ${MASTER_CHECKOUT:?}/wiki/src/torrents/files/tails-amd64-${PREVIOUS_VERSION:?}.packages \
             ${ISOS:?}/tails-amd64-${VERSION:?}/tails-amd64-${VERSION:?}.packages \
             | wdiff --diff-input  --terminal
 
