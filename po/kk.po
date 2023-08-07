@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 10:08+0200\n"
-"PO-Revision-Date: 2023-03-05 10:37+0000\n"
-"Last-Translator: emma peel <emma.peel@riseup.net>\n"
+"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"PO-Revision-Date: 2023-07-21 16:06+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Kazakh <https://hosted.weblate.org/projects/tor/tails-gui/kk/"
 ">\n"
 "Language: kk\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. Translators: Don't translate {details}, it's a placeholder and will
 #. be replaced.
@@ -208,12 +208,12 @@ msgstr ""
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:135
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:185
 msgid ""
-"To add more, install some software using <a href=\"synaptic.desktop"
-"\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal.desktop"
-"\">APT on the command line</a>."
+"To add more, install some software using <a href=\"synaptic."
+"desktop\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal."
+"desktop\">APT on the command line</a>."
 msgstr ""
-"Қосымша ақпарат алу үшін кейбір бағдарламалық жасақтаманы орнатыңыз<a href="
-"\"synaptic.desktop\">Synaptic Package Manager</a>or<a href=\"org.gnome."
+"Қосымша ақпарат алу үшін кейбір бағдарламалық жасақтаманы орнатыңыз<a "
+"href=\"synaptic.desktop\">Synaptic Package Manager</a>or<a href=\"org.gnome."
 "Terminal.desktop\">APT пәрмен жолында</a>."
 
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:154
@@ -376,10 +376,10 @@ msgstr ""
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:289
 msgid ""
 "<b>An error occured while updating the signing key.</b>\\n\\n<b>This "
-"prevents determining whether an upgrade is available from our website.</b>\\n"
-"\\nCheck your network connection, and restart Tails to try upgrading again."
-"\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/website/doc/"
-"upgrade/error/check.en.html"
+"prevents determining whether an upgrade is available from our website.</"
+"b>\\n\\nCheck your network connection, and restart Tails to try upgrading "
+"again.\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/check.en.html"
 msgstr ""
 "<b>Қол қою кілтін жаңарту кезінде қате орын алды.</b>\\n\\n<b>Бұл біздің веб-"
 "сайттан жаңартудың қолжетімділігін анықтауға жол бермейді.</b>\\n\\nЖелі "
@@ -1419,9 +1419,10 @@ msgid ""
 "href=\"synaptic.desktop\">Synaptic Package Manager</a> or <a href=\"org."
 "gnome.Terminal.desktop\">APT on the command line</a>."
 msgstr ""
-"Мұны істеу үшін, тұрақты сақтауды жасаңыз және командалық жолда <a href="
-"\"synaptic.desktop\">Synaptic Package Manager</a> немесе <a href=\"org.gnome."
-"Terminal.desktop\">APT арқылы кейбір бағдарламалық жасақтаманы орнатыңыз</a>."
+"Мұны істеу үшін, тұрақты сақтауды жасаңыз және командалық жолда <a "
+"href=\"synaptic.desktop\">Synaptic Package Manager</a> немесе <a href=\"org."
+"gnome.Terminal.desktop\">APT арқылы кейбір бағдарламалық жасақтаманы "
+"орнатыңыз</a>."
 
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:219
 msgid "To do so, install Tails on a USB stick and create a persistent storage."
@@ -1917,7 +1918,7 @@ msgstr "Тұрақты сақтауды жасаңыз"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:160
 #, fuzzy
-msgid "Deleting your Persistent Storage"
+msgid "Deleting your Persistent Storage..."
 msgstr "Тұрақты сақтауды жасаңыз"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:177
@@ -3122,7 +3123,7 @@ msgstr ""
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:181
 msgid "meek"
-msgstr ""
+msgstr "meek"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:204
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:1518

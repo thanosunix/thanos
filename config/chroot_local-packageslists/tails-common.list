@@ -4,8 +4,6 @@ python3-pyinotify
 # contains mkpasswd, needed in chroot_local-hooks/01-password and for
 # setting the admin password in chroot_local-includes/etc/gdm3/PostLogin/Default
 whois
-# needed in chroot_local-includes/etc/NetworkManager/dispatcher.d/50-htp.sh
-bind9-host
 # needed by tails-security-check
 libcarp-assert-perl
 libcarp-assert-more-perl
@@ -25,9 +23,7 @@ libgetopt-long-descriptive-perl
 libtry-tiny-perl
 # needed by our chroot_local-hooks
 live-build
-# needed by tordate
-inotify-tools
-# needed by 20-time.sh
+# We use notify-send in a number of places, either directly or via tails-notify-user
 libnotify-bin
 # needed by tails-documentation
 libgtk-3-bin
@@ -74,6 +70,7 @@ apparmor-profiles-extra
 apt-transport-tor
 audacity
 bilibop-udev
+bind9-host
 console-data
 cups
 cups-pk-helper

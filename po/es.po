@@ -22,9 +22,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 10:08+0200\n"
-"PO-Revision-Date: 2023-07-04 17:50+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"PO-Revision-Date: 2023-08-06 10:16+0200\n"
+"Last-Translator: emma peel <emmapeel@torproject.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/tor/tails-gui/es/"
 ">\n"
 "Language: es\n"
@@ -219,9 +219,9 @@ msgstr ""
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:135
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:185
 msgid ""
-"To add more, install some software using <a href=\"synaptic.desktop"
-"\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal.desktop"
-"\">APT on the command line</a>."
+"To add more, install some software using <a href=\"synaptic."
+"desktop\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal."
+"desktop\">APT on the command line</a>."
 msgstr ""
 "Para añadir más, instala software usando <a href=\"synaptic.desktop\">el "
 "Gestor de Paquetes Synaptic</a> o <a href=\"org.gnome.Terminal.desktop\">con "
@@ -406,10 +406,10 @@ msgstr ""
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:289
 msgid ""
 "<b>An error occured while updating the signing key.</b>\\n\\n<b>This "
-"prevents determining whether an upgrade is available from our website.</b>\\n"
-"\\nCheck your network connection, and restart Tails to try upgrading again."
-"\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/website/doc/"
-"upgrade/error/check.en.html"
+"prevents determining whether an upgrade is available from our website.</"
+"b>\\n\\nCheck your network connection, and restart Tails to try upgrading "
+"again.\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/check.en.html"
 msgstr ""
 "<b>Se produjo un error al actualizar la clave de firma.</b>\\n\\n<b>Esto "
 "impide determinar si una actualización está disponible en nuestro sitio web."
@@ -732,9 +732,9 @@ msgid ""
 "install.en.html"
 msgstr ""
 "<b>Ha ocurrido un error al instalar la actualización.</b>\\n\\nTu "
-"dispositivo Tails debe repararse y podría ser que no pueda arrancar.\\n"
-"\\nPor favor, sigue las instrucciones en file:///usr/share/doc/tails/website/"
-"doc/upgrade/error/install.es.html"
+"dispositivo Tails debe repararse y podría ser que no pueda arrancar."
+"\\n\\nPor favor, sigue las instrucciones en file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/install.es.html"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:863
 msgid "Error while installing the upgrade"
@@ -1519,8 +1519,8 @@ msgid ""
 "gnome.Terminal.desktop\">APT on the command line</a>."
 msgstr ""
 "Para hacerlo, crea un almacenamiento persistente e instala software usando "
-"<a href=\"synaptic.desktop\">el Gestor de Paquetes Synaptic</a> o <a href="
-"\"org.gnome.Terminal.desktop\">con APT en la línea de comandos</a>."
+"<a href=\"synaptic.desktop\">el Gestor de Paquetes Synaptic</a> o <a "
+"href=\"org.gnome.Terminal.desktop\">con APT en la línea de comandos</a>."
 
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:219
 msgid "To do so, install Tails on a USB stick and create a persistent storage."
@@ -1922,9 +1922,8 @@ msgid "Could not find the WhisperBack application"
 msgstr "No se encontró la aplicación WhisperBack"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:82
-#, fuzzy
 msgid "Delete Data…"
-msgstr "Eliminar"
+msgstr "Eliminar los datos…"
 
 #. Translators: Don't translate {feature}, it's a placeholder
 #. and will be replaced.
@@ -2076,7 +2075,7 @@ msgstr "_Borrar Almacenamiento Persistente"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:160
 #, fuzzy
-msgid "Deleting your Persistent Storage"
+msgid "Deleting your Persistent Storage..."
 msgstr "Borrar Almacenamiento Persistente"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:177

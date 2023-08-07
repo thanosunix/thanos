@@ -46,9 +46,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 10:08+0200\n"
-"PO-Revision-Date: 2023-06-26 21:51+0000\n"
-"Last-Translator: tachyglossues <tachyglossues@gmail.com>\n"
+"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"PO-Revision-Date: 2023-07-26 23:02+0000\n"
+"Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tor/tails-gui/fr/"
 ">\n"
 "Language: fr\n"
@@ -57,7 +57,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. Translators: Don't translate {details}, it's a placeholder and will
 #. be replaced.
@@ -248,13 +248,13 @@ msgstr ""
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:135
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:185
 msgid ""
-"To add more, install some software using <a href=\"synaptic.desktop"
-"\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal.desktop"
-"\">APT on the command line</a>."
+"To add more, install some software using <a href=\"synaptic."
+"desktop\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal."
+"desktop\">APT on the command line</a>."
 msgstr ""
-"Pour en ajouter d’autres, installez des logiciels en utilisant le <a href="
-"\"synaptic.desktop\">gestionnaire de paquets Synaptic</a> ou <a href=\"org."
-"gnome.Terminal.desktop\">APT en ligne de commande</a>."
+"Pour en ajouter d’autres, installez des logiciels en utilisant le <a "
+"href=\"synaptic.desktop\">gestionnaire de paquets Synaptic</a> ou <a "
+"href=\"org.gnome.Terminal.desktop\">APT en ligne de commande</a>."
 
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:154
 msgid "_Create persistent storage"
@@ -275,8 +275,8 @@ msgstr ""
 "Chaque centime nous aide dans notre lutte contre la surveillance et la "
 "censure !\n"
 "\n"
-"<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses"
-"\">Comment nous dépensons votre argent.</a>"
+"<a href=\"file:///usr/share/doc/tails/website/donate.en."
+"html#expenses\">Comment nous dépensons votre argent.</a>"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:101
 msgid ""
@@ -291,8 +291,8 @@ msgstr ""
 "\n"
 "Aidez-nous à garder vos bitcoins en sécurité !\n"
 "\n"
-"<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses"
-"\">Comment nous dépensons votre argent.</a>"
+"<a href=\"file:///usr/share/doc/tails/website/donate.en."
+"html#expenses\">Comment nous dépensons votre argent.</a>"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:112
 msgid "Donate Now"
@@ -436,10 +436,10 @@ msgstr ""
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:289
 msgid ""
 "<b>An error occured while updating the signing key.</b>\\n\\n<b>This "
-"prevents determining whether an upgrade is available from our website.</b>\\n"
-"\\nCheck your network connection, and restart Tails to try upgrading again."
-"\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/website/doc/"
-"upgrade/error/check.en.html"
+"prevents determining whether an upgrade is available from our website.</"
+"b>\\n\\nCheck your network connection, and restart Tails to try upgrading "
+"again.\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/check.en.html"
 msgstr ""
 "<b>Une erreur est survenue pendant la mise à niveau de la clé de signature.</"
 "b>\\n\\n<b>Cela empêche de déterminer si une mise à niveau est proposée sur "
@@ -642,8 +642,8 @@ msgid ""
 "download.en.html"
 msgstr ""
 "<b>La mise à niveau n’a pas pu être téléchargée.</b>\\n\\nVérifiez votre "
-"connexion réseau et redémarrez Tails pour retenter de mettre à niveau.\\n"
-"\\nSi le problème persiste, consultez file:///usr/share/doc/tails/website/"
+"connexion réseau et redémarrez Tails pour retenter de mettre à niveau."
+"\\n\\nSi le problème persiste, consultez file:///usr/share/doc/tails/website/"
 "doc/upgrade/error/download.fr.html"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:711
@@ -765,10 +765,10 @@ msgid ""
 "instructions at file:///usr/share/doc/tails/website/doc/upgrade/error/"
 "install.en.html"
 msgstr ""
-"<b>Une erreur est survenue durant l’installation de la mise à niveau.</b>\\n"
-"\\nVotre périphérique Tails doit être réparé et pourrait ne pas redémarrer."
-"\\n\\nVeuillez suivre les instructions sur file:///usr/share/doc/tails/"
-"website/doc/upgrade/error/install.fr.html"
+"<b>Une erreur est survenue durant l’installation de la mise à niveau.</"
+"b>\\n\\nVotre périphérique Tails doit être réparé et pourrait ne pas "
+"redémarrer.\\n\\nVeuillez suivre les instructions sur file:///usr/share/doc/"
+"tails/website/doc/upgrade/error/install.fr.html"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:863
 msgid "Error while installing the upgrade"
@@ -972,10 +972,10 @@ msgid ""
 "There was a problem executing the following command: `%(command)s`.\n"
 "A more detailed error log has been written to \"%(filename)s\"."
 msgstr ""
-"Un problème est survenu lors de l’exécution de la commande suivante : `"
-"%(command)s`.\n"
-"Un journal d’erreurs plus détaillé a été écrit dans le fichier `"
-"%(filename)s`."
+"Un problème est survenu lors de l’exécution de la commande suivante : "
+"`%(command)s`.\n"
+"Un journal d’erreurs plus détaillé a été écrit dans le fichier "
+"`%(filename)s`."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/creator.py:463
 #, python-format
@@ -1547,9 +1547,9 @@ msgid ""
 "a> or <a href=\"org.gnome.Terminal.desktop\">APT on the command line</a>."
 msgstr ""
 "Pour ce faire, déverrouillez votre stockage persistant lors du démarrage de "
-"Tails et installez des logiciels en utilisant le <a href=\"synaptic.desktop"
-"\">gestionnaire de paquets Synaptic</a> ou <a href=\"org.gnome.Terminal."
-"desktop\">APT en ligne de commande</a>."
+"Tails et installez des logiciels en utilisant le <a href=\"synaptic."
+"desktop\">gestionnaire de paquets Synaptic</a> ou <a href=\"org.gnome."
+"Terminal.desktop\">APT en ligne de commande</a>."
 
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:211
 msgid ""
@@ -1711,8 +1711,8 @@ msgid ""
 "To save your bridge, <a href=\"doc/persistent_storage\">unlock your "
 "Persistent Storage</a>."
 msgstr ""
-"Pour sauvegarder votre pont, <a href=\"doc/persistent_storage"
-"\">déverrouillez votre stockage persistant</a>."
+"Pour sauvegarder votre pont, <a href=\"doc/"
+"persistent_storage\">déverrouillez votre stockage persistant</a>."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tca/ui/main_window.py:249
 msgid ""
@@ -1862,7 +1862,7 @@ msgstr "Tor n’est pas prêt"
 
 #: config/chroot_local-includes/usr/bin/tor-browser:50
 msgid "Tor is not ready. Start Tor Browser anyway?"
-msgstr "Tor n’est pas prêt. Démarrer le navigateur Tor quand même ?"
+msgstr "Tor n’est pas prêt. Démarrer le Navigateur Tor quand même ?"
 
 #: config/chroot_local-includes/usr/bin/tor-browser:51
 msgid "Start Tor Browser Offline"
@@ -2050,15 +2050,15 @@ msgstr "Modifier la phrase de passe"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:83
 msgid "The current passphrase is incorrect"
-msgstr "Le mot de passe est incorrect"
+msgstr "La phrase de passe actuelle est incorrecte"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:92
 msgid "Changing the passphrase failed"
-msgstr "Modifier le mot de passe"
+msgstr "La modification de la phrase de passe a échoué"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:41
 msgid "Weak"
-msgstr "mauvais"
+msgstr "Faible"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:44
 msgid "Fair"
@@ -2108,8 +2108,9 @@ msgid "_Delete Persistent Storage"
 msgstr "_Supprimer le stockage persistant"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:160
-msgid "Deleting your Persistent Storage"
-msgstr "Supprimer le stockage persistant"
+#, fuzzy
+msgid "Deleting your Persistent Storage..."
+msgstr "Supprimer votre stockage persistant"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:177
 msgid ""
@@ -2845,8 +2846,8 @@ msgid ""
 "passwords, and so on."
 msgstr ""
 "Vous pouvez enregistrer certains de vos fichiers et votre configuration dans "
-"un stockage persistant chiffré sur votre clé USB Tails : documents, signets "
-"de navigateur, mots de passe Wi-Fi, etc."
+"un stockage persistant chiffré sur votre clé USB Tails : documents, marque-"
+"pages de navigateur, mots de passe Wi-Fi, etc."
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:225
 msgid "Create and configure a Persistent Storage after starting Tails"
@@ -2866,7 +2867,7 @@ msgstr "Afficher la phrase de passe"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:470
 msgid "_Passphrase"
-msgstr "_Mot de passe"
+msgstr "_Phrase de passe"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:546
 msgid ""
@@ -3049,11 +3050,11 @@ msgstr "Applications"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:429
 msgid "Tor Browser Bookmarks"
-msgstr "Activer les signets du navigateur Tor"
+msgstr "Marque-pages du Navigateur Tor"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:445
 msgid "Activate Tor Browser Bookmarks"
-msgstr "Activer les signets au Navigateur Tor"
+msgstr "Activer les marque-pages du Navigateur Tor"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:458
 msgid "Electrum Bitcoin Wallet"
@@ -3174,7 +3175,7 @@ msgid ""
 "Choose the passphrase that you will use to unlock the encryption of your "
 "Persistent Storage and all its data."
 msgstr ""
-"Choisissez le mot de passe que vous emploierez pour déverrouiller le "
+"Choisissez la phrase de passe que vous utiliserez pour déverrouiller le "
 "chiffrement de votre stockage persistant et de toutes ses données."
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:82
@@ -3225,16 +3226,16 @@ msgid ""
 "<a href=\"doc/persistent_storage\">Learn more about the Persistent Storage.</"
 "a>"
 msgstr ""
-"Toutes vos actions disparaissent automatiquement lorsque vous arrêtez "
+"Tout ce que vous faites disparaît automatiquement lorsque vous arrêtez "
 "Tails.\n"
 "\n"
 "Toutefois, vous pouvez sauvegarder certains de vos fichiers et votre "
-"configuration dans un stockage persistant crypté sur votre clé USB Tails, "
+"configuration dans un stockage persistant chiffré sur votre clé USB Tails, "
 "par exemple :\n"
 "\n"
 "• Vos documents\n"
 "• Vos mots de passe Wi-Fi\n"
-"• Les signets de votre navigateur\n"
+"• Les marque-pages de votre navigateur\n"
 "• ...\n"
 "\n"
 "<a href=\"doc/persistent_storage\" >En savoir plus sur le stockage "
@@ -3265,7 +3266,7 @@ msgstr "_Supprimer…"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:49
 msgid "_Change Passphrase…"
-msgstr "_Modifier le mot de passe…"
+msgstr "_Modifier la phrase de passe…"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:66
 msgid "_Restart Tails"
@@ -3313,11 +3314,11 @@ msgstr "Détacher ce volume"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:8
 msgid "Choose Passphrase"
-msgstr "Choisissez le mot de passe"
+msgstr "Choisissez la phrase de passe"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:30
 msgid "Choose the passphrase for the cloned Persistent Storage."
-msgstr "Choisissez le mot de passe pour le stockage persistant cloné."
+msgstr "Choisissez la phrase de passe pour le stockage persistant cloné."
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/tails-installer.ui.in:281
 msgid "Target USB stick:"
@@ -3349,7 +3350,7 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"WhisperBack – Envoyez votre rétroaction dans un courriel chiffré\n"
+"WhisperBack – Envoyez vos retours dans un courriel chiffré\n"
 "Tous droits réservés © 2009 à 2018 Les développeurs de Tails <tails@boum."
 "org>\n"
 "\n"
