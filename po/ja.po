@@ -33,8 +33,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 10:08+0200\n"
-"PO-Revision-Date: 2023-07-02 08:47+0000\n"
+"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"PO-Revision-Date: 2023-08-04 16:06+0000\n"
 "Last-Translator: Isizaki mei <christine.dinapoli@tmail.link>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tor/tails-gui/"
 "ja/>\n"
@@ -226,9 +226,9 @@ msgstr ""
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:135
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:185
 msgid ""
-"To add more, install some software using <a href=\"synaptic.desktop"
-"\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal.desktop"
-"\">APT on the command line</a>."
+"To add more, install some software using <a href=\"synaptic."
+"desktop\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal."
+"desktop\">APT on the command line</a>."
 msgstr ""
 "他のソフトウェアを追加するには、<a href=\"synaptic.desktop\">Synaptic パッ"
 "ケージ マネージャー</a>または <a href=\"org.gnome.Terminal.desktop\">APT でコ"
@@ -403,10 +403,10 @@ msgstr ""
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:289
 msgid ""
 "<b>An error occured while updating the signing key.</b>\\n\\n<b>This "
-"prevents determining whether an upgrade is available from our website.</b>\\n"
-"\\nCheck your network connection, and restart Tails to try upgrading again."
-"\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/website/doc/"
-"upgrade/error/check.en.html"
+"prevents determining whether an upgrade is available from our website.</"
+"b>\\n\\nCheck your network connection, and restart Tails to try upgrading "
+"again.\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/check.en.html"
 msgstr ""
 "<b>署名キーの更新中にエラーが発生しました。</b>\\n\\n<b>これにより、当社の "
 "Web サイトからアップグレードを利用できるかどうかを判断できません。</b>\\n\\n"
@@ -780,7 +780,7 @@ msgstr "廃止"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/additional_settings.py:338
 msgid "_Unsafe Browser"
-msgstr "安全でないブラウザー (_U)"
+msgstr "安全でないブラウザ (_U)"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/additional_settings.py:347
 msgid "Enabled (default)"
@@ -1487,10 +1487,10 @@ msgid ""
 "some software using <a href=\"synaptic.desktop\">Synaptic Package Manager</"
 "a> or <a href=\"org.gnome.Terminal.desktop\">APT on the command line</a>."
 msgstr ""
-"そうするには、Tails を起動する時に永続的ストレージをアンロックして <a href="
-"\"synaptic.desktop\">Synaptic パッケージ・マネージャー</a>で、あるいは<a "
-"href=\"org.gnome.Terminal.desktop\">コマンドラインから ATP で</a>ソフトウェア"
-"をインストールして下さい。"
+"そうするには、Tails を起動する時に永続的ストレージをアンロックして <a "
+"href=\"synaptic.desktop\">Synaptic パッケージ・マネージャー</a>で、あるいは"
+"<a href=\"org.gnome.Terminal.desktop\">コマンドラインから ATP で</a>ソフト"
+"ウェアをインストールして下さい。"
 
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:211
 msgid ""
@@ -1936,39 +1936,41 @@ msgid ""
 "\n"
 "If you cancel, the data will be restored when you turn this feature on again."
 msgstr ""
+"永続ストレージに保存されている{}機能のデータをすべて削除しますか？\n"
+"\n"
+"キャンセルすると、この機能を再度オンにしたときにデータが復元されます。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:345
-#, fuzzy
 msgid "_Delete Data"
-msgstr "削除"
+msgstr "_データを削除"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:373
 msgid "Error deleting data of feature {}"
-msgstr ""
+msgstr "特徴{}のデータ削除エラー"
 
 #. Translators: Don't translate {applications}, it's a placeholder
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:457
 #, python-brace-format
 msgid "Close {applications} to continue"
-msgstr ""
+msgstr "{applications}を閉じて続行する"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:458
 msgid " and "
-msgstr ""
+msgstr " と "
 
 #. Translators: Don't translate {app} and {pid}, they
 #. are placeholders.
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:469
 #, python-brace-format
 msgid "{app} (PID: {pid})"
-msgstr ""
+msgstr "{app} (PID: {pid})"
 
 #. Translators: Don't translate {app} and {pids}, they
 #. are placeholders.
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:474
 #, python-brace-format
 msgid "{app} (PIDs: {pids})"
-msgstr ""
+msgstr "{app} (PIDs: {pids})"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:36
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/change_passphrase_dialog.ui.in:8
@@ -1977,39 +1979,36 @@ msgid "Change Passphrase"
 msgstr "パスフレーズを変更する"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:83
-#, fuzzy
 msgid "The current passphrase is incorrect"
-msgstr "パスフレーズが一致しません"
+msgstr "現在のパスフレーズが正しくありません"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:92
-#, fuzzy
 msgid "Changing the passphrase failed"
-msgstr "パスフレーズを変更する"
+msgstr "パスフレーズの変更に失敗しました"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:41
 msgid "Weak"
-msgstr ""
+msgstr "脆弱"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:44
 msgid "Fair"
-msgstr ""
+msgstr "弱"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:47
 msgid "Good"
-msgstr ""
+msgstr "標準"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:50
 msgid "Strong"
-msgstr ""
+msgstr "強力"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/error_dialog.py:36
 msgid "You can send an error report to help solve the issue."
-msgstr ""
+msgstr "問題を解決するために、エラーレポートを送信することができます。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/error_dialog.py:42
-#, fuzzy
 msgid "_Send Error Report"
-msgstr "エラーレポートを送信する"
+msgstr "_エラーレポートを送信する"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:144
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:175
@@ -2021,7 +2020,7 @@ msgstr "永続ストレージの削除"
 msgid ""
 "Are you sure that you want to delete your Persistent Storage? This action "
 "cannot be undone."
-msgstr ""
+msgstr "永続ストレージを削除してもよろしいですか？この操作は元に戻せません。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:149
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:57
@@ -2032,49 +2031,49 @@ msgid "_Cancel"
 msgstr "キャンセル(_C)"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:150
-#, fuzzy
 msgid "_Delete Persistent Storage"
-msgstr "永続ストレージの削除"
+msgstr "_永続ストレージを削除する"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:160
 #, fuzzy
-msgid "Deleting your Persistent Storage"
-msgstr "永続ストレージの削除"
+msgid "Deleting your Persistent Storage..."
+msgstr "永続ストレージを削除する"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:177
 msgid ""
 "To delete the Persistent Storage, restart Tails without unlocking the "
 "Persistent Storage and open the Persistent Storage settings again."
 msgstr ""
+"永続ストレージを削除するには、永続ストレージのロックを解除せずにTailsを再起動"
+"し、永続ストレージ設定を再度開きます。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:181
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:189
 msgid ""
 "Sorry, you can't close this app until the ongoing operation has completed."
 msgstr ""
+"申し訳ありませんが、進行中の操作が完了するまで、このアプリを閉じることはでき"
+"ません。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:191
 msgid "Please wait"
-msgstr ""
+msgstr "お待ちください"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:216
-#, fuzzy
 msgid "Not enough memory to create Persistent Storage"
-msgstr "永続的ストレージを作成_しない"
+msgstr "永続ストレージを作成するのに十分なメモリがありません"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:221
-#, fuzzy
 msgid "Failed to create Persistent Storage"
-msgstr "永続的ストレージの構成に失敗しました"
+msgstr "永続ストレージの作成に失敗しました"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:240
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:245
-#, fuzzy
 msgid "Error deleting Persistent Storage"
-msgstr "暗号化された永続的ストレージ: {}"
+msgstr "永続ストレージの削除エラー"
 
 #. Translators: Don't translate {volume_label} or {volume_size},
 #. they are placeholders and will be replaced. They need
@@ -2287,7 +2286,7 @@ msgstr "システムの再起動に失敗しました。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:74
 msgid "Starting the Unsafe Browser..."
-msgstr "安全でないブラウザーを起動中..."
+msgstr "安全でないブラウザを起動中..."
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:75
 msgid "This may take a while, so please be patient."
@@ -2295,7 +2294,7 @@ msgstr "しばらくかかる場合があるので、お待ちください。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:81
 msgid "Shutting down the Unsafe Browser..."
-msgstr "安全でないブラウザーをシャットダウンしています..."
+msgstr "安全でないブラウザをシャットダウンしています..."
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:82
 msgid ""
@@ -2303,21 +2302,21 @@ msgid ""
 "is properly shut down."
 msgstr ""
 "しばらく時間がかかる恐れがあり、適切にシャットダウンされるまで、安全でないブ"
-"ラウザーを再起動できません。"
+"ラウザを再起動できません。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:95
 #: ../config/chroot_local-includes/usr/share/applications/unsafe-browser.desktop.in.h:1
 #: ../config/chroot_local-includes/usr/share/tails/greeter/additional_settings.ui.in:512
 msgid "Unsafe Browser"
-msgstr "安全でないブラウザー"
+msgstr "安全でないブラウザ"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:110
 msgid ""
 "Another Unsafe Browser is currently running, or being cleaned up. Please "
 "retry in a while."
 msgstr ""
-"別の安全でないブラウザーが起動中か、クリーンアップされています。少ししてから"
-"もう一度お試しください。"
+"別の安全でないブラウザが起動中か、クリーンアップされています。少ししてからも"
+"う一度お試しください。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:117
 msgid "Failed to setup chroot."
@@ -2325,7 +2324,7 @@ msgstr "chroot のセットアップに失敗しました。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:123
 msgid "Failed to configure browser."
-msgstr "ブラウザーの設定に失敗しました。"
+msgstr "ブラウザの設定に失敗しました。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:125
 msgid ""
@@ -2333,12 +2332,12 @@ msgid ""
 "Unsafe Browser, you first need to connect to a Wi-Fi, wired, or mobile "
 "network."
 msgstr ""
-"まだローカルネットワークに接続していません。\\n\\n安全ではないブラウザーを開"
-"始するには、Wi-Fi、有線接続、モバイルネットワークに接続する必要があります。"
+"まだローカルネットワークに接続していません。\\n\\n安全ではないブラウザを開始"
+"するには、Wi-Fi、有線接続、モバイルネットワークに接続する必要があります。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:155
 msgid "Failed to run browser."
-msgstr "ブラウザーを起動できませんでした。"
+msgstr "ブラウザを起動できませんでした。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/whisperBack/exceptions.py:40
 #, python-format
@@ -2534,16 +2533,13 @@ msgid "Learn more about Tails"
 msgstr "Tails について詳しく知る"
 
 #: ../config/chroot_local-includes/usr/share/applications/tails-backup.desktop.in.h:1
-#, fuzzy
 msgid "Back Up Persistent Storage"
-msgstr "永続ストレージ"
+msgstr "永続ストレージをバックアップする"
 
 #: ../config/chroot_local-includes/usr/share/applications/tails-backup.desktop.in.h:2
-#, fuzzy
 msgid ""
 "Make a backup of the Tails Persistent Storage to another Tails USB stick"
-msgstr ""
-"Tails USB スティックに保存するデータの永続ストレージの機能をオンにします。"
+msgstr "Tails 永続ストレージのバックアップを別のTails USBスティックに作成する"
 
 #: ../config/chroot_local-includes/usr/share/applications/tails-installer.desktop.in.h:2
 msgid "Install, clone, upgrade Tails"
@@ -2559,7 +2555,7 @@ msgstr "Tor Browser"
 
 #: ../config/chroot_local-includes/usr/share/applications/tor-browser.desktop.in.h:2
 msgid "Anonymous Web Browser"
-msgstr "匿名ウェブブラウザー"
+msgstr "匿名ウェブブラウザ"
 
 #: ../config/chroot_local-includes/usr/share/applications/unsafe-browser.desktop.in.h:2
 msgid "Browse the World Wide Web without anonymity"
@@ -2567,7 +2563,7 @@ msgstr "匿名性なしでワールドワイドウェブをブラウズする"
 
 #: ../config/chroot_local-includes/usr/share/applications/unsafe-browser.desktop.in.h:3
 msgid "Unsafe Web Browser"
-msgstr "安全でない Web ブラウザー"
+msgstr "安全でないウェブブラウザ"
 
 #: ../config/chroot_local-includes/usr/share/applications/unlock-veracrypt-volumes.desktop.in.h:2
 msgid "Mount VeraCrypt encrypted file containers and devices"
@@ -2753,12 +2749,11 @@ msgid ""
 "passwords, and so on."
 msgstr ""
 "ファイルと設定の一部を Tails USB スティックの暗号化された永続ストレージに保存"
-"できます: ドキュメント、ブラウザーのブックマーク、Wi-Fi パスワードなどです。"
+"できます: ドキュメント、ブラウザのブックマーク、Wi-Fi パスワードなどです。"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:225
-#, fuzzy
 msgid "Create and configure a Persistent Storage after starting Tails"
-msgstr "Tails を開始した後、永続ストレージを作成して設定します。"
+msgstr "Tails起動後の永続ストレージの作成と設定"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:279
 msgid "Language & Region"
@@ -2773,18 +2768,16 @@ msgid "Show Passphrase"
 msgstr "パスフレーズの表示"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:470
-#, fuzzy
 msgid "_Passphrase"
-msgstr "パスフレーズ:"
+msgstr "_パスフレーズ"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:546
-#, fuzzy
 msgid ""
 "Your Persistent Storage is unlocked. Its content will be available until you "
 "shut down Tails."
 msgstr ""
-"永続的ストレージのロックが解除されました。もう一度ロックするには、Tails を再"
-"起動してください。"
+"永続ストレージのロックが解除されました。Tailsをシャットダウンするまで、そのコ"
+"ンテンツを利用できます。"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:583
 msgid "_Additional Settings"
@@ -2846,7 +2839,7 @@ msgstr "_閉じる"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/fail_view.ui.in:30
 msgid "Oh no! Something has gone wrong."
-msgstr "ぴえん！ 何か問題が発生しました。"
+msgstr "何か問題が発生しました。"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/fail_view.ui.in:45
 msgid ""
@@ -2897,7 +2890,7 @@ msgstr "永続フォルダー"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:135
 msgid "A folder where you can save your documents."
-msgstr ""
+msgstr "ドキュメントを保存できるフォルダ。"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:160
 msgid "Open Persistent Folder"
@@ -2912,18 +2905,16 @@ msgid "System Settings"
 msgstr "システム設定"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:228
-#, fuzzy
 msgid "Welcome Screen"
-msgstr "ウェルカムスクリーンを有効にする"
+msgstr "ウェルカムスクリーン"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:244
 msgid "Activate Welcome Screen"
 msgstr "ウェルカムスクリーンを有効にする"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:257
-#, fuzzy
 msgid "Printers"
-msgstr "プリンターの有効化"
+msgstr "プリンター"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:273
 msgid "Activate Printers"
@@ -2958,9 +2949,8 @@ msgid "Applications"
 msgstr "アプリケーション"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:429
-#, fuzzy
 msgid "Tor Browser Bookmarks"
-msgstr "Tor Browserのブックマークを有効化する"
+msgstr "Tor Browserのブックマーク"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:445
 msgid "Activate Tor Browser Bookmarks"
@@ -2987,9 +2977,8 @@ msgid "GnuPG"
 msgstr "GnuPG"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:517
-#, fuzzy
 msgid "OpenPGP keys outside of Thunderbird, including in Kleopatra."
-msgstr "Thunderbird 以外の OpenPGP キー。"
+msgstr "Kleopatraを含む、Thunderbird以外のOpenPGPキー。"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:533
 msgid "Activate GnuPG"
@@ -3079,23 +3068,20 @@ msgstr ""
 "リックしてください。"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:62
-#, fuzzy
 msgid ""
 "Choose the passphrase that you will use to unlock the encryption of your "
 "Persistent Storage and all its data."
 msgstr ""
 "永続ストレージとそのすべてのデータの暗号化を解除するために使用するパスフレー"
-"ズを選択します。\n"
-"\n"
-"5 ～ 7 個のランダムな単語からなる長いパスフレーズをお勧めします。"
+"ズを選択します。"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:82
 msgid "We recommend a long passphrase of 5 to 7 random words."
-msgstr ""
+msgstr "5～7個のランダムな単語からなる長いパスフレーズをお勧めします。"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:94
 msgid " For example:"
-msgstr ""
+msgstr " 例えば："
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:186
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:46
@@ -3166,14 +3152,12 @@ msgid "Co_ntinue"
 msgstr "Co_ntinue"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:29
-#, fuzzy
 msgid "_Delete…"
-msgstr "削除"
+msgstr "_削除…"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:49
-#, fuzzy
 msgid "_Change Passphrase…"
-msgstr "パスフレーズを変更する"
+msgstr "_パスフレーズを変更する…"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:66
 msgid "_Restart Tails"
@@ -3220,14 +3204,12 @@ msgid "Detach this volume"
 msgstr "ボリュームを取り外す"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:8
-#, fuzzy
 msgid "Choose Passphrase"
-msgstr "パスフレーズを変更する"
+msgstr "パスフレーズを選択する"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:30
-#, fuzzy
 msgid "Choose the passphrase for the cloned Persistent Storage."
-msgstr "永続的ボリュームを保護するためのパスフレーズを選択"
+msgstr "クローン化された永続ストレージのパスフレーズを選択します。"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/tails-installer.ui.in:281
 msgid "Target USB stick:"
@@ -3577,7 +3559,6 @@ msgstr ""
 "能性がある場合は、気づかれないようにする必要性があるかもしれません。"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:1499
-#, fuzzy
 msgid ""
 "Tails will only connect to Tor after you configured a Tor bridge. Bridges "
 "are secret Tor relays that hide that you are connecting to Tor.\n"
@@ -3589,14 +3570,14 @@ msgid ""
 "yet, if you connect from a public Wi-Fi network, or if you are in the "
 "Eastern Hemisphere."
 msgstr ""
-"Tails は Tor ブリッジを構成した後に Tor に接続します。ブリッジは Tor に接続し"
-"ていることを隠すためにある秘密の Tor リレーです。\n"
+"TailsはTorブリッジを設定した後でないとTorに接続しません。ブリッジはあなたが"
+"Torに接続していることを隠す秘密のTorリレーです。\n"
 "\n"
-"私たちのチームはできる限り違う種類の Tor ブリッジを使い Tor に接続できるよう"
-"に最善を尽くしています。\n"
+"私たちのチームは、あなたが最も目立たないタイプのTorブリッジを使ってTorに接続"
+"できるよう最善を尽くしています。\n"
 "\n"
-"Tor ブリッジを知らない場合、公共 Wi-Fi を利用している場合、東半球にいる場合は"
-"追加の設定が必要になります。"
+"Torブリッジをまだ知らない場合や、公衆Wi-Fiネットワークから接続する場合、東半"
+"球（特に中国）にいる場合は、追加設定が必要です。"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:1544
 msgid ""
@@ -3660,7 +3641,7 @@ msgstr "ネットワーク モニターを開く"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:2039
 msgid "View Tor Circuits"
-msgstr "Tor 回路を見る"
+msgstr "Tor 回線を見る"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:2053
 msgid "Reset Tor Connection"

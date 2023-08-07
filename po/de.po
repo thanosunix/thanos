@@ -42,8 +42,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 10:08+0200\n"
-"PO-Revision-Date: 2023-06-23 20:35+0000\n"
+"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"PO-Revision-Date: 2023-07-27 10:04+0000\n"
 "Last-Translator: Pepe Nietnagel <asozial+weblate23@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/tor/tails-gui/de/"
 ">\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. Translators: Don't translate {details}, it's a placeholder and will
 #. be replaced.
@@ -241,13 +241,13 @@ msgstr ""
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:135
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:185
 msgid ""
-"To add more, install some software using <a href=\"synaptic.desktop"
-"\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal.desktop"
-"\">APT on the command line</a>."
+"To add more, install some software using <a href=\"synaptic."
+"desktop\">Synaptic Package Manager</a> or <a href=\"org.gnome.Terminal."
+"desktop\">APT on the command line</a>."
 msgstr ""
-"Um mehr hinzufügen, installiere Software mit <a href=\"synaptic.desktop"
-"\">Synaptic Packet Manager</a> oder <a href=\"org.gnome.Terminal.desktop"
-"\">APT in der Kommandozeile</a>."
+"Um mehr hinzufügen, installiere Software mit <a href=\"synaptic."
+"desktop\">Synaptic Packet Manager</a> oder <a href=\"org.gnome.Terminal."
+"desktop\">APT in der Kommandozeile</a>."
 
 #: config/chroot_local-includes/usr/share/tails/additional-software/configuration-window.ui:154
 msgid "_Create persistent storage"
@@ -262,6 +262,12 @@ msgid ""
 "<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">How "
 "we spend our money.</a>"
 msgstr ""
+"Tails benötigt Spenden, damit jeder frei und sicher online sein kann.\n"
+"\n"
+"Jedes bisschen hilft in unserem Kampf gegen Überwachung und Zensur!\n"
+"\n"
+"<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">Wie "
+"wir dein Geld verwenden.</a>"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:101
 msgid ""
@@ -272,6 +278,12 @@ msgid ""
 "<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">How "
 "we spend our money.</a>"
 msgstr ""
+"Tails schützt deinen Wallet.\n"
+"\n"
+"Helfen Sie uns, Ihre Bitcoins zu schützen!\n"
+"\n"
+"<a href=\"file:///usr/share/doc/tails/website/donate.en.html#expenses\">Wir "
+"wir dein Geld verwenden.</a>"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:112
 msgid "Donate Now"
@@ -283,11 +295,11 @@ msgstr "Später"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:123
 msgid "Opening Electrum with our donation address..."
-msgstr ""
+msgstr "Öffne Electrum mit unserer Spendenadresse..."
 
 #: config/chroot_local-includes/usr/local/bin/electrum:124
 msgid "Thank you for making the Internet a safer place!"
-msgstr ""
+msgstr "Danke, dass du das Internet zu einem sichereren Ort machst!"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:157
 msgid "Persistence is disabled for Electrum"
@@ -410,13 +422,13 @@ msgstr ""
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:289
 msgid ""
 "<b>An error occured while updating the signing key.</b>\\n\\n<b>This "
-"prevents determining whether an upgrade is available from our website.</b>\\n"
-"\\nCheck your network connection, and restart Tails to try upgrading again."
-"\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/website/doc/"
-"upgrade/error/check.en.html"
+"prevents determining whether an upgrade is available from our website.</"
+"b>\\n\\nCheck your network connection, and restart Tails to try upgrading "
+"again.\\n\\nIf the problem persists, go to file:///usr/share/doc/tails/"
+"website/doc/upgrade/error/check.en.html"
 msgstr ""
-"<b>Ein Fehler trat beim Aktualisieren des Singnaturschlüssels auf.</b>\\n"
-"\\n<b>Dies verhindert zu bestimmen, ob eine Aktualisierung von unserer "
+"<b>Ein Fehler trat beim Aktualisieren des Singnaturschlüssels auf.</"
+"b>\\n\\n<b>Dies verhindert zu bestimmen, ob eine Aktualisierung von unserer "
 "Webseite verfügbar ist.</b>\\n\\nÜberprüfe deine Internetverbindung und "
 "starte Tails neu, um nochmal zu versuchen zu aktualisieren.\\n\\nFalls das "
 "Problem fortbesteht, gehe zur Datei file:///usr/share/doc/tails/website/doc/"
@@ -867,7 +879,7 @@ msgstr "Wird entsperrt…"
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:135
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:505
 msgid "Unlock Encryption"
-msgstr ""
+msgstr "Verschlüsselung entsperren"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:113
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:41
@@ -903,7 +915,7 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:143
 msgid "Upgrading the Persistent Storage. This may take a while…"
-msgstr ""
+msgstr "Upgrade des Beständigen Datenspeichers. Dies kann eine Weile dauern…"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/persistent_storage.py:154
 #, fuzzy
@@ -1193,6 +1205,8 @@ msgid ""
 "Clone the current Persistent Storage\n"
 "Impossible to clone the Persistent Storage because it is locked."
 msgstr ""
+"Klonen des beständigen Datenspeichers\n"
+"Beständiger Datenspeicher konnte nicht geklont werden, da er gesperrt ist."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:491
 #: ../config/chroot_local-includes/usr/share/tails-installer/tails-installer.ui.in:180
@@ -1205,6 +1219,9 @@ msgid ""
 "Clone the current Persistent Storage\n"
 "You can only choose to reinstall when cloning the Persistent Storage."
 msgstr ""
+"Klonen des beständigen Datenspeichers\n"
+"Du kannst neuinstallieren nur wählen, wenn du den beständigen Datenspeicher "
+"klonst."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:531
 #, python-format
@@ -1858,6 +1875,11 @@ msgid ""
 "\n"
 "Try again after closing some applications or rebooting."
 msgstr ""
+"Nur {available_memory} KiB Speicher sind verfügbar, es werden mindestens "
+"{required_memory} KiB benötigt.\n"
+"\n"
+"Versuchen Sie es erneut, nachdem Sie einige Anwendungen geschlossen oder "
+"einen Neustart durchgeführt haben."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:331
 msgid "Creating a partition for the Persistent Storage..."
@@ -1868,10 +1890,12 @@ msgid ""
 "Initializing the LUKS encryption... The computer might stop responding for a "
 "few seconds."
 msgstr ""
+"Initialisiere LUKS-Verschlüsselung... Der Computer könnte für einige "
+"Sekunden nicht reagieren."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:373
 msgid "Unlocking the encryption..."
-msgstr ""
+msgstr "Verschlüsselung wird entsperrt..."
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:381
 msgid "Formatting the file system..."
@@ -2066,7 +2090,8 @@ msgid "_Delete Persistent Storage"
 msgstr "_Beständigen Datenspeicher löschen"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:160
-msgid "Deleting your Persistent Storage"
+#, fuzzy
+msgid "Deleting your Persistent Storage..."
 msgstr "Beständiger Datenspeicher wird gelöscht"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:177
@@ -3407,7 +3432,7 @@ msgstr "obfs4 (empfohlen)"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:181
 msgid "meek"
-msgstr "Meek"
+msgstr "meek"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:204
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:1518
@@ -4173,8 +4198,8 @@ msgstr "Uhr"
 #~ msgstr "Tails konfiguriert deinen beständigen Speicher. Bitte warten..."
 
 #~ msgid ""
-#~ "Only use the Unsafe Browser to sign in to a network, then close it.\\n"
-#~ "\\nThe Unsafe Browser is disabled by default for security.\\n\\nTo <a "
+#~ "Only use the Unsafe Browser to sign in to a network, then close it."
+#~ "\\n\\nThe Unsafe Browser is disabled by default for security.\\n\\nTo <a "
 #~ "href='file:///usr/share/doc/tails/website/doc/anonymous_internet/"
 #~ "unsafe_browser.en.html#use'>use the Unsafe Browser</a>, restart Tails and "
 #~ "enable the Unsafe Browser in the additional settings of the Welcome "

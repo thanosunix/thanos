@@ -1,3 +1,87 @@
+tails (5.16) unstable; urgency=medium
+
+  * Upgrade to Thunderbird 1:102.14.0-1~deb11u1
+
+  * Upgrade to Linux 6.1.38-2
+
+  * Upgrade to Tor Browser 12.5.2 (Firefox 102.14) (tails/tails!1207)
+
+    Closes issues:
+      - Upgrade to Tor Browser 12.5.2 (Firefox 102.14) (tails/tails#19889)
+
+    Commits:
+      - Fetch Tor Browser from our own archive
+      - Upgrade Tor Browser to 12.5.2
+
+  * Install amd64-microcode from Debian security (tails/tails!1204)
+
+    Closes issues:
+      - Upgrade to Linux 6.1.38 and amd64-microcode 3.20230719.1 (tails/tails#19888)
+
+    Commits:
+      - Install amd64-microcode from Debian security
+
+  * Test suite: ensure tails-debugging-info does not crash (tails/tails!1206)
+
+    Closes issues:
+      - Automated tests for Whisperback (tails/tails#19881)
+
+    Commits:
+      - Remove obsolete justification
+      - Update comment
+      - Stop installing inotify-tools
+      - Drop obsolete /run/tordate
+      - WhisperBack: move huge "lsusb --verbose" below info that's more often used
+      - Test suite: ensure tails-debugging-info does not crash
+
+  * Test suite: ignore exception if LAN web server is kill():ed before we wait()
+    (tails/tails!1199)
+
+    Commits:
+      - Test suite: ignore exception if LAN web server is kill():ed before we wait()
+
+  * onion-grater: make my_circuits() handle unattached streams correctly
+    (tails/tails!1198)
+
+    Commits:
+      - Compare to None with identity, not equality
+      - onion-grater: make my_circuits() handle unattached streams correctly
+
+  * Turn off capitalization to make passphrase suggestion easier to type.
+    (tails/tails!1197)
+
+    Commits:
+      - Turn off capitalization to make passphrase suggestion easier to type.
+
+  * Doc updates for 5.15 (tails/tails!1194)
+
+    Closes issues:
+      - More robust UDF signing (tails/tails#19665)
+
+    Commits:
+      - Re-add anchor
+      - UDFs signature check
+      - variables, not constants!
+      - less bogus usages of cat
+      - login cmdline option useful in testing again
+      - more usages for automailer
+      - fix rc/final check
+      - automatic manual testing email
+      - automailer supports attachments
+      - kernel cmdline options make instructions simpler
+      - black reformatting
+      - automailer: set default in configuration file
+      - more automailer
+      - clarify what's inside the "If" statement
+      - Update PO files takes longer than you think
+      - let's remove useless sections early
+      - more automailer
+      - tbb upgrade: clarify norm vs exception
+      - tbb upgrade: chdir in subshell
+      - tbb upgrade: add ma1 repository
+
+ -- Tails developers <tails@boum.org>  Sun, 06 Aug 2023 10:32:57 +0000
+
 tails (5.15.1) unstable; urgency=medium
 
   * Emergency fix: fix whisperback reporting

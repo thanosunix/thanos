@@ -1212,7 +1212,11 @@ def start_web_server
 
   add_after_scenario_hook do
     Process.kill('TERM', proc.pid)
-    Process.wait(proc.pid)
+    begin
+      Process.wait(proc.pid)
+    rescue Errno::ECHILD
+      # The web server was killed before we started wait():ing!
+    end
   end
 
   # It seems necessary to actually check that the LAN server is
@@ -1599,4 +1603,9 @@ Given /^I write (|an old version of )the Tails (ISO|USB) image to disk "([^"]+)"
   ) do |g, src_disk_handle, dest_disk_handle|
     g.copy_device_to_device(src_disk_handle, dest_disk_handle, {})
   end
+end
+
+Then /^running "([^"]+)" as user "([^"]+)" succeeds$/ do |command, user|
+  c = $vm.execute(command, user: user)
+  assert(c.success?, "Failed to run command:\n#{c.stdout}\n#{c.stderr}")
 end
