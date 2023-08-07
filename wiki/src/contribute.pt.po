@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-07-06 09:16+0000\n"
-"PO-Revision-Date: 2023-08-06 11:22+0000\n"
+"PO-Revision-Date: 2023-08-07 15:22+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: Portuguese <LL@li.org>\n"
 "Language: pt\n"
@@ -619,56 +619,42 @@ msgid "[[Help desk|contribute/working_together/roles/help_desk]]"
 msgstr "[[Central de ajuda|contribute/working_together/roles/help_desk]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Management team|contribute/working_together/roles/management]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr "[[Time de gerenciamento|contribute/working_together/roles/management]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Release managers|contribute/working_together/roles/release_manager]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr ""
+"[[Gerentes de lançamentos|contribute/working_together/roles/release_manager]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid ""
-#| "[[Document progress|contribute/working_together/GitLab#document-progress]]"
 msgid "[[Ticket gardeners|contribute/working_together/roles/ticket_gardener]]"
 msgstr ""
-"[[Documentação de progresso|contribute/working_together/GitLab#document-"
-"progress]]"
+"[[Jardineirxs de tíquetes|contribute/working_together/roles/ticket_gardener]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Sysadmins|contribute/working_together/roles/sysadmins]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr "[[Sysadmins|contribute/working_together/roles/sysadmins]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid ""
 "[[Technical writers|contribute/working_together/roles/technical_writer]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr ""
+"[[Documentação técnica|contribute/working_together/roles/technical_writer]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Test suite maintainers|contribute/working_together/roles/test_suite]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr ""
+"[[Mantenedores da suíte de testes|contribute/working_together/roles/"
+"test_suite]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid ""
-#| "[[Marking a task as Starter|contribute/working_together/"
-#| "criteria_for_starter_tasks]]"
 msgid ""
 "[[Translation platform maintainers|contribute/working_together/roles/"
 "translation_platform]]"
 msgstr ""
-"[[Marcando uma tarefa como 'inicial'|contribute/working_together/"
-"criteria_for_starter_tasks]]"
+"[[Mantenedores da plataforma de tradução|contribute/working_together/roles/"
+"translation_platform]]"
 
 #. type: Bullet: '    - '
 #, fuzzy
