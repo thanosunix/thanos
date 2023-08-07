@@ -7,14 +7,31 @@
 
 - Update *Tor Browser* to [12.5.2](https://blog.torproject.org/new-release-tor-browser-1252/).
 
-- This section will be updated soon. Sorry for the inconvenience!
+- Update *Thunderbird* to [102.14.0](https://www.thunderbird.net/en-US/thunderbird/102.14.0/releasenotes/).
+
+- Display the passphrase recommendation for the Persistent Storage in small
+  caps only.
+
+  Capitalizing each word is more cumbersom and not more secure.
+
+<h1 id="fixes">Fixed problems</h1>
+
+- Fix some failures while unlocking the Persistent Storage. ([[!tails_ticket 19728]])
+
+  Sometimes, *upgrading* the cryptographic parameters of the Persistent Storage
+  was taking too long and made *unlocking* the Persistent Storage fail. We
+  allowed the *upgrade* to take more time before reporting a failure.
+
+  Please keep reporting errors using
+  [[*WhisperBack*|doc/first_steps/bug_reporting]] if you have problems
+  unlocking your Persistent Storage.
+
+- Fix the circuit view of *Tor Browser* that was sometimes not displayed.
+  ([[!tails_ticket 19897]])
 
 For more details, read our [[!tails_gitweb debian/changelog desc="changelog"]].
 
 <h1 id="issues">Known issues</h1>
-
-[[!tails_ticket 19728]] was affecting 5.14, and it might still be present. If you encounter this bug, please
-[[send us a *WhisperBack* report|doc/first_steps/bug_reporting/#whisperback]].
 
 See the list of [[long-standing issues|support/known_issues]].
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-06 18:24+0200\n"
+"POT-Creation-Date: 2023-08-07 22:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,53 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-msgid "- This section will be updated soon. Sorry for the inconvenience!"
+msgid ""
+"- Update *Thunderbird* to [102.14.0](https://www.thunderbird.net/en-US/"
+"thunderbird/102.14.0/releasenotes/)."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"Display the passphrase recommendation for the Persistent Storage in small "
+"caps only."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "  Capitalizing each word is more cumbersom and not more secure.\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<h1 id=\"fixes\">Fixed problems</h1>\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"- Fix some failures while unlocking the Persistent Storage. ([[!tails_ticket "
+"19728]])"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Sometimes, *upgrading* the cryptographic parameters of the Persistent Storage\n"
+"  was taking too long and made *unlocking* the Persistent Storage fail. We\n"
+"  allowed the *upgrade* to take more time before reporting a failure.\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Please keep reporting errors using\n"
+"  [[*WhisperBack*|doc/first_steps/bug_reporting]] if you have problems\n"
+"  unlocking your Persistent Storage.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"Fix the circuit view of *Tor Browser* that was sometimes not displayed.  ([[!"
+"tails_ticket 19897]])"
 msgstr ""
 
 #. type: Plain text
@@ -60,13 +106,6 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "<h1 id=\"issues\">Known issues</h1>\n"
-msgstr ""
-
-#. type: Plain text
-msgid ""
-"[[!tails_ticket 19728]] was affecting 5.14, and it might still be present. "
-"If you encounter this bug, please [[send us a *WhisperBack* report|doc/"
-"first_steps/bug_reporting/#whisperback]]."
 msgstr ""
 
 #. type: Plain text
