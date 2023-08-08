@@ -50,7 +50,6 @@ def get_attachments(msg) -> List[str]:
     attachments: List[str] = []
 
     if "x-attach" in msg:
-        attachments = []
         for fpath in msg["x-attach"].split(","):
             fpath = fpath.strip()
             if not fpath:
