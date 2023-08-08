@@ -339,7 +339,17 @@ class FilteredControlPortProxySession:
         # We de-duplicate the circuit IDs because get_circuit(id) will
         # return a new object each call.
         my_circuit_ids = {s.circ_id for s in self.my_streams() if s.circ_id is not None}
-        return [self.controller.get_circuit(i) for i in my_circuit_ids]
+        my_circuits = list()
+        for i in my_circuit_ids:
+            try:
+                my_circuits.append(self.controller.get_circuit(i))
+            except ValueError:
+                # There is a race: after calling my_streams() one of
+                # the streams could have its circuit close, so when we
+                # call get_circuit() on its ID stem raises this
+                # exception, since the circuit doesn't exist any more.
+                pass
+        return my_circuits
 
     def event_cb(self, event, event_rewriter=None):
         if self.restrict_stream_events and \
