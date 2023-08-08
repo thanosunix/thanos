@@ -106,18 +106,24 @@ def mailer(mailer: str, body: str):
 
 
 def add_parser_mailer(parser: ArgumentParser, config: dict):
-    parser.add_argument(
+    mail_options = parser.add_argument_group('mail options')
+    mail_options.add_argument(
         "--mailer",
-        default=config.get("mailer"),
+        default=config.get("mailer", "print"),
         choices=["print", "thunderbird", "notmuch"],
         help="Your favorite MUA",
     )
 
 
-if __name__ == "__main__":
+def get_parser():
     config = read_config()
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
     add_parser_mailer(parser, config)
+    return parser
+
+
+if __name__ == "__main__":
+    parser = get_parser()
     args = parser.parse_args()
     body = sys.stdin.read()
     mailer(args.mailer, body)
