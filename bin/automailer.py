@@ -15,6 +15,7 @@ from email import policy
 import tempfile
 from pathlib import Path
 import subprocess
+from typing import List
 
 from xdg.BaseDirectory import xdg_config_home  # type: ignore
 
@@ -47,12 +48,9 @@ def parse(body: str):
     return msg, body
 
 
-def mailer_thunderbird(body: str):
-    msg, body = parse(body)
-    spec = []
-    for key in ["to", "cc", "subject"]:
-        if key in msg:
-            spec.append(f"{key}='{msg[key]}'")
+def get_attachments(msg) -> List[str]:
+    attachments: List[str] = []
+
     if 'x-attach' in msg:
         attachments = []
         for fpath in msg['x-attach'].split(','):
@@ -63,8 +61,19 @@ def mailer_thunderbird(body: str):
                 print(f"Skipping attachemt '{fpath}': not found", file=sys.stderr)
                 continue
             attachments.append(fpath)
-        if attachments:
-            spec.append("attachment='%s'" % ','.join(attachments))
+
+    return attachments
+
+
+def mailer_thunderbird(body: str):
+    msg, body = parse(body)
+    spec = []
+    for key in ["to", "cc", "subject"]:
+        if key in msg:
+            spec.append(f"{key}='{msg[key]}'")
+    attachments = get_attachments(msg)
+    if attachments:
+        spec.append("attachment='%s'" % ','.join(attachments))
 
     with tempfile.TemporaryDirectory() as tmpdir:
         fpath = Path(tmpdir) / "email.eml"
