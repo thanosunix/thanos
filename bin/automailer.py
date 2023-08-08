@@ -84,12 +84,9 @@ def mailer_notmuch(body: str):
     msg, body = parse(body)
     cmdline = ["notmuch-emacs-mua", "--client", "--create-frame"]
 
-    for key in ["cc", "subject"]:
+    for key in ["to", "cc", "subject"]:
         if key in msg:
             cmdline.append(f"--{key}={msg[key]}")
-
-    for address in msg["to"].split(","):
-        cmdline.append(address.strip())
 
     subprocess.check_output(cmdline)
 
