@@ -2,8 +2,8 @@
 """
 Standalone/module to simplify composing emails.
 
-The purpose of this module is to make it easier to convert machine-ready emails into actually composing
-emails.
+The purpose of this module is to make it easier to convert machine-ready
+emails into actually composing emails.
 """
 
 import os.path
@@ -21,7 +21,7 @@ from xdg.BaseDirectory import xdg_config_home  # type: ignore
 
 def read_config() -> dict:
     config_files = sorted(
-        list((Path(xdg_config_home) / "tails/automailer/").glob("*.toml"))
+        (Path(xdg_config_home) / "tails/automailer/").glob("*.toml")
     )
     if not config_files:
         return {}
@@ -36,7 +36,8 @@ def read_config() -> dict:
 
     data = {}
     for fpath in config_files:
-        data.update(toml.load(open(fpath)))
+        with open(fpath) as fp:
+            data.update(toml.load(fp))
     return data
 
 
@@ -64,7 +65,6 @@ def mailer_thunderbird(body: str):
             attachments.append(fpath)
         if attachments:
             spec.append("attachment='%s'" % ','.join(attachments))
-
 
     with tempfile.TemporaryDirectory() as tmpdir:
         fpath = Path(tmpdir) / "email.eml"
@@ -100,9 +100,9 @@ def mailer_notmuch(body: str):
 def mailer(mailer: str, body: str):
     if mailer == "thunderbird":
         return mailer_thunderbird(body)
-    elif mailer == "notmuch":
+    if mailer == "notmuch":
         return mailer_notmuch(body)
-    elif not mailer or mailer == "print":
+    if not mailer or mailer == "print":
         print(body)
     else:
         print(f"Unsupported mailer: '{mailer}'")
@@ -120,9 +120,9 @@ def add_parser_mailer(parser: ArgumentParser, config: dict):
 
 def get_parser():
     config = read_config()
-    parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
-    add_parser_mailer(parser, config)
-    return parser
+    argparser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
+    add_parser_mailer(argparser, config)
+    return argparser
 
 
 if __name__ == "__main__":
