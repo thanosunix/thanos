@@ -21,9 +21,7 @@ from xdg.BaseDirectory import xdg_config_home  # type: ignore
 
 
 def read_config() -> dict:
-    config_files = sorted(
-        (Path(xdg_config_home) / "tails/automailer/").glob("*.toml")
-    )
+    config_files = sorted((Path(xdg_config_home) / "tails/automailer/").glob("*.toml"))
     if not config_files:
         return {}
     try:
@@ -51,9 +49,9 @@ def parse(body: str):
 def get_attachments(msg) -> List[str]:
     attachments: List[str] = []
 
-    if 'x-attach' in msg:
+    if "x-attach" in msg:
         attachments = []
-        for fpath in msg['x-attach'].split(','):
+        for fpath in msg["x-attach"].split(","):
             fpath = fpath.strip()
             if not fpath:
                 continue
@@ -73,7 +71,7 @@ def mailer_thunderbird(body: str):
             spec.append(f"{key}='{msg[key]}'")
     attachments = get_attachments(msg)
     if attachments:
-        spec.append("attachment='%s'" % ','.join(attachments))
+        spec.append("attachment='%s'" % ",".join(attachments))
 
     with tempfile.TemporaryDirectory() as tmpdir:
         fpath = Path(tmpdir) / "email.eml"
@@ -118,7 +116,7 @@ def mailer(mailer: str, body: str):
 
 
 def add_parser_mailer(parser: ArgumentParser, config: dict):
-    mail_options = parser.add_argument_group('mail options')
+    mail_options = parser.add_argument_group("mail options")
     mail_options.add_argument(
         "--mailer",
         default=config.get("mailer", "print"),
