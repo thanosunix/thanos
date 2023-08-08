@@ -10,7 +10,7 @@ fi
 case "$-" in
     *e*) : ;;
     *)
-        echo "This library is meant to be used with `set -e`. Exiting..." >&2
+        echo "This library is meant to be used with 'set -e'. Exiting..." >&2
         exit 1
         ;;
 esac
