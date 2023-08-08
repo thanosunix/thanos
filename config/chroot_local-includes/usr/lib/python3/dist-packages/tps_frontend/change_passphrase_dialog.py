@@ -39,6 +39,8 @@ class ChangePassphraseDialog(Gtk.Dialog):
 
         self.passphrases_match = False
 
+        set_passphrase_strength_hint(self.progress_bar, '')
+
     def run(self):
         self.old_passphrase_entry.grab_focus()
         self.ok_button.grab_default()
