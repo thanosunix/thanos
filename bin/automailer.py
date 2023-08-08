@@ -94,6 +94,13 @@ def mailer_notmuch(body: str):
     for key in ["to", "cc", "subject"]:
         if key in msg:
             cmdline.append(f"--{key}={msg[key]}")
+    attachments = get_attachments(msg)
+    if attachments:
+        body = "\n".join([f'<#part filename="{attachment}" '
+                          "disposition=attachment><#/part>"
+                          for attachment in attachments]) \
+                + "\n\n" \
+                + body
 
     with tempfile.TemporaryDirectory() as tmpdir:
         fpath = Path(tmpdir) / "email.eml"
