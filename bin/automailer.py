@@ -41,7 +41,7 @@ def read_config() -> dict:
 
 
 def parse(body: str):
-    header, body = body.split("\n\n", 1)
+    header, body = body.split("\n\n", maxsplit=1)
     msg = Parser(policy=policy.default).parsestr(header)
     return msg, body
 
