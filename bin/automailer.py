@@ -88,7 +88,13 @@ def mailer_notmuch(body: str):
         if key in msg:
             cmdline.append(f"--{key}={msg[key]}")
 
-    subprocess.check_output(cmdline)
+    with tempfile.TemporaryDirectory() as tmpdir:
+        fpath = Path(tmpdir) / "email.eml"
+        with fpath.open("w") as fp:
+            fp.write(body)
+        cmdline.append(f"--body={fpath}")
+
+        subprocess.check_output(cmdline)
 
 
 def mailer(mailer: str, body: str):
