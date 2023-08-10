@@ -524,27 +524,9 @@ Please check these views once in a while and talk to us! :)
 
 # GitLab CI
 
-Tails system administrators are currently experimenting with [[!tails_gitlab
+We use [[!tails_gitlab
 help/ci/README.md desc="GitLab CI"]] for some quality assurance checks that
-don't require building or booting Tails images: [[!tails_gitlab
-tails/sysadmin/-/issues/17740]].
-
-## Experimental
-
-Please consider this work as experimental and don't rely on it for making
-decisions. In particular:
-
- - Don't trust the CI runners. As a consequence, don't trust the results of
-   CI pipelines.
-
- - Don't rely on the CI runners being in working shape.
-
-*Why?* Because the CI runner we are using at the moment is running on a test
-infrastructure, that's not managed in the same way as our production
-infrastructure. For example, it is not automatically monitored, and security
-updates are not consistently applied in a timely manner.
-
-We will let you know once our GitLab CI setup is in production.
+don't require building or booting Tails images.
 
 ## Feedback and patches are welcome
 
