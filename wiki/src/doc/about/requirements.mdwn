@@ -51,7 +51,7 @@ organization, are considering acquiring a laptop dedicated to running Tails.
 - Avoid "gaming" models with Nvidia or AMD Radeon graphics cards.
 - Consider buying a refurbished laptop from a high-end (professional) series.
   These are cheaper and will last longer than new but lower-quality laptops.
-  * For example, the Lenovo ThinkPad series work very well with Tails,
+  * For example, the Lenovo ThinkPad series work well with Tails,
     including the X250, X1 Carbon, T440, T480, and T490 models.
   * If you live in a part of the world where buying refurbished laptops is
     uncommon, look on eBay and Amazon. Amazon offers a 90-day [Amazon Renewed
@@ -61,7 +61,7 @@ organization, are considering acquiring a laptop dedicated to running Tails.
 
 ### For Mac
 
-- The MacBookPro16,1 and MacBookPro16,2 from 2019 work with Tails.
+- The MacBookPro16,1 and MacBookPro16,2 from 2019 work well with Tails.
 
 <!--
 
