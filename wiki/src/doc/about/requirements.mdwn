@@ -62,3 +62,36 @@ organization, are considering acquiring a laptop dedicated to running Tails.
 ### For Mac
 
 - The MacBookPro16,1 and MacBookPro16,2 from 2019 work with Tails.
+
+<!--
+
+To update the list of Mac computer:
+
+1. Store an archive of WhisperBack reports from the last 6 months in a folder.
+
+2. Decrypt all the reports:
+
+   ~/Tails/blueprints/stats/whisperback_scripts/decrypt.rb
+
+3. Extract the list of computer models:
+
+   ~/Tails/blueprints/stats/whisperback_scripts/content_of.rb "/usr/sbin/dmidecode -s system-product-name" > machines
+
+4. Sort and count identical models:
+
+   grep -v Bug_report machines | sort | uniq -c | sort -rhk 1 > top
+
+5. Analyze the reports corresponding from each model:
+
+   - Check whether they were sent from the same email address, if any
+   - Check whether the wlan0 interface was the same hardware device
+     * XXX: How to do that actually?
+   - Check whether the report was about hardware compatibility issues
+
+To update the list of PC computers:
+
+- Check what's commonly available with refurbishing companies.
+
+- Ask tails-assembly@ for models.
+
+-->
