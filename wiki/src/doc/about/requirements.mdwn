@@ -1,19 +1,17 @@
 [[!meta title="System requirements and recommended hardware"]]
 
-Tails works on most computers less than 10 years old.
+Summary
+=======
 
-<div class="note">
+- Tails works on most PC computers that are less than 10 years old.
+- Tails works on some older Mac computers with an Intel processor.
+- Tails does not work on newer Mac computers with an Apple processor (M1 or M2).
+- Tails might not work on:
+  * Some older computers, for example, if they don't have enough RAM.
+  * Some newer computers, for example, if their [[graphics card is incompatible with Linux|support/known_issues/graphics]].
+  * "Gaming" graphics cards like Nvidia or AMD Radeon, which are often incompatible.
 
-<p>Tails might not work on:</p>
-
-<ul>
-<li>Some older computers, for example, if they don't have enough
-RAM.</li>
-<li>Some newer computers, for example, if their [[graphics card is
-not compatible with Linux|support/known_issues/graphics]].</li>
-</ul>
-
-<p>See the [[known hardware compatibility
+<p>See our [[list of known hardware compatibility
 issues|support/known_issues]].</p>
 
 </div>
