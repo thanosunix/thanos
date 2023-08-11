@@ -74,7 +74,7 @@ we want to [[limit the amount of software included in Tails|faq#new-software]].
 
 See also:
 
-- [[System requirements|doc/about/requirements]]
+- [[System requirements and recommended hardware|doc/about/requirements]]
 - [[Known issues|support/known_issues]]
 
 <h2 id="32-bit">Does Tails work on 32-bit computers?</h2>

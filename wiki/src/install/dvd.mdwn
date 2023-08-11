@@ -9,7 +9,7 @@
 
 <div class="tip">
 
-<p>Check our [[system requirements|doc/about/requirements]].</p>
+<p>Check our [[system requirements and recommended hardware|doc/about/requirements]].</p>
 
 </div>
 
