@@ -49,7 +49,7 @@ the Foundations Team's duties.
   schedule](https://gitlab.torproject.org/tpo/applications/tor-browser/-/wikis/Release-Schedule). `[skip-if-emergency-release]`. In doubt, check the [logs from their last meeting](http://meetbot.debian.net/tor-meeting/).
 - Check the Mozilla release calendars: `[skip-if-emergency-release]`
   * [Google calendar](https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com)
-  * [Release schedule](https://wiki.mozilla.org/Release_Management/Calendar)
+  * [Release schedule](https://whattrainisitnow.com/calendar/)
 - Reply to the email sent to <tails-dev@boum.org> and
   <tails-l10n@boum.org> by the RM for the previous release,
   to provide any information they could not, such as: `[skip-if-emergency-release]`

@@ -6,7 +6,7 @@ Tails has a time-based release schedule, aligned with
 [Tor Browser release schedule](https://gitlab.torproject.org/tpo/applications/tor-browser/-/wikis/Release-Schedule),
 which itself depends on the
 [Firefox ESR
-(Extended Support Release) release schedule](https://wiki.mozilla.org/Release_Management/Calendar).
+(Extended Support Release) release schedule](https://whattrainisitnow.com/calendar/).
 In the examples below we'll assume a 4-weeks release cycle.
 
 We generally publish 2 or 3 major Tails releases every year.
