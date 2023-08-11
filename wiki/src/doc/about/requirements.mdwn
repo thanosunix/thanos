@@ -88,6 +88,8 @@ To update the list of Mac computer:
      * XXX: How to do that actually?
    - Check whether the report was about hardware compatibility issues
 
+6. Check whether these Mac models still support the latest version of macOS.
+
 To update the list of PC computers:
 
 - Check what's commonly available with refurbishing companies.
