@@ -1612,7 +1612,9 @@ Lead the internal manual testing to conclusion
           done
 
    1. Delete "⚠ Wait until the Release Manager […]" in the "Incremental
-      upgrades" section on the pad.
+      upgrades" section on the pad. Replace "⚠ PLACEHOLDER" in that section
+      with the versions to run the test from (i.e. the versions that UDFs
+      were added for when running `publish-test-udfs` earlier).
 
 1. Fill the holes and make sure that the automated and manual test
    suites are done in due time.
