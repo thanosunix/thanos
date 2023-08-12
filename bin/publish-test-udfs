@@ -8,17 +8,7 @@ git fetch
 git switch master
 git merge origin/master
 
-# We always provide an upgrade path from the last stable version
-previous_versions="${PREVIOUS_STABLE_VERSION:?}"
-# ... but also from the last of any alphas/betas/RCs. Given Tails
-# versioning scheme we trivially have that that can only be
-# $PREVIOUS_VERSION, but only if it isn't the same as the previous
-# stable release (alpha/beta/RC is not stable by definition).
-if [ "${PREVIOUS_STABLE_VERSION}" != "${PREVIOUS_VERSION}" ]; then
-    previous_versions="${previous_versions} ${PREVIOUS_VERSION:?}"
-fi
-
-for version in ${previous_versions}; do
+for version in ${TEST_IUK_SOURCE_VERSIONS:?}; do
     release_udf="wiki/src/upgrade/v2/Tails/${version}/amd64/${DIST:?}/upgrades.yml"
     if [ ! -e "${release_udf}" ]; then
         echo "Cannot find: ${release_udf}" >&2
