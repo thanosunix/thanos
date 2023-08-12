@@ -1604,7 +1604,7 @@ Lead the internal manual testing to conclusion
 1. Ensure the "Incremental upgrades" part of the manual test suite
    is done:
 
-   1. Wait until the IUK start being available:
+   1. Wait until the IUKs are available:
 
           while ! curl --silent --head --location --fail "https://download.tails.net/tails/stable/iuk/v2/Tails_amd64_${PREVIOUS_VERSION:?}_to_${VERSION:?}.iuk"
           do
