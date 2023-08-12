@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-11-04 18:21+0000\n"
-"PO-Revision-Date: 2023-03-16 10:28+0000\n"
-"Last-Translator: xin <xin@riseup.net>\n"
+"PO-Revision-Date: 2023-08-12 11:49+0000\n"
+"Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -21,10 +21,12 @@ msgstr ""
 #, no-wrap
 msgid "[[!meta title=\"Modifying the boot options using the Boot Loader\"]]\n"
 msgstr ""
+"[[!meta title=\"Modificando as opções de boot options através do Boot "
+"Loader\"]]\n"
 
 #. type: Plain text
 msgid "The Boot Loader is the first screen that appears when Tails starts."
-msgstr ""
+msgstr "O Boot Loader é a primeira tela que aparece quando o Tails é iniciado."
 
 #. type: Plain text
 msgid ""
@@ -34,6 +36,11 @@ msgid ""
 "support/known_issues/graphics]] document boot options for different graphics "
 "cards."
 msgstr ""
+"Você pode utilizar o Boot Loader para modificar as *opções de boot\". Opções "
+"de boot são parâmetros especiais usados para investigar problemas ou "
+"resolver prolemas relacionados a suporte de hardware. Por exemplo, nossa [["
+"lista de problemas conhecidos com interfaces gráficas|support/known_issues/"
+"graphics]] documenta opções de boot para diferentes interfaces gráficas."
 
 #. type: Plain text
 #, no-wrap
