@@ -196,6 +196,7 @@ start_xvfb() {
 
 start_vnc_server() {
     check_dependencies x11vnc
+    # shellcheck disable=SC2086
     VNC_SERVER_PORT="$(env -u WAYLAND_DISPLAY x11vnc \
                               -listen localhost -display "${TARGET_DISPLAY}" \
                               -bg -nopw -forever ${TAILS_X11VNC_OPTS:-} 2>&1 | \
