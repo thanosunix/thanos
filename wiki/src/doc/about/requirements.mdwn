@@ -81,12 +81,8 @@ To update the list of Mac computer:
 
    grep -v Bug_report machines | sort | uniq -c | sort -rhk 1 > top
 
-5. Analyze the reports corresponding from each model:
-
-   - Check whether they were sent from the same email address, if any
-   - Check whether the wlan0 interface was the same hardware device
-     * XXX: How to do that actually?
-   - Check whether the report was about hardware compatibility issues
+5. Share WhisperBack reports number with the Foundations team and ask them to
+   evaluate hardware compatibility hints in those reports.
 
 6. Check whether these Mac models still support the latest version of macOS.
 
