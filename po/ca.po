@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-06 10:11+0200\n"
-"PO-Revision-Date: 2023-07-21 16:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-12 15:50+0000\n"
+"Last-Translator: victor dargallo <victordargallo@disroot.org>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/tor/tails-gui/ca/"
 ">\n"
 "Language: ca\n"
@@ -564,7 +564,7 @@ msgstr "Actualitza ara"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:511
 msgid "Upgrade later"
-msgstr "Actualitza després"
+msgstr "Actualitza més tard"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:518
 #, perl-brace-format
@@ -685,7 +685,7 @@ msgstr "Reinicia ara"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:772
 msgid "Restart later"
-msgstr "Reinicia després"
+msgstr "Reinicia més tard"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:782
 msgid "Error while restarting the system"
@@ -1517,7 +1517,7 @@ msgid ""
 "href=\"synaptic.desktop\">Synaptic Package Manager</a> or <a href=\"org."
 "gnome.Terminal.desktop\">APT on the command line</a>."
 msgstr ""
-"Per fer-ho, creeu un emmagatzematge persistent i instal·leu algun programari "
+"Per fer-ho, creeu un Emmagatzematge Persistent i instal·leu algun programari "
 "utilitzant <a href=\"synaptic.desktop\">el Gestor de Paquets Synaptic</a> o "
 "<a href=\"org.gnome.Terminal.desktop\">APT a la línia d'ordres</a>."
 
@@ -2497,7 +2497,7 @@ msgstr "Desenvolupadors de Tails <tails@boum.org>"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/whisperBack/gui.py:343
 msgid "translator-credits"
-msgstr "Informació del traductor"
+msgstr "Crèdits de traducció"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/whisperBack/gui.py:376
 msgid "This doesn't seem to be a valid URL or OpenPGP key."
@@ -2533,7 +2533,7 @@ msgstr ""
 
 #: ../config/chroot_local-includes/etc/skel/Desktop/Report_an_error.desktop.in.h:1
 msgid "Report an error"
-msgstr "Reporta un error"
+msgstr "Informa d'un error"
 
 #: ../config/chroot_local-includes/etc/skel/Desktop/tails-documentation.desktop.in.h:1
 #: ../config/chroot_local-includes/usr/share/applications/tails-documentation.desktop.in.h:1
@@ -2844,7 +2844,7 @@ msgstr "Tancar"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:770
 msgid "_Start Tails"
-msgstr "_Iniciar Tails"
+msgstr "_Inicia Tails"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/change_passphrase_dialog.ui.in:95
 msgid "Current _Passphrase"
@@ -3443,7 +3443,7 @@ msgstr "Desa el pont a l'Emmagatzematge Persistent"
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:1158
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:1556
 msgid "_Connect to Tor"
-msgstr "_Connecta a Tor"
+msgstr "_Connecta't a Tor"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:692
 msgid "Error connecting to Tor"
@@ -3766,7 +3766,7 @@ msgstr "Zona horària"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/time-dialog.ui.in:186
 msgid "Time"
-msgstr "Temps"
+msgstr "Hora"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/time-dialog.ui.in:223
 msgid ":"
