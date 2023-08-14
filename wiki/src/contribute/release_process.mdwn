@@ -1130,7 +1130,7 @@ Build the Incremental Upgrade Kits on Jenkins
           . $(./bin/rm-config generate-environment --stage built-iuks)
 
 5. Wait until the `build_IUKs` build completes successfully.
-   It should take about 20-25 minutes for each member of
+   It should take about 15 minutes for each member of
    the `$IUK_SOURCE_VERSIONS` list, distributed across `isoworkerN` workers.
 
    If you have a fast computer, you'll be waiting for Jenkins to be done, while
