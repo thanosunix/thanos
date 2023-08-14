@@ -22,7 +22,7 @@ logger = tps.logging.get_logger(__name__)
 TAILS_MOUNTPOINT = "/lib/live/mount/medium"
 PARTITION_GUID = "8DA63339-0007-60C0-C436-083AC8230908" # Linux reserved
 TPS_PARTITION_LABEL = "TailsData"
-VERSION_REGEX = re.compile(r'^Version:\s*(\d+)$', re.M)
+VERSION_REGEX = re.compile(r'^Version:\s*(\d+)$', re.MULTILINE)
 PBKDF_REGEX = re.compile(r'^\s*PBKDF:\s*(\S+)$')
 MEMORY_COST_REGEX = re.compile(r'^\s*Memory:\s*(\d+)$')
 
