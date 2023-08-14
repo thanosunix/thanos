@@ -192,7 +192,7 @@ you need to set a bunch of environment variables.
 4. Generate the resulting environment variables and export them into your
    environment:
 
-        . $(./bin/rm-config generate-environment)
+        . $(./bin/rm-config generate-environment --stage base)
 
 ### Notes
 
