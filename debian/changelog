@@ -1,4 +1,4 @@
-tails (5.16.1) UNRELEASED; urgency=medium
+tails (5.16.1) unstable; urgency=medium
 
   * Mitigate Downfall and INCEPTION speculative-execution vulnerabilities
     (tails/tails!1215)
@@ -85,7 +85,7 @@ tails (5.16.1) UNRELEASED; urgency=medium
       - Update change_passphrase_dialog.py to have a blank default hint instead of "0%"
         until user types
 
- -- Tails developers <tails@boum.org>  Mon, 14 Aug 2023 11:40:26 +0000
+ -- Tails developers <tails@boum.org>  Mon, 14 Aug 2023 15:11:40 +0200
 
 tails (5.16) unstable; urgency=medium
 
