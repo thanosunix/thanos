@@ -1,8 +1,91 @@
-tails (5.17) UNRELEASED; urgency=medium
+tails (5.16.1) UNRELEASED; urgency=medium
 
-  * Dummy entry for next release.
+  * Mitigate Downfall and INCEPTION speculative-execution vulnerabilities
+    (tails/tails!1215)
 
- -- intrigeri <intrigeri@debian.org>  Mon, 07 Aug 2023 08:01:38 +0000
+    Closes issues:
+      - Fix Downfall and INCEPTION speculative-execution vulnerabilities
+        (tails/tails#19937)
+
+    Commits:
+      - Update SquashFS sort file manually
+      - Upgrade to Linux linux-image-6.1.0-11-amd64 (currently version 6.1.38-4)
+
+  * onion-grater: deal with race condition in my_circuits() (tails/tails!1212)
+
+    Closes issues:
+      - Circuits view sometimes not displayed in Tor Browser, possibly related onion-
+        grater exception and dropped restricted stream event (tails/tails#19897)
+
+    Commits:
+      - onion-grater: deal with race condition in my_circuits()
+
+  * automailer.py: add support for notmuch (tails/tails!1213)
+
+    Closes issues:
+      - automailer.py: add support for notmuch (tails/tails#19932)
+
+    Commits:
+      - automailer: remove duplicate variable
+      - automailer (notmuch): add support for attachments
+      - Reformat with black
+      - automailer: refactoring (extract code to function)
+      - automailer: lint
+      - automailer: name parameter instead of relying on position
+      - automailer (notmuch): use the specified email body
+      - automailer: simplify
+
+  * Add options verification to Tails shell library (tails/tails!1211)
+
+    Closes issues:
+      - Tails shell library should verify that it is called set -e -u
+        (tails/tails#6588)
+
+    Commits:
+      - Replace backticks with single quotes to prevent command substitution
+      - Add another options verification to Tails shell library
+      - Add options verification to Tails shell library
+
+  * simplify and fix automailer parser config (tails/tails!1210)
+
+    Closes issues:
+      - generate-call-for-trusted-reproducer is broken: TypeError: add_parser_mailer()
+        missing 1 required positional argument: 'config' (tails/tails#19929)
+
+    Commits:
+      - simplify and fix automailer parser config
+
+  * create_box.sh: fix IMG_SIZE parsing on Debian Sid (tails/tails!1208)
+
+    Closes issues:
+      - Creating basebox broken on Debian Sid (tails/tails#19927)
+
+    Commits:
+      - create_box.sh: use jq for json parsing instead of awk
+      - create_box.sh: fix IMG_SIZE parsing on Debian Sid
+
+  * Test suite: make --view and --vnc-server-only compatible with Wayland without
+    sudo (tails/tails!1203)
+
+    Commits:
+      - Make shellcheck happy
+      - Test suite: send arbitrary options to x11vnc via the TAILS_X11VNC_OPTS
+        environment variable
+      - Test suite: make --view and --vnc-server-only compatible with Wayland
+
+  * Initialize passphrase strength hint as blank, don't show 0%! (tails/tails!1202)
+
+    Closes issues:
+      - Passphrase strength meter initially shows 0% (tails/tails#19918)
+
+    Commits:
+      - Update passphrase_view.py to remove "0%" and display blank hint initially
+      - Update passphrase_dialog.py to not display "0%" as strength hint before the
+        user types anything
+      - Update change_passphrase_dialog.py to have a blank default hint instead of "0%"
+        until user types
+
+ -- Tails developers <tails@boum.org>  Mon, 14 Aug 2023 11:40:26 +0000
 
 tails (5.16) unstable; urgency=medium
 
