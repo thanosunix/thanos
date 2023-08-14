@@ -61,7 +61,8 @@ organization, are considering acquiring a laptop dedicated to running Tails.
 
 ### For Mac
 
-- The MacBookPro16,1 and MacBookPro16,2 from 2019 work well with Tails.
+We don't know of any Mac model that works well in Tails and can run the latest
+macOS version.
 
 <!--
 
