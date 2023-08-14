@@ -61,8 +61,8 @@ organization, are considering acquiring a laptop dedicated to running Tails.
 
 ### For Mac
 
-We don't know of any Mac model that works well in Tails and can run the latest
-macOS version.
+Unfortunately, we don't know of any Mac model that works well in Tails and can
+run the latest macOS version.
 
 <!--
 
