@@ -1068,7 +1068,7 @@ on <https://iso-history.tails.boum.org/?C=M&O=D>:
             sleep 10
         done
         echo "Dir created: ${dirurl}"
-        expected_size="$(stat -c %s "${isopath}")"
+        expected_size="$(stat -L -c %s "${isopath}")"
         while true
         do
             size=$(curl --silent --head "${isourl}" | grep -iPo '^content-length:\s*\K\d+')
