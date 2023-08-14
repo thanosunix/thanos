@@ -6,7 +6,7 @@ from subprocess import check_output
 
 def end_date() -> str:
     when = 'now + 24 hours'
-    cmd = ['env', 'TZ=UTC', 'date', '-d' , when,  '+%A %H:00 %Z']
+    cmd = ['env', 'LC_ALL=C', 'TZ=UTC', 'date', '-d', when,  '+%A %H:00 %Z']
     return check_output(cmd).decode('utf8').strip()
 
 def call_for_testing_contents(args) -> str:
