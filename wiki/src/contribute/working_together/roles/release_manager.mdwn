@@ -198,10 +198,39 @@ release, we have to make 2 decisions:
 
 ### Additional steps
 
-1. Announce to <tails-dev@boum.org>:
+1. Move to the milestone that was just created for the emergency release
+   every:
+
+    - issue that was resolved
+    - merge request that was merged
+
+   … and that currently have the milestone of the next planned non-emergency
+   bugfix release. In other words, since every change that is on the `stable`
+   branch, but not released yet, will be released for the first time in this
+   upcoming emergency release, it must have the milestone of that
+   emergency release.
+
+   This ensures the generated changelog will include these changes, and ensures
+   we have a correct record of which release presumably fixed which bug (that's
+   useful for example when triaging bug reports).
+
+   To do so, on each of these 2 pages:
+
+    - [[!tails_gitlab tails/tails/-/issues?state=closed desc="issues"]]
+    - [[!tails_gitlab tails/tails/-/merge_requests?state=merged desc="merge requests"]]
+
+   Do this:
+
+   1. Filter by milestone = the next planned non-emergency bugfix release
+   2. Click *Bulk edit*
+   3. Select all items
+   4. Set the milestone of the emergency release
+
+2. Announce to <tails-dev@boum.org>:
     - There's an upcoming emergency release. Don't say why if it's a secret.
     - Announce the code freeze.
-2. Announce to manual testers: when you expect the tests to happen
+
+3. Announce to manual testers: when you expect the tests to happen
 
 ### Irrelevant steps
 
