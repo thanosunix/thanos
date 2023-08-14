@@ -195,8 +195,11 @@ Incremental upgrades
 
 (automate: [[!tails_ticket 18004]])
 
-1. Install _from scratch_ on a USB stick the previous Tails stable release
-   (that is, at this time, the current published one).
+Follow the instructions below for each of these versions of Tails:
+
+⚠ PLACEHOLDER
+
+1. Install this version of Tails _from scratch_ to a USB stick.
    A system that was upgraded to that version will not do.
 
 2. Start from that USB stick.

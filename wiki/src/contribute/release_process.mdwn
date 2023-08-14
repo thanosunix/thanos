@@ -1610,15 +1610,22 @@ Lead the internal manual testing to conclusion
 1. Ensure the "Incremental upgrades" part of the manual test suite
    is done:
 
-   1. Wait until the IUK start being available:
+   1. Wait until the IUKs are available:
 
-          while ! curl --silent --head --location --fail "https://download.tails.net/tails/stable/iuk/v2/Tails_amd64_${PREVIOUS_VERSION:?}_to_${VERSION:?}.iuk"
-          do
-              sleep 30
+          for old in ${TEST_IUK_SOURCE_VERSIONS:?}; do
+              while ! curl --silent --head --location --fail "https://download.tails.net/tails/stable/iuk/v2/Tails_amd64_${old}_to_${VERSION:?}.iuk"
+              do
+                  sleep 30
+              done
           done
 
    1. Delete "⚠ Wait until the Release Manager […]" in the "Incremental
-      upgrades" section on the pad.
+      upgrades" section on the pad. Replace "⚠ PLACEHOLDER" in that section
+      with the versions to run the test from (i.e. the versions that UDFs
+      were added for when running `publish-test-udfs` earlier):
+
+          echo ${TEST_IUK_SOURCE_VERSIONS:?}
+
 
 1. Fill the holes and make sure that the automated and manual test
    suites are done in due time.
