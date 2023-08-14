@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-11-08 00:37+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-01-03 09:17+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -56,11 +56,11 @@ msgstr "[[!toggle id=\"why_extra\" text=\"Pourquoi ?\"]]"
 
 #. type: Content of: <div><div><div>
 msgid ""
-"[[!toggleable id=\"why_extra\" text=\"\"\" [[!toggle id=\"why_extra\" text="
-"\"X\"]]"
+"[[!toggleable id=\"why_extra\" text=\"\"\" [[!toggle id=\"why_extra\" "
+"text=\"X\"]]"
 msgstr ""
-"[[!toggleable id=\"why_extra\" text=\"\"\" [[!toggle id=\"why_extra\" text="
-"\"X\"]]"
+"[[!toggleable id=\"why_extra\" text=\"\"\" [[!toggle id=\"why_extra\" "
+"text=\"X\"]]"
 
 #. type: Content of: <div><div><div><p>
 msgid ""
@@ -200,11 +200,15 @@ msgid "1 hour in total"
 msgstr "Une heure au total"
 
 #. type: Content of: <div><div><p>
-msgid "½ hour"
+#, fuzzy
+#| msgid "½ hour"
+msgid "Â½ hour"
 msgstr "½ heure"
 
 #. type: Content of: <div><div><p>
-msgid "¼ hour"
+#, fuzzy
+#| msgid "¼ hour"
+msgid "Â¼ hour"
 msgstr "¼ heure"
 
 #. type: Content of: <div><div><p>
@@ -216,11 +220,15 @@ msgstr ""
 "télécharger"
 
 #. type: Content of: <div><div><p>
-msgid "½ hour to install"
+#, fuzzy
+#| msgid "½ hour to install"
+msgid "Â½ hour to install"
 msgstr "½ heure pour installer"
 
 #. type: Content of: <div><div><p>
-msgid "½ hour to upgrade"
+#, fuzzy
+#| msgid "½ hour to upgrade"
+msgid "Â½ hour to upgrade"
 msgstr "½ heure pour mettre à jour"
 
 #. type: Content of: <h2>
@@ -468,8 +476,8 @@ msgstr "</a>"
 #~ "hour to upgrade</small></span>"
 #~ msgstr ""
 #~ "</span> <span class=\"windows linux mac expert\"><small>½ heure pour "
-#~ "l'installation</small></span> <span class=\"upgrade-tails upgrade-os"
-#~ "\"><small>½ heure pour la mise à jour</small></span>"
+#~ "l'installation</small></span> <span class=\"upgrade-tails upgrade-"
+#~ "os\"><small>½ heure pour la mise à jour</small></span>"
 
 #~ msgid "[[!img install/inc/icons/usb.png link=\"no\"]]"
 #~ msgstr "[[!img install/inc/icons/usb.png link=\"no\"]]"
@@ -495,21 +503,21 @@ msgstr "</a>"
 #~ msgstr "Vérification"
 
 #~ msgid ""
-#~ "[[!img install/inc/infography/restart-on-other-tails.png link=\"no\" alt="
-#~ "\"Computer restarted on USB stick on the left\"]]"
+#~ "[[!img install/inc/infography/restart-on-other-tails.png link=\"no\" "
+#~ "alt=\"Computer restarted on USB stick on the left\"]]"
 #~ msgstr ""
-#~ "[[!img install/inc/infography/restart-on-other-tails.png link=\"no\" alt="
-#~ "\"Ordinateur redémarré sur la clé USB de gauche\"]]"
+#~ "[[!img install/inc/infography/restart-on-other-tails.png link=\"no\" "
+#~ "alt=\"Ordinateur redémarré sur la clé USB de gauche\"]]"
 
 #~ msgid "Restart"
 #~ msgstr "Redémarrage"
 
 #~ msgid ""
-#~ "[[!img install/inc/infography/install-etcher.png link=\"no\" alt="
-#~ "\"balenaEtcher downloaded\"]]"
+#~ "[[!img install/inc/infography/install-etcher.png link=\"no\" "
+#~ "alt=\"balenaEtcher downloaded\"]]"
 #~ msgstr ""
-#~ "[[!img install/inc/infography/install-etcher.png link=\"no\" alt="
-#~ "\"balenaEtcher téléchargé\"]]"
+#~ "[[!img install/inc/infography/install-etcher.png link=\"no\" "
+#~ "alt=\"balenaEtcher téléchargé\"]]"
 
 #~ msgid ""
 #~ "[[!img install/inc/infography/install-tails.png link=\"no\" alt=\"USB "
@@ -519,11 +527,11 @@ msgstr "</a>"
 #~ "USB installée sur la clé USB\"]]"
 
 #~ msgid ""
-#~ "[[!img install/inc/infography/install-upgrade-usb.png link=\"no\" alt="
-#~ "\"USB image installed on USB stick on the left\"]]"
+#~ "[[!img install/inc/infography/install-upgrade-usb.png link=\"no\" "
+#~ "alt=\"USB image installed on USB stick on the left\"]]"
 #~ msgstr ""
-#~ "[[!img install/inc/infography/install-upgrade-usb.png link=\"no\" alt="
-#~ "\"Image USB installée sur la clé USB de gauche\"]]"
+#~ "[[!img install/inc/infography/install-upgrade-usb.png link=\"no\" "
+#~ "alt=\"Image USB installée sur la clé USB de gauche\"]]"
 
 #~ msgid "Install intermediary"
 #~ msgstr "Installation intermédiaire"
@@ -536,8 +544,8 @@ msgstr "</a>"
 #~ "installé sur la clé USB de droite\"]]"
 
 #~ msgid ""
-#~ "<span class=\"install-clone mac-clone\">Install Tails</span> <span class="
-#~ "\"upgrade\">Upgrade Tails</span>"
+#~ "<span class=\"install-clone mac-clone\">Install Tails</span> <span "
+#~ "class=\"upgrade\">Upgrade Tails</span>"
 #~ msgstr ""
 #~ "<span class=\"install-clone mac-clone\">Installation de Tails</span> "
 #~ "<span class=\"upgrade\">Mise à jour de Tails</span>"
@@ -546,11 +554,11 @@ msgstr "</a>"
 #~ msgstr "Tails"
 
 #~ msgid ""
-#~ "[[!img install/inc/infography/create-persistence.png link=\"no\" alt="
-#~ "\"Encryption configured on USB stick\"]]"
+#~ "[[!img install/inc/infography/create-persistence.png link=\"no\" "
+#~ "alt=\"Encryption configured on USB stick\"]]"
 #~ msgstr ""
-#~ "[[!img install/inc/infography/create-persistence.png link=\"no\" alt="
-#~ "\"Chiffrement configuré sur la clé USB\"]]"
+#~ "[[!img install/inc/infography/create-persistence.png link=\"no\" "
+#~ "alt=\"Chiffrement configuré sur la clé USB\"]]"
 
 #~ msgid "Configure"
 #~ msgstr "Configuration"

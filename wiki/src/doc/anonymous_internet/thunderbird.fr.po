@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-17 22:56+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-07-24 17:37+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -43,12 +43,18 @@ msgid "[[!toc levels=2]]\n"
 msgstr "[[!toc levels=2]]\n"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "To start <span class=\"application\">Thunderbird</span> choose\n"
+#| "<span class=\"menuchoice\">\n"
+#| "  <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+#| "  <span class=\"guisubmenu\">Internet</span>&nbsp;▸\n"
+#| "  <span class=\"guimenuitem\">Thunderbird</span></span>.\n"
 msgid ""
 "To start <span class=\"application\">Thunderbird</span> choose\n"
 "<span class=\"menuchoice\">\n"
-"  <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
-"  <span class=\"guisubmenu\">Internet</span>&nbsp;▸\n"
+"  <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
+"  <span class=\"guisubmenu\">Internet</span>&nbsp;â¸\n"
 "  <span class=\"guimenuitem\">Thunderbird</span></span>.\n"
 msgstr ""
 "Pour démarrer <span class=\"application\">Thunderbird</span> choisissez\n"
@@ -113,15 +119,24 @@ msgid "   <div class=\"tip\">\n"
 msgstr "   <div class=\"tip\">\n"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "   <p>To start this assistant again in the future from the main window of\n"
+#| "   <span class=\"application\">Thunderbird</span>, choose\n"
+#| "   <span class=\"menuchoice\">\n"
+#| "     <span class=\"guimenu\">[[!img lib/open-menu.png alt=\"Menu\" class=symbolic link=no]]</span>&nbsp;▸\n"
+#| "     <span class=\"guimenuitem\">Account Settings</span>\n"
+#| "   </span> and then, from the <span class=\"guilabel\">Account Settings</span>\n"
+#| "   dialog, choose <span class=\"guilabel\">Account Actions</span>&nbsp;▸\n"
+#| "   <span class=\"guilabel\">Add Mail Account&hellip;</span>.</p>\n"
 msgid ""
 "   <p>To start this assistant again in the future from the main window of\n"
 "   <span class=\"application\">Thunderbird</span>, choose\n"
 "   <span class=\"menuchoice\">\n"
-"     <span class=\"guimenu\">[[!img lib/open-menu.png alt=\"Menu\" class=symbolic link=no]]</span>&nbsp;▸\n"
+"     <span class=\"guimenu\">[[!img lib/open-menu.png alt=\"Menu\" class=symbolic link=no]]</span>&nbsp;â¸\n"
 "     <span class=\"guimenuitem\">Account Settings</span>\n"
 "   </span> and then, from the <span class=\"guilabel\">Account Settings</span>\n"
-"   dialog, choose <span class=\"guilabel\">Account Actions</span>&nbsp;▸\n"
+"   dialog, choose <span class=\"guilabel\">Account Actions</span>&nbsp;â¸\n"
 "   <span class=\"guilabel\">Add Mail Account&hellip;</span>.</p>\n"
 msgstr ""
 "   <p>Pour plus tard démarrer à nouveau l'assistant, depuis la fenêtre principale\n"
@@ -217,13 +232,13 @@ msgstr ""
 #. type: Bullet: '1. '
 msgid ""
 "If the automatic configuration succeeds, you might have to specify which "
-"protocol to use to connect to your email provider, either <span class="
-"\"guilabel\">IMAP</span> or <span class=\"guilabel\">POP</span>."
+"protocol to use to connect to your email provider, either <span "
+"class=\"guilabel\">IMAP</span> or <span class=\"guilabel\">POP</span>."
 msgstr ""
 "Si la configuration automatique réussie, vous devez préciser quel protocole "
 "utiliser pour se connecter à votre fournisseur de courrier électronique, "
-"soit <span class=\"guilabel\">IMAP</span>, soit <span class=\"guilabel"
-"\">POP</span>."
+"soit <span class=\"guilabel\">IMAP</span>, soit <span "
+"class=\"guilabel\">POP</span>."
 
 #. type: Plain text
 #, no-wrap
@@ -458,14 +473,14 @@ msgstr ""
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid ""
-#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#| "\"no\"]]&nbsp;▸ Account Settings**."
+#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#| "link=\"no\"]]&nbsp;▸ Account Settings**."
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Settings**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Settings**."
 msgstr ""
-"Choisir **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Paramètres de comptes**."
+"Choisir **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;▸ Paramètres de comptes**."
 
 #. type: Bullet: '1. '
 msgid "Choose **Privacy & Security**."
@@ -526,7 +541,7 @@ msgstr "Depuis le bureau :"
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid "Choose **Applications&nbsp;▸ Utilities&nbsp;▸ Passwords and Keys**."
-msgid "Choose **Applications&nbsp;▸ Accessories&nbsp;▸ Kleopatra**."
+msgid "Choose **Applications&nbsp;â¸ Accessories&nbsp;â¸ Kleopatra**."
 msgstr ""
 "Choisir **Applications&nbsp;▸ Utilitaires&nbsp;▸ Mots de passe et clés**."
 
@@ -536,8 +551,8 @@ msgstr "Sélectionner la clé privée que vous voulez migrer vers *Thunderbird*.
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **File&nbsp;▸ Export Secret Keys…** and save this private key to your "
-"*Home* directory."
+"Choose **File&nbsp;â¸ Export Secret Keysâ¦** and save this private key to "
+"your *Home* directory."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -554,12 +569,16 @@ msgid "In *Thunderbird*:"
 msgstr "Dans *Thunderbird* :"
 
 #. type: Bullet: '1. '
+#, fuzzy
+#| msgid ""
+#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#| "link=\"no\"]]&nbsp;▸ Account Settings**."
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Account Settings**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Account Settings**."
 msgstr ""
-"Choisir **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Paramètres de comptes**."
+"Choisir **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;▸ Paramètres de comptes**."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -570,7 +589,9 @@ msgstr ""
 "importer la clé privée et choisir **Chiffrement de bout en bout**."
 
 #. type: Bullet: '1. '
-msgid "In the right pane, click the **Add Key…** button."
+#, fuzzy
+#| msgid "In the right pane, click the **Add Key…** button."
+msgid "In the right pane, click the **Add Keyâ¦** button."
 msgstr ""
 "Dans le panneau de droite, cliquer sur le bouton **Ajouter une clé...**."
 
@@ -592,7 +613,7 @@ msgstr ""
 #| "Click the **Select File to Import…** button and choose the private key "
 #| "that your exported from the *Passwords and Keys* utility."
 msgid ""
-"Click the **Select File to Import…** button and choose the private key that "
+"Click the **Select File to Importâ¦** button and choose the private key that "
 "your exported from *Kleopatra* utility."
 msgstr ""
 "Cliquer sur le bouton **Sélectionner le fichier à importer...** et choisir "
@@ -713,7 +734,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid ""
-"  Choose **Security**&nbsp;▸ **Key Assistant** to see the keys of the\n"
+"  Choose **Security**&nbsp;â¸ **Key Assistant** to see the keys of the\n"
 "  receipts and solve any issue.\n"
 msgstr ""
 
@@ -740,11 +761,11 @@ msgstr ""
 #~ msgstr "Fermer l'utilitaire *Mots de passe et clés*."
 
 #~ msgid ""
-#~ "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#~ "\"no\"]]&nbsp;▸ Preferences**."
+#~ "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#~ "link=\"no\"]]&nbsp;▸ Preferences**."
 #~ msgstr ""
-#~ "Choisir **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#~ "\"no\"]]&nbsp;▸ Préférences**."
+#~ "Choisir **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#~ "link=\"no\"]]&nbsp;▸ Préférences**."
 
 #~ msgid ""
 #~ "To send an unencrypted email, in the composition window, choose "

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-17 22:56+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2022-05-24 07:40+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgid "From the desktop:"
 msgstr ""
 
 #. type: Bullet: '1. '
-msgid "Choose **Applications&nbsp;▸ Accessories&nbsp;▸ Kleopatra**."
+msgid "Choose **Applications&nbsp;â¸ Accessories&nbsp;â¸ Kleopatra**."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -73,8 +73,8 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **File&nbsp;▸ Export Secret Keys…** and save this private key to your "
-"*Home* directory."
+"Choose **File&nbsp;â¸ Export Secret Keysâ¦** and save this private key to "
+"your *Home* directory."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -92,8 +92,8 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Account Settings**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Account Settings**."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -103,7 +103,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-msgid "In the right pane, click the **Add Key…** button."
+msgid "In the right pane, click the **Add Keyâ¦** button."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -114,7 +114,7 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Click the **Select File to Import…** button and choose the private key that "
+"Click the **Select File to Importâ¦** button and choose the private key that "
 "your exported from *Kleopatra*."
 msgstr ""
 
@@ -163,8 +163,8 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Settings**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Settings**."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -203,7 +203,7 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **File&nbsp;▸ Export…** and save these public keys to your *Home* "
+"Choose **File&nbsp;â¸ Exportâ¦** and save these public keys to your *Home* "
 "directory."
 msgstr ""
 
@@ -214,13 +214,13 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Tools&nbsp;▸ OpenPGP Key Manager**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Tools&nbsp;â¸ OpenPGP Key Manager**."
 msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"In the **OpenPGP Key Manager**, choose **File&nbsp;▸ Import Public Key(s)  "
+"In the **OpenPGP Key Manager**, choose **File&nbsp;â¸ Import Public Key(s)  "
 "From File.**"
 msgstr ""
 
@@ -275,7 +275,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-msgid "Choose **Applications&nbsp;▸ Persistent Storage**."
+msgid "Choose **Applications&nbsp;â¸ Persistent Storage**."
 msgstr ""
 
 #. type: Bullet: '1. '

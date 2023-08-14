@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-06-13 19:42+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-07-14 16:35+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,15 @@ msgid "[[!tag security/fixed]]\n"
 msgstr "[[!tag security/fixed]]\n"
 
 #. type: Bullet: '   1. '
-msgid "Choose **Applications**&nbsp;▸ **KeePassXC**."
+#, fuzzy
+#| msgid "Choose **Applications**&nbsp;▸ **KeePassXC**."
+msgid "Choose **Applications**&nbsp;â¸ **KeePassXC**."
 msgstr "Choisir **Applications**&nbsp;▸ **KeePassXC**."
 
 #. type: Bullet: '   1. '
-msgid "Choose **Tools**&nbsp;▸ **Password Generator**."
+#, fuzzy
+#| msgid "Choose **Tools**&nbsp;▸ **Password Generator**."
+msgid "Choose **Tools**&nbsp;â¸ **Password Generator**."
 msgstr "Choisir **Outils**&nbsp;▸ **Générateur de mot de passe**."
 
 #. type: Bullet: '   1. '
@@ -38,9 +42,7 @@ msgstr "Passer à l'onglet **Phrase de passe**."
 #. type: Plain text
 #, no-wrap
 msgid "      A very strong passphrase of 7 random words is automatically generated.\n"
-msgstr ""
-"      Une phrase de passe très forte de sept mots aléatoires est "
-"automatiquement générée.\n"
+msgstr "      Une phrase de passe très forte de sept mots aléatoires est automatiquement générée.\n"
 
 #. type: Plain text
 #, no-wrap
@@ -50,9 +52,7 @@ msgstr "      <div class=\"caution\">\n"
 #. type: Plain text
 #, no-wrap
 msgid "      <p>It is impossible to recover your passphrase if you forget it!</p>\n"
-msgstr ""
-"      <p>Il est impossible de récupérer votre phrase de passe si vous "
-"l'oubliez !</p>\n"
+msgstr "      <p>Il est impossible de récupérer votre phrase de passe si vous l'oubliez !</p>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -61,8 +61,7 @@ msgid ""
 "      paper, store it in your wallet for a few days, and destroy it once\n"
 "      you know it well.</p>\n"
 msgstr ""
-"      <p>Pour vous aider à mémoriser votre phrase de passe, vous pouvez "
-"l'écrire sur un morceau de\n"
+"      <p>Pour vous aider à mémoriser votre phrase de passe, vous pouvez l'écrire sur un morceau de\n"
 "      papier, le ranger dans votre portefeuille, et le détruire une fois\n"
 "      que vous la connaissez bien.</p>\n"
 

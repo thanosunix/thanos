@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-09 11:51+0000\n"
+"POT-Creation-Date: 2023-08-14 13:52+0200\n"
 "PO-Revision-Date: 2023-03-12 00:33+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: \n"
@@ -99,13 +99,13 @@ msgstr ""
 #. type: Content of: <p>
 #, fuzzy
 #| msgid "$50.000 – $99.999"
-msgid "$50&#8239;000 – $99&#8239;999"
+msgid "$50&#8239;000 â $99&#8239;999"
 msgstr "$50.000 – $99.999"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.433€"
-msgid "Anonymous donation - 60 ethereums = 86 880€"
+msgid "Anonymous donation - 60 ethereums = 86 880â¬"
 msgstr "Anonyme Spende - 1.433€"
 
 #. type: Content of: <div><p>
@@ -115,13 +115,13 @@ msgstr "[[!img anonymous.png link=\"no\" alt=\"\"]]"
 #. type: Content of: <p>
 #, fuzzy
 #| msgid "$10.000 – $49.999"
-msgid "$10&#8239;000 – $49&#8239;999"
+msgid "$10&#8239;000 â $49&#8239;999"
 msgstr "$10.000 – $49.999"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Access Now - 50.000€"
-msgid "Nym - 10 000€"
+msgid "Nym - 10 000â¬"
 msgstr "Access Now - 50.000€"
 
 #. type: Content of: <div><p>
@@ -133,13 +133,13 @@ msgstr ""
 #. type: Content of: <p>
 #, fuzzy
 #| msgid "$1.000 – $9.999"
-msgid "$1&#8239;000 – $9&#8239;999"
+msgid "$1&#8239;000 â $9&#8239;999"
 msgstr "$1.000 – $9.999"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 0.35 bitcoins = 5 694€"
+msgid "Anonymous donation - 0.35 bitcoins = 5 694â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -157,14 +157,14 @@ msgstr ""
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 20 moneros = 2 767€"
+msgid "Anonymous donation - 20 moneros = 2 767â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
-#| msgid "An individual - $2.000"
-msgid "An individual - 2 000€"
-msgstr "Eine Einzelperson - $2.000"
+#| msgid "An individual - 2.000€"
+msgid "An individual - 2 000â¬"
+msgstr "Eine Einzelperson - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
@@ -181,13 +181,13 @@ msgstr ""
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 10 moneros = 1 549€"
+msgid "Anonymous donation - 10 moneros = 1 549â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 0.09 bitcoins = 1 535€"
+msgid "Anonymous donation - 0.09 bitcoins = 1 535â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -198,22 +198,22 @@ msgstr "Tor - $5.000"
 
 #. type: Content of: <div><p>
 msgid ""
-"<a href=\"https://wordsolver.co/\">[[!img word-solver.png link=\"no\" alt="
-"\"\"]]</a>"
+"<a href=\"https://wordsolver.co/\">[[!img word-solver.png link=\"no\" "
+"alt=\"\"]]</a>"
 msgstr ""
-"<a href=\"https://wordsolver.co/\">[[!img word-solver.png link=\"no\" alt="
-"\"\"]]</a>"
+"<a href=\"https://wordsolver.co/\">[[!img word-solver.png link=\"no\" "
+"alt=\"\"]]</a>"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.433€"
-msgid "Anonymous donation - 1 337€"
+msgid "Anonymous donation - 1 337â¬"
 msgstr "Anonyme Spende - 1.433€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Mediapart - 2.000€"
-msgid "freiheitsfoo - 1 250€"
+msgid "freiheitsfoo - 1 250â¬"
 msgstr "Mediapart - 2.000€"
 
 #. type: Content of: <div><p>
@@ -246,11 +246,11 @@ msgstr "Anonyme Spende - 2.902€"
 
 #. type: Content of: <div><p>
 msgid ""
-"<a href=\"https://www.thinkpenguin.com/\">[[!img thinkpenguin.png link=\"no"
-"\" alt=\"\"]]</a>"
+"<a href=\"https://www.thinkpenguin.com/\">[[!img thinkpenguin.png "
+"link=\"no\" alt=\"\"]]</a>"
 msgstr ""
-"<a href=\"https://www.thinkpenguin.com/\">[[!img thinkpenguin.png link=\"no"
-"\" alt=\"\"]]</a>"
+"<a href=\"https://www.thinkpenguin.com/\">[[!img thinkpenguin.png "
+"link=\"no\" alt=\"\"]]</a>"
 
 #. type: Attribute 'title' of: <div><p>
 msgid "Look to the Right - $1 000"
@@ -258,11 +258,11 @@ msgstr ""
 
 #. type: Content of: <div><p>
 msgid ""
-"<a href=\"https://www.looktotheright.com/\">[[!img lttr.jpg link=\"no\" alt="
-"\"\"]]</a>"
+"<a href=\"https://www.looktotheright.com/\">[[!img lttr.jpg link=\"no\" "
+"alt=\"\"]]</a>"
 msgstr ""
-"<a href=\"https://www.looktotheright.com/\">[[!img lttr.jpg link=\"no\" alt="
-"\"\"]]</a>"
+"<a href=\"https://www.looktotheright.com/\">[[!img lttr.jpg link=\"no\" "
+"alt=\"\"]]</a>"
 
 #. type: Content of: <h1>
 #, fuzzy
@@ -337,19 +337,19 @@ msgstr "2021"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.857€"
-msgid "Anonymous donation - 7 bitcoins = 235 000€"
+msgid "Anonymous donation - 7 bitcoins = 235 000â¬"
 msgstr "Anonyme Spende - 1.857€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.433€"
-msgid "Anonymous donation - 24 ethereums = 85 909€"
+msgid "Anonymous donation - 24 ethereums = 85 909â¬"
 msgstr "Anonyme Spende - 1.433€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Access Now - 50.000€"
-msgid "RIPE NCC - 50 000€"
+msgid "RIPE NCC - 50 000â¬"
 msgstr "Access Now - 50.000€"
 
 #. type: Content of: <div><p>
@@ -369,7 +369,7 @@ msgstr "[[!img internews.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 100 moneros = 19 611€"
+msgid "Anonymous donation - 100 moneros = 19 611â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Content of: <div><p>
@@ -379,7 +379,7 @@ msgstr "[[!img aspiration.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 2 000€"
+msgid "Anonymous donation - 2 000â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -395,7 +395,7 @@ msgstr "[[!img word-solver.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Mediapart - 2.000€"
-msgid "freiheitsfoo - 1 100€"
+msgid "freiheitsfoo - 1 100â¬"
 msgstr "Mediapart - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -421,17 +421,17 @@ msgstr "2020"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 50 000€"
+msgid "Anonymous donation - 50 000â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.857€"
-msgid "Anonymous donation - 2.11 bitcoins = 34 694€"
+msgid "Anonymous donation - 2.11 bitcoins = 34 694â¬"
 msgstr "Anonyme Spende - 1.857€"
 
 #. type: Attribute 'title' of: <div><p>
-msgid "ISC - 9 448€"
+msgid "ISC - 9 448â¬"
 msgstr ""
 
 #. type: Content of: <div><p>
@@ -441,61 +441,61 @@ msgstr "[[!img isc.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 69 moneros = 8 903€"
+msgid "Anonymous donation - 69 moneros = 8 903â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 0.33 bitcoins = 4 445€"
+msgid "Anonymous donation - 0.33 bitcoins = 4 445â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 23 moneros = 2 886€"
+msgid "Anonymous donation - 23 moneros = 2 886â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.433€"
-msgid "Anonymous donation - 2.8 ethereums = 1 463€"
+msgid "Anonymous donation - 2.8 ethereums = 1 463â¬"
 msgstr "Anonyme Spende - 1.433€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Mediapart - 2.000€"
-msgid "freiheitsfoo - 1 200€"
+msgid "freiheitsfoo - 1 200â¬"
 msgstr "Mediapart - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.161€"
-msgid "Anonymous donation - 3.3 ethereums = 1 100€"
+msgid "Anonymous donation - 3.3 ethereums = 1 100â¬"
 msgstr "Anonyme Spende - 1.161€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.857€"
-msgid "Anonymous donation - 0.1 bitcoins = 1 080€"
+msgid "Anonymous donation - 0.1 bitcoins = 1 080â¬"
 msgstr "Anonyme Spende - 1.857€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 0.75 bitcoins = 1 022€"
+msgid "Anonymous donation - 0.75 bitcoins = 1 022â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 0.05 bitcoins = 1 002€"
+msgid "Anonymous donation - 0.05 bitcoins = 1 002â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 20 moneros = 987€"
+msgid "Anonymous donation - 20 moneros = 987â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -545,11 +545,11 @@ msgstr "[[!img mozilla.png link=\"no\" alt=\"\"]]"
 #. type: Content of: <p>
 #, fuzzy
 #| msgid "$10.000 – $50.000"
-msgid "$10&#8239;000 – $50&#8239;000"
+msgid "$10&#8239;000 â $50&#8239;000"
 msgstr "$10.000 – $50.000"
 
 #. type: Attribute 'title' of: <div><p>
-msgid "PrivCoin - 6 bitcoins = 46 170€"
+msgid "PrivCoin - 6 bitcoins = 46 170â¬"
 msgstr ""
 
 #. type: Content of: <div><p>
@@ -559,7 +559,7 @@ msgstr "[[!img privcoin.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 300 moneros = 17 010€"
+msgid "Anonymous donation - 300 moneros = 17 010â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -569,7 +569,7 @@ msgstr ""
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "An individual - 2.000€"
-msgid "An individual - 7 533€"
+msgid "An individual - 7 533â¬"
 msgstr "Eine Einzelperson - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -581,7 +581,7 @@ msgstr "Eine Einzelperson - $5.000"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "An individual - 2.000€"
-msgid "An individual - 3 000€"
+msgid "An individual - 3 000â¬"
 msgstr "Eine Einzelperson - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
@@ -596,13 +596,15 @@ msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
-#| msgid "An individual - $2.000"
-msgid "An individual - 1 000€"
-msgstr "Eine Einzelperson - $2.000"
+#| msgid "An individual - 2.000€"
+msgid "An individual - 1 000â¬"
+msgstr "Eine Einzelperson - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
-msgid "A group of people - 1 000€"
-msgstr ""
+#, fuzzy
+#| msgid "An individual - 2.000€"
+msgid "A group of people - 1 000â¬"
+msgstr "Eine Einzelperson - 2.000€"
 
 #. type: Attribute 'title' of: <div><p>
 msgid "Cooltechzone - $1 000"
@@ -673,7 +675,7 @@ msgid "[[!img ddg.png link=\"no\" alt=\"\"]]"
 msgstr "[[!img ddg.png link=\"no\" alt=\"\"]]"
 
 #. type: Attribute 'title' of: <div><p>
-msgid "ISC - 20 743€"
+msgid "ISC - 20 743â¬"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
@@ -685,7 +687,7 @@ msgstr "Anonyme Spende - 2.902€"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Lush Digital Fund - 11.000€"
-msgid "Lush Digital Fund - 11 000€"
+msgid "Lush Digital Fund - 11 000â¬"
 msgstr "Lush Digital Fund - 11.000€"
 
 #. type: Content of: <div><p>
@@ -743,7 +745,7 @@ msgstr "2017"
 #. type: Content of: <p>
 #, fuzzy
 #| msgid "$50.000 – $99.000"
-msgid "$50&#8239;000 – $99&#8239;000"
+msgid "$50&#8239;000 â $99&#8239;000"
 msgstr "$50.000 – $99.000"
 
 #. type: Attribute 'title' of: <div><p>
@@ -825,19 +827,19 @@ msgstr "Open Technology Fund - $208.800"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 11.609€"
-msgid "Anonymous donation - 11 609€"
+msgid "Anonymous donation - 11 609â¬"
 msgstr "Anonyme Spende - 11.609€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.902€"
-msgid "Anonymous donation - 2 902€"
+msgid "Anonymous donation - 2 902â¬"
 msgstr "Anonyme Spende - 2.902€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Mediapart - 2.000€"
-msgid "Mediapart - 2 000€"
+msgid "Mediapart - 2 000â¬"
 msgstr "Mediapart - 2.000€"
 
 #. type: Content of: <div><p>
@@ -847,25 +849,25 @@ msgstr "[[!img mediapart.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 2.554€"
-msgid "Anonymous donation - 2 554€"
+msgid "Anonymous donation - 2 554â¬"
 msgstr "Anonyme Spende - 2.554€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.857€"
-msgid "Anonymous donation - 1 857€"
+msgid "Anonymous donation - 1 857â¬"
 msgstr "Anonyme Spende - 1.857€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.433€"
-msgid "Anonymous donation - 1 433€"
+msgid "Anonymous donation - 1 433â¬"
 msgstr "Anonyme Spende - 1.433€"
 
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Anonymous donation - 1.161€"
-msgid "Anonymous donation - 1 161€"
+msgid "Anonymous donation - 1 161â¬"
 msgstr "Anonyme Spende - 1.161€"
 
 #. type: Content of: <p>
@@ -889,7 +891,7 @@ msgstr "2015"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Hivos International - 70.000€"
-msgid "Hivos International - 70 000€"
+msgid "Hivos International - 70 000â¬"
 msgstr "Hivos International - 70.000€"
 
 #. type: Content of: <div><p>
@@ -937,7 +939,7 @@ msgstr "2014"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Access Now - 50.000€"
-msgid "Access Now - 50 000€"
+msgid "Access Now - 50 000â¬"
 msgstr "Access Now - 50.000€"
 
 #. type: Content of: <div><p>
@@ -963,7 +965,7 @@ msgstr "[[!img openitp.png link=\"no\" alt=\"\"]]"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Förderung Freier Information und Software - 5.000€"
-msgid "Förderung Freier Information und Software - 5 000€"
+msgid "FÃ¶rderung Freier Information und Software - 5 000â¬"
 msgstr "Förderung Freier Information und Software - 5.000€"
 
 #. type: Content of: <div><p>
@@ -1031,8 +1033,23 @@ msgstr "2010"
 #. type: Attribute 'title' of: <div><p>
 #, fuzzy
 #| msgid "Tor - 8.500€"
-msgid "Tor - 8 500€"
+msgid "Tor - 8 500â¬"
 msgstr "Tor - 8.500€"
+
+#, fuzzy
+#~| msgid "An individual - $2.000"
+#~ msgid "An individual - 2 000€"
+#~ msgstr "Eine Einzelperson - $2.000"
+
+#, fuzzy
+#~| msgid "An individual - 2.000€"
+#~ msgid "An individual - 3 000€"
+#~ msgstr "Eine Einzelperson - 2.000€"
+
+#, fuzzy
+#~| msgid "An individual - $2.000"
+#~ msgid "An individual - 1 000€"
+#~ msgstr "Eine Einzelperson - $2.000"
 
 #, fuzzy
 #~| msgid "Anonymous donation - 2.902€"
@@ -1042,8 +1059,8 @@ msgstr "Tor - 8.500€"
 #, fuzzy
 #~| msgid "<a href=\"https://torproject.org\">[[!img tor.png link=\"no\"]]</a>"
 #~ msgid ""
-#~ "<a href=\"https://protonmail.com/\">[[!img protonmail.png link=\"no\" alt="
-#~ "\"\"]]</a>"
+#~ "<a href=\"https://protonmail.com/\">[[!img protonmail.png link=\"no\" "
+#~ "alt=\"\"]]</a>"
 #~ msgstr "<a href=\"https://torproject.org\">[[!img tor.png link=\"no\"]]</a>"
 
 #, fuzzy
@@ -1056,19 +1073,9 @@ msgstr "Tor - 8.500€"
 #, fuzzy
 #~| msgid "<a href=\"https://torproject.org\">[[!img tor.png link=\"no\"]]</a>"
 #~ msgid ""
-#~ "<a href=\"https://internews.org/\">[[!img internews.png link=\"no\" alt="
-#~ "\"\"]]</a>"
+#~ "<a href=\"https://internews.org/\">[[!img internews.png link=\"no\" "
+#~ "alt=\"\"]]</a>"
 #~ msgstr "<a href=\"https://torproject.org\">[[!img tor.png link=\"no\"]]</a>"
-
-#, fuzzy
-#~| msgid "An individual - 2.000€"
-#~ msgid "An individual - 2 000â¬"
-#~ msgstr "Eine Einzelperson - 2.000€"
-
-#, fuzzy
-#~| msgid "An individual - 2.000€"
-#~ msgid "An individual - 1 000â¬"
-#~ msgstr "Eine Einzelperson - 2.000€"
 
 #, fuzzy
 #~| msgid "<a href=\"https://torproject.org\">[[!img tor.png link=\"no\"]]</a>"
@@ -1162,13 +1169,13 @@ msgstr "Tor - 8.500€"
 #~ msgstr "[[!toggle id=\"previous_partners\" text=\"Frühere Partner\"]]"
 
 #~ msgid ""
-#~ "[[!toggleable id=\"previous_partners\" text=\"\"\" <span class=\"hide"
-#~ "\">[[!toggle id=\"previous_partners\" text=\" \"]]</span> <span class="
-#~ "\"clearfix\"></span>"
+#~ "[[!toggleable id=\"previous_partners\" text=\"\"\" <span "
+#~ "class=\"hide\">[[!toggle id=\"previous_partners\" text=\" \"]]</span> "
+#~ "<span class=\"clearfix\"></span>"
 #~ msgstr ""
-#~ "[[!toggleable id=\"previous_partners\" text=\"\"\" <span class=\"hide"
-#~ "\">[[!toggle id=\"previous_partners\" text=\" \"]]</span> <span class="
-#~ "\"clearfix\"></span>"
+#~ "[[!toggleable id=\"previous_partners\" text=\"\"\" <span "
+#~ "class=\"hide\">[[!toggle id=\"previous_partners\" text=\" \"]]</span> "
+#~ "<span class=\"clearfix\"></span>"
 
 #~ msgid "\"\"\"]]"
 #~ msgstr "\"\"\"]]"
