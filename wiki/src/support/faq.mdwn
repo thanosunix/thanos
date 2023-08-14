@@ -127,7 +127,7 @@ This is a conscious decision as this mode of operation is better for what we
 want to provide to Tails users: amnesia, the fact that Tails leaves no traces on
 the computer after a session is closed.
 
-<h2 id="unetbootin">Can I install Tails with UNetbootin, YUMI, Rufus or my other favorite tool?</h2>
+<h2 id="unetbootin">Can I install Tails with UNetbootin, YUMI, Rufus, Ventoy, or another tool?</h2>
 
 No. Those installation methods are unsupported. They might not work at
 all, or worse: they might seem to work, but produce a USB stick

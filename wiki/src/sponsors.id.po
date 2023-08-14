@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-03 17:30+0000\n"
+"POT-Creation-Date: 2023-08-09 11:51+0000\n"
 "PO-Revision-Date: 2020-01-15 21:32+0000\n"
 "Last-Translator: emmapeel <emma.peel@riseup.net>\n"
 "Language-Team: \n"
@@ -126,7 +126,7 @@ msgid "An individual - 2 000€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Tor - $1 575"
+msgid "Tor - $2 700"
 msgstr ""
 
 #. type: Content of: <div><p>
@@ -159,7 +159,7 @@ msgid "Anonymous donation - 1 337€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Freiheitsfoo - 1 205€"
+msgid "freiheitsfoo - 1 250€"
 msgstr ""
 
 #. type: Content of: <div><p>
@@ -228,6 +228,20 @@ msgstr "[[!img ndi.png link=\"no\"]]"
 msgid "[[!img nym.png link=\"no\" alt=\"\"]]"
 msgstr "[[!img ndi.png link=\"no\"]]"
 
+#. type: Attribute 'title' of: <div><p>
+msgid "Tor - $2 175"
+msgstr ""
+
+#. type: Content of: <div><p>
+#, fuzzy
+msgid "[[!img tor.png link=\"no\" alt=\"\"]]"
+msgstr "[[!img ndi.png link=\"no\"]]"
+
+#. type: Content of: <div><p>
+#, fuzzy
+msgid "[[!img freiheitsfoo.png link=\"no\" alt=\"\"]]"
+msgstr "[[!img ndi.png link=\"no\"]]"
+
 #. type: Content of: <div><p>
 #, fuzzy
 msgid "[[!img exam-success.jpg link=\"no\" alt=\"\"]]"
@@ -294,10 +308,9 @@ msgstr "[[!img ndi.png link=\"no\"]]"
 msgid "Anonymous donation - 2 000€"
 msgstr ""
 
-#. type: Content of: <div><p>
-#, fuzzy
-msgid "[[!img tor.png link=\"no\" alt=\"\"]]"
-msgstr "[[!img ndi.png link=\"no\"]]"
+#. type: Attribute 'title' of: <div><p>
+msgid "Tor - $1 575"
+msgstr ""
 
 #. type: Content of: <div><p>
 #, fuzzy
@@ -305,13 +318,8 @@ msgid "[[!img word-solver.png link=\"no\" alt=\"\"]]"
 msgstr "[[!img ndi.png link=\"no\"]]"
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Freiheitsfoo - 1 100€"
+msgid "freiheitsfoo - 1 100€"
 msgstr ""
-
-#. type: Content of: <div><p>
-#, fuzzy
-msgid "[[!img freiheitsfoo.png link=\"no\" alt=\"\"]]"
-msgstr "[[!img ndi.png link=\"no\"]]"
 
 #. type: Attribute 'title' of: <div><p>
 msgid "ThinkPenguin - 0.02 bitcoins = $1 200"
@@ -364,7 +372,7 @@ msgid "Anonymous donation - 2.8 ethereums = 1 463€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>
-msgid "Freiheitsfoo - 1 200€"
+msgid "freiheitsfoo - 1 200€"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><p>

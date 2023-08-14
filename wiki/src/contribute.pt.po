@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-07-06 09:16+0000\n"
-"PO-Revision-Date: 2023-08-06 11:22+0000\n"
+"PO-Revision-Date: 2023-08-10 18:49+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: Portuguese <LL@li.org>\n"
 "Language: pt\n"
@@ -311,11 +311,16 @@ msgid ""
 "\t</ol>\n"
 msgstr ""
 "\t<ol>\n"
-"\t\t<li class=\"L2\"><a href=\"#reference-documents\">Documentos de referencia</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#tools\">Ferramentas para contribuidores</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#release-cycle\">Ciclo de lançamento</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#upstream\">Relacionamento com upstream</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#collective-process\">Processo coletivo</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#reference-documents\">Documentos de "
+"referência</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#tools\">Ferramentas para "
+"contribuidores</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#release-cycle\">Ciclo de lançamento</a></li>"
+"\n"
+"\t\t<li class=\"L2\"><a href=\"#upstream\">Relacionamento com "
+"upstream</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#collective-process\">Processo "
+"coletivo</a></li>\n"
 "\t\t<li class=\"L2\"><a href=\"#talk\">Fale conosco</a></li>\n"
 "\t</ol>\n"
 
@@ -541,7 +546,7 @@ msgstr "Processo coletivo"
 
 #. type: Bullet: '  - '
 msgid "[[Calendar|contribute/calendar]] of releases"
-msgstr "[[Calendário|contribute/calendar]] de lançamentos."
+msgstr "[[Calendário|contribute/calendar]] de lançamentos"
 
 #. type: Bullet: '  - '
 msgid "[[Code of conduct|contribute/working_together/code_of_conduct]]"
@@ -619,87 +624,69 @@ msgid "[[Help desk|contribute/working_together/roles/help_desk]]"
 msgstr "[[Central de ajuda|contribute/working_together/roles/help_desk]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Management team|contribute/working_together/roles/management]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr "[[Time de gerenciamento|contribute/working_together/roles/management]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Release managers|contribute/working_together/roles/release_manager]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr ""
+"[[Gerentes de lançamentos|contribute/working_together/roles/release_manager]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid ""
-#| "[[Document progress|contribute/working_together/GitLab#document-progress]]"
 msgid "[[Ticket gardeners|contribute/working_together/roles/ticket_gardener]]"
 msgstr ""
-"[[Documentação de progresso|contribute/working_together/GitLab#document-"
-"progress]]"
+"[[Jardineirxs de tíquetes|contribute/working_together/roles/ticket_gardener]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Sysadmins|contribute/working_together/roles/sysadmins]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr "[[Sysadmins|contribute/working_together/roles/sysadmins]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid ""
 "[[Technical writers|contribute/working_together/roles/technical_writer]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr ""
+"[[Documentação técnica|contribute/working_together/roles/technical_writer]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[Test suite maintainers|contribute/working_together/roles/test_suite]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr ""
+"[[Mantenedores da suíte de testes|contribute/working_together/roles/"
+"test_suite]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid ""
-#| "[[Marking a task as Starter|contribute/working_together/"
-#| "criteria_for_starter_tasks]]"
 msgid ""
 "[[Translation platform maintainers|contribute/working_together/roles/"
 "translation_platform]]"
 msgstr ""
-"[[Marcando uma tarefa como 'inicial'|contribute/working_together/"
-"criteria_for_starter_tasks]]"
+"[[Mantenedores da plataforma de tradução|contribute/working_together/roles/"
+"translation_platform]]"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid "[[People|contribute/working_together/people]]"
 msgid "[[UX designers|contribute/working_together/roles/ux]]"
-msgstr "[[Pessoas|contribute/working_together/people]]"
+msgstr "[[Designers de UX|contribute/working_together/roles/ux]]"
 
 #. type: Bullet: '  - '
 msgid "Interfaces between roles and teams"
-msgstr ""
+msgstr "Interfaces entre papéis e times"
 
 #. type: Bullet: '    - '
-#, fuzzy
-#| msgid ""
-#| "[[Marking a task as Starter|contribute/working_together/"
-#| "criteria_for_starter_tasks]]"
 msgid ""
 "[[Developers and Release Managers|contribute/working_together/interfaces/"
 "developers_and_release_managers]]"
 msgstr ""
-"[[Marcando uma tarefa como 'inicial'|contribute/working_together/"
-"criteria_for_starter_tasks]]"
+"[[Desenvolvimento e Gerenciamento de Lançamentos|contribute/interfaces/"
+"developers_and_release_managers]]"
 
 #. type: Bullet: '  - '
 msgid "Roles for sponsor deliverables (internal documentation):"
-msgstr ""
+msgstr "Papéis para implementações patrocinadas (documentação interna):"
 
 #. type: Plain text
 #, no-wrap
 msgid "    [[!tails_gitlab tails/summit/-/wikis/Handbook/Grant_contract_management]]\n"
 msgstr ""
+"    [[!tails_gitlab tails/summit/-/wikis/Handbook/Grant_contract_management]]"
+"\n"
 
 #. type: Plain text
 #, no-wrap

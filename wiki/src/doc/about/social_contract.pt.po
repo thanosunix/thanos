@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-14 18:03+0000\n"
-"PO-Revision-Date: 2022-11-22 00:06+0000\n"
+"PO-Revision-Date: 2023-08-11 11:49+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -52,7 +52,9 @@ msgstr ""
 #. type: Title ##
 #, no-wrap
 msgid "1. By creating Tails we try to provide usable tools for anonymity and privacy"
-msgstr "1. Ao criarmos o Tails, tentamos providenciar ferramentas utilizáveis para anonimidade e privacidade."
+msgstr ""
+"1. Ao criarmos o Tails, tentamos prover ferramentas para anonimidade e "
+"privacidade que sejam utilizáveis"
 
 #. type: Plain text
 msgid ""
@@ -70,7 +72,7 @@ msgstr ""
 #. type: Title ##
 #, no-wrap
 msgid "2. Tails is and will remain Free Software"
-msgstr "2. Tails é e continuará sendo Software Livre."
+msgstr "2. Tails é e continuará sendo Software Livre"
 
 #. type: Plain text
 msgid ""
@@ -120,7 +122,7 @@ msgstr ""
 #. type: Title ##
 #, no-wrap
 msgid "3. We will give back to the Free Software community"
-msgstr "3. Retribuiremos para a comunidade Código-Livre."
+msgstr "3. Retribuiremos para a comunidade de Software Livre"
 
 #. type: Plain text
 msgid ""
@@ -153,7 +155,7 @@ msgstr ""
 #. type: Title ##
 #, no-wrap
 msgid "4. We encourage participation and transparency"
-msgstr "4. Encorajamos participação e transparencia"
+msgstr "4. Encorajamos participação e transparência"
 
 #. type: Plain text
 msgid ""
@@ -162,23 +164,24 @@ msgid ""
 "such a transparent manner, anyone is encouraged to participate, review it "
 "and point out problems."
 msgstr ""
-"Queremos produzir tails de uma maneira que encoraje a participação, o que "
-"requer documentação pública que pode ser melhorada. Como tails foi criado de "
-"uma maneira tão transparente, qualquer um é encorajado à participar, revisar "
-"e apontar problemas."
+"Queremos produzir o Tails de uma forma que encoraje a participação, o que "
+"requer que documentemos publicamente tudo aquilo que pode ser melhorado. Ao "
+"criar o Tails de forma transparente, todas as pessoas são encorajadas a "
+"participar, revisar e apontar problemas."
 
 #. type: Plain text
 msgid ""
 "To make our community a welcoming place for everybody we agreed on a [[Code "
 "of Conduct|contribute/working_together/code_of_conduct]]."
 msgstr ""
-"Para fazer nossa comunidade um lugar acolhedor para todos, concordamos com "
-"um [[Código de conduta|contribute/working_together/code_of_conduct]]."
+"Para fazer com que nossa comunidade seja um lugar acolhedor para todas as "
+"pessoas, entramos em acordo sobre um [[Código de conduta|contribute/"
+"working_together/code_of_conduct]]."
 
 #. type: Title ##
 #, no-wrap
 msgid "5. We will never harm our users intentionally"
-msgstr "5. Nós nunca machucaremos os nossos usuarios intencionalmente."
+msgstr "5. Nós nunca causaremos dano a nossos usuários de forma intencional"
 
 #. type: Plain text
 msgid ""
@@ -186,18 +189,19 @@ msgid ""
 "willingly include backdoors or malicious software nor will we cooperate with "
 "any entity wanting us to harm our users."
 msgstr ""
-"Sempre faremos o melhor para criar ferramentas seguras e utilizaves. Nós "
-"nunca incluiremos voluntariamente backdoors ou software malicioso, nem "
-"cooperaremos com nenhuma entidade querendo que machuquemos nossos usuários."
+"Sempre faremos o melhor para criar ferramentas seguras e utilizáveis. Nunca "
+"incluiremos voluntariamente backdoors ou programas maliciosos, e nem "
+"cooperaremos com nenhuma entidade que tenha como objetivo causar danos a "
+"nossos usuários."
 
 #. type: Plain text
 msgid ""
 "Mistakes sometimes happen. We will be honest about them and fix those that "
 "affect the safety of Tails users when they are reported to us."
 msgstr ""
-"Erros às vezes acontecem. Seremos honestos quaisquer erros e, quando nos "
-"forem reportados, consertaremos os que afetem a segurança de quem usa o "
-"Tails."
+"Erros às vezes acontecem. Seremos honestos sobre erros e consertaremos "
+"aqueles que afetem a segurança de quem usa o Tails sempre que nos forem "
+"relatados."
 
 #. type: Plain text
 msgid ""
@@ -206,17 +210,17 @@ msgid ""
 "whenever such an issue has been reported to us. However, for the security of "
 "our users, we might not disclose such a severe issue before releasing a fix."
 msgstr ""
-"Sempre que problemas graves de segurança nos forem reportados em privado, "
-"vamos testá-los e corrigí-los imediatamente. Notificaremos nossos usuários "
-"sempre que um problema deste tipo nos for reportado. Entretanto, para a "
-"segurança de nossos usuários, é possível que não anunciemos um erro tão "
-"grave antes de lançarmos uma correção."
+"Sempre que problemas graves de segurança nos forem relatados em privado, "
+"vamos testá-los e corrigí-los prontamente. Notificaremos nossos usuários "
+"sempre que um problema deste tipo nos for relatado. Entretanto, para a "
+"segurança de nossos usuários, pode ser que somente anunciemos a existência "
+"de um erro muito grave após lançarmos uma correção para ele."
 
 #. type: Title ##
 #, no-wrap
 msgid "6. We give users the means to decide how much they can rely on Tails"
 msgstr ""
-"6. Damos meios para que os usuários decidam o quanto eles podem confiar no "
+"6. Fornecemos meios para que as pessoas decidam o quanto podem confiar no "
 "Tails"
 
 #. type: Plain text
@@ -229,14 +233,23 @@ msgid ""
 "an informed decision and engage in a learning process about the tools we "
 "ship."
 msgstr ""
+"Encorajamos as pessoas a se informar e decidir se o Tails é adequado para "
+"seu caso de uso e o quanto podem confiar no sistema. Trabalhamos "
+"diligentemente para manter nossa comunidade atualizada, através de nossos "
+"vários canais de comunicação, sobre o estado atual de nossos programas e "
+"suas limitações. Encorajamos as pessoas a ler tanto a nossa documentação "
+"quando a documentação de terceiros para tomar decisões informadas e se "
+"engajar em um processo de aprendizagem sobre as ferramentas que fornecemos."
 
 #. type: Plain text
 msgid ""
 "We provide and explain methods of verification so that anyone can ensure "
 "that they downloaded a genuine copy of Tails."
 msgstr ""
+"Proporcionamos e explicamos métodos de verificação de forma que qualquer "
+"pessoa possa ter certeza de que baixou uma cópia genuína do Tails."
 
 #. type: Plain text
 #, no-wrap
 msgid "<p>See also our [[Mission and Values|contribute/mission]].</p>\n"
-msgstr ""
+msgstr "<p>Veja tambám nossa [[Missão e Valores |contribute/mission]].</p>\n"

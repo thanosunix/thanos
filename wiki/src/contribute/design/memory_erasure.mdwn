@@ -62,11 +62,8 @@ to run the shutdown process that erases memory.
 
 **First, most memory is erased at the end of a normal shutdown/reboot
 sequence.** This is implemented by the [[Linux kernel's freed memory
-poisoning feature|design/kernel_hardening]], more specifically:
-
-* `page_poison`
-* passing "P" to `slub_debug`
-* zeroing heap memory at free time (`init_on_free=1`)
+poisoning feature|design/kernel_hardening]], more specifically
+`init_on_free=1`.
 
 [[!tails_gitweb features/erase_memory.feature desc="Automated tests"]]
 ensure that the most important parts of memory are erased this way.

@@ -2165,7 +2165,7 @@ Check that you are indeed preparing a final release:
        issues](https://gitlab.torproject.org/tpo/applications/tor-browser-build/-/issues/?search=Prepare%20stable%20release&sort=updated_desc&state=opened).
        If necessary, ask the Tor Browser developers.
    * [Google calendar](https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com)
-   * [Release schedule](https://wiki.mozilla.org/Release_Management/Calendar)
+   * [Release schedule](https://whattrainisitnow.com/calendar/)
 
    If the upcoming release dates in the Mozilla calendar does not match
    what we have in our release calendar, then alert

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-20 15:31+0000\n"
+"POT-Creation-Date: 2023-08-11 01:59+0000\n"
 "PO-Revision-Date: 2023-07-14 16:35+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -383,8 +383,9 @@ msgstr ""
 "Tails ne laisse aucune trace sur l'ordinateur après son utilisation."
 
 #. type: Plain text
-#, no-wrap
-msgid "<h2 id=\"unetbootin\">Can I install Tails with UNetbootin, YUMI, Rufus or my other favorite tool?</h2>\n"
+#, fuzzy, no-wrap
+#| msgid "<h2 id=\"unetbootin\">Can I install Tails with UNetbootin, YUMI, Rufus or my other favorite tool?</h2>\n"
+msgid "<h2 id=\"unetbootin\">Can I install Tails with UNetbootin, YUMI, Rufus, Ventoy, or another tool?</h2>\n"
 msgstr "<h2 id=\"unetbootin\">Puis-je installer Tails avec UNetbootin, YUMI, Rufus ou mon autre outil favori ?</h2>\n"
 
 #. type: Plain text
