@@ -243,37 +243,46 @@ def validate_configuration(stage: str):
 def main():
     """Command-line entry point"""
     parser = argparse.ArgumentParser(
-        description="Query and manage Release Management configuration")
+        description="Query and manage Release Management configuration",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        )
     parser.add_argument("--debug", action="store_true", help="debug output")
     subparsers = parser.add_subparsers(help="sub-command help", dest="command")
 
     parser_generate_boilerplate = subparsers.add_parser(
         "generate-boilerplate",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         help="Creates a configuration file template that you will fill")
     parser_generate_boilerplate.add_argument("--stage",
                                              type=str,
                                              action="store",
                                              default="base",
-                                             help="")
+                                             choices=STAGES,
+                                             help="Select stage")
     parser_generate_boilerplate.set_defaults(func=generate_boilerplate)
 
     parser_validate_configuration = subparsers.add_parser(
-        "validate-configuration", help="Validate configuration files")
+        "validate-configuration",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        help="Validate configuration files")
     parser_validate_configuration.add_argument("--stage",
                                                type=str,
                                                action="store",
                                                default="base",
-                                               help="")
+                                               choices=STAGES,
+                                               help="Select stage")
     parser_validate_configuration.set_defaults(func=validate_configuration)
 
     parser_generate_environment = subparsers.add_parser(
         "generate-environment",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         help="Creates a shell sourceable file with resulting environment")
     parser_generate_environment.add_argument("--stage",
                                              type=str,
                                              action="store",
                                              default="base",
-                                             help="")
+                                             choices=STAGES,
+                                             help="Select stage")
     parser_generate_environment.set_defaults(func=generate_environment)
 
     args = parser.parse_args()
