@@ -54,5 +54,11 @@ echo 3 > /proc/sys/vm/drop_caches
 ### Pause if the test suite wants us to
 if [ -e /tails_shutdown_debugging ] ; then
     echo "Going to sleep 2 minutes. Happy dumping!"
+    # Those extra "echo" avoid that the text is on the bottom, which can be easier for the test suite to
+    # recognize
+    echo
+    echo
+    echo
+    echo
     sleep 120
 fi
