@@ -1955,7 +1955,19 @@ to the release notes:
 
     echo "Tails ${VERSION:?} is out: https://tails.net/news/version_${TAG:?}/"
 
-The credentials are in keyringer in `rm.git`.
+To login:
+
+ - Get username and password:
+
+      keyringer tails-rm decrypt credentials.asc | grep twitter.com
+
+ - Get the OTP code:
+
+    oathtool -b --totp \
+      "$(keyringer tails decrypt credentials.asc |
+         grep 'twitter OTP code' |
+         grep -Po 'otpauth://totp/.*[?]secret=\K[A-Z0-9]*' )"
+
 
 Request the publication of the Tor blog post
 --------------------------------------------
