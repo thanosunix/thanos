@@ -1,3 +1,9 @@
+tails (5.17) UNRELEASED; urgency=medium
+
+  * Dummy entry for next release.
+
+ -- boyska <boyska@riseup.net>  Tue, 15 Aug 2023 13:05:46 +0200
+
 tails (5.16.1) unstable; urgency=medium
 
   * Mitigate Downfall and INCEPTION speculative-execution vulnerabilities
