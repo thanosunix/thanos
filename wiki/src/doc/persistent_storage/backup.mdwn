@@ -23,7 +23,7 @@ replace it immediately with your backup Tails.
 1. Plug in the new USB stick on which you want to create your backup Tails USB
    stick.
 
-1. Choose **Applications**&nbsp;▸ **Tails Installer**.
+1. Choose **Applications**&nbsp;▸ **Tails Cloner**.
 
 1. Turn on the option **Clone the current Persistent Storage** below the
    option **Clone the current Tails**.
@@ -76,7 +76,7 @@ replace it immediately with your backup Tails.
    </div>
 
 1. If your backup Tails has an outdated version of Tails, we recommend you upgrade it by cloning your
-   current Tails using <span class="application">Tails Installer</span>.
+   current Tails using <span class="application">Tails Cloner</span>.
    For detailed instructions, see how to [[manually upgrade from another
    Tails|upgrade/clone#upgrade]].
 

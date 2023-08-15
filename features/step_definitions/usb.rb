@@ -145,14 +145,14 @@ When /^I start Tails Installer$/ do
   command = "/usr/local/bin/tails-installer --verbose  2>&1 | tee #{@installer_log_path} | logger -t tails-installer"
   step "I run \"#{command}\" in GNOME Terminal"
   @installer = Dogtail::Application.new('tails-installer')
-  @installer.child('Tails Installer', roleName: 'frame')
+  @installer.child('Tails Cloner', roleName: 'frame')
   # Sometimes Dogtail will find the Installer and click its window
   # before it is shown (searchShowingOnly is not perfect) which
   # generally means clicking somewhere on the Terminal => the click is
   # lost *and* the installer does not go to the foreground. So let's
   # wait a bit extra.
   sleep 3
-  @screen.wait('TailsInstallerWindow.png', 10).click
+  @screen.wait('TailsClonerWindow.png', 10).click
 end
 
 When /^I am told by Tails Installer that.*"([^"]+)".*$/ do |status|

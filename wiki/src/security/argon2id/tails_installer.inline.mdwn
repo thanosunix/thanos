@@ -2,7 +2,7 @@
 
    1. Plug in the new USB stick.
 
-   1. Choose **Applications**&nbsp;▸ **Tails Installer**.
+   1. Choose **Applications**&nbsp;▸ **Tails Cloner**.
 
    1. Turn on the option **Clone the current Persistent Storage** below the
       option **Clone the current Tails**.

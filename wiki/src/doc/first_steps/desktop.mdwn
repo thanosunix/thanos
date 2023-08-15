@@ -127,7 +127,7 @@ shortcuts allow you to launch the most frequently used applications:
 <div class="icon">
 [[!img lib/apps/tails-installer.png link="no" alt=""]]
 <div class="text">
-<strong>Tails Installer</strong> to clone Tails to another USB stick<br/>
+<strong>Tails Cloner</strong> to clone Tails to another USB stick<br/>
 </div>
 </div>
 
