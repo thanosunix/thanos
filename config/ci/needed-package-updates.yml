@@ -1,0 +1,13 @@
+---
+distribution: bullseye
+ignore:
+  temporary:
+    PKG_NAME:
+      version: "VERSION_STRING"
+      reason: "see #XXXX"
+    firmware-sof:
+      version: 2.2.6-1
+      reason: "will be fixed indirectly soon enough via #19888"
+  general:
+    - tor
+    - live-boot

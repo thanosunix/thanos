@@ -250,7 +250,11 @@ and check that the jobs for the release branch have good enough results:
  - look at the last build of the corresponding `test_Tails_ISO_*` job;
    if anything looks unusual or fishy, check the few previous builds
    to see if it's a one-off robustness issue, a serious regression,
-   or what not.
+   or what not. In particular:
+   - Check the results of *Scenario: All packages are up-to-date*.
+     If it does not pass, evaluate whether the problems fixed in the missing
+     package update are worth delaying the release. If not, create an issue
+     to track them.
 
 Freeze
 ======

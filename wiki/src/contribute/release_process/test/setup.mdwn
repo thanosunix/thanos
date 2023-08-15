@@ -62,7 +62,12 @@ To install the dependencies on our test suite:
             openssh-server \
             ovmf \
             pry \
+            python3-debian \
+            python3-distro-info \
+            python3-requests \
+            python3-psycopg2 \
             python3-slixmpp \
+            python3-yaml \
             qemu-system-common \
             qemu-system-x86 \
             qemu-utils \
