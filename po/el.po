@@ -34,8 +34,8 @@ msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-06 10:11+0200\n"
-"PO-Revision-Date: 2023-07-21 16:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-11 19:48+0000\n"
+"Last-Translator: george kitsoukakis <norhorn@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/tor/tails-gui/el/"
 ">\n"
 "Language: el\n"
@@ -265,11 +265,11 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/local/bin/electrum:112
 msgid "Donate Now"
-msgstr ""
+msgstr "Κάντε δωρεά τώρα"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:113
 msgid "Later"
-msgstr ""
+msgstr "Αργότερα"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:123
 msgid "Opening Electrum with our donation address..."
@@ -1915,9 +1915,8 @@ msgid "Could not find the WhisperBack application"
 msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:82
-#, fuzzy
 msgid "Delete Data…"
-msgstr "Διαγραφή"
+msgstr "Διαγραφή δεδομένων…"
 
 #. Translators: Don't translate {feature}, it's a placeholder
 #. and will be replaced.
@@ -1927,9 +1926,8 @@ msgid "Delete {feature} data"
 msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:107
-#, fuzzy
 msgid "Activation failed"
-msgstr "Ενεργοποίηση Dotfiles"
+msgstr "Αποτυχία ενεργοποίησης"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:163
 msgid "Activation failed. Try again or delete data."
@@ -1964,9 +1962,8 @@ msgid ""
 msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:345
-#, fuzzy
 msgid "_Delete Data"
-msgstr "Διαγραφή"
+msgstr "_Διαγραφή δεδομένων"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:373
 msgid "Error deleting data of feature {}"
@@ -1980,7 +1977,7 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/feature.py:458
 msgid " and "
-msgstr ""
+msgstr " και "
 
 #. Translators: Don't translate {app} and {pid}, they
 #. are placeholders.
@@ -2014,19 +2011,19 @@ msgstr "Αλλαγή φράσης πρόσβασης"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:41
 msgid "Weak"
-msgstr ""
+msgstr "Αδύνατο"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:44
 msgid "Fair"
-msgstr ""
+msgstr "Μέτρια"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:47
 msgid "Good"
-msgstr ""
+msgstr "Καλό"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/passphrase_strength_hint.py:50
 msgid "Strong"
-msgstr ""
+msgstr "Δυνατό"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/error_dialog.py:36
 msgid "You can send an error report to help solve the issue."
@@ -2075,7 +2072,7 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:181
 msgid "_OK"
-msgstr ""
+msgstr "_Εντάξει"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:189
 msgid ""
@@ -2084,7 +2081,7 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:191
 msgid "Please wait"
-msgstr ""
+msgstr "Παρακαλούμε περιμένετε"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/window.py:216
 #, fuzzy
@@ -2817,9 +2814,8 @@ msgid "Show Passphrase"
 msgstr "Εμφάνιση συνθηματικού"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:470
-#, fuzzy
 msgid "_Passphrase"
-msgstr "Συνθηματικό:"
+msgstr "_Συνθηματικό"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:546
 #, fuzzy
@@ -2958,18 +2954,16 @@ msgid "System Settings"
 msgstr "Ρυθμίσεις συστήματος"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:228
-#, fuzzy
 msgid "Welcome Screen"
-msgstr "Ενεργοποίηση Οθόνης υποδοχής"
+msgstr "Οθόνης υποδοχής"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:244
 msgid "Activate Welcome Screen"
 msgstr "Ενεργοποίηση Οθόνης υποδοχής"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:257
-#, fuzzy
 msgid "Printers"
-msgstr "Ενεργοποίηση Εκτυπωτών"
+msgstr "Εκτυπωτές"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:273
 msgid "Activate Printers"
@@ -3142,7 +3136,7 @@ msgstr ""
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:94
 msgid " For example:"
-msgstr ""
+msgstr " Για παράδειγμα:"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/passphrase_view.ui.in:186
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:46
@@ -3215,14 +3209,12 @@ msgid "Co_ntinue"
 msgstr "Συ_νέχεια"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:29
-#, fuzzy
 msgid "_Delete…"
-msgstr "Διαγραφή"
+msgstr "_Διαγραφή…"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:49
-#, fuzzy
 msgid "_Change Passphrase…"
-msgstr "Αλλαγή φράσης πρόσβασης"
+msgstr "_Αλλαγή φράσης πρόσβασης…"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/window.ui.in:66
 msgid "_Restart Tails"
@@ -3269,9 +3261,8 @@ msgid "Detach this volume"
 msgstr "Αποσύνδεση αυτού του τομέα"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:8
-#, fuzzy
 msgid "Choose Passphrase"
-msgstr "Αλλαγή φράσης πρόσβασης"
+msgstr "Επιλογή φράσης πρόσβασης"
 
 #: ../config/chroot_local-includes/usr/share/tails-installer/passphrase_dialog.ui.in:30
 #, fuzzy

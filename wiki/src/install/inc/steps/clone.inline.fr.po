@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
-"POT-Creation-Date: 2023-06-09 07:47+0200\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-07-14 16:35+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -67,8 +67,8 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Plug <span class=\"pc-clone mac-clone\">the new</span> <span class=\"upgrade"
-"\">your Tails</span> USB stick into the computer."
+"Plug <span class=\"pc-clone mac-clone\">the new</span> <span "
+"class=\"upgrade\">your Tails</span> USB stick into the computer."
 msgstr ""
 "Connecter <span class=\"pc-clone mac-clone\">la nouvelle clé USB</span> "
 "<span class=\"upgrade\">votre clé USB Tails</span> dans l'ordinateur."
@@ -85,12 +85,20 @@ msgstr ""
 "   </div>\n"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "1. Choose\n"
+#| "   <span class=\"menuchoice\">\n"
+#| "     <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+#| "     <span class=\"guisubmenu\">Tails</span>&nbsp;▸\n"
+#| "     <span class=\"guimenuitem\">Tails Installer</span>\n"
+#| "   </span>\n"
+#| "   to start <span class=\"application\">Tails Installer</span>.\n"
 msgid ""
 "1. Choose\n"
 "   <span class=\"menuchoice\">\n"
-"     <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
-"     <span class=\"guisubmenu\">Tails</span>&nbsp;▸\n"
+"     <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
+"     <span class=\"guisubmenu\">Tails</span>&nbsp;â¸\n"
 "     <span class=\"guimenuitem\">Tails Installer</span>\n"
 "   </span>\n"
 "   to start <span class=\"application\">Tails Installer</span>.\n"
@@ -115,13 +123,13 @@ msgstr "   [[!img install/inc/screenshots/tails_installer_upgrade.png link=\"no\
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose <span class=\"pc-clone mac-clone\">the new</span> <span class="
-"\"upgrade\">your</span> USB stick in the <span class=\"guilabel\">Target USB "
-"stick</span> menu."
+"Choose <span class=\"pc-clone mac-clone\">the new</span> <span "
+"class=\"upgrade\">your</span> USB stick in the <span "
+"class=\"guilabel\">Target USB stick</span> menu."
 msgstr ""
-"Choisir <span class=\"pc-clone mac-clone\">la nouvelle</span> <span class="
-"\"upgrade\">votre</span> clé USB dans le menu <span class=\"guilabel\">Clé "
-"USB cible</span>."
+"Choisir <span class=\"pc-clone mac-clone\">la nouvelle</span> <span "
+"class=\"upgrade\">votre</span> clé USB dans le menu <span "
+"class=\"guilabel\">Clé USB cible</span>."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -184,8 +192,8 @@ msgid ""
 "After the installation finishes, close <span class=\"application\">Tails "
 "Installer</span>."
 msgstr ""
-"Une fois l'installation terminée, fermer l'<span class=\"application"
-"\">Installeur de Tails</span>."
+"Une fois l'installation terminée, fermer l'<span "
+"class=\"application\">Installeur de Tails</span>."
 
 #. type: Plain text
 #, no-wrap

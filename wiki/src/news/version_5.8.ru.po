@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-05-18 18:19+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-03-16 13:28+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.9.1\n"
 
 #. type: Plain text
@@ -258,8 +258,8 @@ msgstr ""
 
 #. type: Plain text
 msgid ""
-"For more details, read our [[!tails_gitweb debian/changelog desc=\"changelog"
-"\"]]."
+"For more details, read our [[!tails_gitweb debian/changelog "
+"desc=\"changelog\"]]."
 msgstr ""
 
 #. type: Plain text
@@ -301,7 +301,7 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **Applications**&nbsp;▸ **Utilities**&nbsp;▸ **Terminal** to open a "
+"Choose **Applications**&nbsp;â¸ **Utilities**&nbsp;â¸ **Terminal** to open a "
 "terminal."
 msgstr ""
 
@@ -679,7 +679,7 @@ msgid "- In Tails, unlock your Persistent Storage:"
 msgstr ""
 
 #. type: Bullet: '  1. '
-msgid "Choose **Applications**&nbsp;▸ **Utilities**&nbsp;▸ **Disks**."
+msgid "Choose **Applications**&nbsp;â¸ **Utilities**&nbsp;â¸ **Disks**."
 msgstr ""
 
 #. type: Bullet: '  1. '
@@ -692,8 +692,8 @@ msgstr ""
 
 #. type: Bullet: '  1. '
 msgid ""
-"Click the **[[!img lib/unlock.png alt=\"Unlock selected encrypted partition"
-"\" class=\"symbolic\" link=\"no\"]]** button."
+"Click the **[[!img lib/unlock.png alt=\"Unlock selected encrypted "
+"partition\" class=\"symbolic\" link=\"no\"]]** button."
 msgstr ""
 
 #. type: Bullet: '  1. '
@@ -727,8 +727,8 @@ msgstr ""
 
 #. type: Bullet: '  1. '
 msgid ""
-"Choose **Applications**&nbsp;▸ **System Tools**&nbsp;▸ **Root Terminal** to "
-"open a terminal with administration rights."
+"Choose **Applications**&nbsp;â¸ **System Tools**&nbsp;â¸ **Root Terminal** "
+"to open a terminal with administration rights."
 msgstr ""
 
 #. type: Bullet: '  1. '
@@ -787,13 +787,13 @@ msgstr ""
 
 #. type: Title ##
 #, no-wrap
-msgid "Welcome Screen and Tor Connection don't fit on 800×600 ([[!tails_ticket 19324]])"
+msgid "Welcome Screen and Tor Connection don't fit on 800Ã600 ([[!tails_ticket 19324]])"
 msgstr ""
 
 #. type: Plain text
 msgid ""
 "The top of the Welcome Screen and some button of the Tor Connection "
-"assistant are cut out on small displays (800×600), like virtual machines."
+"assistant are cut out on small displays (800Ã600), like virtual machines."
 msgstr ""
 
 #. type: Plain text

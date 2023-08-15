@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-07-06 17:33+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,11 +207,11 @@ msgstr ""
 
 #. type: Plain text
 msgid ""
-"For more details, read our [[!tails_gitweb debian/changelog desc=\"changelog"
-"\"]]."
+"For more details, read our [[!tails_gitweb debian/changelog "
+"desc=\"changelog\"]]."
 msgstr ""
-"Pour plus de détails, lisez notre [[!tails_gitweb debian/changelog desc="
-"\"liste des changements\"]]."
+"Pour plus de détails, lisez notre [[!tails_gitweb debian/changelog "
+"desc=\"liste des changements\"]]."
 
 #. type: Plain text
 #, no-wrap
@@ -249,14 +249,19 @@ msgid "Choose **Minimize** or **Maximize**."
 msgstr "Choisir **Réduire** ou **Restaurer**."
 
 #. type: Title ##
-#, no-wrap
-msgid "Welcome Screen and Tor Connection don't fit on 800×600 ([[!tails_ticket 19324]])"
+#, fuzzy, no-wrap
+#| msgid "Welcome Screen and Tor Connection don't fit on 800×600 ([[!tails_ticket 19324]])"
+msgid "Welcome Screen and Tor Connection don't fit on 800Ã600 ([[!tails_ticket 19324]])"
 msgstr "L'Écran de bienvenue et la Connexion à Tor ne rentrent pas en 800x600 ([[!tails_ticket 19324]])"
 
 #. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "The top of the Welcome Screen and some button of the Tor Connection "
+#| "assistant are cut out on small displays (800×600), like virtual machines."
 msgid ""
 "The top of the Welcome Screen and some button of the Tor Connection "
-"assistant are cut out on small displays (800×600), like virtual machines."
+"assistant are cut out on small displays (800Ã600), like virtual machines."
 msgstr ""
 "Le haut de l'Écran de bienvenue et quelques boutons de l'assistant Connexion "
 "à Tor sont coupés sur les petits écrans (800×600), tels ceux des machines "

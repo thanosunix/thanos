@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-12-11 08:53+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-02-05 18:28+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,14 +246,14 @@ msgstr ""
 #. type: Plain text
 msgid ""
 "We fixed [28 usability issues](https://gitlab.tails.boum.org/tails/tails/-/"
-"issues/?sort=closed_desc&state=closed&label_name%5B%5D=C%3ATor"
-"%20Connection&first_page_size=20)  identified during these tests. For "
-"example:"
+"issues/?"
+"sort=closed_desc&state=closed&label_name%5B%5D=C%3ATor%20Connection&first_page_size=20)  "
+"identified during these tests. For example:"
 msgstr ""
 "Nous avons corrigé [28 problèmes d'utilisation](https://gitlab.tails.boum."
-"org/tails/tails/-/issues/?sort=closed_desc&state=closed&label_name%5B%5D=C"
-"%3ATor%20Connection&first_page_size=20)  identifiés durant ces tests. Par "
-"exemple :"
+"org/tails/tails/-/issues/?"
+"sort=closed_desc&state=closed&label_name%5B%5D=C%3ATor%20Connection&first_page_size=20)  "
+"identifiés durant ces tests. Par exemple :"
 
 #. type: Bullet: '- '
 msgid ""
@@ -453,13 +453,13 @@ msgstr ""
 msgid ""
 "Finally, we fixed no less than [30 other smaller usability issues](https://"
 "gitlab.tails.boum.org/tails/tails/-/issues/?"
-"sort=closed_desc&state=closed&label_name%5B%5D=C"
-"%3AInstallation&first_page_size=20) in the instructions!"
+"sort=closed_desc&state=closed&label_name%5B%5D=C%3AInstallation&first_page_size=20) "
+"in the instructions!"
 msgstr ""
 "Finalement, nous avons corrigé pas moins de [30 autres petits problèmes "
 "d'utilisation](https://gitlab.tails.boum.org/tails/tails/-/issues/?"
-"sort=closed_desc&state=closed&label_name%5B%5D=C"
-"%3AInstallation&first_page_size=20) dans les instructions !"
+"sort=closed_desc&state=closed&label_name%5B%5D=C%3AInstallation&first_page_size=20) "
+"dans les instructions !"
 
 #. type: Title ##
 #, no-wrap
@@ -477,7 +477,9 @@ msgstr ""
 "domaine simple, beau et de confiance :"
 
 #. type: Plain text
-msgid "🎉 ✨ ***tails.net*** ✨ 🎉"
+#, fuzzy
+#| msgid "🎉 ✨ ***tails.net*** ✨ 🎉"
+msgid "ð â¨ ***tails.net*** â¨ ð"
 msgstr "🎉 ✨ ***tails.net*** ✨ 🎉"
 
 #. type: Plain text

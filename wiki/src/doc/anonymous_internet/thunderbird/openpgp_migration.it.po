@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-17 22:56+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2021-03-17 21:06+0000\n"
 "Last-Translator: _ignifugo <ignifugo@insicuri.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgstr "Dal desktop:"
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid "Choose **Applications&nbsp;▸ Configure persistent volume**."
-msgid "Choose **Applications&nbsp;▸ Accessories&nbsp;▸ Kleopatra**."
+msgid "Choose **Applications&nbsp;â¸ Accessories&nbsp;â¸ Kleopatra**."
 msgstr "Scegli **Applicazioni&nbsp;- Configurare il volume persistente**."
 
 #. type: Bullet: '1. '
@@ -87,8 +87,8 @@ msgstr "Seleziona le chiavi pubbliche che desideri spostare su *Thunderbird*."
 #| "Choose **File&nbsp;▸ Export&hellip;** and save these public keys to your "
 #| "*Home* directory."
 msgid ""
-"Choose **File&nbsp;▸ Export Secret Keys…** and save this private key to your "
-"*Home* directory."
+"Choose **File&nbsp;â¸ Export Secret Keysâ¦** and save this private key to "
+"your *Home* directory."
 msgstr ""
 "Seleziona **File&nbsp;▸ Export&hellip;** e salva queste chiavi pubbliche "
 "nella tua cartella *Home*."
@@ -109,14 +109,14 @@ msgstr "Da *Thunderbird*:"
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid ""
-#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#| "\"no\"]]&nbsp;▸ Account Settings**."
+#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#| "link=\"no\"]]&nbsp;▸ Account Settings**."
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Account Settings**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Account Settings**."
 msgstr ""
-"Seleziona **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-"\"no\"]]&nbsp;▸ Impostazioni dell'Account**."
+"Seleziona **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;▸ Impostazioni dell'Account**."
 
 #. type: Bullet: '1. '
 msgid ""
@@ -129,7 +129,7 @@ msgstr ""
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid "In the right pane, click the **Add Key…** button."
-msgid "In the right pane, click the **Add Key…** button."
+msgid "In the right pane, click the **Add Keyâ¦** button."
 msgstr "Nel riquadro a destra fai clic sul pulsante **Aggiungi chiave...**."
 
 #. type: Bullet: '1. '
@@ -147,7 +147,7 @@ msgstr ""
 #| "Click the **Select File to Import…** button and choose the private key "
 #| "that your exported from the *Passwords and Keys* utility."
 msgid ""
-"Click the **Select File to Import…** button and choose the private key that "
+"Click the **Select File to Importâ¦** button and choose the private key that "
 "your exported from *Kleopatra*."
 msgstr ""
 "Fai clic su **Seleziona file da importare...** e scegli la chiave privata "
@@ -228,14 +228,14 @@ msgstr ""
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid ""
-#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#| "\"no\"]]&nbsp;▸ Account Settings**."
+#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#| "link=\"no\"]]&nbsp;▸ Account Settings**."
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Settings**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Settings**."
 msgstr ""
-"Seleziona **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-"\"no\"]]&nbsp;▸ Impostazioni dell'Account**."
+"Seleziona **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;▸ Impostazioni dell'Account**."
 
 #. type: Bullet: '1. '
 msgid "Choose **Privacy & Security**."
@@ -289,7 +289,7 @@ msgstr "   Puoi usare **Shift+click** e **Ctrl+click** per selezionare più tast
 #| "Choose **File&nbsp;▸ Export&hellip;** and save these public keys to your "
 #| "*Home* directory."
 msgid ""
-"Choose **File&nbsp;▸ Export…** and save these public keys to your *Home* "
+"Choose **File&nbsp;â¸ Exportâ¦** and save these public keys to your *Home* "
 "directory."
 msgstr ""
 "Seleziona **File&nbsp;▸ Export&hellip;** e salva queste chiavi pubbliche "
@@ -303,14 +303,14 @@ msgstr "<h2 id=\"import-public\">Importa le chiavi publiche su <em>Thunderbird</
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid ""
-#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#| "\"no\"]]&nbsp;▸ Tools&nbsp;▸ OpenPGP Key Manager**."
+#| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#| "link=\"no\"]]&nbsp;▸ Tools&nbsp;▸ OpenPGP Key Manager**."
 msgid ""
-"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;▸ Tools&nbsp;▸ OpenPGP Key Manager**."
+"Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;â¸ Tools&nbsp;â¸ OpenPGP Key Manager**."
 msgstr ""
-"Scegli **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link=\"no"
-"\"]]&nbsp;- Tools&nbsp;- OpenPGP Key Manager**."
+"Scegli **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]]&nbsp;- Tools&nbsp;- OpenPGP Key Manager**."
 
 #. type: Bullet: '1. '
 #, fuzzy
@@ -318,7 +318,7 @@ msgstr ""
 #| "In the **OpenPGP Key Manager**, choose **File&nbsp;▸ Import Public "
 #| "Key(s)  From File.**"
 msgid ""
-"In the **OpenPGP Key Manager**, choose **File&nbsp;▸ Import Public Key(s)  "
+"In the **OpenPGP Key Manager**, choose **File&nbsp;â¸ Import Public Key(s)  "
 "From File.**"
 msgstr ""
 "Nell' **OpenPGP Key Manager**, seleziona **File&nbsp;▸ Importa Chiave(i) "
@@ -395,7 +395,7 @@ msgstr ""
 #. type: Bullet: '1. '
 #, fuzzy
 #| msgid "Choose **Applications&nbsp;▸ Configure persistent volume**."
-msgid "Choose **Applications&nbsp;▸ Persistent Storage**."
+msgid "Choose **Applications&nbsp;â¸ Persistent Storage**."
 msgstr "Scegli **Applicazioni&nbsp;- Configurare il volume persistente**."
 
 #. type: Bullet: '1. '
@@ -436,14 +436,14 @@ msgstr "Disattiva la funzionalità GnuPG."
 
 #, fuzzy
 #~| msgid ""
-#~| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#~| "\"no\"]]&nbsp;▸ Preferences**."
+#~| "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#~| "link=\"no\"]]&nbsp;▸ Preferences**."
 #~ msgid ""
-#~ "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#~ "\"no\"]]&nbsp;▸ Preferences**."
+#~ "Choose **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#~ "link=\"no\"]]&nbsp;▸ Preferences**."
 #~ msgstr ""
-#~ "Scegli **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" link="
-#~ "\"no\"]]&nbsp;▸ Preferenze**."
+#~ "Scegli **[[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#~ "link=\"no\"]]&nbsp;▸ Preferenze**."
 
 #~ msgid "Click **Save**."
 #~ msgstr "Clicca **Salva**."

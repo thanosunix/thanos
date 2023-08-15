@@ -1,13 +1,19 @@
 #!/bin/sh
 
-# This shell library is meant to be used with `set -e`.
-
 NEW_INCLUDES_DIR=/mnt/config/chroot_local-includes
 
 if [ "$(whoami)" != "root" ]; then
     echo "This library is useless for non-root users. Exiting..." >&2
     exit 1
 fi
+
+case "$-" in
+    *e*) : ;;
+    *)
+        echo "This library is meant to be used with 'set -e'. Exiting..." >&2
+        exit 1
+        ;;
+esac
 
 # Import the TBB_INSTALL variable
 . /usr/local/lib/tails-shell-library/tor-browser.sh
