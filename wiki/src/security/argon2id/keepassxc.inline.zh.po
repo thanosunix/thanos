@@ -7,7 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-13 19:42+0000\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +23,11 @@ msgid "[[!tag security/fixed]]\n"
 msgstr ""
 
 #. type: Bullet: '   1. '
-msgid "Choose **Applications**&nbsp;▸ **KeePassXC**."
+msgid "Choose **Applications**&nbsp;â¸ **KeePassXC**."
 msgstr ""
 
 #. type: Bullet: '   1. '
-msgid "Choose **Tools**&nbsp;▸ **Password Generator**."
+msgid "Choose **Tools**&nbsp;â¸ **Password Generator**."
 msgstr ""
 
 #. type: Bullet: '   1. '

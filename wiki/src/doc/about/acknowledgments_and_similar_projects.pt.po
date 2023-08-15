@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-05-31 09:31+0200\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2022-11-09 15:17+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,14 +70,19 @@ msgstr ""
 "fonte de inspiração no começo."
 
 #. type: Bullet: '  - '
+#, fuzzy
+#| msgid ""
+#| "Some ideas (in particular the improvements to the [[contribute/design/"
+#| "memory_erasure]] procedure) were borrowed from [Liberté Linux](https://"
+#| "dee.su/liberte)."
 msgid ""
 "Some ideas (in particular the improvements to the [[contribute/design/"
-"memory_erasure]] procedure) were borrowed from [Liberté Linux](https://dee."
+"memory_erasure]] procedure) were borrowed from [LibertÃ© Linux](https://dee."
 "su/liberte)."
 msgstr ""
-"Algumas ideias (em particular as melhorias no nosso procedimento de [["
-"apagamento de memória|contribute/design/memory_erasure]]) foram tomadas do ["
-"Liberté Linux](http://dee.su/liberte)."
+"Algumas ideias (em particular as melhorias no nosso procedimento de "
+"[[apagamento de memória|contribute/design/memory_erasure]]) foram tomadas do "
+"[Liberté Linux](http://dee.su/liberte)."
 
 #. type: Plain text
 #, no-wrap
@@ -105,9 +110,7 @@ msgstr "Projetos ativos"
 #. type: Plain text
 #, no-wrap
 msgid "<!-- We degrade projects to 'discontinued' if they don't release a new version in at least 1 year. -->\n"
-msgstr ""
-"<!-- We degrade projects to 'discontinued' if they don't release a new "
-"version in at least 1 year. -->\n"
+msgstr "<!-- We degrade projects to 'discontinued' if they don't release a new version in at least 1 year. -->\n"
 
 #. type: Bullet: '* '
 msgid "[Qubes](https://www.qubes-os.org/)"
@@ -184,7 +187,9 @@ msgstr ""
 "[JonDo Live-CD](https://anonymous-proxy-servers.net/en/jondo-live-cd.html)"
 
 #. type: Bullet: '* '
-msgid "[Liberté Linux](https://dee.su/liberte)"
+#, fuzzy
+#| msgid "[Liberté Linux](https://dee.su/liberte)"
+msgid "[LibertÃ© Linux](https://dee.su/liberte)"
 msgstr "[Liberté Linux](https://dee.su/liberte)"
 
 #. type: Bullet: '* '
@@ -198,8 +203,8 @@ msgid ""
 "[ParanoidLinux](https://web.archive.org/web/20090425140610/http://"
 "paranoidlinux.org:80/)"
 msgstr ""
-"[ParanoidLinux](https://web.archive.org/web/20090425140610/"
-"http://paranoidlinux.org:80/)"
+"[ParanoidLinux](https://web.archive.org/web/20090425140610/http://"
+"paranoidlinux.org:80/)"
 
 #. type: Bullet: '* '
 msgid "[Phantomix](http://phantomix.ytternhagen.de/)"
@@ -224,8 +229,8 @@ msgid ""
 "[SilentKeys](https://web.archive.org/web/20160521142915/https://"
 "getsilentkeys.com/en/)"
 msgstr ""
-"[SilentKeys](https://web.archive.org/web/20160521142915/https://getsilentkeys"
-".com/en/)"
+"[SilentKeys](https://web.archive.org/web/20160521142915/https://"
+"getsilentkeys.com/en/)"
 
 #. type: Bullet: '* '
 msgid "[SubgraphOS](https://subgraph.com/sgos/)"
@@ -244,8 +249,8 @@ msgid ""
 "[The Incognito LiveCD](https://web.archive.org/web/20090220133020/http://"
 "anonymityanywhere.com/)"
 msgstr ""
-"[The Incognito LiveCD](https://web.archive.org/web/20090220133020/"
-"http://anonymityanywhere.com/)"
+"[The Incognito LiveCD](https://web.archive.org/web/20090220133020/http://"
+"anonymityanywhere.com/)"
 
 #. type: Bullet: '* '
 msgid "[Discreete Linux](https://www.privacy-cd.org/)"
@@ -256,8 +261,8 @@ msgid ""
 "[uVirtus](https://web.archive.org/web/20131030050159/https://www.uvirtus."
 "org/)"
 msgstr ""
-"[uVirtus](https://web.archive.org/web/20131030050159/https://www.uvirtus.org/"
-")"
+"[uVirtus](https://web.archive.org/web/20131030050159/https://www.uvirtus."
+"org/)"
 
 #~ msgid "[IprediaOS](http://www.ipredia.org/)"
 #~ msgstr "[IprediaOS](http://www.ipredia.org/)"

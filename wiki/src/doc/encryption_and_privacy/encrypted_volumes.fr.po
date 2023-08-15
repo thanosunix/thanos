@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-06-09 07:47+0200\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-07-24 17:37+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -31,8 +31,7 @@ msgstr "[[!toc levels=2]]\n"
 #. type: Plain text
 #, no-wrap
 msgid "<h1 id=\"luks\">Introduction to <span class=\"application\">LUKS</span></h1>\n"
-msgstr ""
-"<h1 id=\"luks\">Introduction à <span class=\"application\">LUKS</span></h1>\n"
+msgstr "<h1 id=\"luks\">Introduction à <span class=\"application\">LUKS</span></h1>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -85,9 +84,7 @@ msgstr "Le bureau GNOME vous permet d'ouvrir des supports chiffrés."
 #. type: Plain text
 #, no-wrap
 msgid "<h2 id=\"comparison\">Comparison between <span class=\"application\">LUKS</span> and <span class=\"application\">VeraCrypt</span></h2>\n"
-msgstr ""
-"<h2 id=\"comparison\">Comparaison entre <span class=\"application\">LUKS</"
-"span> et <span class=\"application\">VeraCrypt</span></h2>\n"
+msgstr "<h2 id=\"comparison\">Comparaison entre <span class=\"application\">LUKS</span> et <span class=\"application\">VeraCrypt</span></h2>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -113,9 +110,13 @@ msgid "<h1 id=\"creating\">Creating an encrypted partition</h1>\n"
 msgstr "<h1 id=\"creating\">Créer une partition chiffrée</h1>\n"
 
 #. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "Choose **Applications**&nbsp;▸ **Utilities**&nbsp;▸ **Disks** to open "
+#| "*GNOME Disks*."
 msgid ""
-"Choose **Applications**&nbsp;▸ **Utilities**&nbsp;▸ **Disks** to open *GNOME "
-"Disks*."
+"Choose **Applications**&nbsp;â¸ **Utilities**&nbsp;â¸ **Disks** to open "
+"*GNOME Disks*."
 msgstr ""
 "Choisir **Applications**&nbsp;▸ **Utilitaires**&nbsp;▸ **Disques** pour "
 "ouvrir *Disques*."
@@ -123,9 +124,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "<h2 id=\"identifying\">Identifying your external storage device</h2>\n"
-msgstr ""
-"<h2 id=\"identifying\">Identifier votre périphérique de stockage externe</h2>"
-"\n"
+msgstr "<h2 id=\"identifying\">Identifier votre périphérique de stockage externe</h2>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -167,10 +166,15 @@ msgid "<h2 id=\"formatting\">Formatting the device</h2>\n"
 msgstr "<h2 id=\"formatting\">Formater le périphérique</h2>\n"
 
 #. type: Bullet: '  1. '
+#, fuzzy
+#| msgid ""
+#| "Click on the [[!img lib/view-more.png alt=\"Drive Options\" "
+#| "class=\"symbolic\" link=\"no\"]] button in the titlebar and choose "
+#| "**Format Disk…** to erase all the existing partitions on the device."
 msgid ""
-"Click on the [[!img lib/view-more.png alt=\"Drive Options\" class=\"symbolic"
-"\" link=\"no\"]] button in the titlebar and choose **Format Disk…** to erase "
-"all the existing partitions on the device."
+"Click on the [[!img lib/view-more.png alt=\"Drive Options\" "
+"class=\"symbolic\" link=\"no\"]] button in the titlebar and choose **Format "
+"Diskâ¦** to erase all the existing partitions on the device."
 msgstr ""
 "Cliquer sur le bouton [[!img lib/view-more.png alt=\"Options du disque\" "
 "class=\"symbolic\" link=\"no\"]] dans la barre de titre et choisir "
@@ -190,9 +194,9 @@ msgstr ""
 #| "class=\"guilabel\">Overwrite existing data with zeroes</span> in the "
 #| "<span class=\"guilabel\">Erase</span> drop-down list."
 msgid ""
-"If you want to securely erase all data on the device, choose to <span class="
-"\"guilabel\">Overwrite existing data with zeroes</span> in the <span class="
-"\"guilabel\">Erase</span> menu."
+"If you want to securely erase all data on the device, choose to <span "
+"class=\"guilabel\">Overwrite existing data with zeroes</span> in the <span "
+"class=\"guilabel\">Erase</span> menu."
 msgstr ""
 "Si vous voulez effacer de façon sécurisée toutes les données sur le "
 "périphérique, choisissez l'option <span class=\"guilabel\">Écraser les "
@@ -210,12 +214,13 @@ msgid ""
 "DOS)</span> in the <span class=\"guilabel\">Partitioning</span> menu."
 msgstr ""
 "Choisissez <span class=\"guilabel\">Compatible avec tous les systèmes et "
-"périphériques (MBR / DOS)</span> dans la liste déroulante <span class="
-"\"guilabel\">Partitionnement</span>."
+"périphériques (MBR / DOS)</span> dans la liste déroulante <span "
+"class=\"guilabel\">Partitionnement</span>."
 
 #. type: Plain text
-#, no-wrap
-msgid "     Then click <span class=\"bold\">Format…</span>.\n"
+#, fuzzy, no-wrap
+#| msgid "     Then click <span class=\"bold\">Format…</span>.\n"
+msgid "     Then click <span class=\"bold\">Formatâ¦</span>.\n"
 msgstr "     Cliquez ensuite sur <span class=\"bold\">Formater...</span>.\n"
 
 #. type: Bullet: '  1. '
@@ -251,9 +256,9 @@ msgid ""
 "partition\" class=\"symbolic\" link=\"no\"]]</span> button to create a new "
 "partition on the device."
 msgstr ""
-"Cliquez sur le bouton <span class=\"guimenu\">[[!img lib/list-add.png alt="
-"\"Créer partition\" class=\"symbolic\" link=\"no\"]]</span> pour créer une "
-"nouvelle partition sur le périphérique."
+"Cliquez sur le bouton <span class=\"guimenu\">[[!img lib/list-add.png "
+"alt=\"Créer partition\" class=\"symbolic\" link=\"no\"]]</span> pour créer "
+"une nouvelle partition sur le périphérique."
 
 #. type: Plain text
 #, no-wrap
@@ -336,14 +341,14 @@ msgstr ""
 
 #. type: Bullet: '       - '
 msgid ""
-"<span class=\"guilabel\">Type</span>: choose <span class=\"guilabel"
-"\">Internal disk for use with Linux systems only (Ext4)</span> and <span "
-"class=\"guilabel\">Password protect volume (LUKS)</span>."
+"<span class=\"guilabel\">Type</span>: choose <span "
+"class=\"guilabel\">Internal disk for use with Linux systems only (Ext4)</"
+"span> and <span class=\"guilabel\">Password protect volume (LUKS)</span>."
 msgstr ""
-"<span class=\"guilabel\">Type</span> : choisissez <span class=\"guilabel"
-"\">Disque interne à utiliser avec les systèmes Linux uniquement (Ext4)</"
-"span> et <span class=\"guilabel\">Volume protégé par mot de passe (LUKS)</"
-"span>."
+"<span class=\"guilabel\">Type</span> : choisissez <span "
+"class=\"guilabel\">Disque interne à utiliser avec les systèmes Linux "
+"uniquement (Ext4)</span> et <span class=\"guilabel\">Volume protégé par mot "
+"de passe (LUKS)</span>."
 
 #. type: Bullet: '     - '
 msgid "In the <span class=\"guilabel\">Set Password</span> screen:"
@@ -460,11 +465,17 @@ msgstr ""
 "navigateur de fichiers pour l'ouvrir."
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "1. Choose\n"
+#| "   <span class=\"menuchoice\">\n"
+#| "     <span class=\"guimenu\">Places</span>&nbsp;▸\n"
+#| "     <span class=\"guisubmenu\">Computer</span></span>\n"
+#| "   to open the file browser.\n"
 msgid ""
 "1. Choose\n"
 "   <span class=\"menuchoice\">\n"
-"     <span class=\"guimenu\">Places</span>&nbsp;▸\n"
+"     <span class=\"guimenu\">Places</span>&nbsp;â¸\n"
 "     <span class=\"guisubmenu\">Computer</span></span>\n"
 "   to open the file browser.\n"
 msgstr ""
@@ -499,15 +510,15 @@ msgid ""
 "from the <span class=\"guimenu\">Places</span> menu."
 msgstr ""
 "Après avoir ouvert la partition chiffrée avec le navigateur de fichier, il "
-"vous est aussi possible d'y accéder depuis le menu <span class=\"guimenu"
-"\">Emplacements</span>."
+"vous est aussi possible d'y accéder depuis le menu <span "
+"class=\"guimenu\">Emplacements</span>."
 
 #. type: Bullet: '1. '
 msgid ""
-"To close the partition after you finished using it, click on the <span class="
-"\"guimenu\">[[!img lib/media-eject.png alt=\"Eject\" class=\"symbolic\" link="
-"\"no\"]]</span> button next to the partition in the sidebar of the file "
-"browser."
+"To close the partition after you finished using it, click on the <span "
+"class=\"guimenu\">[[!img lib/media-eject.png alt=\"Eject\" "
+"class=\"symbolic\" link=\"no\"]]</span> button next to the partition in the "
+"sidebar of the file browser."
 msgstr ""
 "Pour fermer la partition, après avoir fini de l'utiliser, cliquez sur le "
 "bouton  <span class=\"guimenu\">[[!img lib/media-eject.png alt=\"Éjection\" "
@@ -533,9 +544,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "<h1 id=\"os\">Opening encrypted volumes from other operating systems</h1>\n"
-msgstr ""
-"<h1 id=\"os\">Ouvrir des volumes chiffrés depuis d'autres systèmes "
-"d'exploitation</h1>\n"
+msgstr "<h1 id=\"os\">Ouvrir des volumes chiffrés depuis d'autres systèmes d'exploitation</h1>\n"
 
 #. type: Plain text
 msgid ""
@@ -559,17 +568,21 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "<h1 id=\"changing\">Changing the passphrase of an existing encrypted partition</h1>\n"
-msgstr ""
-"<h1 id=\"changing\">Changer la phrase de passe d'une partition chiffrée "
-"existante</h1>\n"
+msgstr "<h1 id=\"changing\">Changer la phrase de passe d'une partition chiffrée existante</h1>\n"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "To open <span class=\"application\">GNOME Disks</span> choose\n"
+#| "<span class=\"menuchoice\">\n"
+#| "  <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+#| "  <span class=\"guisubmenu\">Utilities</span>&nbsp;▸\n"
+#| "  <span class=\"guimenuitem\">Disks</span></span>.\n"
 msgid ""
 "To open <span class=\"application\">GNOME Disks</span> choose\n"
 "<span class=\"menuchoice\">\n"
-"  <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
-"  <span class=\"guisubmenu\">Utilities</span>&nbsp;▸\n"
+"  <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
+"  <span class=\"guisubmenu\">Utilities</span>&nbsp;â¸\n"
 "  <span class=\"guimenuitem\">Disks</span></span>.\n"
 msgstr ""
 "Pour ouvrir l'utilitaire <span class=\"application\">Disques</span> de GNOME, choisir\n"
@@ -627,8 +640,9 @@ msgid "   [[!img lib/system-run.png alt=\"Additional partition options\" class=\
 msgstr "   [[!img lib/system-run.png alt=\"Options de partition supplémentaires\" class=\"symbolic\" link=\"no\"]]\n"
 
 #. type: Plain text
-#, no-wrap
-msgid "   </span> button and choose <span class=\"guimenu\">Change Passphrase…</span>\n"
+#, fuzzy, no-wrap
+#| msgid "   </span> button and choose <span class=\"guimenu\">Change Passphrase…</span>\n"
+msgid "   </span> button and choose <span class=\"guimenu\">Change Passphraseâ¦</span>\n"
 msgstr "   </span> bouton et choisir <span class=\"guimenu\">Modifier la phrase de passe…</span>\n"
 
 #, no-wrap
@@ -706,8 +720,8 @@ msgstr "   </span> bouton et choisir <span class=\"guimenu\">Modifier la phrase 
 #~ "persistent storage and remembered across multiple\n"
 #~ "   working sessions.\n"
 #~ msgstr ""
-#~ "   Si vous choisissez de sélectionner l'option <span class=\"guilabel"
-#~ "\">Se souvenir du mot de passe</span> et \n"
+#~ "   Si vous choisissez de sélectionner l'option <span "
+#~ "class=\"guilabel\">Se souvenir du mot de passe</span> et \n"
 #~ "   que vous avez la fonctionnalité de persistance du \n"
 #~ "   <span class=\"guilabel\">[[Trousseau de clés GNOME|first_steps/"
 #~ "persistence/configure#gnome_keyring]]</span> activée, \n"
@@ -726,14 +740,14 @@ msgstr "   </span> bouton et choisir <span class=\"guimenu\">Modifier la phrase 
 #~ msgid ""
 #~ "  1. In the dialog box to select the <span class=\"guilabel\">Scheme</"
 #~ "span>, if\n"
-#~ "  you are unsure, leave the default option <span class=\"guilabel"
-#~ "\">Master Boot\n"
+#~ "  you are unsure, leave the default option <span "
+#~ "class=\"guilabel\">Master Boot\n"
 #~ "  Record</span> selected.\n"
 #~ msgstr ""
-#~ "  1. Dans la boîte de dialogue pour sélectionner le <span class=\"guilabel"
-#~ "\">Schéma</span>, si\n"
-#~ "  vous avez un doute, laissez l'option par défaut, <span class=\"guilabel"
-#~ "\">Master Boot\n"
+#~ "  1. Dans la boîte de dialogue pour sélectionner le <span "
+#~ "class=\"guilabel\">Schéma</span>, si\n"
+#~ "  vous avez un doute, laissez l'option par défaut, <span "
+#~ "class=\"guilabel\">Master Boot\n"
 #~ "  Record</span>.\n"
 
 #~ msgid ""
@@ -779,10 +793,10 @@ msgstr "   </span> bouton et choisir <span class=\"guimenu\">Modifier la phrase 
 #~ msgstr ""
 #~ "Lorsque vous branchez un périphérique contenant une partition chiffrée, "
 #~ "Tails ne la montera pas\n"
-#~ "automatiquement mais elle apparaîtra dans le menu <span class=\"guimenu"
-#~ "\">Raccourcis</span>.\n"
-#~ "Si plusieurs partitions apparaissent comme <span class=\"guimenu"
-#~ "\">chiffrées</span>, comme\n"
+#~ "automatiquement mais elle apparaîtra dans le menu <span "
+#~ "class=\"guimenu\">Raccourcis</span>.\n"
+#~ "Si plusieurs partitions apparaissent comme <span "
+#~ "class=\"guimenu\">chiffrées</span>, comme\n"
 #~ "dans cet exemple, vous pouvez utiliser la taille pour déduire laquelle "
 #~ "vous souhaitez ouvrir.\n"
 

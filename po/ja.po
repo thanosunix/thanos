@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-06 10:11+0200\n"
-"PO-Revision-Date: 2023-08-04 16:06+0000\n"
+"PO-Revision-Date: 2023-08-09 07:05+0000\n"
 "Last-Translator: Isizaki mei <christine.dinapoli@tmail.link>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tor/tails-gui/"
 "ja/>\n"
@@ -409,10 +409,10 @@ msgid ""
 "website/doc/upgrade/error/check.en.html"
 msgstr ""
 "<b>署名キーの更新中にエラーが発生しました。</b>\\n\\n<b>これにより、当社の "
-"Web サイトからアップグレードを利用できるかどうかを判断できません。</b>\\n\\n"
-"ネットワーク接続を確認して、Tails を再起動してください。 もう一度アップグレー"
-"ドしてみてください。\\n\\n問題が解決しない場合は、file:///usr/share/doc/"
-"tails/website/doc/upgrade/error/check.en.html にアクセスしてください"
+"ウェブサイトからアップグレードを利用できるかどうかを判断できません。</"
+"b>\\n\\nネットワーク接続を確認して、Tails を再起動してください。 もう一度アッ"
+"プグレードしてみてください。\\n\\n問題が解決しない場合は、file:///usr/share/"
+"doc/tails/website/doc/upgrade/error/check.en.html にアクセスしてください"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:303
 msgid "Error while downloading the signing key"
@@ -780,7 +780,7 @@ msgstr "廃止"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/additional_settings.py:338
 msgid "_Unsafe Browser"
-msgstr "安全でないブラウザ (_U)"
+msgstr "安全でないブラウザー (_U)"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/additional_settings.py:347
 msgid "Enabled (default)"
@@ -2258,8 +2258,8 @@ msgid ""
 "To use the Unsafe Browser, restart Tails and make sure that the Unsafe "
 "Browser is enabled in the additional settings of the Welcome Screen."
 msgstr ""
-"Unsafe Browser を使用するには、Tails を再起動し、ようこそ画面の追加設定で "
-"Unsafe Browser が有効になっていることを確認します。"
+"安全ではないブラウザーを使用するには、Tails を再起動し、ようこそ画面の追加設"
+"定で Unsafe Browser が有効になっていることを確認します。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:53
 msgid "To use the Unsafe Browser, restart Tails."
@@ -2286,7 +2286,7 @@ msgstr "システムの再起動に失敗しました。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:74
 msgid "Starting the Unsafe Browser..."
-msgstr "安全でないブラウザを起動中..."
+msgstr "安全でないブラウザーを起動中..."
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:75
 msgid "This may take a while, so please be patient."
@@ -2294,7 +2294,7 @@ msgstr "しばらくかかる場合があるので、お待ちください。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:81
 msgid "Shutting down the Unsafe Browser..."
-msgstr "安全でないブラウザをシャットダウンしています..."
+msgstr "安全でないブラウザーをシャットダウンしています..."
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:82
 msgid ""
@@ -2302,21 +2302,21 @@ msgid ""
 "is properly shut down."
 msgstr ""
 "しばらく時間がかかる恐れがあり、適切にシャットダウンされるまで、安全でないブ"
-"ラウザを再起動できません。"
+"ラウザーを再起動できません。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:95
 #: ../config/chroot_local-includes/usr/share/applications/unsafe-browser.desktop.in.h:1
 #: ../config/chroot_local-includes/usr/share/tails/greeter/additional_settings.ui.in:512
 msgid "Unsafe Browser"
-msgstr "安全でないブラウザ"
+msgstr "安全でないブラウザー"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:110
 msgid ""
 "Another Unsafe Browser is currently running, or being cleaned up. Please "
 "retry in a while."
 msgstr ""
-"別の安全でないブラウザが起動中か、クリーンアップされています。少ししてからも"
-"う一度お試しください。"
+"別の安全でないブラウザーが起動中か、クリーンアップされています。少ししてから"
+"もう一度お試しください。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:117
 msgid "Failed to setup chroot."
@@ -2324,7 +2324,7 @@ msgstr "chroot のセットアップに失敗しました。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:123
 msgid "Failed to configure browser."
-msgstr "ブラウザの設定に失敗しました。"
+msgstr "ブラウザーの設定に失敗しました。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:125
 msgid ""
@@ -2332,12 +2332,12 @@ msgid ""
 "Unsafe Browser, you first need to connect to a Wi-Fi, wired, or mobile "
 "network."
 msgstr ""
-"まだローカルネットワークに接続していません。\\n\\n安全ではないブラウザを開始"
-"するには、Wi-Fi、有線接続、モバイルネットワークに接続する必要があります。"
+"まだローカルネットワークに接続していません。\\n\\n安全ではないブラウザーを開"
+"始するには、Wi-Fi、有線接続、モバイルネットワークに接続する必要があります。"
 
 #: config/chroot_local-includes/usr/local/sbin/unsafe-browser:155
 msgid "Failed to run browser."
-msgstr "ブラウザを起動できませんでした。"
+msgstr "ブラウザーを起動できませんでした。"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/whisperBack/exceptions.py:40
 #, python-format
@@ -2555,7 +2555,7 @@ msgstr "Tor Browser"
 
 #: ../config/chroot_local-includes/usr/share/applications/tor-browser.desktop.in.h:2
 msgid "Anonymous Web Browser"
-msgstr "匿名ウェブブラウザ"
+msgstr "匿名ウェブブラウザー"
 
 #: ../config/chroot_local-includes/usr/share/applications/unsafe-browser.desktop.in.h:2
 msgid "Browse the World Wide Web without anonymity"
@@ -2563,7 +2563,7 @@ msgstr "匿名性なしでワールドワイドウェブをブラウズする"
 
 #: ../config/chroot_local-includes/usr/share/applications/unsafe-browser.desktop.in.h:3
 msgid "Unsafe Web Browser"
-msgstr "安全でないウェブブラウザ"
+msgstr "安全でないウェブブラウザー"
 
 #: ../config/chroot_local-includes/usr/share/applications/unlock-veracrypt-volumes.desktop.in.h:2
 msgid "Mount VeraCrypt encrypted file containers and devices"
@@ -2728,11 +2728,11 @@ msgstr ""
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/additional_settings.ui.in:576
 msgid "Enable the Unsafe Browser (default)"
-msgstr "安全でないブラウザを有効にする（デフォルト）"
+msgstr "安全でないブラウザーを有効にする（デフォルト）"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/additional_settings.ui.in:622
 msgid "Disable the Unsafe Browser"
-msgstr "安全でないブラウザを無効化する"
+msgstr "安全でないブラウザーを無効化する"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:101
 msgid "Settings were loaded from the persistent storage."
@@ -2749,7 +2749,7 @@ msgid ""
 "passwords, and so on."
 msgstr ""
 "ファイルと設定の一部を Tails USB スティックの暗号化された永続ストレージに保存"
-"できます: ドキュメント、ブラウザのブックマーク、Wi-Fi パスワードなどです。"
+"できます: ドキュメント、ブラウザーのブックマーク、Wi-Fi パスワードなどです。"
 
 #: ../config/chroot_local-includes/usr/share/tails/greeter/main.ui.in:225
 msgid "Create and configure a Persistent Storage after starting Tails"
@@ -2906,11 +2906,11 @@ msgstr "システム設定"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:228
 msgid "Welcome Screen"
-msgstr "ウェルカムスクリーン"
+msgstr "ようこそ画面"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:244
 msgid "Activate Welcome Screen"
-msgstr "ウェルカムスクリーンを有効にする"
+msgstr "ようこそ画面を有効にする"
 
 #: ../config/chroot_local-includes/usr/share/tails/persistent-storage/features_view.ui.in:257
 msgid "Printers"
@@ -3061,8 +3061,8 @@ msgid ""
 msgstr ""
 "<b>永続ストレージはロックされています。</b>\n"
 "\n"
-"永続ストレージを使用または構成するには、Tails の起動時にウェルカム画面でロッ"
-"クを解除します。\n"
+"永続ストレージを使用または構成するには、Tails の起動時にようこそ画面でロック"
+"を解除します。\n"
 "\n"
 "永続ストレージを削除するには、タイトル バーの右側にある [<b>削除</b>] をク"
 "リックしてください。"
@@ -3129,7 +3129,7 @@ msgstr ""
 "\n"
 "・あなたのドキュメント\n"
 "・あなたのWi-Fiパスワード\n"
-"・お使いのブラウザのブックマーク\n"
+"・お使いのブラウザーのブックマーク\n"
 "・...\n"
 "\n"
 "<a href=\"doc/persistent_storage\">永続ストレージの詳細をご覧ください。</a>"
@@ -3423,7 +3423,7 @@ msgid ""
 "If you are in a shop, hotel, or airport, you might need to sign in to the "
 "local network using the Unsafe Browser."
 msgstr ""
-"お店、ホテル、または空港にいる場合は、安全でないブラウザを使用してローカル "
+"お店、ホテル、または空港にいる場合は、安全でないブラウザーを使用してローカル "
 "ネットワークにサインインする必要がある場合があります。"
 
 #: ../config/chroot_local-includes/usr/share/tails/tca/main.ui.in:840

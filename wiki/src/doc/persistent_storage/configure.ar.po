@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-28 16:04+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-05-29 20:01+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: Arabic <http://translate.tails.boum.org/projects/tails/"
@@ -27,8 +27,8 @@ msgstr ""
 
 #. type: Plain text
 msgid ""
-"To configure the Persistent Storage, choose **Applications**&nbsp;▸ "
-"**Tails**&nbsp;▸ **Persistent Storage**."
+"To configure the Persistent Storage, choose **Applications**&nbsp;â¸ "
+"**Tails**&nbsp;â¸ **Persistent Storage**."
 msgstr ""
 
 #. type: Plain text
@@ -68,7 +68,7 @@ msgid ""
 "<p>We are often asked to implement new features of the Persistent Storage: Tor\n"
 "Browser preferences, Tor configuration, desktop background, mouse and touchpad\n"
 "settings, and so on. See the [[!tails_gitlab\n"
-"groups/tails/-/issues?scope=all&utf8=✓&state=opened&label_name%5B%5D=C%3APersistence\n"
+"groups/tails/-/issues?scope=all&utf8=â&state=opened&label_name%5B%5D=C%3APersistence\n"
 "desc=\"list of issues about the Persistent Storage in our GitLab\"]].<p>\n"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid ""
 "To open the <span class=\"filename\">Persistent</span> folder, choose\n"
 "<span class=\"menuchoice\">\n"
-"  <span class=\"guimenu\">Places</span>&nbsp;▸\n"
+"  <span class=\"guimenu\">Places</span>&nbsp;â¸\n"
 "  <span class=\"guimenuitem\">Persistent</span></span>.\n"
 msgstr ""
 
@@ -530,12 +530,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "    /live/persistence/TailsData_unlocked/dotfiles\n"
-"    ├── file_a\n"
-"    ├── folder\n"
-"    │   ├── file_b\n"
-"    │   └── subfolder\n"
-"    │       └── file_c\n"
-"    └── emptyfolder\n"
+"    âââ file_a\n"
+"    âââ folder\n"
+"    âÂ Â  âââ file_b\n"
+"    âÂ Â  âââ subfolder\n"
+"    âÂ Â      âââ file_c\n"
+"    âââ emptyfolder\n"
 msgstr ""
 
 #. type: Plain text
@@ -546,11 +546,11 @@ msgstr ""
 #, no-wrap
 msgid ""
 "    /home/amnesia\n"
-"    ├── file_a → /live/persistence/TailsData_unlocked/dotfiles/file_a\n"
-"    └── folder\n"
-"        ├── file_b → /live/persistence/TailsData_unlocked/dotfiles/folder/file_b\n"
-"        └── subfolder\n"
-"            └── file_c → /live/persistence/TailsData_unlocked/dotfiles/folder/subfolder/file_c\n"
+"    âââ file_a â /live/persistence/TailsData_unlocked/dotfiles/file_a\n"
+"    âââ folder\n"
+"     Â Â  âââ file_b â /live/persistence/TailsData_unlocked/dotfiles/folder/file_b\n"
+"     Â Â  âââ subfolder\n"
+"     Â Â      âââ file_c â /live/persistence/TailsData_unlocked/dotfiles/folder/subfolder/file_c\n"
 msgstr ""
 
 #. type: Plain text
@@ -615,8 +615,8 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **Applications**&nbsp;▸ **System Tools**&nbsp;▸ **Settings** to open "
-"the *Settings* utility."
+"Choose **Applications**&nbsp;â¸ **System Tools**&nbsp;â¸ **Settings** to "
+"open the *Settings* utility."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -629,7 +629,7 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **Places**&nbsp;▸ **Dotfiles** to open the <span class=\"filename\">/"
+"Choose **Places**&nbsp;â¸ **Dotfiles** to open the <span class=\"filename\">/"
 "live/persistence/TailsData_unlocked/dotfiles</span> folder in the <span "
 "class=\"application\">Files</span> browser."
 msgstr ""
@@ -675,7 +675,7 @@ msgstr ""
 #. type: Bullet: '  - '
 msgid ""
 "If you turn off the Persistent Folder feature, the documents saved in "
-"**Places** &nbsp;▸ **Persistent** are not available anymore."
+"**Places** &nbsp;â¸ **Persistent** are not available anymore."
 msgstr ""
 
 #. type: Bullet: '  - '

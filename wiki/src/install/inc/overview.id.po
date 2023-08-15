@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-11-08 00:37+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2018-04-04 20:23+0200\n"
 "Last-Translator: Tails translators\n"
 "Language-Team: \n"
@@ -188,11 +188,11 @@ msgid "1 hour in total"
 msgstr ""
 
 #. type: Content of: <div><div><p>
-msgid "½ hour"
+msgid "Â½ hour"
 msgstr ""
 
 #. type: Content of: <div><div><p>
-msgid "¼ hour"
+msgid "Â¼ hour"
 msgstr ""
 
 #. type: Content of: <div><div><p>
@@ -202,11 +202,11 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <div><div><p>
-msgid "½ hour to install"
+msgid "Â½ hour to install"
 msgstr ""
 
 #. type: Content of: <div><div><p>
-msgid "½ hour to upgrade"
+msgid "Â½ hour to upgrade"
 msgstr ""
 
 #. type: Content of: <h2>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-05-22 13:17+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-05-23 22:01+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,9 +46,7 @@ msgstr "<h1 id=\"features\">Nouvelles fonctionnalités</h1>\n"
 #. type: Plain text
 #, no-wrap
 msgid "<h2>Data deletion when deactivating a feature of the Persistent Storage</h2>\n"
-msgstr ""
-"<h2>Suppression des données lors de la désactivation de la fonctionnalité "
-"stockage persistant</h2>\n"
+msgstr "<h2>Suppression des données lors de la désactivation de la fonctionnalité stockage persistant</h2>\n"
 
 #. type: Plain text
 msgid ""
@@ -65,17 +63,13 @@ msgid ""
 "[[!img delete-data.png link=\"no\" alt=\"Persistent Storage settings with message:\n"
 "Persistent Folder. The data of this feature is still saved. Delete Data?\"]]\n"
 msgstr ""
-"[[!img delete-data.png link=\"no\" alt=\"Paramètres du stockage persistant "
-"avec le message :\n"
-"Dossier persistant. Les données de cette fonctionnalité sont encore "
-"présentes. Supprimer les données ?\"]]\n"
+"[[!img delete-data.png link=\"no\" alt=\"Paramètres du stockage persistant avec le message :\n"
+"Dossier persistant. Les données de cette fonctionnalité sont encore présentes. Supprimer les données ?\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "<h2>Passphrase suggestion when creating the Persistent Storage</h2>\n"
-msgstr ""
-"<h2>Suggestion d'une phrase de passe lors de la création du stockage "
-"persistant</h2>\n"
+msgstr "<h2>Suggestion d'une phrase de passe lors de la création du stockage persistant</h2>\n"
 
 #. type: Plain text
 msgid ""
@@ -88,10 +82,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "[[!img diceware.png link=\"no\" alt=\"We recommend a long passphrase of 5 to 7 random words. For example: Ella Grim Inca Brief Facts Panda\"]]\n"
-msgstr ""
-"[[!img diceware.png link=\"no\" alt=\"Nous conseillons une phrase de passe "
-"de 5 à 7 mots aléatoires de long. Par exemple : Ella Grim Inca Bref Faits "
-"Panda\"]]\n"
+msgstr "[[!img diceware.png link=\"no\" alt=\"Nous conseillons une phrase de passe de 5 à 7 mots aléatoires de long. Par exemple : Ella Grim Inca Bref Faits Panda\"]]\n"
 
 #. type: Plain text
 msgid ""
@@ -110,7 +101,7 @@ msgstr ""
 #. type: Plain text
 msgid ""
 "Learn more about the maths in [The Intercept: Passphrases That You Can "
-"Memorize — But That Even the NSA Can’t Guess](https://theintercept."
+"Memorize â But That Even the NSA Canât Guess](https://theintercept."
 "com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/)."
 msgstr ""
 
@@ -202,11 +193,11 @@ msgstr ""
 
 #. type: Plain text
 msgid ""
-"For more details, read our [[!tails_gitweb debian/changelog desc=\"changelog"
-"\"]]."
+"For more details, read our [[!tails_gitweb debian/changelog "
+"desc=\"changelog\"]]."
 msgstr ""
-"Pour plus de détails, lisez notre [[!tails_gitweb debian/changelog desc="
-"\"liste des changements\"]]."
+"Pour plus de détails, lisez notre [[!tails_gitweb debian/changelog "
+"desc=\"liste des changements\"]]."
 
 #. type: Plain text
 #, no-wrap

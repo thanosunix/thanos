@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-03-15 18:33+0000\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-03-26 10:28+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: \n"
@@ -41,9 +41,7 @@ msgstr "[[!inline pages=\"doc/anonymous_internet/unsafe_browser/captive_portal.i
 #. type: Plain text
 #, no-wrap
 msgid "<h1 id=\"security\">The <i>Unsafe Browser</i> is not anonymous</h1>\n"
-msgstr ""
-"<h1 id=\"security\">Le <i>Navigateur non sécurisé</i> n'est pas anonyme</h1>"
-"\n"
+msgstr "<h1 id=\"security\">Le <i>Navigateur non sécurisé</i> n'est pas anonyme</h1>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -61,10 +59,8 @@ msgid ""
 "<p>To learn how Tails implements the <i>Unsafe Browser</i> and its security, see our\n"
 "[[design documentation about the <i>Unsafe Browser</i>|contribute/design/Unsafe_Browser]].</p>\n"
 msgstr ""
-"<p>Pour voir comment Tails implémente le <i>Navigateur non sécurisé</i> et "
-"sa sécurité, consulter notre\n"
-"[[documentation sur la conception du <i>Navigateur non sécurisé</i>|"
-"contribute/design/Unsafe_Browser]].</p>\n"
+"<p>Pour voir comment Tails implémente le <i>Navigateur non sécurisé</i> et sa sécurité, consulter notre\n"
+"[[documentation sur la conception du <i>Navigateur non sécurisé</i>|contribute/design/Unsafe_Browser]].</p>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -81,7 +77,11 @@ msgid "To start the *Unsafe Browser*:"
 msgstr "Pour démarrer le *Navigateur non sécurisé* :"
 
 #. type: Bullet: '1. '
-msgid "Choose **Applications**&nbsp;▸ **Internet**&nbsp;▸ **Unsafe Browser**."
+#, fuzzy
+#| msgid ""
+#| "Choose **Applications**&nbsp;▸ **Internet**&nbsp;▸ **Unsafe Browser**."
+msgid ""
+"Choose **Applications**&nbsp;â¸ **Internet**&nbsp;â¸ **Unsafe Browser**."
 msgstr ""
 "Choisir **Applications**&nbsp;▸ **Internet**&nbsp;▸ **Navigateur non "
 "sécurisé**."
@@ -108,8 +108,8 @@ msgstr "[[!inline pages=\"doc/anonymous_internet/unsafe_browser/signing_in.inlin
 
 #~ msgid ""
 #~ "When the [[Welcome Screen|first_steps/welcome_screen]] appears, click on "
-#~ "the **[[!img lib/list-add.png alt=\"Add Additional Setting\" class="
-#~ "\"symbolic\" link=\"no\"]]** button."
+#~ "the **[[!img lib/list-add.png alt=\"Add Additional Setting\" "
+#~ "class=\"symbolic\" link=\"no\"]]** button."
 #~ msgstr ""
 #~ "Quand l'[[écran de bienvenue|first_steps/welcome_screen]] apparaît, "
 #~ "cliquez sur le bouton **[[!img lib/list-add.png alt=\"Paramètres "
@@ -211,14 +211,14 @@ msgstr "[[!inline pages=\"doc/anonymous_internet/unsafe_browser/signing_in.inlin
 #~ msgstr "Recommandations de sécurité :"
 
 #~ msgid ""
-#~ "Do not run this browser at the same time as the anonymous [[<span class="
-#~ "\"application\">Tor Browser</span>|Tor_Browser]]. This makes it easy to "
-#~ "not mistake one browser for the other, which could have catastrophic "
-#~ "consequences."
+#~ "Do not run this browser at the same time as the anonymous [[<span "
+#~ "class=\"application\">Tor Browser</span>|Tor_Browser]]. This makes it "
+#~ "easy to not mistake one browser for the other, which could have "
+#~ "catastrophic consequences."
 #~ msgstr ""
-#~ "N'utilisez pas ce navigateur en même temps que le [[<span class="
-#~ "\"application\">navigateur Tor</span>|Tor_Browser]] anonyme. Cela vous "
-#~ "permet d'éviter de confondre ces deux navigateurs, ce qui pourrait "
+#~ "N'utilisez pas ce navigateur en même temps que le [[<span "
+#~ "class=\"application\">navigateur Tor</span>|Tor_Browser]] anonyme. Cela "
+#~ "vous permet d'éviter de confondre ces deux navigateurs, ce qui pourrait "
 #~ "s'avérer catastrophique."
 
 #~ msgid ""

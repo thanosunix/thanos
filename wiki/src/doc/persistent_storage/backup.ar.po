@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-06-13 14:17+0200\n"
+"POT-Creation-Date: 2023-08-14 13:53+0200\n"
 "PO-Revision-Date: 2023-03-29 08:28+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 "sichern möchten."
 
 #. type: Bullet: '1. '
-msgid "Choose **Applications**&nbsp;▸ **Tails Installer**."
+msgid "Choose **Applications**&nbsp;â¸ **Tails Installer**."
 msgstr ""
 
 #. type: Bullet: '1. '
@@ -159,8 +159,8 @@ msgstr ""
 msgid ""
 "1. Choose\n"
 "   <span class=\"menuchoice\">\n"
-"     <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
-"     <span class=\"guisubmenu\">System Tools</span>&nbsp;▸\n"
+"     <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
+"     <span class=\"guisubmenu\">System Tools</span>&nbsp;â¸\n"
 "     <span class=\"guimenuitem\">Back Up Persistent Storage</span></span>.\n"
 msgstr ""
 "1. Wählen Sie in der Titelleiste\n"
@@ -212,8 +212,8 @@ msgstr ""
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **Applications**&nbsp;▸ **Accessories**&nbsp;▸ **Files** to open the "
-"*Files* browser."
+"Choose **Applications**&nbsp;â¸ **Accessories**&nbsp;â¸ **Files** to open "
+"the *Files* browser."
 msgstr ""
 
 #. type: Plain text

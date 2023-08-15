@@ -3,7 +3,7 @@ origin_references:
   debian:
     reference: '2023070701'
   debian-security:
-    reference: '2023080601'
+    reference: '2023081402'
   torproject:
     reference: '2023011801'
 packages:
@@ -931,7 +931,7 @@ packages:
     version: 1.18.4-2+deb11u2
   - arch: amd64
     package: gstreamer1.0-plugins-ugly
-    version: 1.18.4-2
+    version: 1.18.4-2+deb11u1
   - arch: amd64
     package: gstreamer1.0-x
     version: 1.18.4-2+deb11u1
@@ -1072,7 +1072,7 @@ packages:
     version: 1.0.2-4
   - arch: amd64
     package: intel-microcode
-    version: 3.20230214.1~deb11u1
+    version: 3.20230808.1~deb11u1
   - arch: all
     package: intltool-debian
     version: 0.35.0+20060710.5
@@ -4887,11 +4887,11 @@ packages:
     package: linux-base
     version: '4.6'
   - arch: amd64
-    package: linux-image-6.1.0-10-amd64
-    version: 6.1.38-2
+    package: linux-image-6.1.0-11-amd64
+    version: 6.1.38-4
   - arch: amd64
     package: linux-libc-dev
-    version: 5.10.179-3
+    version: 5.10.179-5
   - arch: all
     package: live-boot-initramfs-tools
     version: 1:20170112
@@ -5494,7 +5494,7 @@ packages:
     version: 1.0.2-2
   - arch: all
     package: python3-werkzeug
-    version: 1.0.1+dfsg1-2
+    version: 1.0.1+dfsg1-2+deb11u1
   - arch: all
     package: python3-xdg
     version: 0.27-2
