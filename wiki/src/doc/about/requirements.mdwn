@@ -84,7 +84,7 @@ To update the list of Mac computer:
 
 5. Share WhisperBack reports number with the Foundations team and ask them to
    evaluate hardware compatibility hints in those reports.
-   
+
    While analyzing the reports corresponding from each model, FT should:
 
    - Check whether they were sent from the same email address, if any
