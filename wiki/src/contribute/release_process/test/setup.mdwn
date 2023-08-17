@@ -44,6 +44,7 @@ To install the dependencies on our test suite:
 
 1. Potentially enable some workarounds:
 
+        sudo apt update
         virt_viewer_candidate_version="$(
             apt-cache policy virt-viewer \
                 | sed -n 's/^  Candidate: \(.*\)$/\1/p'
