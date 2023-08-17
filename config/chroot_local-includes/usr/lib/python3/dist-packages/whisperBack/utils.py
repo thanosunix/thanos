@@ -183,8 +183,8 @@ def is_valid_hostname_or_ipv4(candidate):
     if len(candidate) > 255:
         return False
 
-    # regex from http://stackoverflow.com/a/106223
-    ip_address_regex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
+    # regex from http://stackoverflow.com/a/17871737
+    ip_address_regex = re.compile("^((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])$");
     hostname_regex = re.compile("^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
 
     if ip_address_regex.match(candidate) or hostname_regex.match(candidate):
@@ -231,7 +231,8 @@ def sanitize_hardware_info(log_string):
                         log_string)
 
     # IPv4s
-    log_string = re.sub(r'([\d]{1,3}\.){3}[\d]{1,3}',
+    # regex from https://stackoverflow.com/a/17871737
+    log_string = re.sub(r'((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])',
                         r'[IPV4 REMOVED]',
                         log_string)
     # IPv6s
