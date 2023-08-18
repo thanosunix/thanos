@@ -133,9 +133,12 @@ class PersistentStorageSettings(object):
                 method_name="Activate",
                 parameters=None,
                 flags=Gio.DBusCallFlags.NONE,
-                # In some cases, the default timeout of 25 seconds was not
-                # enough, so we use a timeout of 120 seconds instead.
-                timeout_msec=120000,
+                # We have seen this take almost 4 minutes (tails/tails#19944)
+                # so let's try 5 minutes for now. We don't want to disable
+                # the timeout completely (yet) since we still want to catch
+                # situations where e.g. some of our on-activation scripts
+                # gets in an infinite loop or similar.
+                timeout_msec=300000,
             )
         except GLib.GError as err:
             if tps_errors.FeatureActivationFailedError.is_instance(err):
