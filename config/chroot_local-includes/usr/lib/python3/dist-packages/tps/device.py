@@ -259,8 +259,11 @@ class TPSPartition(object):
         updated_keyslots = [slot for slot in keyslots if keyslot_is_upgraded(keyslots[slot])]
         logger.debug(f"updated_keyslots = {updated_keyslots}")
 
-        # We only require a single key to be upgraded until we
-        # properly solve tails/tails#19728.
+        # We only require a single key to be upgraded since we have
+        # seen users ending up with multiple keys, some which refuse
+        # to upgrade (probably due to the storage being corrupt) so
+        # is_upgraded() would always return false leading to the LUKS
+        # upgrade procedure for each boot (tails/tails#19728).
         upgraded = version == "2" and len(updated_keyslots) > 0
         logger.debug(f"is_upgraded() = {upgraded}")
 
