@@ -180,6 +180,12 @@ class TPSPartition(object):
         cmd = ["cryptsetup", "luksDump", self.device_path]
         try:
             luks_dump = executil.check_output(cmd)
+            luks_dump = re.sub(
+                r'((?:UUID|Salt|Digest):\s*)[\sa-f0-9-]*\n',
+                r'\1[REDACTED]\n',
+                luks_dump,
+                re.MULTILINE
+            )
         except subprocess.CalledProcessError:
             logger.exception("Command 'cryptsetup luksDump' failed")
             return False
