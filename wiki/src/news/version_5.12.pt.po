@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-08-14 13:53+0200\n"
-"PO-Revision-Date: 2023-08-18 21:45+0000\n"
+"PO-Revision-Date: 2023-08-18 23:37+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -205,7 +205,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "-->\n"
-msgstr ""
+msgstr "-->\n"
 
 #. type: Plain text
 msgid "None specific to this release."
