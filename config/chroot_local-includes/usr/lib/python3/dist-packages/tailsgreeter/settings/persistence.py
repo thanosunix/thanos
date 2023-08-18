@@ -114,7 +114,9 @@ class PersistentStorageSettings(object):
                 method_name="UpgradeLUKS",
                 parameters=GLib.Variant("(s)", (passphrase,)),
                 flags=Gio.DBusCallFlags.NONE,
-                timeout_msec=240000,
+                # GLib.MAXINT (largest 32-bit signed integer) disables
+                # the timeout
+                timeout_msec=GLib.MAXINT,
             )
         except GLib.GError as err:
             if tps_errors.IncorrectPassphraseError.is_instance(err):
