@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-08-15 18:59+0000\n"
-"PO-Revision-Date: 2023-08-18 21:45+0000\n"
+"PO-Revision-Date: 2023-08-18 23:37+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -252,7 +252,7 @@ msgid "Decrypt all the reports:"
 msgstr "Descriptografe todos os relatórios:"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "   ~/Tails/blueprints/stats/whisperback_scripts/decrypt.rb\n"
 msgstr "   ~/Tails/blueprints/stats/whisperback_scripts/decrypt.rb\n"
 
@@ -272,7 +272,7 @@ msgid "Sort and count identical models:"
 msgstr "Ordene e conte os modelos idênticos:"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "   grep -v Bug_report machines | sort | uniq -c | sort -rhk 1 > top\n"
 msgstr "   grep -v Bug_report machines | sort | uniq -c | sort -rhk 1 > top\n"
 
@@ -310,23 +310,26 @@ msgstr ""
 msgid ""
 "Check whether these Mac models still support the latest version of macOS."
 msgstr ""
+"Verificar se estes modelos de Mac ainda suportam a útlima versão do macOS."
 
 #. type: Plain text
 msgid "To update the list of PC computers:"
-msgstr ""
+msgstr "Para atualizar a lista de computadores PC:"
 
 #. type: Plain text
 msgid "- Check what's commonly available with refurbishing companies."
 msgstr ""
+"- Verifique o que está disponivel com frequência nas empresas de "
+"recondicionamento."
 
 #. type: Plain text
 msgid "- Ask tails-assembly@ for models."
-msgstr ""
+msgstr "- Peça a tails-assembly@ por informações sobre modelos."
 
 #. type: Plain text
 #, no-wrap
 msgid "-->\n"
-msgstr ""
+msgstr "-->\n"
 
 #, no-wrap
 #~ msgid "<div class=\"note\">\n"
