@@ -340,6 +340,7 @@ printer-driver-escpr
 printer-driver-hpcups
 printer-driver-gutenprint
 printer-driver-postscript-hp
+printer-driver-brlaser
 
 ### Enable MAT2's Nautilus extension
 python3-nautilus
