@@ -305,7 +305,7 @@ def check_build_manifest(
 
     def _log(issues):
         for source, i in itertools.groupby(
-            non_forked, key=operator.attrgetter("source")
+            issues, key=operator.attrgetter("source")
         ):
             yield log_group(source, list(i))
 
