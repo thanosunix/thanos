@@ -23,6 +23,7 @@ TAILS_MOUNTPOINT = "/lib/live/mount/medium"
 PARTITION_GUID = "8DA63339-0007-60C0-C436-083AC8230908" # Linux reserved
 TPS_PARTITION_LABEL = "TailsData"
 VERSION_REGEX = re.compile(r'^Version:\s*(\d+)$', re.MULTILINE)
+KEYSLOT_REGEX = re.compile(r'^  (\d+): (.+)$')
 PBKDF_REGEX = re.compile(r'^\s*PBKDF:\s*(\S+)$')
 MEMORY_COST_REGEX = re.compile(r'^\s*Memory:\s*(\d+)$')
 
@@ -210,7 +211,7 @@ class TPSPartition(object):
         keyslots = dict()
         slot = None
         for line in keyslots_section.splitlines():
-            if match := re.match("^  (\d+): (.+)$", line):
+            if match := KEYSLOT_REGEX.match(line):
                 slot = int(match.group(1))
                 keyslots[slot] = dict()
                 keyslots[slot]["type"] = match.group(2)
