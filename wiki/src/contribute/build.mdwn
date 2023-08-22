@@ -55,6 +55,7 @@ Then:
            dnsmasq-base \
            ebtables \
            faketime \
+           jq \
            pigz \
            qemu-system-x86 \
            qemu-utils \

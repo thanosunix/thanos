@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-01-27 18:26+0100\n"
+"POT-Creation-Date: 2023-08-15 18:59+0000\n"
 "PO-Revision-Date: 2015-10-25 17:35+0000\n"
 "Last-Translator: sprint5 <translation5@451f.org>\n"
 "Language-Team: Persian <http://weblate.451f.org:8889/projects/tails/"
@@ -21,7 +21,7 @@ msgstr ""
 
 #. type: Bullet: '  - '
 #, fuzzy
-msgid "[[System requirements|about/requirements]]"
+msgid "[[System requirements and recommended hardware|about/requirements]]"
 msgstr "[[!traillink نیازمندی‌های_سیستم|about/requirements]]"
 
 #. type: Bullet: '  - '

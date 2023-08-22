@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-01-27 18:26+0100\n"
-"PO-Revision-Date: 2023-02-26 11:27+0000\n"
+"POT-Creation-Date: 2023-08-15 18:59+0000\n"
+"PO-Revision-Date: 2023-08-18 23:37+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Generator: Weblate 4.9.1\n"
 
 #. type: Bullet: '  - '
-msgid "[[System requirements|about/requirements]]"
-msgstr "[[Requisitos de sistema|about/requirements]]"
+msgid "[[System requirements and recommended hardware|about/requirements]]"
+msgstr "[[Requisitos de sistema e hardware recomendado|about/requirements]]"
 
 #. type: Bullet: '  - '
 msgid "[[Warnings: Tails is safe but not magic!|about/warnings]]"

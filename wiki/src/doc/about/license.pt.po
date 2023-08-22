@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
 "POT-Creation-Date: 2023-08-14 13:52+0200\n"
-"PO-Revision-Date: 2022-06-16 21:07+0000\n"
+"PO-Revision-Date: 2023-08-18 23:37+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -150,13 +150,6 @@ msgstr ""
 "Bazaar, Inc."
 
 #. type: Bullet: '- '
-#, fuzzy
-#| msgid ""
-#| "The drawings on our [[Home|index]], [[About|about]], and [[Warnings|doc/"
-#| "about/warnings]] pages are licensed under the [Creative Commons "
-#| "Attribution-ShareAlike 4.0 International License](https://creativecommons."
-#| "org/licenses/by-sa/4.0/), copyright [Andrés Fernández Cordón](https://"
-#| "anhdr.es/)  ([[source|lib/drawings.zip]] for Adobe Illustrator)."
 msgid ""
 "The drawings on our [[Home|index]], [[About|about]], and [[Warnings|doc/"
 "about/warnings]] pages are licensed under the [Creative Commons Attribution-"
@@ -164,11 +157,12 @@ msgid ""
 "by-sa/4.0/), copyright [AndrÃ©s FernÃ¡ndez CordÃ³n](https://anhdr.es/)  "
 "([[source|lib/drawings.zip]] for Adobe Illustrator)."
 msgstr ""
-"Os desenhos nas nossas páginas [[Inicial|index]], [[Como Tails funciona|"
-"about]], e [[Avisos|doc/about/warnings]] são licenciados sob a licença "
-"[Creative Commons Attribution-ShareAlike 4.0 International](https://"
-"creativecommons.org/licenses/by-sa/4.0/), copyright [Andrés Fernández Cordón]"
-"(https://anhdr.es/)  ([[source|lib/drawings.zip]] for Adobe Illustrator)."
+"Os desenhos nas nossas páginas [[Inicial|index]], [[Como Tails "
+"funciona|about]], e [[Avisos|doc/about/warnings]] são licenciados sob a "
+"licença [Creative Commons Attribution-ShareAlike 4.0 "
+"International](https://creativecommons.org/licenses/by-sa/4.0/), copyright ["
+"Andrés Fernández Cordón](https://anhdr.es/)  ([[source|lib/drawings.zip]] "
+"for Adobe Illustrator)."
 
 #. type: Bullet: '- '
 msgid ""
@@ -212,10 +206,6 @@ msgstr ""
 "Commons - Attribução, por Olivier Guin."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Code|http://thenounproject.com/term/code/18033/]]: Creative Commons — "
-#| "Attribution, by Azis."
 msgid ""
 "[[Code|http://thenounproject.com/term/code/18033/]]: Creative Commons â "
 "Attribution, by Azis."
@@ -224,10 +214,6 @@ msgstr ""
 "Atribuição, por Azis."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Pen|http://thenounproject.com/term/pen/18907/]]: Creative Commons — "
-#| "Attribution, by factor[e] design initiative."
 msgid ""
 "[[Pen|http://thenounproject.com/term/pen/18907/]]: Creative Commons â "
 "Attribution, by factor[e] design initiative."
@@ -244,10 +230,6 @@ msgstr ""
 "Rohith M S."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[User|http://thenounproject.com/term/user/419/]]: Creative Commons — "
-#| "Attribution, by Edward Boatman."
 msgid ""
 "[[User|http://thenounproject.com/term/user/419/]]: Creative Commons â "
 "Attribution, by Edward Boatman."
@@ -256,10 +238,6 @@ msgstr ""
 "Atribuição, por Edward Boatman."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Translation|http://thenounproject.com/term/translation/5735/]]: "
-#| "Creative Commons — Attribution, by Joe Mortell."
 msgid ""
 "[[Translation|http://thenounproject.com/term/translation/5735/]]: Creative "
 "Commons â Attribution, by Joe Mortell."
@@ -268,10 +246,6 @@ msgstr ""
 "Commons — Atribuição, por Joe Mortell."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Gears|http://thenounproject.com/term/gears/8949/]]: Creative Commons — "
-#| "Attribution, by Cris Dobbins."
 msgid ""
 "[[Gears|http://thenounproject.com/term/gears/8949/]]: Creative Commons â "
 "Attribution, by Cris Dobbins."
@@ -280,10 +254,6 @@ msgstr ""
 "Atribuição, por Cris Dobbins."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Graphic Design|http://thenounproject.com/term/graphic_design/9198/]]: "
-#| "Creative Commons — Attribution, by Cornelius Danger."
 msgid ""
 "[[Graphic Design|http://thenounproject.com/term/graphic_design/9198/]]: "
 "Creative Commons â Attribution, by Cornelius Danger."
@@ -300,10 +270,6 @@ msgstr ""
 "por Julian Norton."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Delete|https://thenounproject.com/term/delete/49691/]]: Creative "
-#| "Commons — Attribution, by Kervin Markle."
 msgid ""
 "[[Delete|https://thenounproject.com/term/delete/49691/]]: Creative Commons â "
 "Attribution, by Kervin Markle."
@@ -312,10 +278,6 @@ msgstr ""
 "Atribuição, por Kervin Markle."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Play|https://thenounproject.com/term/play/152052]]: Creative Commons — "
-#| "Attribution, by Zech Nelson."
 msgid ""
 "[[Play|https://thenounproject.com/term/play/152052]]: Creative Commons â "
 "Attribution, by Zech Nelson."
@@ -324,10 +286,6 @@ msgstr ""
 "Atribuição, por Zech Nelson."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Pause|https://thenounproject.com/term/pause/152046]]: Creative Commons "
-#| "— Attribution, by Zech Nelson."
 msgid ""
 "[[Pause|https://thenounproject.com/term/pause/152046]]: Creative Commons â "
 "Attribution, by Zech Nelson."
@@ -336,10 +294,6 @@ msgstr ""
 "Atribuição, por Zech Nelson."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[USB|https://thenounproject.com/term/usb/28901]]: Creative Commons — "
-#| "Attribution, by Wilson Joseph."
 msgid ""
 "[[USB|https://thenounproject.com/term/usb/28901]]: Creative Commons â "
 "Attribution, by Wilson Joseph."
@@ -348,10 +302,6 @@ msgstr ""
 "Atribuição, por Wilson Joseph."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Time|https://thenounproject.com/term/time/6732]]: Creative Commons — "
-#| "Attribution, by Richard de Vos."
 msgid ""
 "[[Time|https://thenounproject.com/term/time/6732]]: Creative Commons â "
 "Attribution, by Richard de Vos."
@@ -360,10 +310,6 @@ msgstr ""
 "Atribuição, por Richard de Vos."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Printer|https://thenounproject.com/term/printer/146674]]: Creative "
-#| "Commons — Attribution, by Diego Naive."
 msgid ""
 "[[Printer|https://thenounproject.com/term/printer/146674]]: Creative Commons "
 "â Attribution, by Diego Naive."
@@ -372,10 +318,6 @@ msgstr ""
 "Commons — Atribuição, por Diego Naive."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Smart Phones|https://thenounproject.com/term/smartphone/25790]]: "
-#| "Creative Commons — Attribution, by Pham Thi Dieu Linh."
 msgid ""
 "[[Smart Phones|https://thenounproject.com/term/smartphone/25790]]: Creative "
 "Commons â Attribution, by Pham Thi Dieu Linh."
@@ -392,10 +334,6 @@ msgstr ""
 "Jean Yashu."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Love|https://thenounproject.com/term/love/218846/]]: Creative Commons — "
-#| "Attribution, by Thomas Helbig."
 msgid ""
 "[[Love|https://thenounproject.com/term/love/218846/]]: Creative Commons â "
 "Attribution, by Thomas Helbig."
@@ -404,10 +342,6 @@ msgstr ""
 "Atribuição, por Thomas Helbig."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Survey|https://thenounproject.com/term/survey/1296072]]: Creative "
-#| "Commons — Attribution, by unlimicon."
 msgid ""
 "[[Survey|https://thenounproject.com/term/survey/1296072]]: Creative Commons "
 "â Attribution, by unlimicon."
@@ -416,10 +350,6 @@ msgstr ""
 "Commons — Atribuição, por unlimicon."
 
 #. type: Bullet: '  - '
-#, fuzzy
-#| msgid ""
-#| "[[Info|https://thenounproject.com/term/info/808461]]: Creative Commons — "
-#| "Attribution, by icongeek."
 msgid ""
 "[[Info|https://thenounproject.com/term/info/808461]]: Creative Commons â "
 "Attribution, by icongeek."
