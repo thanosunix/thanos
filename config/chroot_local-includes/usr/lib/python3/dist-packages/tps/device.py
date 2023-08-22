@@ -195,8 +195,8 @@ class TPSPartition(object):
                      f"### End of LUKS dump ###")
 
         version = str()
-        if match := VERSION_REGEX.search(luks_dump):
-            version = match.group(1)
+        if m := VERSION_REGEX.search(luks_dump):
+            version = m.group(1)
         logger.debug(f"version = {version}")
 
         # LUKS version 1 does not print the PBKDF because it only
@@ -211,14 +211,14 @@ class TPSPartition(object):
         keyslots = dict()
         slot = None
         for line in keyslots_section.splitlines():
-            if match := KEYSLOT_REGEX.match(line):
-                slot = int(match.group(1))
+            if m := KEYSLOT_REGEX.match(line):
+                slot = int(m.group(1))
                 keyslots[slot] = dict()
-                keyslots[slot]["type"] = match.group(2)
-            elif match := PBKDF_REGEX.match(line):
-                keyslots[slot]["pbkdf"] = match.group(1)
-            elif match := MEMORY_COST_REGEX.match(line):
-                keyslots[slot]["memory_cost_kib"] = int(match.group(1))
+                keyslots[slot]["type"] = m.group(2)
+            elif m := PBKDF_REGEX.match(line):
+                keyslots[slot]["pbkdf"] = m.group(1)
+            elif m := MEMORY_COST_REGEX.match(line):
+                keyslots[slot]["memory_cost_kib"] = int(m.group(1))
         logger.debug(f"keyslots = {keyslots}")
 
         errors = list()
