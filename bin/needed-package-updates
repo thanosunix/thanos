@@ -209,7 +209,7 @@ class NewVersionIssue:
     suite_source_version: Version
 
     def __str__(self):
-        binaries =  getattr(self, 'log_binaries', None)
+        binaries = getattr(self, "log_binaries", None)
         if binaries:
             binaries = ", ".join(binaries)
             return f"{self.source}[{binaries}] ({self.version}) to Debian {self.suite} ({self.suite_source_version})"
@@ -220,11 +220,10 @@ class NewVersionIssue:
 
 
 def get_udd(package_dict: dict[str, Version], suites: tuple[str]) -> UDD:
-    return UDD(package_dict.keys(), suites) # type: ignore[arg-type]
+    return UDD(package_dict.keys(), suites)  # type: ignore[arg-type]
 
-def get_issues(udd: UDD,
-    package_dict: dict[str, Version]
-) -> Iterator[NewVersionIssue]:
+
+def get_issues(udd: UDD, package_dict: dict[str, Version]) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
@@ -304,15 +303,15 @@ def check_build_manifest(
 
         return _log_issue(issue)
 
-
     def _log(issues):
-        for source, i in itertools.groupby(non_forked,key=operator.attrgetter("source")):
+        for source, i in itertools.groupby(
+            non_forked, key=operator.attrgetter("source")
+        ):
             yield log_group(source, list(i))
 
     if forked:
         l = "\n  - ".join(sorted(_log(forked)))
         logger.info(f"Need to upgrade our own forked package:\n  - {l}")
-
 
     if non_forked:
         l = "\n  - ".join(sorted(_log(non_forked)))
