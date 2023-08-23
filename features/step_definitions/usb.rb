@@ -1102,7 +1102,10 @@ When /^I delete the persistent partition$/ do
 
   # If we just do delete_btn.click, then dogtail won't find tps-frontend anymore.
   # That's probably a bug somewhere, and this is a simple workaround
-  delete_btn.grabFocus
+  try_for(5) do
+    delete_btn.grabFocus
+    delete_btn.focused
+  end
   @screen.press('Return')
 
   persistent_storage_frontend
