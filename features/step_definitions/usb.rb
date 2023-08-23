@@ -1101,6 +1101,8 @@ When /^I delete the persistent partition$/ do
   assert delete_btn
 
   # If we just do delete_btn.click, then dogtail won't find tps-frontend anymore.
+  # Related to https://gitlab.gnome.org/GNOME/gtk/-/issues/1281 mentioned
+  # elsewhere in this file?
   # That's probably a bug somewhere, and this is a simple workaround
   try_for(5) do
     delete_btn.grabFocus
