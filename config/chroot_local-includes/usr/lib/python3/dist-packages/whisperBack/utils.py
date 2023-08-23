@@ -184,8 +184,8 @@ def is_valid_hostname_or_ipv4(candidate):
         return False
 
     # regex from http://stackoverflow.com/a/106223
-    ip_address_regex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
-    hostname_regex = re.compile("^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
+    ip_address_regex = re.compile(r"^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
+    hostname_regex = re.compile(r"^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
 
     if ip_address_regex.match(candidate) or hostname_regex.match(candidate):
         return True
@@ -216,14 +216,14 @@ def sanitize_hardware_info(log_string):
 
     # Serial Numbers
     log_string = re.sub(r'(Serial Number:?[\s]+|'
-                          'SerialNo=|'
-                          'iSerial[\s]+[\d]+\s+|'
-                          'SerialNumber:[\s]+|'
-                          'SerialNumber=|'
-                          'Serial#:[\s+]|'
-                          'serial#[\s+]|'
-                          'Serial No:[\s]+'
-                        ')[^\s].*',
+                        r'SerialNo=|'
+                        r'iSerial[\s]+[\d]+\s+|'
+                        r'SerialNumber:[\s]+|'
+                        r'SerialNumber=|'
+                        r'Serial#:[\s+]|'
+                        r'serial#[\s+]|'
+                        r'Serial No:[\s]+'
+                        r')[^\s].*',
                         r'\1[SN REMOVED]',
                         log_string)
     # UUIDs
