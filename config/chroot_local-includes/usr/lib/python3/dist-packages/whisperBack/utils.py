@@ -129,7 +129,7 @@ def is_valid_pgp_id(candidate):
     """
     # pylint: disable=C0301
     LOG.debug("Validating pgp id %s", candidate)
-    if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
+    if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9a-fA-F]{4} {0,2}){10}$)",
             candidate):
         return True
     else:
@@ -183,7 +183,7 @@ def is_valid_hostname_or_ipv4(candidate):
     if len(candidate) > 255:
         return False
 
-    # regex from http://stackoverflow.com/a/106223
+    # regex from https://stackoverflow.com/a/106223
     ip_address_regex = re.compile(r"^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
     hostname_regex = re.compile(r"^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
 
