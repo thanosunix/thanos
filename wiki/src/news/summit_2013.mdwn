@@ -13,8 +13,8 @@ We mainly discussed the **growth of the project**: given the growing
 number of users and our super-short release cycle, it is a challenge
 to keep the project sustainable and maintainable in the mid/long term.
 
-Our take on this is first reflected by [[!tails_roadmap desc="our
-**updated roadmap**"]]: we now have a better vision of what we want to
+Our take on this is first reflected by our
+**updated roadmap**: we now have a better vision of what we want to
 focus on for the next major releases of Tails: the 1.0, 1.1 and 2.0
 milestones are now pretty well defined, and we even were bold enough
 to draft goals for 3.0.
@@ -66,7 +66,7 @@ was perhaps [our **move to
 Redmine**](https://labs.riseup.net/code/projects/tails) for managing
 our
 [tasks](https://labs.riseup.net/code/projects/tails/issues?query_id=108)
-and [[!tails_roadmap desc="plans"]]. We are not exploiting the full
+and plans. We are not exploiting the full
 potential of Redmine yet, but it already feels far less messy than how
 we did previously. Hopefully this will help others get involved!
 Many thanks go to Riseup for hosting the Redmine instance we use.

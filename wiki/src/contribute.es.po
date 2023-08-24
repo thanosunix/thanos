@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2022-03-24 06:34+0000\n"
 "Last-Translator: Joaquín Serna <bubuanabelas@cryptolab.net>\n"
 "Language-Team: Spanish <http://translate.tails.boum.org/projects/tails/"
@@ -400,10 +400,6 @@ msgid "Source code: [[Git repositories|contribute/git]]"
 msgstr "Código fuente: [[Git repositories|contribute/git]]"
 
 #. type: Bullet: '  - '
-msgid "[[!tails_roadmap desc=\"Roadmap\"]]"
-msgstr "[[!tails_roadmap desc=\"Roadmap\"]]"
-
-#. type: Bullet: '  - '
 msgid ""
 "[[GitLab source code and bug tracker|contribute/working_together/GitLab]]"
 msgstr ""
@@ -738,6 +734,9 @@ msgid ""
 msgstr ""
 "Para hablar con otros colaboradores de Tails suscríbete a [[nuestra lista de "
 "correo|about/contact]]."
+
+#~ msgid "[[!tails_roadmap desc=\"Roadmap\"]]"
+#~ msgstr "[[!tails_roadmap desc=\"Roadmap\"]]"
 
 #, fuzzy
 #~| msgid "[[Code of conduct|contribute/working_together/code_of_conduct]]"

@@ -53,4 +53,3 @@ Tails 4.23 directly:
 
 Tails 4.24 is [[scheduled|contribute/calendar]] for November 2.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

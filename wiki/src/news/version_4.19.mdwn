@@ -90,4 +90,3 @@ Tails 4.19 directly:
 
 Tails 4.20 is [[scheduled|contribute/calendar]] for July 13.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

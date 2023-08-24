@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-12 16:10+0200\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2015-10-17 09:58+0000\n"
 "Last-Translator: sprint5 <translation5@451f.org>\n"
 "Language-Team: Persian <http://weblate.451f.org:8889/projects/tails/"
@@ -56,13 +57,14 @@ msgid "We needs more hands!"
 msgstr "نیاز به کمک بیشتری داریم!"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy
 msgid ""
-"Among the things we know [[!tails_roadmap desc=\"we should do in the\n"
-"next few years\"]], we have identified some areas that could benefit the most\n"
-"from new dedicated contributors.\n"
+"Among the things we know we should do in the next few years, we have "
+"identified some areas that could benefit the most from new dedicated "
+"contributors."
 msgstr ""
-"از میان کارهایی که می‌دانیم [[!tails_roadmap desc=\"در چند سال آینده باید انجام دهیم\"]]،\n"
+"از میان کارهایی که می‌دانیم [[!tails_roadmap desc=\"در چند سال آینده باید "
+"انجام دهیم\"]]،\n"
 "چند مورد را مشخص کرده‌ایم که برای آن‌ها می‌توانیم بیشتر از کمک‌کنندگان \n"
 "جدید و متعهد کمک بگیریم.\n"
 

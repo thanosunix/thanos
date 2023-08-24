@@ -62,4 +62,3 @@ Tails 5.4 directly:
 
 Tails 5.5 is [[scheduled|contribute/calendar]] for September 20.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

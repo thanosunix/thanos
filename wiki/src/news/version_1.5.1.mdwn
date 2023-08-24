@@ -36,7 +36,6 @@ Go to the [[install]] page.
 The next Tails release is [[scheduled|contribute/calendar]] for
 September 22.
 
-Have a look to our [[!tails_roadmap]] to see where we are heading to.
 
 Do you want to help? There are many ways [[**you** can
 contribute to Tails|contribute]]. If you want to help, come talk

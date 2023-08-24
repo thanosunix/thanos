@@ -106,4 +106,3 @@ Tails 4.25 directly:
 
 Tails 4.26 is [[scheduled|contribute/calendar]] for January 11.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.
