@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-10-18 10:43-0500\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2023-01-21 09:17+0000\n"
 "Last-Translator: Joaquín Serna <bubuanabelas@cryptolab.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,10 +95,6 @@ msgid "[[!tails_gitlab tails/tails/-/issues desc=\"GitLab\"]]"
 msgstr "[[!tails_gitlab tails/tails/-/issues desc=\"GitLab\"]]"
 
 #. type: Content of: <div><ul><li>
-msgid "[[Roadmap|contribute/roadmap]]"
-msgstr "[[Roadmap|contribute/roadmap]]"
-
-#. type: Content of: <div><ul><li>
 msgid "[[Donate|donate]]"
 msgstr "[[Donar|donate]]"
 
@@ -157,6 +153,9 @@ msgid ""
 msgstr ""
 "[[!img lib/twitter.svg link=\"https://twitter.com/Tails_live\" alt=\"Twitter"
 "\"]]"
+
+#~ msgid "[[Roadmap|contribute/roadmap]]"
+#~ msgstr "[[Roadmap|contribute/roadmap]]"
 
 #~ msgid "[[!meta title=\"\"]]"
 #~ msgstr "[[!meta title=\"\"]]"

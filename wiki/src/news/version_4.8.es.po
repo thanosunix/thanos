@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-14 13:52+0200\n"
+"POT-Creation-Date: 2023-08-24 19:55+0000\n"
 "PO-Revision-Date: 2022-12-29 18:17+0000\n"
 "Last-Translator: cacukin <cacukin@cryptolab.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,11 +182,11 @@ msgstr ""
 
 #. type: Plain text
 msgid ""
-"For more details, read our [[!tails_gitweb debian/changelog "
-"desc=\"changelog\"]]."
+"For more details, read our [[!tails_gitweb debian/changelog desc=\"changelog"
+"\"]]."
 msgstr ""
-"Para más detalles, lee nuestro [[!tails_gitweb debian/changelog "
-"desc=\"changelog\"]]."
+"Para más detalles, lee nuestro [[!tails_gitweb debian/changelog desc="
+"\"changelog\"]]."
 
 #. type: Plain text
 #, no-wrap
@@ -224,7 +224,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "  If you use spaces or other accentuated characters, like <span\n"
-"  class=\"code\">Ã Ã©Ã¯Ã¸Å¯</span>, your will not be able to type your\n"
+"  class=\"code\">àéïøů</span>, your will not be able to type your\n"
 "  administration password again in your Tails session, unless you\n"
 "  type single quotes <span class=\"code\">'</span> around it.\n"
 msgstr ""
@@ -233,8 +233,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "  For example, if you set the administration password:\n"
-"  <span class=\"code\">nÃ©e entrepÃ´t Ã¼ber seÃ±or</span>, you would have to\n"
-"  type <span class=\"code\">'nÃ©e entrepÃ´t Ã¼ber seÃ±or'</span>.\n"
+"  <span class=\"code\">née entrepôt über señor</span>, you would have to\n"
+"  type <span class=\"code\">'née entrepôt über señor'</span>.\n"
 "  ([[!tails_ticket 17792]])\n"
 msgstr ""
 
@@ -361,15 +361,15 @@ msgid "Tails 4.9 is [[scheduled|contribute/calendar]] for July 28."
 msgstr ""
 
 #. type: Plain text
-msgid "Have a look at our [[!tails_roadmap]] to see where we are heading to."
-msgstr ""
-"Echa un vistazo a nuestro [[!tails_roadmap]] para ver hacia dónde nos "
-"dirigimos."
-
-#. type: Plain text
 #, no-wrap
 msgid ""
 "We need your help and there are many ways to [[contribute to\n"
 "Tails|contribute]] (<a href=\"https://tails.net/donate/?r=4.8\">donating</a> is only one of\n"
 "them). Come [[talk to us|about/contact#tails-dev]]!\n"
 msgstr ""
+
+#~ msgid ""
+#~ "Have a look at our [[!tails_roadmap]] to see where we are heading to."
+#~ msgstr ""
+#~ "Echa un vistazo a nuestro [[!tails_roadmap]] para ver hacia dónde nos "
+#~ "dirigimos."

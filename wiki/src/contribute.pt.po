@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2023-08-10 18:49+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: Portuguese <LL@li.org>\n"
@@ -311,16 +311,11 @@ msgid ""
 "\t</ol>\n"
 msgstr ""
 "\t<ol>\n"
-"\t\t<li class=\"L2\"><a href=\"#reference-documents\">Documentos de "
-"referência</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#tools\">Ferramentas para "
-"contribuidores</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#release-cycle\">Ciclo de lançamento</a></li>"
-"\n"
-"\t\t<li class=\"L2\"><a href=\"#upstream\">Relacionamento com "
-"upstream</a></li>\n"
-"\t\t<li class=\"L2\"><a href=\"#collective-process\">Processo "
-"coletivo</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#reference-documents\">Documentos de referência</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#tools\">Ferramentas para contribuidores</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#release-cycle\">Ciclo de lançamento</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#upstream\">Relacionamento com upstream</a></li>\n"
+"\t\t<li class=\"L2\"><a href=\"#collective-process\">Processo coletivo</a></li>\n"
 "\t\t<li class=\"L2\"><a href=\"#talk\">Fale conosco</a></li>\n"
 "\t</ol>\n"
 
@@ -400,10 +395,6 @@ msgstr "Ferramentas para contribuidores"
 #. type: Bullet: '  - '
 msgid "Source code: [[Git repositories|contribute/git]]"
 msgstr "Código fonte: [[Repositórios git|contribute/git]]"
-
-#. type: Bullet: '  - '
-msgid "[[!tails_roadmap desc=\"Roadmap\"]]"
-msgstr "[[!tails_roadmap desc=\"Roadmap\"]]"
 
 #. type: Bullet: '  - '
 msgid ""
@@ -684,9 +675,7 @@ msgstr "Papéis para implementações patrocinadas (documentação interna):"
 #. type: Plain text
 #, no-wrap
 msgid "    [[!tails_gitlab tails/summit/-/wikis/Handbook/Grant_contract_management]]\n"
-msgstr ""
-"    [[!tails_gitlab tails/summit/-/wikis/Handbook/Grant_contract_management]]"
-"\n"
+msgstr "    [[!tails_gitlab tails/summit/-/wikis/Handbook/Grant_contract_management]]\n"
 
 #. type: Plain text
 #, no-wrap
@@ -705,6 +694,9 @@ msgid ""
 msgstr ""
 "Para falar com outras pessoas que contribuem com o Tails, inscreva-se na "
 "[[lista de emails específica para isso|about/contact]]."
+
+#~ msgid "[[!tails_roadmap desc=\"Roadmap\"]]"
+#~ msgstr "[[!tails_roadmap desc=\"Roadmap\"]]"
 
 #, fuzzy
 #~| msgid "[[People|contribute/working_together/people]]"

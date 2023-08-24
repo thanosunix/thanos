@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2020-04-12 16:10+0200\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2022-04-24 22:22+0000\n"
 "Last-Translator: Joaquín Serna <bubuanabelas@cryptolab.net>\n"
 "Language-Team: Spanish <https://translate.tails.boum.org/projects/tails/"
@@ -51,11 +51,10 @@ msgid "We needs more hands!"
 msgstr ""
 
 #. type: Plain text
-#, no-wrap
 msgid ""
-"Among the things we know [[!tails_roadmap desc=\"we should do in the\n"
-"next few years\"]], we have identified some areas that could benefit the most\n"
-"from new dedicated contributors.\n"
+"Among the things we know we should do in the next few years, we have "
+"identified some areas that could benefit the most from new dedicated "
+"contributors."
 msgstr ""
 
 #. type: Plain text
