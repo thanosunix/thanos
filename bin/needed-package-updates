@@ -179,6 +179,16 @@ class UDD:
                 f"{name}: the package version({version}) is higher than the version on {suite} ({suite_version})"
             )
 
+    def packages_by_source(self, source: str, suite: str) -> set[str]:
+        ret = set()
+        for name, pkg in self.packages.items():
+            if suite not in pkg:
+                continue
+            p = pkg[suite]
+            if p.source == source:
+                ret.add(name)
+        return ret
+
 
 def strip_tails_version(version: str) -> Version:
     """if we have a Tails own fork get the Debian version."""
@@ -199,17 +209,22 @@ class NewVersionIssue:
     suite_source_version: Version
 
     def __str__(self):
+        binaries = getattr(self, "log_binaries", None)
+        if binaries:
+            binaries = ", ".join(binaries)
+            return f"{self.source}[{binaries}] ({self.version}) to Debian {self.suite} ({self.suite_source_version})"
         return f"{self.source} ({self.version}) to Debian {self.suite} ({self.suite_source_version})"
 
     def tails_fork(self):
         return re.search(".0tails[0-9]+$", str(self.version)) is not None
 
 
-def get_issues(
-    package_dict: dict[str, Version], suites: tuple[str]
-) -> Iterator[NewVersionIssue]:
+def get_udd(package_dict: dict[str, Version], suites: tuple[str]) -> UDD:
+    return UDD(package_dict.keys(), suites)  # type: ignore[arg-type]
+
+
+def get_issues(udd: UDD, package_dict: dict[str, Version]) -> Iterator[NewVersionIssue]:
     """Get a issue list of updateable packages."""
-    udd = UDD(package_dict.keys(), suites)  # type: ignore[arg-type]
     for package, version in package_dict.items():
         striped_version = strip_tails_version(str(version))
         try:
@@ -249,7 +264,9 @@ def check_build_manifest(
             continue
         pkg_dict[p] = v
 
-    issues = list(get_issues(pkg_dict, suites))
+    udd = get_udd(pkg_dict, suites)
+
+    issues = list(get_issues(udd, pkg_dict))
 
     def _is_ignored(issue):
         if issue.source in general_ignore:
@@ -277,12 +294,27 @@ def check_build_manifest(
         else:
             return str(issue)
 
+    def log_group(source, issues):
+        issue = issues[0]
+        suite = issue.suite
+        names = set(i.name for i in issues)
+        if names != udd.packages_by_source(source, suite):
+            issue.log_binaries = names
+
+        return _log_issue(issue)
+
+    def _log(issues):
+        for source, i in itertools.groupby(
+            issues, key=operator.attrgetter("source")
+        ):
+            yield log_group(source, list(i))
+
     if forked:
-        l = "\n  - ".join(sorted(set(map(_log_issue, forked))))
+        l = "\n  - ".join(sorted(_log(forked)))
         logger.info(f"Need to upgrade our own forked package:\n  - {l}")
 
     if non_forked:
-        l = "\n  - ".join(sorted(set(map(_log_issue, non_forked))))
+        l = "\n  - ".join(sorted(_log(non_forked)))
         logger.info(f"Need to upgrade to a new APT snapshot:\n  - {l}")
 
     # Check if we have at least one non ignored issue
