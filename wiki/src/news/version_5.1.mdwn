@@ -146,4 +146,3 @@ Tails 5.1 directly:
 
 Tails 5.2 is [[scheduled|contribute/calendar]] for June 28.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

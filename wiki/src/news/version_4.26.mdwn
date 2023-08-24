@@ -60,4 +60,3 @@ Tails 4.26 directly:
 
 Tails 4.27 is [[scheduled|contribute/calendar]] for February 8.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

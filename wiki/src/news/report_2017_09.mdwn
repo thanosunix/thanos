@@ -70,7 +70,7 @@ Code
 Documentation and website
 =========================
 
-- We updated our [[roadmap|contribute/roadmap]] with our priorities for
+- We updated our roadmap with our priorities for
   the next years.
 
 - We greatly improved our [[instructions for building the Tails ISO

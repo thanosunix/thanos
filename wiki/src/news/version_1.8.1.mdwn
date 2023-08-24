@@ -57,7 +57,6 @@ to the network:
 
 The next Tails release is [[scheduled|contribute/calendar]] for January 26.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.
 
 We need your help and there are many ways to [[contribute to
 Tails|contribute]] ([[donating|donate]] is only one of

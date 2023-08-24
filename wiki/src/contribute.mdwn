@@ -131,7 +131,6 @@ Tools for contributors
 ======================
 
   - Source code: [[Git repositories|contribute/git]]
-  - [[!tails_roadmap desc="Roadmap"]]
   - [[GitLab source code and bug tracker|contribute/working_together/GitLab]]
   - [[Starter tasks|starter_tasks]] for new contributors
   - [[Building a Tails image|contribute/build]]

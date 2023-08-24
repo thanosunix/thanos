@@ -83,9 +83,6 @@ in the 2 GB to 4 GB region is wiped. The improvements made in Tails
 
 # A glimpse towards the future
 
-Were do we go from here? Have a look to our [[!tails_roadmap]] to
-see where we are heading to.
-
 Would you want to help? As explained in our [["how to contribute"
 documentation|contribute]], here are many ways **you** can contribute
 to Tails: no need to be a hardcore developer.

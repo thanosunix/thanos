@@ -58,7 +58,7 @@ upstream... which sometimes implies to write a patch ourselves.
 ## Pick up a task
 
 We use [[!tails_gitlab groups/tails/-/issues desc="GitLab"]] to track
-our lists of tasks and bugs, as well as our [[!tails_roadmap]].
+our lists of tasks and bugs, as well as our roadmap.
 If you already know which one of the listed tasks you want to tackle
 and it has the *T:Code* label, then you can probably
 safely skip to the next section.

@@ -138,4 +138,3 @@ Tails 4.20 directly:
 
 Tails 4.21 is [[scheduled|contribute/calendar]] for August 10.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

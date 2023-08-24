@@ -62,4 +62,3 @@ Tails 4.29 directly:
 
 Tails 4.30 is [[scheduled|contribute/calendar]] for May 3.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

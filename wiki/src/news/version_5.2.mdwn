@@ -57,4 +57,3 @@ Tails 5.2 directly:
 
 Tails 5.3 is [[scheduled|contribute/calendar]] for August 9.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

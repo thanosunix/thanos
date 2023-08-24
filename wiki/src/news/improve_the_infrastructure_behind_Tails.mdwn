@@ -13,8 +13,8 @@ a challenge to keep Tails alive and getting better.
 
 We needs more hands!
 
-Among the things we know [[!tails_roadmap desc="we should do in the
-next few years"]], we have identified some areas that could benefit the most
+Among the things we know we should do in the
+next few years, we have identified some areas that could benefit the most
 from new dedicated contributors.
 
 Today, we are talking of **improving the infrastructure behind

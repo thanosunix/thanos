@@ -44,12 +44,8 @@ See the online
 Changelog
 for details.
 
-Were do we go from here?
-
-1. This release is likely to be the last one to be based on Debian
-   Lenny. Further development will be based on the (to be released
-   soon) next Debian stable release: Squeeze.
-2. Have a look to our [[!tails_roadmap]] to learn more about our
-   plans.
+This release is likely to be the last one to be based on Debian
+Lenny. Further development will be based on the (to be released
+soon) next Debian stable release: Squeeze.
 
 [[Download it, seed it!|install]]
