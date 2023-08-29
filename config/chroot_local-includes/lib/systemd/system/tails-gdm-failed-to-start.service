@@ -17,15 +17,7 @@ After=plymouth-quit-wait.service
 Type=oneshot
 # We use VT5 that is clean of boot messages and does not get a getty started
 # when we switch there, thanks to our custom NAutoVTs=4 logind.conf setting
-#
-# There are queued udev events when we run plymouthd so on Stretch, so
-# watch_for_coldplug_completion will set up a watcher and return before
-# there's any place where plymouthd can create a seat to display its
-# splash and messages on. So we tell plymouthd to ignore udev which makes
-# it create a fallback seat. The removal of this hack is tracked on #16964.
-ExecStart=/bin/sh -c \
-    '/sbin/plymouthd --mode=shutdown --tty=tty5 \
-        --kernel-command-line="plymouth.ignore-udev $(cat /proc/cmdline)"'
+ExecStart=/sbin/plymouthd --mode=shutdown --tty=tty5
 ExecStart=/bin/chvt 5
 ExecStart=/bin/plymouth show-splash
 ExecStart=/usr/local/lib/tails-gdm-error-message

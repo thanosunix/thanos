@@ -13,7 +13,11 @@ end
 def thunderbird_inbox
   folder_view = thunderbird_main.child($config['Thunderbird']['address'],
                                        roleName: 'table row').parent
-  folder_view.child(/^Inbox( .*)?$/, roleName: 'table row', recursive: false)
+  # Dogtail mangles the regexps we pass it, which we have to workaround,
+  # hence the suboptimal regexp below (the simpler /^Inbox( .*)?$/ would
+  # not work). For details, see
+  # https://gitlab.tails.boum.org/tails/tails/-/issues/19928#note_215864
+  folder_view.child(/^Inbox|Inbox (.*)$/, roleName: 'table row', recursive: false)
 end
 
 def thunderbird_install_host_snakeoil_ssl_cert

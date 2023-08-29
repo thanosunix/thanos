@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-11-08 00:37+0000\n"
+"POT-Creation-Date: 2023-08-15 18:59+0000\n"
 "PO-Revision-Date: 2021-07-16 19:05+0000\n"
 "Last-Translator: Ed Medvedev <edward.medvedev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,43 +20,77 @@ msgstr ""
 "X-Generator: Weblate 3.11.3\n"
 
 #. type: Plain text
-#, no-wrap
-msgid "[[!meta title=\"System requirements\"]]\n"
+#, fuzzy, no-wrap
+#| msgid "[[!meta title=\"System requirements\"]]\n"
+msgid "[[!meta title=\"System requirements and recommended hardware\"]]\n"
 msgstr "[[!meta title=\"Системные требования\"]]\n"
 
-#. type: Plain text
-msgid "Tails works on most computers less than 10 years old."
+#. type: Title =
+#, no-wrap
+msgid "Summary"
+msgstr ""
+
+#. type: Bullet: '- '
+#, fuzzy
+#| msgid "Tails works on most computers less than 10 years old."
+msgid "Tails works on most PC computers that are less than 10 years old."
 msgstr "Tails работает на большинстве компьютеров, которым меньше 10 лет."
 
-#. type: Plain text
-#, no-wrap
-msgid "<div class=\"note\">\n"
-msgstr "<div class=\"note\">\n"
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid "Tails works on most computers less than 10 years old."
+msgid "Tails works on some older Mac computers with an Intel processor."
+msgstr "Tails работает на большинстве компьютеров, которым меньше 10 лет."
 
-#. type: Plain text
-#, no-wrap
-msgid "<p>Tails might not work on:</p>\n"
+#. type: Bullet: '- '
+msgid ""
+"Tails does not work on newer Mac computers with an Apple processor (M1 or "
+"M2)."
+msgstr ""
+
+#. type: Bullet: '- '
+#, fuzzy
+#| msgid "<p>Tails might not work on:</p>\n"
+msgid "Tails might not work on:"
 msgstr "<p>Tails может не работать на:</p>\n"
 
-#. type: Plain text
-#, no-wrap
+#. type: Bullet: '  * '
+msgid "Some older computers, for example, if they don't have enough RAM."
+msgstr ""
+
+#. type: Bullet: '  * '
+#, fuzzy
+#| msgid ""
+#| "<ul>\n"
+#| "<li>Some older computers, for example, if they don't have enough\n"
+#| "RAM.</li>\n"
+#| "<li>Some newer computers, for example, if their [[graphics card is\n"
+#| "not compatible with Linux|support/known_issues/graphics]].</li>\n"
+#| "</ul>\n"
 msgid ""
-"<ul>\n"
-"<li>Some older computers, for example, if they don't have enough\n"
-"RAM.</li>\n"
-"<li>Some newer computers, for example, if their [[graphics card is\n"
-"not compatible with Linux|support/known_issues/graphics]].</li>\n"
-"</ul>\n"
+"Some newer computers, for example, if their [[graphics card is incompatible "
+"with Linux|support/known_issues/graphics]]."
 msgstr ""
 "<ul>\n"
-"<li>некоторых старых компьютерах, которым, например, не хватает оперативной памяти;</li>\n"
-"<li>некоторых сравнительно новых компьютерах, например, если их [[видеокарта несовместима с Linux|support/known_issues/graphics]].</li>\n"
+"<li>некоторых старых компьютерах, которым, например, не хватает оперативной "
+"памяти;</li>\n"
+"<li>некоторых сравнительно новых компьютерах, например, если их [[видеокарта "
+"несовместима с Linux|support/known_issues/graphics]].</li>\n"
 "</ul>\n"
 
-#. type: Plain text
-#, no-wrap
+#. type: Bullet: '  * '
 msgid ""
-"<p>See the [[known hardware compatibility\n"
+"\"Gaming\" graphics cards like Nvidia or AMD Radeon, which are often "
+"incompatible."
+msgstr ""
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<p>See the [[known hardware compatibility\n"
+#| "issues|support/known_issues]].</p>\n"
+msgid ""
+"<p>See our [[list of known hardware compatibility\n"
 "issues|support/known_issues]].</p>\n"
 msgstr "<p>Смотрите раздел [[о проблемах совместимости оборудования|support/known_issues]].</p>\n"
 
@@ -65,8 +99,10 @@ msgstr "<p>Смотрите раздел [[о проблемах совмест�
 msgid "</div>\n"
 msgstr "</div>\n"
 
-#. type: Plain text
-msgid "Hardware requirements:"
+#. type: Title =
+#, fuzzy, no-wrap
+#| msgid "Hardware requirements:"
+msgid "Hardware requirements"
 msgstr "Аппаратные требования:"
 
 #. type: Plain text
@@ -96,13 +132,9 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-msgid "Most Mac computers are IBM PC compatible since 2006."
-msgstr ""
-
-#. type: Bullet: '  - '
 msgid ""
-"Tails does not work with Mac models that use the [[!wikipedia "
-"Apple_silicon#M_series desc=\"Apple M1 or M2\"]] chips."
+"Tails does not work on newer Mac computers with an [[!wikipedia "
+"Apple_silicon#M_series desc=\"Apple processors\"]] (M1 or M2)."
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -114,7 +146,7 @@ msgstr ""
 #. type: Bullet: '  - '
 #, fuzzy
 #| msgid "Tails works on most computers less than 10 years old."
-msgid "Tails does not work on most tablets and phones."
+msgid "Tails does not work on phone or tablets."
 msgstr "Tails работает на большинстве компьютеров, которым меньше 10 лет."
 
 #. type: Plain text
@@ -125,6 +157,154 @@ msgstr "- 2 Гб оперативной памяти для стабильной
 #, no-wrap
 msgid "  Tails can work with less than 2 GB RAM but might behave strangely or crash.\n"
 msgstr "  На устройствах с объёмом памяти меньше  2 Гб Tails может работать нестабильно или не работать вообще.\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Recommended hardware"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Laptop models evolve too rapidly for us to be able to provide an up-to-date "
+"list of recommended hardware. Below are some guidelines if you, or your "
+"organization, are considering acquiring a laptop dedicated to running Tails."
+msgstr ""
+
+#. type: Title ###
+#, no-wrap
+msgid "For PC"
+msgstr ""
+
+#. type: Bullet: '- '
+msgid "Avoid \"gaming\" models with Nvidia or AMD Radeon graphics cards."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"Consider buying a refurbished laptop from a high-end (professional) series.  "
+"These are cheaper and will last longer than new but lower-quality laptops."
+msgstr ""
+
+#. type: Bullet: '  * '
+msgid ""
+"For example, the Lenovo ThinkPad series work well with Tails, including the "
+"X250, X1 Carbon, T440, T480, and T490 models."
+msgstr ""
+
+#. type: Bullet: '  * '
+msgid ""
+"If you live in a part of the world where buying refurbished laptops is "
+"uncommon, look on eBay and Amazon. Amazon offers a 90-day [Amazon Renewed "
+"Guarantee](https://www.amazon.com/gp/help/customer/display.html?"
+"nodeId=G4ZAA22U35N373NX)."
+msgstr ""
+
+#. type: Bullet: '- '
+msgid ""
+"Consider buying a new laptop from vendors who guarantee the compatibility "
+"with Linux and Tails like [ThinkPenguin](https://www.thinkpenguin.com/)."
+msgstr ""
+
+#. type: Title ###
+#, no-wrap
+msgid "For Mac"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Unfortunately, we don't know of any Mac model that works well in Tails and "
+"can run the latest macOS version."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<!--\n"
+msgstr ""
+
+#. type: Plain text
+msgid "To update the list of Mac computer:"
+msgstr ""
+
+#. type: Bullet: '1. '
+msgid ""
+"Store an archive of WhisperBack reports from the last 6 months in a folder."
+msgstr ""
+
+#. type: Bullet: '2. '
+msgid "Decrypt all the reports:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "   ~/Tails/blueprints/stats/whisperback_scripts/decrypt.rb\n"
+msgstr ""
+
+#. type: Bullet: '3. '
+msgid "Extract the list of computer models:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "   ~/Tails/blueprints/stats/whisperback_scripts/content_of.rb \"/usr/sbin/dmidecode -s system-product-name\" > machines\n"
+msgstr ""
+
+#. type: Bullet: '4. '
+msgid "Sort and count identical models:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "   grep -v Bug_report machines | sort | uniq -c | sort -rhk 1 > top\n"
+msgstr ""
+
+#. type: Bullet: '5. '
+msgid ""
+"Share WhisperBack reports number with the Foundations team and ask them to "
+"evaluate hardware compatibility hints in those reports."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "   While analyzing the reports corresponding from each model, FT should:\n"
+msgstr ""
+
+#. type: Bullet: '   - '
+msgid "Check whether they were sent from the same email address, if any"
+msgstr ""
+
+#. type: Bullet: '   - '
+msgid "Check whether the wlan0 interface was the same hardware device"
+msgstr ""
+
+#. type: Bullet: '   - '
+msgid "Check whether the report was about hardware compatibility issues"
+msgstr ""
+
+#. type: Bullet: '6. '
+msgid ""
+"Check whether these Mac models still support the latest version of macOS."
+msgstr ""
+
+#. type: Plain text
+msgid "To update the list of PC computers:"
+msgstr ""
+
+#. type: Plain text
+msgid "- Check what's commonly available with refurbishing companies."
+msgstr ""
+
+#. type: Plain text
+msgid "- Ask tails-assembly@ for models."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "-->\n"
+msgstr ""
+
+#, no-wrap
+#~ msgid "<div class=\"note\">\n"
+#~ msgstr "<div class=\"note\">\n"
 
 #, no-wrap
 #~ msgid ""

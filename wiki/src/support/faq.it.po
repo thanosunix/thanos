@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-11 01:59+0000\n"
+"POT-Creation-Date: 2023-08-15 18:59+0000\n"
 "PO-Revision-Date: 2023-03-15 23:28+0000\n"
 "Last-Translator: Carlo Gandolfi <gand61@gmail.com>\n"
 "Language-Team: ita <transitails@inventati.org>\n"
@@ -242,8 +242,8 @@ msgstr "Vedere anche:"
 
 #. type: Plain text
 msgid ""
-"- [[System requirements|doc/about/requirements]] - [[Known issues|support/"
-"known_issues]]"
+"- [[System requirements and recommended hardware|doc/about/requirements]] - "
+"[[Known issues|support/known_issues]]"
 msgstr ""
 
 #. type: Plain text
@@ -759,7 +759,7 @@ msgstr ""
 #. type: Bullet: '- '
 msgid ""
 "By adding another browser that would use a VPN instead of Tor.  ([[!"
-"tails_ticket 19465]])"
+"tails_ticket 19465]] or [[!tails_ticket 19942]])"
 msgstr ""
 
 #. type: Bullet: '- '

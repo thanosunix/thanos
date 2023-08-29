@@ -136,7 +136,6 @@ for general troubleshooting tips.</p>
 Last updated:
 - MacBook Air Retina 2019: 2019-11-01
 - MacBook Pro 8,3: 2019-11-01
-- MacBook Pro 16,1: 2021-08-12
 -->
 
 ### MacBook Air Retina 2018 and 2019
@@ -148,16 +147,6 @@ starting Tails|doc/advanced_topics/boot_options]]:
 
 Still, the trackpad and keyboard might not work. You can use an external
 mouse and keyboard.
-
-### MacBook Pro 16,1 (A2141)
-
-The computer freezes then automatically restarts. An error message
-appears saying that the computer was restarted because of a problem.
-
-To prevent this from occurring, [[add the following boot option when
-starting Tails|doc/advanced_topics/boot_options]]:
-
-    amdgpu.dpm=0
 
 <h2 id="pc-not-entirely">PC</h2>
 

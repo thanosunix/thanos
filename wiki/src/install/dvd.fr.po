@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2022-02-25 15:40-0600\n"
+"POT-Creation-Date: 2023-08-15 18:59+0000\n"
 "PO-Revision-Date: 2022-12-19 21:06+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -26,28 +26,22 @@ msgstr "[[!meta title=\"Graver Tails sur un DVD\"]]\n"
 #. type: Plain text
 #, no-wrap
 msgid "[[!meta stylesheet=\"inc/stylesheets/download\" rel=\"stylesheet\" title=\"\"]]\n"
-msgstr ""
-"[[!meta stylesheet=\"inc/stylesheets/download\" rel=\"stylesheet\" title=\"\""
-"]]\n"
+msgstr "[[!meta stylesheet=\"inc/stylesheets/download\" rel=\"stylesheet\" title=\"\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "[[!meta stylesheet=\"doc/about/warnings\" rel=\"stylesheet\" title=\"\"]]\n"
-msgstr ""
-"[[!meta stylesheet=\"doc/about/warnings\" rel=\"stylesheet\" title=\"\"]]\n"
+msgstr "[[!meta stylesheet=\"doc/about/warnings\" rel=\"stylesheet\" title=\"\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "[[!meta stylesheet=\"inc/stylesheets/steps\" rel=\"stylesheet\" title=\"\"]]\n"
-msgstr ""
-"[[!meta stylesheet=\"inc/stylesheets/steps\" rel=\"stylesheet\" title=\"\"]]"
-"\n"
+msgstr "[[!meta stylesheet=\"inc/stylesheets/steps\" rel=\"stylesheet\" title=\"\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "[[!meta stylesheet=\"inc/stylesheets/dvd\" rel=\"stylesheet\" title=\"\"]]\n"
-msgstr ""
-"[[!meta stylesheet=\"inc/stylesheets/dvd\" rel=\"stylesheet\" title=\"\"]]\n"
+msgstr "[[!meta stylesheet=\"inc/stylesheets/dvd\" rel=\"stylesheet\" title=\"\"]]\n"
 
 #. type: Plain text
 #, no-wrap
@@ -65,8 +59,9 @@ msgid "<div class=\"tip\">\n"
 msgstr "<div class=\"tip\">\n"
 
 #. type: Plain text
-#, no-wrap
-msgid "<p>Check our [[system requirements|doc/about/requirements]].</p>\n"
+#, fuzzy, no-wrap
+#| msgid "<p>Check our [[system requirements|doc/about/requirements]].</p>\n"
+msgid "<p>Check our [[system requirements and recommended hardware|doc/about/requirements]].</p>\n"
 msgstr "<p>Vérifier la [[configuration requise|doc/about/requirements]].</p>\n"
 
 #. type: Plain text
@@ -77,29 +72,22 @@ msgstr "</div>\n"
 #. type: Plain text
 #, no-wrap
 msgid "[[!inline pages=\"install/inc/steps/download.inline\" raw=\"yes\" sort=\"age\"]]\n"
-msgstr ""
-"[[!inline pages=\"install/inc/steps/download.inline.fr\" raw=\"yes\" sort="
-"\"age\"]]\n"
+msgstr "[[!inline pages=\"install/inc/steps/download.inline.fr\" raw=\"yes\" sort=\"age\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "[[!inline pages=\"install/inc/steps/warnings.inline\" raw=\"yes\" sort=\"age\"]]\n"
-msgstr ""
-"[[!inline pages=\"install/inc/steps/warnings.inline.fr\" raw=\"yes\" sort="
-"\"age\"]]\n"
+msgstr "[[!inline pages=\"install/inc/steps/warnings.inline.fr\" raw=\"yes\" sort=\"age\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "[[!inline pages=\"install/inc/steps/verify.inline\" raw=\"yes\" sort=\"age\"]]\n"
-msgstr ""
-"[[!inline pages=\"install/inc/steps/verify.inline.fr\" raw=\"yes\" sort=\"age"
-"\"]]\n"
+msgstr "[[!inline pages=\"install/inc/steps/verify.inline.fr\" raw=\"yes\" sort=\"age\"]]\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "<h1 class=\"step\">Continue installing or upgrading Tails</h1>\n"
-msgstr ""
-"<h1 class=\"step\">Continuer l'installation ou mettre à jour Tails</h1>\n"
+msgstr "<h1 class=\"step\">Continuer l'installation ou mettre à jour Tails</h1>\n"
 
 #. type: Plain text
 msgid "For detailed instructions, refer to the Ubuntu documentation:"

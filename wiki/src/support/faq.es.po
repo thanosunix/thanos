@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-11 01:59+0000\n"
+"POT-Creation-Date: 2023-08-15 18:59+0000\n"
 "PO-Revision-Date: 2023-03-11 13:28+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: Spanish <https://translate.tails.boum.org/projects/tails/faq/"
@@ -235,9 +235,13 @@ msgid "See also:"
 msgstr "Ver también:"
 
 #. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "- [[System requirements|doc/about/requirements]] - [[Known issues|support/"
+#| "known_issues]]"
 msgid ""
-"- [[System requirements|doc/about/requirements]] - [[Known issues|support/"
-"known_issues]]"
+"- [[System requirements and recommended hardware|doc/about/requirements]] - "
+"[[Known issues|support/known_issues]]"
 msgstr ""
 "- [[Requisitos del sistema|doc/about/requirements]]\n"
 "- [[Problemas conocidos|support/known_issues]]"
@@ -770,7 +774,7 @@ msgstr ""
 #. type: Bullet: '- '
 msgid ""
 "By adding another browser that would use a VPN instead of Tor.  ([[!"
-"tails_ticket 19465]])"
+"tails_ticket 19465]] or [[!tails_ticket 19942]])"
 msgstr ""
 
 #. type: Bullet: '- '
