@@ -51,6 +51,9 @@ To install the dependencies on our test suite:
         )"
         if dpkg --compare-versions "${virt_viewer_candidate_version}" ge 10.0; then
             # https://gitlab.tails.boum.org/tails/tails/-/issues/19064
+            sudo install --owner root --group root --mode 644 \
+                     config/chroot_sources/tails.chroot.gpg \
+                     /etc/apt/trusted.gpg.d/tails.asc
             echo 'deb http://deb.tails.boum.org/ isotester-bookworm main' \
                 | sudo tee /etc/apt/sources.list.d/isotester-bookworm.list
         fi
