@@ -36,7 +36,7 @@ def _run(cmd: List, *args, **kwargs) -> subprocess.CompletedProcess:
         print(e.stderr, file=sys.stderr)
         raise
     else:
-        #print(p.stderr, file=sys.stderr)
+        print(p.stderr, file=sys.stderr)
         return p
     finally:
         logger.debug(f"Done executing command", stacklevel=5)
