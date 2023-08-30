@@ -42,7 +42,23 @@ To install the dependencies on our test suite:
 
 1. Enable the `non-free` APT component.
 
-2. Install the following packages:
+1. Potentially enable some workarounds:
+
+        sudo apt update
+        virt_viewer_candidate_version="$(
+            apt-cache policy virt-viewer \
+                | sed -n 's/^  Candidate: \(.*\)$/\1/p'
+        )"
+        if dpkg --compare-versions "${virt_viewer_candidate_version}" ge 10.0; then
+            # https://gitlab.tails.boum.org/tails/tails/-/issues/19064
+            sudo install --owner root --group root --mode 644 \
+                     config/chroot_sources/tails.chroot.gpg \
+                     /etc/apt/trusted.gpg.d/tails.asc
+            echo 'deb http://deb.tails.boum.org/ isotester-bookworm main' \
+                | sudo tee /etc/apt/sources.list.d/isotester-bookworm.list
+        fi
+
+1. Install the following packages:
 
         sudo apt update && \
         sudo apt install \
