@@ -446,9 +446,11 @@ Given /^I change the passphrase of the Persistent Storage( back to the original)
   # modal dialog to be run via gtk_dialog_run() which causes the
   # application to hang when triggered via a ATSPI action. See
   # https://gitlab.gnome.org/GNOME/gtk/-/issues/1281
-  persistent_storage_main_frame
-    .button('Change Passphrase')
-    .grabFocus
+  button = persistent_storage_main_frame.button('Change Passphrase')
+  try_for(5) do
+    button.grabFocus
+    button.focused
+  end
   @screen.press('Return')
   change_passphrase_dialog = persistent_storage_frontend
                              .child('Change Passphrase', roleName: 'dialog')
@@ -1099,8 +1101,13 @@ When /^I delete the persistent partition$/ do
   assert delete_btn
 
   # If we just do delete_btn.click, then dogtail won't find tps-frontend anymore.
+  # Related to https://gitlab.gnome.org/GNOME/gtk/-/issues/1281 mentioned
+  # elsewhere in this file?
   # That's probably a bug somewhere, and this is a simple workaround
-  delete_btn.grabFocus
+  try_for(5) do
+    delete_btn.grabFocus
+    delete_btn.focused
+  end
   @screen.press('Return')
 
   persistent_storage_frontend
