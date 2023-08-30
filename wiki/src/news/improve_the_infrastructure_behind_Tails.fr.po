@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2020-04-12 16:10+0200\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2022-05-04 19:23+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: French <http://translate.tails.boum.org/projects/tails/"
@@ -22,9 +22,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "[[!meta title=\"Call for help: improve the infrastructure behind Tails\"]]\n"
-msgstr ""
-"[!meta title=\"Appel à l'aide : améliorer l'infrastructure derrière Tails\"]]"
-"\n"
+msgstr "[!meta title=\"Appel à l'aide : améliorer l'infrastructure derrière Tails\"]]\n"
 
 #. type: Plain text
 #, no-wrap
@@ -60,11 +58,16 @@ msgid "We needs more hands!"
 msgstr "Il nous faut plus de bras !"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy
+#| msgid ""
+#| "Among the things we know [[!tails_roadmap desc=\"we should do in the\n"
+#| "next few years\"]], we have identified some areas that could benefit the "
+#| "most\n"
+#| "from new dedicated contributors.\n"
 msgid ""
-"Among the things we know [[!tails_roadmap desc=\"we should do in the\n"
-"next few years\"]], we have identified some areas that could benefit the most\n"
-"from new dedicated contributors.\n"
+"Among the things we know we should do in the next few years, we have "
+"identified some areas that could benefit the most from new dedicated "
+"contributors."
 msgstr ""
 "Parmi les choses que nous savons [[!tails_roadmap desc=\"que nous devrions "
 "faire\n"

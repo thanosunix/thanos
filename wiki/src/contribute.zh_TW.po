@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails l10n\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2020-08-15 08:29+0000\n"
 "Last-Translator: emmapeel <emma.peel@riseup.net>\n"
 "Language-Team: Tails Chinese translators <jxt@twngo.xyz>\n"
@@ -383,10 +383,6 @@ msgstr "參與者工具箱\n"
 #. type: Bullet: '  - '
 msgid "Source code: [[Git repositories|contribute/git]]"
 msgstr "Quellcode: [[Git repositories|contribute/git]]"
-
-#. type: Bullet: '  - '
-msgid "[[!tails_roadmap desc=\"Roadmap\"]]"
-msgstr ""
 
 #. type: Bullet: '  - '
 #, fuzzy

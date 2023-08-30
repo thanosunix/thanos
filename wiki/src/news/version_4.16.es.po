@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2022-12-29 18:17+0000\n"
 "Last-Translator: cacukin <cacukin@cryptolab.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,15 +191,15 @@ msgid "Tails 4.17 is [[scheduled|contribute/calendar]] for March 23."
 msgstr ""
 
 #. type: Plain text
-msgid "Have a look at our [[!tails_roadmap]] to see where we are heading to."
-msgstr ""
-"Echa un vistazo a nuestro [[!tails_roadmap]] para ver hacia dónde nos "
-"dirigimos."
-
-#. type: Plain text
 #, no-wrap
 msgid ""
 "We need your help and there are many ways to [[contribute to\n"
 "Tails|contribute]] (<a href=\"https://tails.net/donate/?r=4.16\">donating</a> is only one of\n"
 "them). Come [[talk to us|about/contact#tails-dev]]!\n"
 msgstr ""
+
+#~ msgid ""
+#~ "Have a look at our [[!tails_roadmap]] to see where we are heading to."
+#~ msgstr ""
+#~ "Echa un vistazo a nuestro [[!tails_roadmap]] para ver hacia dónde nos "
+#~ "dirigimos."

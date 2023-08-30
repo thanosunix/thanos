@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:55+0000\n"
 "PO-Revision-Date: 2020-04-23 09:36+0000\n"
 "Last-Translator: emmapeel <emma.peel@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,10 +257,6 @@ msgstr ""
 
 #. type: Plain text
 msgid "Tails 4.3 is [[scheduled|contribute/calendar]] for February 11."
-msgstr ""
-
-#. type: Plain text
-msgid "Have a look at our [[!tails_roadmap]] to see where we are heading to."
 msgstr ""
 
 #. type: Plain text

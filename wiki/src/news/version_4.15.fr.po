@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:56+0000\n"
 "PO-Revision-Date: 2023-07-14 16:35+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,22 +234,18 @@ msgid "Tails 4.16 is [[scheduled|contribute/calendar]] for February 23."
 msgstr "Tails 4.16 est [[prévu|contribute/calendar]] pour le 23 février."
 
 #. type: Plain text
-msgid "Have a look at our [[!tails_roadmap]] to see where we are heading to."
-msgstr ""
-"Jetez un œil à notre [[feuille de route|contribute/roadmap]] pour savoir ce "
-"que nous avons en tête."
-
-#. type: Plain text
 #, no-wrap
 msgid ""
 "We need your help and there are many ways to [[contribute to\n"
 "Tails|contribute]] (<a href=\"https://tails.net/donate/?r=4.15\">donating</a> is only one of\n"
 "them). Come [[talk to us|about/contact#tails-dev]]!\n"
-msgstr ""
-"Nous avons besoin de votre aide et il y a de nombreuses manières de [["
-"contribuer à Tails|contribute]] (<a href=\"https://tails.net/donate/?r=4.15\""
-">faire un don</a> est seulement l'une d'entre elles). Venez [[discuter avec "
-"nous|about/contact#tails-dev]] !\n"
+msgstr "Nous avons besoin de votre aide et il y a de nombreuses manières de [[contribuer à Tails|contribute]] (<a href=\"https://tails.net/donate/?r=4.15\">faire un don</a> est seulement l'une d'entre elles). Venez [[discuter avec nous|about/contact#tails-dev]] !\n"
+
+#~ msgid ""
+#~ "Have a look at our [[!tails_roadmap]] to see where we are heading to."
+#~ msgstr ""
+#~ "Jetez un œil à notre [[feuille de route|contribute/roadmap]] pour savoir "
+#~ "ce que nous avons en tête."
 
 #~ msgid "None specific to this release."
 #~ msgstr "Aucun spécifique à cette version."
