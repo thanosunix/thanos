@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-24 19:20+0000\n"
+"POT-Creation-Date: 2023-08-30 19:30+0000\n"
 "PO-Revision-Date: 2023-01-04 21:17+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -866,43 +866,49 @@ msgid "Passionate people like you"
 msgstr "Personnes passionnées comme vous"
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(73%)"
-msgstr "(73%)"
-
-#. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "Foundations & NGOs"
-msgstr "Fondations et ONG"
-
-#. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(16%)"
-msgstr "(16%)"
-
-#. type: Content of: <div><div><figure><figcaption><ul><li>
-msgid "like Mozilla or RIPE NCC"
-msgstr "comme Mozilla ou RIPE NCC"
+msgid "(69%)"
+msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
 msgid "Entities related to the US government"
 msgstr "Entités liées au gouvernement des États-Unis"
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(8%)"
-msgstr "(8%)"
+msgid "(20%)"
+msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li>
-msgid "like the US Department of State"
+#, fuzzy
+#| msgid "like the US Department of State"
+msgid "like the US Department of State and Internews"
 msgstr "comme le Département d'État des États-Unis"
+
+#. type: Content of: <div><div><figure><figcaption><ul><li><div>
+msgid "Foundations & NGOs"
+msgstr "Fondations et ONG"
+
+#. type: Content of: <div><div><figure><figcaption><ul><li><div>
+msgid "(6%)"
+msgstr ""
+
+#. type: Content of: <div><div><figure><figcaption><ul><li>
+#, fuzzy
+#| msgid "like Mozilla or RIPE NCC"
+msgid "like Tor and RIPE NCC"
+msgstr "comme Mozilla ou RIPE NCC"
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
 msgid "Private companies"
 msgstr "Entreprises privées"
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(4%)"
-msgstr "(4%)"
+msgid "(5%)"
+msgstr "(5%)"
 
 #. type: Content of: <div><div><figure><figcaption><ul><li>
-msgid "like ProtonMail or ThinkPenguin"
+#, fuzzy
+#| msgid "like ProtonMail or ThinkPenguin"
+msgid "like ProtonMail and ThinkPenguin"
 msgstr "comme ProtonMail ou ThinkPenguin"
 
 #. type: Content of: <div><div><h3>
@@ -921,6 +927,18 @@ msgstr ""
 msgid "Come talk to us and [[become a sponsor|sponsors/become]] yourself!"
 msgstr ""
 "Venez discuter avec nous et vous-même [[devenez sponsor|sponsors/become]] !"
+
+#~ msgid "(73%)"
+#~ msgstr "(73%)"
+
+#~ msgid "(16%)"
+#~ msgstr "(16%)"
+
+#~ msgid "(8%)"
+#~ msgstr "(8%)"
+
+#~ msgid "(4%)"
+#~ msgstr "(4%)"
 
 #, fuzzy
 #~| msgid ""
@@ -1248,9 +1266,6 @@ msgstr ""
 
 #~ msgid "Meetings"
 #~ msgstr "Réunions"
-
-#~ msgid "(5%)"
-#~ msgstr "(5%)"
 
 #~ msgid ""
 #~ "Tails also receives grants, awards, corporate donations, and substantial "
