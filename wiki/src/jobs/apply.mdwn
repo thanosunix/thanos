@@ -9,17 +9,20 @@ optional:
   </li>
   <li class="apply-cover-letter">
     <p>Cover letter</p>
-    <p>We are particularly curious why online privacy is important to you.</p>
-  </li>
-  <li class="apply-contributions">
-    <p>Links to other contributions to free software, GitHub, or GitLab accounts</p>
-  </li>
-  <li class="apply-portfolio">
-    <p>Links to your personal website, portfolio, or sample work</p>
-  </li>
-  <li class="apply-org-culture">
-    <p>Your stories about participating in groups that value transparency, autonomy, and horizontal decision-making.</p>
-  </li>
+  <ul>
+    <li>
+        <p>Explain us why you would like to work at Tails. We are particularly curious why online privacy is important to you.</p>
+    </li>
+    <li class="apply-contributions">
+        <p>Links to other contributions to free software, GitHub, or GitLab accounts</p>
+    </li>
+    <li class="apply-portfolio">
+      <p>Links to your personal website, portfolio, or sample work</p>
+    </li>
+    <li class="apply-org-culture">
+      <p>Your stories about participating in groups that value transparency, autonomy, and horizontal decision-making.  What is/has been your role in such groups?</p>
+    </li>
+  </ul>
   <li class="references">
     <p>References</p>
   </li>
