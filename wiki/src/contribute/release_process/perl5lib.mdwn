@@ -15,6 +15,7 @@ Install build and test dependencies
        libdist-zilla-plugin-test-notabs-perl \
        libdist-zilla-plugin-test-perl-critic-perl \
        libdist-zilla-app-command-authordebs-perl && \
+    sudo apt update && \
     cd "$(git rev-parse --show-toplevel)/config/chroot_local-includes/usr/src/perl5lib" && \
     dzil authordebs --install
 
