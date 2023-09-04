@@ -126,4 +126,3 @@ Tails 4.22 directly:
 
 Tails 4.23 is [[scheduled|contribute/calendar]] for October 5.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

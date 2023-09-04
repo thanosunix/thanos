@@ -74,4 +74,3 @@ Tails 4.24 directly:
 
 Tails 4.25 is [[scheduled|contribute/calendar]] for December 7.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

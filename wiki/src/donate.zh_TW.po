@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails l10n\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-14 13:53+0200\n"
+"POT-Creation-Date: 2023-08-30 19:30+0000\n"
 "PO-Revision-Date: 2022-12-24 08:17+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: Tails Chinese translators <jxt@twngo.xyz>\n"
@@ -180,27 +180,27 @@ msgstr "</label>"
 #. type: Content of: <div><div><div><form><div><label>
 msgid ""
 "<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 5 active"
-"\"> <input type=\"radio\" autocomplete=\"off\" value=\"5\"/>5â¬ </label> "
+"\"> <input type=\"radio\" autocomplete=\"off\" value=\"5\"/>5€ </label> "
 "<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 10\"> "
-"<input type=\"radio\" autocomplete=\"off\" value=\"10\"/>10â¬ </label> "
-"<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 25\"> "
-"<input type=\"radio\" autocomplete=\"off\" value=\"25\"/>25â¬ </label> "
-"<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 50\"> "
-"<input type=\"radio\" autocomplete=\"off\" value=\"50\"/>50â¬ </label> "
-"<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 100\"> "
-"<input type=\"radio\" autocomplete=\"off\" value=\"100\"/>100â¬ </label> "
-"<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 150\"> "
-"<input type=\"radio\" autocomplete=\"off\" value=\"150\"/>150â¬ </label> "
-"<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 200\"> "
-"<input type=\"radio\" autocomplete=\"off\" value=\"200\"/>200â¬ </label> "
-"<label class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 other\">"
+"<input type=\"radio\" autocomplete=\"off\" value=\"10\"/>10€ </label> <label "
+"class=\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 25\"> <input "
+"type=\"radio\" autocomplete=\"off\" value=\"25\"/>25€ </label> <label class="
+"\"btn btn-amount btn-lg btn-primary col-md-3 col-xs-6 50\"> <input type="
+"\"radio\" autocomplete=\"off\" value=\"50\"/>50€ </label> <label class=\"btn "
+"btn-amount btn-lg btn-primary col-md-3 col-xs-6 100\"> <input type=\"radio\" "
+"autocomplete=\"off\" value=\"100\"/>100€ </label> <label class=\"btn btn-"
+"amount btn-lg btn-primary col-md-3 col-xs-6 150\"> <input type=\"radio\" "
+"autocomplete=\"off\" value=\"150\"/>150€ </label> <label class=\"btn btn-"
+"amount btn-lg btn-primary col-md-3 col-xs-6 200\"> <input type=\"radio\" "
+"autocomplete=\"off\" value=\"200\"/>200€ </label> <label class=\"btn btn-"
+"amount btn-lg btn-primary col-md-3 col-xs-6 other\">"
 msgstr ""
 
 #. type: Content of: <div><div><div><form><div><label><div>
 #, fuzzy
 msgid ""
 "<input type=\"text\" pattern=\"\\d+\" class=\"form-control text-right\" id="
-"\"other-euro\" placeholder=\"Other\"/> <span class=\"input-group-addon\">â¬</"
+"\"other-euro\" placeholder=\"Other\"/> <span class=\"input-group-addon\">€</"
 "span>"
 msgstr ""
 "<input type=\"text\" pattern=\"\\d+\" class=\"form-control text-right\" id="
@@ -721,7 +721,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "AdministrationÂ and fundraising"
+msgid "Administration and fundraising"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
@@ -732,41 +732,6 @@ msgstr ""
 msgid ""
 "We make the most of the money that we receive because we prefer spending our "
 "time improving Tails for our users."
-msgstr ""
-
-#. type: Content of: <div><div><h3>
-#, fuzzy
-msgid "Our impact"
-msgstr "我們的合伙人"
-
-#. type: Content of: <div><div><p>
-msgid "Our biggest satisfaction comes from the growing popularity of Tails."
-msgstr ""
-
-#. type: Content of: <div><div><p>
-msgid ""
-"From the number of automatic upgrades, we know that Tails was used by around "
-"25&#8239;000 people every day in 2022."
-msgstr ""
-
-#. type: Content of: <div><div><p>
-msgid ""
-"We keep people safe more than 10 million times every year, for a budget "
-"under $350&#8239;000."
-msgstr ""
-
-#. type: Content of: <div><div><p>
-#, fuzzy
-msgid "See our [[financial records|doc/about/finances]]."
-msgstr "我們的財務記錄報告在此 [[here|doc/about/finances]]."
-
-#. type: Content of: <div><div><div>
-#, fuzzy
-msgid "[[!img users.png alt=\"\" link=\"no\"]]"
-msgstr "[[!img expenses.png link=\"no\"]]"
-
-#. type: Content of: <div><div><div><p>
-msgid "Daily users since 2012"
 msgstr ""
 
 #. type: Content of: <div><div><h3>
@@ -787,19 +752,7 @@ msgid "Passionate people like you"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(73%)"
-msgstr ""
-
-#. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "Foundations & NGOs"
-msgstr ""
-
-#. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(16%)"
-msgstr ""
-
-#. type: Content of: <div><div><figure><figcaption><ul><li>
-msgid "like Mozilla or RIPE NCC"
+msgid "(69%)"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
@@ -807,11 +760,23 @@ msgid "Entities related to the US government"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(8%)"
+msgid "(20%)"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li>
-msgid "like the US Department of State"
+msgid "like the US Department of State and Internews"
+msgstr ""
+
+#. type: Content of: <div><div><figure><figcaption><ul><li><div>
+msgid "Foundations & NGOs"
+msgstr ""
+
+#. type: Content of: <div><div><figure><figcaption><ul><li><div>
+msgid "(6%)"
+msgstr ""
+
+#. type: Content of: <div><div><figure><figcaption><ul><li>
+msgid "like Tor and RIPE NCC"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
@@ -819,11 +784,11 @@ msgid "Private companies"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li><div>
-msgid "(4%)"
+msgid "(5%)"
 msgstr ""
 
 #. type: Content of: <div><div><figure><figcaption><ul><li>
-msgid "like ProtonMail or ThinkPenguin"
+msgid "like ProtonMail and ThinkPenguin"
 msgstr ""
 
 #. type: Content of: <div><div><h3>
@@ -841,6 +806,18 @@ msgstr ""
 #, fuzzy
 msgid "Come talk to us and [[become a sponsor|sponsors/become]] yourself!"
 msgstr "見見我們的[[伙伴|partners]] 或是 [[成為我們的伙伴|partners/become]]!"
+
+#, fuzzy
+#~ msgid "Our impact"
+#~ msgstr "我們的合伙人"
+
+#, fuzzy
+#~ msgid "See our [[financial records|doc/about/finances]]."
+#~ msgstr "我們的財務記錄報告在此 [[here|doc/about/finances]]."
+
+#, fuzzy
+#~ msgid "[[!img users.png alt=\"\" link=\"no\"]]"
+#~ msgstr "[[!img expenses.png link=\"no\"]]"
 
 #, fuzzy
 #~ msgid ""

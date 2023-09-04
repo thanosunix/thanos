@@ -72,4 +72,3 @@ Tails 4.27 directly:
 
 Tails 4.28 is [[scheduled|contribute/calendar]] for March 8.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

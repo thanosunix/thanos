@@ -55,4 +55,3 @@ Tails 5.3 directly:
 
 Tails 5.4 is [[scheduled|contribute/calendar]] for August 23.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

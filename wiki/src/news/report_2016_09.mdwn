@@ -103,7 +103,7 @@ is great in itself.
 Documentation and website
 =========================
 
-- We published our [[roadmap for 2016-2017|contribute/roadmap]].
+- We published our roadmap for 2016-2017.
 
 - We designed a new [[donation page|donate]] which proposes
   tax-deductible donations in both euros, through Zwiebelfreunde and

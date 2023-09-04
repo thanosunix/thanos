@@ -60,4 +60,3 @@ Tails 5.6 directly:
 
 Tails 5.7 is scheduled for November 22.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

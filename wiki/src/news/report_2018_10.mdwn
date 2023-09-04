@@ -51,7 +51,7 @@ This work will be released in Tails 3.12 (January 29).
 Documentation and website
 =========================
 
-- We updated our [[!tails_roadmap desc="roadmap"]] for the next 2 years.
+- We updated our roadmap for the next 2 years.
 
 Hot topics on our help desk
 ===========================

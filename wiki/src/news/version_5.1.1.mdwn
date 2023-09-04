@@ -59,4 +59,3 @@ Tails 5.1.1 directly:
 Tails 5.2 is [[tentatively scheduled|contribute/calendar]] for July 5,
 but it will likely be released later than that.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-06 09:16+0000\n"
+"POT-Creation-Date: 2023-08-24 19:55+0000\n"
 "PO-Revision-Date: 2023-03-15 23:28+0000\n"
 "Last-Translator: _ignifugo <ignifugo@insicuri.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,12 +229,6 @@ msgid "Tails 4.4 is [[scheduled|contribute/calendar]] for March 10."
 msgstr "Tails 4.4 è [[previsto|contribute/calendar]] per il 10 marzo."
 
 #. type: Plain text
-msgid "Have a look at our [[!tails_roadmap]] to see where we are heading to."
-msgstr ""
-"Dai un'occhiata alla nostra [[tabella di marcia|contribute/roadmap]] (in "
-"inglese) per sapere a cosa stiamo lavorando."
-
-#. type: Plain text
 #, no-wrap
 msgid ""
 "We need your help and there are many ways to [[contribute to\n"
@@ -244,3 +238,9 @@ msgstr ""
 "Abbiamo bisogno del tuo aiuto e ci sono molti modi per [[contribuire a\n"
 "Tails|contribute]] (le <a href=\"https://tails.net/donate/?r=4.3\">donazioni</a> sono soltanto uno di\n"
 "questi). Vieni a [[parlare con noi|about/contact#tails-dev]]!\n"
+
+#~ msgid ""
+#~ "Have a look at our [[!tails_roadmap]] to see where we are heading to."
+#~ msgstr ""
+#~ "Dai un'occhiata alla nostra [[tabella di marcia|contribute/roadmap]] (in "
+#~ "inglese) per sapere a cosa stiamo lavorando."

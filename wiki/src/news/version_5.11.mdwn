@@ -77,4 +77,3 @@ Tails 5.11 directly:
 
 Tails 5.12 is [[scheduled|contribute/calendar]] for April 18.
 
-Have a look at our [[!tails_roadmap]] to see where we are heading to.
