@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-14 13:53+0200\n"
+"POT-Creation-Date: 2023-09-04 09:56+0200\n"
 "PO-Revision-Date: 2023-02-05 18:28+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -479,7 +479,7 @@ msgstr ""
 #. type: Plain text
 #, fuzzy
 #| msgid "🎉 ✨ ***tails.net*** ✨ 🎉"
-msgid "ð â¨ ***tails.net*** â¨ ð"
+msgid "🎉 ✨ ***tails.net*** ✨ 🎉"
 msgstr "🎉 ✨ ***tails.net*** ✨ 🎉"
 
 #. type: Plain text

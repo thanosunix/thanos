@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-14 13:52+0200\n"
+"POT-Creation-Date: 2023-09-04 09:55+0200\n"
 "PO-Revision-Date: 2023-03-11 13:28+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "[[!meta title=\"Изменение пароля Постоянного �
 
 #. type: Bullet: '1. '
 msgid ""
-"Choose **Applications**&nbsp;â¸ **Tails**&nbsp;â¸ **Persistent Storage** to "
+"Choose **Applications**&nbsp;▸ **Tails**&nbsp;▸ **Persistent Storage** to "
 "open the Persistent Storage settings."
 msgstr ""
 
