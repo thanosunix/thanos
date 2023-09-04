@@ -5,5 +5,5 @@ end
 Then /^all packages listed in the build manifest are up-to-date$/ do
   command = "#{GIT_DIR}/bin/needed-package-updates"
   config = "#{GIT_DIR}/config/ci/needed-package-updates.yml"
-  fatal_system "#{command} --config '#{config}' --file '#{TAILS_BUILD_MANIFEST}'"
+  cmd_helper([command, "--config=#{config}", "--file=#{TAILS_BUILD_MANIFEST}"])
 end
