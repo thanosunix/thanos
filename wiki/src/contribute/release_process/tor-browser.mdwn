@@ -348,7 +348,16 @@ Wait for the synchronization
 Before you can build Tails using Tor Browser from our own archive,
 you need to wait for the tarballs to appear on
 <https://torbrowser-archive.tails.boum.org/?C=M&O=D>. This can take up to
-10 minutes.
+10 minutes:
+
+    (
+    url="$(cat config/chroot_local-includes/usr/share/tails/tbb-dist-url.txt)"
+    while [ -z "$(elinks -dump -no-references -no-numbering "$url"   | grep 'tor-browser-linux64.*MiB')" ]
+    do
+        sleep 5
+     done
+     )
+
 
 Push the updated branch
 -----------------------
