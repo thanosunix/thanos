@@ -38,9 +38,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 10:11+0200\n"
-"PO-Revision-Date: 2023-08-02 17:06+0000\n"
-"Last-Translator: Xap <imme228@gmail.com>\n"
+"POT-Creation-Date: 2023-09-04 09:24+0200\n"
+"PO-Revision-Date: 2023-08-26 14:51+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/tor/tails-gui/fa/"
 ">\n"
 "Language: fa\n"
@@ -48,7 +48,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #. Translators: Don't translate {details}, it's a placeholder and will
 #. be replaced.
@@ -151,7 +151,7 @@ msgstr "این به طور خودکار نصب {packages} را متوقف خوا
 #: config/chroot_local-includes/usr/local/lib/additional-software/asp-handle-package-changes:144
 #: config/chroot_local-includes/usr/local/bin/tails-additional-software-config:168
 msgid "Remove"
-msgstr "حذف"
+msgstr "برداشتن"
 
 #: config/chroot_local-includes/usr/local/lib/additional-software/asp-handle-package-changes:145
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/ui/add_settings_dialog.py:40
@@ -264,7 +264,7 @@ msgstr ""
 
 #: config/chroot_local-includes/usr/local/bin/electrum:112
 msgid "Donate Now"
-msgstr ""
+msgstr "هم‌اکنون حمایت کنید"
 
 #: config/chroot_local-includes/usr/local/bin/electrum:113
 msgid "Later"
@@ -445,7 +445,8 @@ msgid "no automatic upgrade is available from our website for this version"
 msgstr "به روز رسانی خودکار برای این نسخه در وب سایت ما موجود نیست"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:364
-msgid "your device was not created using a USB image or Tails Installer"
+#, fuzzy
+msgid "your device was not created using a USB image or Tails Cloner"
 msgstr "دستگاه شما با استفاده از ایمیج USB و یا نصب‌کننده Tails ایجاد نشده است"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:369
@@ -818,19 +819,19 @@ msgstr "ایجاد ذخیره سازی مداوم"
 msgid "Error unlocking Persistent Storage: {}"
 msgstr "ذخیره دائمی رمزگذاری شده: {}"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:124
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:126
 #, fuzzy
 msgid "Error upgrading Persistent Storage: {}"
 msgstr "ذخیره دائمی رمزگذاری شده: {}"
 
 #. Translators: Don't translate {features}, it's a placeholder
 #. and will be replaced.
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:146
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
 #, fuzzy, python-brace-format
 msgid "Failed to activate some features of the Persistent Storage: {features}."
 msgstr "عدم موفقیت در پیکربندی ذخیره‌ساز دائم"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:156
 #, fuzzy
 msgid "Error activating Persistent Storage: {}"
 msgstr "ایجاد ذخیره سازی مداوم: {}"
@@ -1106,7 +1107,8 @@ msgstr "نصب تیلز ناموفق بود!"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:296
 #: ../config/chroot_local-includes/usr/share/applications/tails-installer.desktop.in.h:1
-msgid "Tails Installer"
+#, fuzzy
+msgid "Tails Cloner"
 msgstr "نصب کننده تیلز"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:339
@@ -1801,7 +1803,7 @@ msgstr "وضعیت Tor"
 msgid "Open Onion Circuits"
 msgstr "یک مدار پیازی باز کن"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:319
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:315
 #, python-brace-format
 msgid ""
 "Only {available_memory} KiB of memory is available, need at least "
@@ -1810,37 +1812,37 @@ msgid ""
 "Try again after closing some applications or rebooting."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:331
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:327
 #, fuzzy
 msgid "Creating a partition for the Persistent Storage..."
 msgstr "اصلاح دسترسی های درایو ذخیره سازی مداوم"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:351
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:347
 msgid ""
 "Initializing the LUKS encryption... The computer might stop responding for a "
 "few seconds."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:373
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:369
 msgid "Unlocking the encryption..."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:381
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:377
 #, fuzzy
 msgid "Formatting the file system..."
 msgstr "تایید فایل سیستم..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:396
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:392
 #, fuzzy
 msgid "Activating the Persistent Storage..."
 msgstr "ایجاد ذخیره سازی مداوم: {}"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:401
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:397
 #, fuzzy
 msgid "Finishing setting up the Persistent Storage..."
 msgstr "ایجاد ذخیره سازی مداوم"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:611
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:607
 msgid ""
 "Can't unmount Persistent Storage, some process is still using it. Please "
 "close all applications that could be accessing it and try again. If that "
@@ -1963,12 +1965,12 @@ msgstr ""
 msgid "Change Passphrase"
 msgstr "نمایش کلمه عبور"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:83
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:85
 #, fuzzy
 msgid "The current passphrase is incorrect"
 msgstr "رمز ها با هم یکسان نیستند"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:92
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:94
 #, fuzzy
 msgid "Changing the passphrase failed"
 msgstr "نمایش کلمه عبور"

@@ -30,7 +30,7 @@ scenarios|doc/upgrade#manual]]:
 Related documents
 =================
 
-- [[Design document of *Tails Installer*|installation]]
+- [[Design document of *Tails Cloner*|installation]]
 - [[Design document of the download verification|download_verification]]
 - [Archive of our design artifacts](https://gitlab.tails.boum.org/tails/ux/-/tree/master/installation%20assistant)
 - [[!tails_ticket 18074 desc="Usability tests from December 2021"]]

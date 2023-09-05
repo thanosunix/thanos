@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-14 13:53+0200\n"
+"POT-Creation-Date: 2023-09-04 09:56+0200\n"
 "PO-Revision-Date: 2023-03-12 00:43+0000\n"
 "Last-Translator: xin <xin@riseup.net>\n"
 "Language-Team: Tails Translators <tails-l10n@boum.org>\n"
@@ -25,8 +25,8 @@ msgstr "[[!meta title=\"Verschlüsselter beständiger Speicherbereich\"]]\n"
 
 #. type: Plain text
 msgid ""
-"To create the Persistent Storage, choose **Applications**&nbsp;â¸ "
-"**Tails**&nbsp;â¸ **Persistent Storage**."
+"To create the Persistent Storage, choose **Applications**&nbsp;▸ "
+"**Tails**&nbsp;▸ **Persistent Storage**."
 msgstr ""
 
 #. type: Plain text

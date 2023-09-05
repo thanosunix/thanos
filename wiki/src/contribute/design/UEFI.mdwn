@@ -8,9 +8,9 @@ Goals and non-goals
 Goals
 -----
 
-* devices produced by Tails Installer should boot on most UEFI-only
+* devices produced by Tails Cloner should boot on most UEFI-only
   hardware (e.g. some relevant set of Macs)
-* devices produced by Tails Installer should boot on most hardware
+* devices produced by Tails Cloner should boot on most hardware
   that only supports UEFI boot for GPT devices (e.g. ThinkPad X220)
 * Legacy BIOS boot support should be left unaffected (modulo a tiny
   amount of really crazy firmware bugs, probably)
@@ -106,9 +106,9 @@ The UEFI boot loader setup is taken care of by:
 * `config/binary_local-includes/EFI/debian/grub.cfg`
 * `config/binary_local-includes/EFI/debian/grub/splash.png`
 
-### Tails Installer
+### Tails Cloner
 
-Tails Installer creates the Tails system partition as an EFI System
+Tails Cloner creates the Tails system partition as an EFI System
 Partition (ESP), with the corresponding GUID.
 
 Future work

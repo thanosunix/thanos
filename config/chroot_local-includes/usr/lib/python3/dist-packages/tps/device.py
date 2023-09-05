@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 import tempfile
@@ -22,9 +23,6 @@ logger = tps.logging.get_logger(__name__)
 TAILS_MOUNTPOINT = "/lib/live/mount/medium"
 PARTITION_GUID = "8DA63339-0007-60C0-C436-083AC8230908" # Linux reserved
 TPS_PARTITION_LABEL = "TailsData"
-VERSION_REGEX = re.compile(r'^Version:\s*(\d+)$')
-PBKDF_REGEX = re.compile(r'^\s*PBKDF:\s*(\S+)$')
-MEMORY_COST_REGEX = re.compile(r'^\s*Memory:\s*(\d+)$')
 
 # Leave at least 200 MiB of memory to the system to avoid triggering the
 # OOM killer.
@@ -69,7 +67,7 @@ class BootDevice(object):
             logger.debug(f"Partition table type: {partition_table_type}")
             raise InvalidBootDeviceError(
                 "You can only create a Persistent Storage on a USB stick "
-                "installed with a USB image or Tails Installer."
+                "installed with a USB image or Tails Cloner."
             )
         self.block = self.udisks_object.get_block()
         if not self.block:
@@ -103,7 +101,7 @@ class BootDevice(object):
             logger.debug(f"Partition name: {partition_name}")
             raise InvalidBootDeviceError(
                 "You can only create a Persistent Storage on a USB stick "
-                "installed with a USB image or Tails Installer."
+                "installed with a USB image or Tails Cloner."
             )
 
         return BootDevice(udisks.get_object(partition.props.table))
@@ -176,45 +174,27 @@ class TPSPartition(object):
             return False
 
     def is_upgraded(self) -> bool:
-        cmd = ["cryptsetup", "luksDump", self.device_path]
+        logger.debug("Calling is_upgraded()")
+        cmd = ["cryptsetup", "luksDump", "--dump-json-metadata", self.device_path]
+        p = executil.run(cmd, stdout=subprocess.PIPE)
+        if p.returncode != 0:
+            m = "Command 'cryptsetup luksDump' failed"
+            if p.stderr.startswith("Dump operation is not supported for this device type"):
+                m += ": dump operation was not supported for the device which implies " \
+                     "it uses LUKS version 1"
+            else:
+                m += f": {p.stderr.strip()}"
+            logger.debug(m)
+            return False
         try:
-            luks_dump = executil.check_output(cmd)
-        except subprocess.CalledProcessError:
-            logger.exception("Command 'cryptsetup luksDump' failed")
+            luks_json = json.loads(str(p.stdout))
+        except json.decoder.JSONDecodeError:
+            logger.exception("Could not parse luksDump output as JSON")
             return False
-
-        version = str()
-        pbkdf = str()
-        memory_cost_kib = int()
-        for line in luks_dump.splitlines():
-            match = VERSION_REGEX.match(line)
-            if match:
-                version = match.group(1)
-            match = PBKDF_REGEX.match(line)
-            if match:
-                pbkdf = match.group(1)
-            match = MEMORY_COST_REGEX.match(line)
-            if match:
-                memory_cost_kib = int(match.group(1))
-
-        # LUKS version 1 does not print the PBKDF because it only
-        # supports PBKDF2.
-        if version == "1":
-            return False
-
-        err_msg = str()
-        if not version and not pbkdf:
-            err_msg = "Could not get LUKS version and PBKDF from LUKS dump"
-        elif not version:
-            err_msg = "Could not get LUKS version from LUKS dump"
-        elif not pbkdf:
-            err_msg = "Could not get PBKDF from LUKS dump"
-        if err_msg:
-            logger.error(f"{err_msg}\n"
-                         f"### Beginning of LUKS dump ###\n"
-                         f"{luks_dump}\n"
-                         f"### End of LUKS dump ###")
-            return False
+        keyslots = luks_json['keyslots']
+        for keyslot in keyslots:
+            luks_json['keyslots'][keyslot]['kdf']['salt'] = 'redacted'
+        logger.debug(f"LUKS keyslots JSON dump: {keyslots}")
 
         # The parameters we want for the LUKS header are:
         # - LUKS version 2
@@ -230,11 +210,27 @@ class TPSPartition(object):
         #   • cryptsetup-2.3.7/lib/utils_pbkdf.c:64:static uint32_t adjusted_phys_memory(void)
         cryptsetup_adjusted_memory_kib = os.sysconf('SC_PAGESIZE') // 1024 * os.sysconf('SC_PHYS_PAGES') // 2
         required_memory_cost_kib = min(cryptsetup_adjusted_memory_kib, DESIRED_PBKDF_MEMORY_KIB)
+        logger.debug(f"cryptsetup_adjusted_memory_kib = {cryptsetup_adjusted_memory_kib}")
 
-        logger.debug("The encrypted partition has %d memory cost (cryptsetup_adjusted_memory_kib = %d)", memory_cost_kib, cryptsetup_adjusted_memory_kib)
+        def keyslot_is_upgraded(keyslot):
+            try:
+                return keyslot["type"] == "luks2" and \
+                    keyslot["kdf"]["type"] == "argon2id" and \
+                    keyslot["kdf"]["memory"] >= required_memory_cost_kib
+            except KeyError:
+                return False
 
-        return version == "2" and pbkdf == "argon2id" and \
-            memory_cost_kib >= required_memory_cost_kib
+        upgraded_keyslots = [slot for slot in keyslots if keyslot_is_upgraded(keyslots[slot])]
+        logger.debug(f"upgraded_keyslots = {upgraded_keyslots}")
+
+        # We only require a single key to be upgraded since we have
+        # seen users ending up with multiple keys, some which refuse
+        # to upgrade (probably due to the storage being corrupt) so
+        # is_upgraded() would always return false leading to the LUKS
+        # upgrade procedure for each boot (tails/tails#19728).
+        upgraded = len(upgraded_keyslots) > 0
+        logger.debug(f"is_upgraded() = {upgraded}")
+        return upgraded
 
     @classmethod
     def exists(cls) -> bool:

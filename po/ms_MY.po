@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"POT-Creation-Date: 2023-09-04 09:24+0200\n"
 "PO-Revision-Date: 2023-07-21 16:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/tor/tails-gui/ms/"
@@ -434,7 +434,8 @@ msgstr ""
 "ini"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:364
-msgid "your device was not created using a USB image or Tails Installer"
+#, fuzzy
+msgid "your device was not created using a USB image or Tails Cloner"
 msgstr "peranti anda tidak dibuat menggunakan imej USB atau Pemasang Tails"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:369
@@ -811,19 +812,19 @@ msgstr "Cipta Storan Berterusan"
 msgid "Error unlocking Persistent Storage: {}"
 msgstr "Storan _Berterusan Tersulit"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:124
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:126
 #, fuzzy
 msgid "Error upgrading Persistent Storage: {}"
 msgstr "Storan _Berterusan Tersulit"
 
 #. Translators: Don't translate {features}, it's a placeholder
 #. and will be replaced.
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:146
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
 #, python-brace-format
 msgid "Failed to activate some features of the Persistent Storage: {features}."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:156
 #, fuzzy
 msgid "Error activating Persistent Storage: {}"
 msgstr "Cipta Storan Berterusan"
@@ -1093,7 +1094,8 @@ msgstr "Pemasangan Tails gagal!"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:296
 #: ../config/chroot_local-includes/usr/share/applications/tails-installer.desktop.in.h:1
-msgid "Tails Installer"
+#, fuzzy
+msgid "Tails Cloner"
 msgstr "Pemasang Tails"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:339
@@ -1733,7 +1735,7 @@ msgstr "Status Tor"
 msgid "Open Onion Circuits"
 msgstr "Buka Litar Onion"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:319
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:315
 #, python-brace-format
 msgid ""
 "Only {available_memory} KiB of memory is available, need at least "
@@ -1742,37 +1744,37 @@ msgid ""
 "Try again after closing some applications or rebooting."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:331
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:327
 #, fuzzy
 msgid "Creating a partition for the Persistent Storage..."
 msgstr "Membetulkan keizinan volum berterusan."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:351
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:347
 msgid ""
 "Initializing the LUKS encryption... The computer might stop responding for a "
 "few seconds."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:373
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:369
 msgid "Unlocking the encryption..."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:381
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:377
 #, fuzzy
 msgid "Formatting the file system..."
 msgstr "Mengesahkan sistem fail..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:396
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:392
 #, fuzzy
 msgid "Activating the Persistent Storage..."
 msgstr "Cipta Storan Berterusan"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:401
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:397
 #, fuzzy
 msgid "Finishing setting up the Persistent Storage..."
 msgstr "Cipta Storan Berterusan"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:611
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:607
 msgid ""
 "Can't unmount Persistent Storage, some process is still using it. Please "
 "close all applications that could be accessing it and try again. If that "
@@ -1895,12 +1897,12 @@ msgstr ""
 msgid "Change Passphrase"
 msgstr "Tunjuk Frasa Laluan"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:83
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:85
 #, fuzzy
 msgid "The current passphrase is incorrect"
 msgstr "Frasa laluan tidak sepadan"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:92
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:94
 #, fuzzy
 msgid "Changing the passphrase failed"
 msgstr "Tunjuk Frasa Laluan"

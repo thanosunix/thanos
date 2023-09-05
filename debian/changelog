@@ -1,3 +1,199 @@
+tails (5.17) unstable; urgency=medium
+
+  * Upgrade Thunderbird to 1:102.15.0-1~deb11u1
+
+  * tps: make is_upgraded() require a single upgraded keyslot (tails/tails!1209)
+
+    Closes issues:
+      - Upgrading Persistent Storage times out on some systems and displays an error in
+        the Welcome Screen but succeeds in the background (tails/tails#19728)
+
+    Commits:
+      - tps: revert commented out code that was committed by mistake
+      - Enable the 19728-tps-upgrade-check-vs-corrupt-keys APT overlay (refs:
+        tails/tails#19728).
+      - tps: drop parsing of luksDump and use JSON instead
+      - Avoid variables named "match" which is a Python >= 3.10 keyword
+      - tps: assign variable to regexp for readability
+      - Update comment.
+      - Welcome screen: bump timeout for activating persistence from 2m to 5m
+      - Welcome Screen: drop timeout for upgrading the persistent storage
+      - tps: redact sensitive information from luksDump in the logs
+      - tps: use more redable re.MULTILINE instead of re.M alias
+      - tps: make is_upgraded() require a single upgraded keyslot
+
+  * Upgrade Tor Browser to 12.5.3 (tails/tails!1238)
+
+    Closes issues:
+      - Remove obsolete config/chroot_local-includes/usr/share/live/config/xserver-
+        xorg/*.ids (tails/tails#19330)
+
+    Commits:
+      - Fetch Tor Browser from our own archive
+      - Upgrade Tor Browser to 12.5.3-build1
+
+  * Test suite: capture needed-package-updates's output by on failure
+    (tails/tails!1236)
+
+    Commits:
+      - Tets suite: capture needed-package-updates's output by on failure
+
+  * Enable all available printers. (tails/tails!1234)
+
+    Commits:
+      - Enable all available printers.
+
+  * Test suite: make changing Persistent Storage passphrase, and deleting
+    Persistent Storage, more robust (tails/tails!1231)
+
+    Closes issues:
+      - Flaky tests: Changing the Persistent Storage passphrase, deleting Persistent
+        Storage (tails/tails#19950)
+
+    Commits:
+      - Add comment
+      - Test suite: make deleting the Persistent Storage more robust
+      - Test suite: make changing Persistent Storage passphrase more robust
+
+  * Remove manual manipulation of env of start-systemd-desktop-target
+    (tails/tails!1229)
+
+    Closes issues:
+      - Simplify start-systemd-desktop-target (tails/tails#16968)
+
+    Commits:
+      - Remove manual manipulation of env of start-systemd-desktop-target
+
+  * Install printer-driver-brlaser (tails/tails!1228)
+
+    Closes issues:
+      - Install printer-driver-brlaser (tails/tails#18254)
+
+    Commits:
+      - Install printer-driver-brlaser
+
+  * Remove the plymouth.ignore-udev hack (tails/tails!1224)
+
+    Closes issues:
+      - Check if we can get rid of the plymouth.ignore-udev hack in tails-gdm-failed-
+        to-start.service (tails/tails#16964)
+
+    Commits:
+      - Remove the plymouth.ignore-udev hack.
+
+  * Resolve "Document how to deal with virt-viewer's CSD" (tails/tails!1223)
+
+    Closes issues:
+      - Document how to deal with virt-viewer's CSD (tails/tails#19941)
+
+    Commits:
+      - Make sure Tails APT signing key is trusted
+      - Update apt to ensure that apt-cache policy will present a candidate
+      - Test suite: check that virt-viewer is not affected by tails/tails#19064
+      - Set up automated test suite so it is not affected by tails/tails#19064
+
+  * Display binary package names if not everything needs an update
+    (tails/tails!1220)
+
+    Closes issues:
+      - Prevent version mismatches among binary packages from src:linux
+        (tails/tails#16375)
+
+    Commits:
+      - fix loop over issues
+      - Reformat with black
+      - Display binary package names· if not everything needs an update tails#16375
+
+  * Misc post-release fixes (tails/tails!1219)
+
+    Closes issues:
+      - Lack of regex support in Dogtail's child method breaks Thunderbird tests
+        (tails/tails#19928)
+
+    Commits:
+      - Add comment
+      - Rewrite regexp to fit in Dogtail syntax
+      - test suite supports regexp
+      - workaround test hidden in test suite
+      - locale-independent output for date
+
+  * RM doc updates (tails/tails!1218)
+
+    Commits:
+      - Apply 1 suggestion(s) to 1 file(s)
+      - twitter credentials explained
+      - expected timing updated
+      - follow links!
+      - list possible stages in rm-config help
+      - explicitly say which stage we're in now
+      - fix python strings
+      - black reformatting
+      - standardize locale
+
+  * GitLab CI: allow forcing to run a pipeline by setting $CI_FORCE_RUN
+    (tails/tails!1214)
+
+    Commits:
+      - GitLab CI: allow forcing to run a pipeline by setting $CI_FORCE_RUN
+
+  * Rename Tails Installer as Tails Cloner (tails/tails!1200)
+
+    Closes issues:
+      - Rename Tails Installer as Tails Cloner (tails/tails#16907)
+
+    Commits:
+      - Rename Tails Installer as Tails Cloner
+
+  * Add script to detect needed package updates from Debian (tails/tails!1155)
+
+    Closes issues:
+      - Prevent version mismatches among binary packages from src:linux
+        (tails/tails#16375)
+      - Track security updates during the Tails code freeze (tails/tails#14728)
+
+    Commits:
+      - Release process: add special mention for the needed package update test
+      - Print error instead of trigger an exception.
+      - Use highest package version if multiple are available.
+      - Reformat with black
+      - Test suite setup doc: update dependencies
+      - Fix typo
+      - Use the Ultimate Debian Database (UDD) directly.
+      - Lint
+      - Test suite: document new dependencies
+      - Test suite: ensure frozen packages are up-to-date
+      - Needed package update: add exception
+      - APT: switch to pinning via source package when relevant
+      - Fix logic to detect an issue correctly.
+      - Reformat with black
+      - Lint
+      - make mypy happy again.
+      - Fix logic to return errcode 0 if no issue is shown.
+      - move SUITES into part of Madison.
+      - make madison a local variable
+      - More linting
+      - Preserve type
+      - Have default value be the correct type
+      - Reformat with black
+      - Use consistent terminology
+      - Start linting new script
+      - Sort imports
+      - Remove unused import
+      - Fix typo
+      - Update comments
+      - use qa.debian.org Madison API
+      - restructure the config file to handle also distribution.
+      - Simplify logic.
+      - Fix type annotations.
+      - Always query stable-security's version to and request update..
+      - Query also stable-secuirty for updates.
+      - We should first look for the source, as we have only query source package
+        names.
+      - Only add metadata, when available.
+      - Add script to detect needed package updates from Debian
+
+ -- Tails developers <tails@boum.org>  Mon, 04 Sep 2023 09:10:16 +0000
+
 tails (5.16.1) unstable; urgency=medium
 
   * Mitigate Downfall and INCEPTION speculative-execution vulnerabilities

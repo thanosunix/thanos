@@ -114,12 +114,21 @@ module Dogtail
         'True'
       elsif value == false
         'False'
-      elsif value.instance_of?(String)
+      elsif [String, Regexp].include?(value.class)
+        s = value
+        if value.instance_of?(Regexp)
+          # All Regexp instances explicitly disable the "mix" flags, so
+          # to_s() returns "(?-mix:$PATTERN)". Unfortunately Dogtail's
+          # regex matching does not support groups since all parentheses
+          # in the expression are escaped but source() returns just the
+          # original pattern as a string.
+          s = value.source
+        end
         # Since we use single-quote the string we have to escape any
         # occurrences inside.
         # We also prefix the string with 'r' to make it a raw string,
         # which means we don't have to escape backslashes.
-        "r'#{value.gsub("'", "\\\\'")}'"
+        "r'#{s.gsub("'", "\\\\'")}'"
       elsif [Integer, Float].include?(value.class)
         value.to_s
       else

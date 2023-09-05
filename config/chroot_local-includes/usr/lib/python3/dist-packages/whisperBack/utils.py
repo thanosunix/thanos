@@ -129,7 +129,7 @@ def is_valid_pgp_id(candidate):
     """
     # pylint: disable=C0301
     LOG.debug("Validating pgp id %s", candidate)
-    if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9f-zA-F]{4} {0,2}){10}$)",
+    if re.search(r"(?:^(?:0x)?(?:[0-9a-fA-F]{8}){1,2}$)|(?:^(?:[0-9a-fA-F]{4} {0,2}){10}$)",
             candidate):
         return True
     else:
@@ -183,8 +183,8 @@ def is_valid_hostname_or_ipv4(candidate):
     if len(candidate) > 255:
         return False
 
-    # regex from http://stackoverflow.com/a/106223
-    ip_address_regex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
+    # regex from https://stackoverflow.com/a/17871737
+    ip_address_regex = re.compile("^((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])$");
     hostname_regex = re.compile("^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
 
     if ip_address_regex.match(candidate) or hostname_regex.match(candidate):
@@ -201,6 +201,7 @@ def sanitize_hardware_info(log_string):
     - labeled as serial numbers and UUID;
     - looking like IPs or MAC addresses.
     - looking like web URLs (starting with http(s)://)
+    - looking like ESSID
 
     @param  log_string  the string to be sanitized
 
@@ -215,14 +216,14 @@ def sanitize_hardware_info(log_string):
 
     # Serial Numbers
     log_string = re.sub(r'(Serial Number:?[\s]+|'
-                          'SerialNo=|'
-                          'iSerial[\s]+[\d]+\s+|'
-                          'SerialNumber:[\s]+|'
-                          'SerialNumber=|'
-                          'Serial#:[\s+]|'
-                          'serial#[\s+]|'
-                          'Serial No:[\s]+'
-                        ')[^\s].*',
+                        r'SerialNo=|'
+                        r'iSerial[\s]+[\d]+\s+|'
+                        r'SerialNumber:[\s]+|'
+                        r'SerialNumber=|'
+                        r'Serial#:[\s+]|'
+                        r'serial#[\s+]|'
+                        r'Serial No:[\s]+'
+                        r')[^\s].*',
                         r'\1[SN REMOVED]',
                         log_string)
     # UUIDs
@@ -231,11 +232,30 @@ def sanitize_hardware_info(log_string):
                         log_string)
 
     # IPv4s
-    log_string = re.sub(r'([\d]{1,3}\.){3}[\d]{1,3}',
+    # regex from https://stackoverflow.com/a/17871737
+    log_string = re.sub(r'((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])',
                         r'[IPV4 REMOVED]',
                         log_string)
     # IPv6s
-    log_string = re.sub(r'(?i)[0-9A-F]{4}(:[0-9A-F]{4}){7}',
+    # regex from https://stackoverflow.com/a/17871737
+    log_string = re.sub(r'('
+                        r'([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|'          # 1:2:3:4:5:6:7:8
+                        r'([0-9a-fA-F]{1,4}:){1,7}:|'                         # 1::                              1:2:3:4:5:6:7::
+                        r'([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|'         # 1::8             1:2:3:4:5:6::8  1:2:3:4:5:6::8
+                        r'([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|'  # 1::7:8           1:2:3:4:5::7:8  1:2:3:4:5::8
+                        r'([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|'  # 1::6:7:8         1:2:3:4::6:7:8  1:2:3:4::8
+                        r'([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|'  # 1::5:6:7:8       1:2:3::5:6:7:8  1:2:3::8
+                        r'([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|'  # 1::4:5:6:7:8     1:2::4:5:6:7:8  1:2::8
+                        r'[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|'       # 1::3:4:5:6:7:8   1::3:4:5:6:7:8  1::8  
+                        r':((:[0-9a-fA-F]{1,4}){1,7}|:)|'                     # ::2:3:4:5:6:7:8  ::2:3:4:5:6:7:8 ::8       ::     
+                        r'fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|'     # fe80::7:8%eth0   fe80::7:8%1     (link-local IPv6 addresses with zone index)
+                        r'::(ffff(:0{1,4}){0,1}:){0,1}'
+                        r'((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}'
+                        r'(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|'          # ::255.255.255.255   ::ffff:255.255.255.255  ::ffff:0:255.255.255.255  (IPv4-mapped IPv6 addresses and IPv4-translated addresses)
+                        r'([0-9a-fA-F]{1,4}:){1,4}:'
+                        r'((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}'
+                        r'(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])'           # 2001:db8:3:4::192.0.2.33  64:ff9b::192.0.2.33 (IPv4-Embedded IPv6 Address)
+                        r')',
                         r'[IPV6 REMOVED]',
                         log_string)
     # MAC addresses
@@ -245,6 +265,19 @@ def sanitize_hardware_info(log_string):
     # HTTP(s) URLs
     log_string = re.sub(r'(http(s?)://)[^\s]+',
                         r'\1[URL REMOVED]',
+                        log_string)
+    
+    # ESSID
+    log_string = re.sub(r'(SSID=|'
+                         'connection |'
+                         'access point |'
+                         "'ssid' value |"
+                         'NetworkManager.*set |'
+                         'network |'
+                         'ssid=|'
+                         'NetworkManager.*name='
+                         ')([\'"])[^\'"]+([\'"])',
+                        r'\1\2[ESSID REMOVED]\3',
                         log_string)
 
     return log_string

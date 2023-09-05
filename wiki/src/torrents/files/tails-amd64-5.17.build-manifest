@@ -3,7 +3,7 @@ origin_references:
   debian:
     reference: '2023070701'
   debian-security:
-    reference: '2023081402'
+    reference: '2023090401'
   torproject:
     reference: '2023011801'
 packages:
@@ -217,7 +217,7 @@ packages:
     version: 3.0pl1-137
   - arch: amd64
     package: cryptsetup-bin
-    version: 2:2.3.7-1+deb11u1
+    version: 2:2.6.1-5~deb11u1
   - arch: all
     package: culmus
     version: 0.133-1
@@ -272,6 +272,9 @@ packages:
   - arch: amd64
     package: dbus
     version: 1.12.24-0+deb11u1
+  - arch: amd64
+    package: dc
+    version: 1.07.1-2+b2
   - arch: amd64
     package: dconf-cli
     version: 0.38.0-2
@@ -688,7 +691,7 @@ packages:
     version: 20.09.0-3.1+deb11u1
   - arch: amd64
     package: gir1.2-rsvg-2.0
-    version: 2.50.3+dfsg-1
+    version: 2.50.3+dfsg-1+deb11u1
   - arch: amd64
     package: gir1.2-soup-2.4
     version: 2.72.0-2
@@ -1661,6 +1664,9 @@ packages:
   - arch: amd64
     package: libcryptsetup12
     version: 2:2.3.7-1+deb11u1
+  - arch: amd64
+    package: libcryptsetup12
+    version: 2:2.6.1-5~deb11u1
   - arch: amd64
     package: libctf-nobfd0
     version: 2.35.2-2
@@ -2653,6 +2659,9 @@ packages:
     version: 3.5.1+dfsg+~3.5.5-7
   - arch: amd64
     package: libjson-c5
+    version: 0.15-2+deb11u1
+  - arch: amd64
+    package: libjson-c5
     version: 0.15-2
   - arch: amd64
     package: libjson-glib-1.0-0
@@ -2935,6 +2944,9 @@ packages:
     version: 3.9.0-3
   - arch: amd64
     package: liblcms2-2
+    version: 2.12~rc1-2
+  - arch: amd64
+    package: liblcms2-utils
     version: 2.12~rc1-2
   - arch: amd64
     package: libldap-2.4-2
@@ -3937,10 +3949,10 @@ packages:
     version: 2.002004-1
   - arch: amd64
     package: librsvg2-2
-    version: 2.50.3+dfsg-1
+    version: 2.50.3+dfsg-1+deb11u1
   - arch: amd64
     package: librsvg2-common
-    version: 2.50.3+dfsg-1
+    version: 2.50.3+dfsg-1+deb11u1
   - arch: amd64
     package: librtmp1
     version: 2.4+20151223.gitfa8646d.1-2+b2
@@ -4891,7 +4903,7 @@ packages:
     version: 6.1.38-4
   - arch: amd64
     package: linux-libc-dev
-    version: 5.10.179-5
+    version: 6.1.38-4
   - arch: all
     package: live-boot-initramfs-tools
     version: 1:20170112
@@ -5222,9 +5234,36 @@ packages:
   - arch: amd64
     package: pppoe
     version: 3.12-1.2
+  - arch: all
+    package: printer-driver-all-enforce
+    version: '0.20200223'
+  - arch: amd64
+    package: printer-driver-brlaser
+    version: 6-1
+  - arch: amd64
+    package: printer-driver-c2050
+    version: 0.3b-8
+  - arch: amd64
+    package: printer-driver-c2esp
+    version: 27-8
+  - arch: amd64
+    package: printer-driver-cjet
+    version: 0.8.9-8
+  - arch: amd64
+    package: printer-driver-dymo
+    version: 1.4.0-9
   - arch: amd64
     package: printer-driver-escpr
     version: 1.7.8-1
+  - arch: all
+    package: printer-driver-foo2zjs-common
+    version: 20200505dfsg0-1
+  - arch: amd64
+    package: printer-driver-foo2zjs
+    version: 20200505dfsg0-1
+  - arch: amd64
+    package: printer-driver-fujixerox
+    version: 1.1.0+ds-3
   - arch: amd64
     package: printer-driver-gutenprint
     version: 5.3.3-5
@@ -5232,8 +5271,35 @@ packages:
     package: printer-driver-hpcups
     version: 3.21.2+dfsg1-2
   - arch: amd64
+    package: printer-driver-indexbraille
+    version: 1.2.3-2
+  - arch: amd64
+    package: printer-driver-m2300w
+    version: 0.51-14
+  - arch: amd64
+    package: printer-driver-min12xxw
+    version: 0.0.9-11
+  - arch: all
+    package: printer-driver-oki
+    version: 1.0.1-1.1
+  - arch: amd64
+    package: printer-driver-pnm2ppa
+    version: 1.13-10
+  - arch: amd64
     package: printer-driver-postscript-hp
     version: 3.21.2+dfsg1-2
+  - arch: amd64
+    package: printer-driver-ptouch
+    version: 1.5.1-2
+  - arch: amd64
+    package: printer-driver-pxljr
+    version: 1.4+repack0-5
+  - arch: all
+    package: printer-driver-sag-gdi
+    version: 0.1-7
+  - arch: amd64
+    package: printer-driver-splix
+    version: 2.0.0+svn315-7
   - arch: amd64
     package: procps
     version: 2:3.3.17-5
@@ -5674,37 +5740,37 @@ packages:
     version: 4.1.1-2.1
   - arch: all
     package: thunderbird-l10n-ar
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-de
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-es-es
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-fr
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-id
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-it
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-pt-br
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-ru
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-tr
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: thunderbird-l10n-zh-cn
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: amd64
     package: thunderbird
-    version: 1:102.14.0-1~deb11u1
+    version: 1:102.15.0-1~deb11u1
   - arch: all
     package: timgm6mb-soundfont
     version: 1.3-5

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-14 13:53+0200\n"
+"POT-Creation-Date: 2023-09-04 09:56+0200\n"
 "PO-Revision-Date: 2021-07-22 06:05+0000\n"
 "Last-Translator: Ed Medvedev <edward.medvedev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,8 +105,8 @@ msgstr "<h1 name=\"check-version\">Проверка версии запущен�
 msgid ""
 "To check which version of Tails you are currently running, choose\n"
 "<span class=\"menuchoice\">\n"
-"  <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
-"  <span class=\"guisubmenu\">Tails</span>&nbsp;â¸\n"
+"  <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+"  <span class=\"guisubmenu\">Tails</span>&nbsp;▸\n"
 "  <span class=\"guimenuitem\">About Tails</span></span>.\n"
 msgstr ""
 "Чтобы выяснить, какую версию Tails вы сейчас используете, выберите <span class=\"menuchoice\">\n"
@@ -336,7 +336,7 @@ msgstr "[[!img manual.svg link=\"no\" alt=\"\"]]\n"
 #. type: Plain text
 #, fuzzy, no-wrap
 #| msgid "<h1 name=\"manual\">Manual upgrade using <i>Tails Installer</i></h1>\n"
-msgid "<h1 id=\"manual\">Manual upgrade using <i>Tails Installer</i></h1>\n"
+msgid "<h1 id=\"manual\">Manual upgrade using <i>Tails Cloner</i></h1>\n"
 msgstr "<h1 name=\"manual\">Обновление вручную с помощью <i>Tails Installer</i></h1>\n"
 
 #. type: Plain text
@@ -386,10 +386,14 @@ msgstr ""
 "Интернет-подключением."
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "After connecting to Tor, a dialog informs you if you have to\n"
+#| "upgrade your USB stick using <span class=\"application\">Tails Installer</span>\n"
+#| "to a newer version of Tails.\n"
 msgid ""
 "After connecting to Tor, a dialog informs you if you have to\n"
-"upgrade your USB stick using <span class=\"application\">Tails Installer</span>\n"
+"upgrade your USB stick using <span class=\"application\">Tails Cloner</span>\n"
 "to a newer version of Tails.\n"
 msgstr "После подключения к Tor в диалоговом окне вы увидите предложение обновить вашу флешку с помощью <span class=\"application\">Tails Installer</span> до свежей версии Tails.\n"
 
@@ -456,7 +460,7 @@ msgstr ""
 #| "1 hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
 #| "pages=\"inc/stable_amd64_iso_size\" raw=\"yes\" sort=\"age\"]]</small>)"
 msgid ""
-"Â½ hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
+"½ hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
 "pages=\"inc/stable_amd64_iso_size\" raw=\"yes\" sort=\"age\"]]</small>)"
 msgstr ""
 "в пределах 1 часа, чтобы скачать Tails (<small class=\"remove-extra-"
@@ -466,7 +470,7 @@ msgstr ""
 #. type: Bullet: '- '
 #, fuzzy
 #| msgid "½ hour to upgrade"
-msgid "Â½ hour to upgrade"
+msgid "½ hour to upgrade"
 msgstr "полчаса для обновления."
 
 #. type: Plain text
@@ -542,7 +546,7 @@ msgstr ""
 #| "- Your Tails USB stick - Another up-to-date Tails (USB stick or DVD)  - ¼ "
 #| "hour to upgrade"
 msgid ""
-"- Your Tails USB stick - Another up-to-date Tails (USB stick or DVD)  - Â¼ "
+"- Your Tails USB stick - Another up-to-date Tails (USB stick or DVD)  - ¼ "
 "hour to upgrade"
 msgstr ""
 "- ваша флешка Tails; - другой носитель с Tails, обновлённый (флешка или "

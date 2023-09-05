@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tails\n"
-"POT-Creation-Date: 2023-08-14 13:53+0200\n"
+"POT-Creation-Date: 2023-09-04 09:56+0200\n"
 "PO-Revision-Date: 2023-07-14 16:35+0000\n"
 "Last-Translator: Chre <tor@renaudineau.org>\n"
 "Language-Team: Tails translators <tails@boum.org>\n"
@@ -47,14 +47,22 @@ msgid "</div>\n"
 msgstr "</div>\n"
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<p class=\"upgrade\">\n"
+#| "  In this step, you will upgrade your Tails from the\n"
+#| "  <span class=\"upgrade-clone\">other</span>\n"
+#| "  <span class=\"upgrade-tails upgrade-os\">intermediary</span>\n"
+#| "  Tails using\n"
+#| "  <span class=\"application\">Tails Installer</span>.\n"
+#| "</p>\n"
 msgid ""
 "<p class=\"upgrade\">\n"
 "  In this step, you will upgrade your Tails from the\n"
 "  <span class=\"upgrade-clone\">other</span>\n"
 "  <span class=\"upgrade-tails upgrade-os\">intermediary</span>\n"
 "  Tails using\n"
-"  <span class=\"application\">Tails Installer</span>.\n"
+"  <span class=\"application\">Tails Cloner</span>.\n"
 "</p>\n"
 msgstr ""
 "<p class=\"upgrade\">\n"
@@ -97,11 +105,11 @@ msgstr ""
 msgid ""
 "1. Choose\n"
 "   <span class=\"menuchoice\">\n"
-"     <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
-"     <span class=\"guisubmenu\">Tails</span>&nbsp;â¸\n"
-"     <span class=\"guimenuitem\">Tails Installer</span>\n"
+"     <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+"     <span class=\"guisubmenu\">Tails</span>&nbsp;▸\n"
+"     <span class=\"guimenuitem\">Tails Cloner</span>\n"
 "   </span>\n"
-"   to start <span class=\"application\">Tails Installer</span>.\n"
+"   to start <span class=\"application\">Tails Cloner</span>.\n"
 msgstr ""
 "1. Choisir\n"
 "   <span class=\"menuchoice\">\n"
@@ -112,13 +120,15 @@ msgstr ""
 "   pour démarrer le <span class=\"application\">Programme d'installation de Tails</span>.\n"
 
 #. type: Plain text
-#, no-wrap
-msgid "   [[!img install/inc/screenshots/tails_installer.png link=\"no\" class=\"pc-clone mac-clone\" alt=\"Tails Installer: 'Clone the current Tails'\"]]\n"
+#, fuzzy, no-wrap
+#| msgid "   [[!img install/inc/screenshots/tails_installer.png link=\"no\" class=\"pc-clone mac-clone\" alt=\"Tails Installer: 'Clone the current Tails'\"]]\n"
+msgid "   [[!img install/inc/screenshots/tails_installer.png link=\"no\" class=\"pc-clone mac-clone\" alt=\"Tails Cloner: 'Clone the current Tails'\"]]\n"
 msgstr "   [[!img install/inc/screenshots/tails_installer.png link=\"no\" class=\"pc-clone mac-clone\" alt=\"Installeur de Tails : 'Cloner le Tails actuellement utilisé'\"]]\n"
 
 #. type: Plain text
-#, no-wrap
-msgid "   [[!img install/inc/screenshots/tails_installer_upgrade.png link=\"no\" class=\"upgrade\" alt=\"Tails Installer: 'Clone the current Tails'\"]]\n"
+#, fuzzy, no-wrap
+#| msgid "   [[!img install/inc/screenshots/tails_installer_upgrade.png link=\"no\" class=\"upgrade\" alt=\"Tails Installer: 'Clone the current Tails'\"]]\n"
+msgid "   [[!img install/inc/screenshots/tails_installer_upgrade.png link=\"no\" class=\"upgrade\" alt=\"Tails Cloner: 'Clone the current Tails'\"]]\n"
 msgstr "   [[!img install/inc/screenshots/tails_installer_upgrade.png link=\"no\" class=\"upgrade\" alt=\"Installeur de Tails : 'Cloner le Tails actuellement utilisé'\"]]\n"
 
 #. type: Bullet: '1. '
@@ -188,9 +198,13 @@ msgstr ""
 "   </div>\n"
 
 #. type: Bullet: '1. '
+#, fuzzy
+#| msgid ""
+#| "After the installation finishes, close <span class=\"application\">Tails "
+#| "Installer</span>."
 msgid ""
 "After the installation finishes, close <span class=\"application\">Tails "
-"Installer</span>."
+"Cloner</span>."
 msgstr ""
 "Une fois l'installation terminée, fermer l'<span "
 "class=\"application\">Installeur de Tails</span>."

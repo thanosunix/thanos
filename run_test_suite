@@ -162,6 +162,18 @@ check_tor_version() {
     fi
 }
 
+check_virt_viewer_version() {
+    local version
+    version="$(dpkg-query --show --showformat='${VERSION}' virt-viewer)"
+    if dpkg --compare-versions "${version}" ge 10.0; then
+        if ! echo "${version}" | grep -q 'tails$'; then
+            error 'Please install virt-viewer from the isotester-bookworm APT suite' \
+                  '(instructions: https://tails.net/contribute/release_process/test/setup/' \
+                  'details: https://gitlab.tails.boum.org/tails/tails/-/issues/19064)'
+        fi
+    fi
+}
+
 display_in_use() {
     [ -e "/tmp/.X${1#:}-lock" ] || [ -e "/tmp/.X11-unix/X${1#:}" ]
 }
@@ -351,6 +363,7 @@ fi
 # shellcheck disable=SC2086
 check_dependencies ${GENERAL_DEPENDENCIES}
 check_tor_version
+check_virt_viewer_version
 
 TARGET_DISPLAY=$(next_free_display)
 

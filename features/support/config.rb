@@ -69,6 +69,7 @@ LIVE_USER = cmd_helper(
 ).chomp
 TAILS_ISO = ENV['TAILS_ISO']
 TAILS_IMG = TAILS_ISO.sub(/\.iso/, '.img')
+TAILS_BUILD_MANIFEST = TAILS_ISO.sub(/\.iso/, '.build-manifest')
 OLD_TAILS_ISO = ENV['OLD_TAILS_ISO'] || TAILS_ISO
 OLD_TAILS_IMG = OLD_TAILS_ISO.sub(/\.iso/, '.img')
 TIME_AT_START = Time.now

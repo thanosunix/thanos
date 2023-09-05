@@ -12,7 +12,7 @@
   <span class="upgrade-clone">other</span>
   <span class="upgrade-tails upgrade-os">intermediary</span>
   Tails using
-  <span class="application">Tails Installer</span>.
+  <span class="application">Tails Cloner</span>.
 </p>
 
 1. Plug
@@ -28,12 +28,12 @@
    <span class="menuchoice">
      <span class="guimenu">Applications</span>&nbsp;▸
      <span class="guisubmenu">Tails</span>&nbsp;▸
-     <span class="guimenuitem">Tails Installer</span>
+     <span class="guimenuitem">Tails Cloner</span>
    </span>
-   to start <span class="application">Tails Installer</span>.
+   to start <span class="application">Tails Cloner</span>.
 
-   [[!img install/inc/screenshots/tails_installer.png link="no" class="pc-clone mac-clone" alt="Tails Installer: 'Clone the current Tails'"]]
-   [[!img install/inc/screenshots/tails_installer_upgrade.png link="no" class="upgrade" alt="Tails Installer: 'Clone the current Tails'"]]
+   [[!img install/inc/screenshots/tails_installer.png link="no" class="pc-clone mac-clone" alt="Tails Cloner: 'Clone the current Tails'"]]
+   [[!img install/inc/screenshots/tails_installer_upgrade.png link="no" class="upgrade" alt="Tails Cloner: 'Clone the current Tails'"]]
 
 1. Choose
    <span class="pc-clone mac-clone">the new</span>
@@ -63,7 +63,7 @@
    while synchronizing data on disk.</p>
    </div>
 
-1. After the installation finishes, close <span class="application">Tails Installer</span>.
+1. After the installation finishes, close <span class="application">Tails Cloner</span>.
 
    [[!img install/inc/screenshots/installation_complete.png link="no" alt=""]]
 

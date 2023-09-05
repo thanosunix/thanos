@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"POT-Creation-Date: 2023-09-04 09:24+0200\n"
 "PO-Revision-Date: 2023-07-21 16:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/tor/tails-gui/"
@@ -429,7 +429,8 @@ msgid "no automatic upgrade is available from our website for this version"
 msgstr "không có sẵn việc tự động nâng cấp từ website cho phiên bản này"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:364
-msgid "your device was not created using a USB image or Tails Installer"
+#, fuzzy
+msgid "your device was not created using a USB image or Tails Cloner"
 msgstr ""
 "thiết bị của bạn đã không được khởi tạo bằng cách sử dụng ổ đĩa image USB "
 "hoặc trình cài đặt Tails Installer"
@@ -800,20 +801,20 @@ msgstr "Khởi động mà Không có Ổ đĩa lưu trữ Bền vững"
 msgid "Error unlocking Persistent Storage: {}"
 msgstr "Có lỗi xảy ra khi đang mở khoá Ổ đĩa lưu trữ Bền vững: {}"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:124
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:126
 msgid "Error upgrading Persistent Storage: {}"
 msgstr "Có lỗi xảy ra khi đang nâng cấp Ổ đĩa lưu trữ Bền vững: {}"
 
 #. Translators: Don't translate {features}, it's a placeholder
 #. and will be replaced.
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:146
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
 #, python-brace-format
 msgid "Failed to activate some features of the Persistent Storage: {features}."
 msgstr ""
 "Đã thất bại khi kích hoạt một số tính năng của Ổ đĩa lưu trữ Bền vũng: "
 "{features}."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:156
 msgid "Error activating Persistent Storage: {}"
 msgstr "Có lỗi xảy ra khi đang kích hoạt Ổ đĩa lưu trữ Bền vững: {}"
 
@@ -1097,7 +1098,8 @@ msgstr "Việc cài đặt Tails đã thất bại!"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:296
 #: ../config/chroot_local-includes/usr/share/applications/tails-installer.desktop.in.h:1
-msgid "Tails Installer"
+#, fuzzy
+msgid "Tails Cloner"
 msgstr "Trình cài đặt Tails"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:339
@@ -1804,7 +1806,7 @@ msgstr "Trạng thái Tor"
 msgid "Open Onion Circuits"
 msgstr "Mở các mạch nối Onion"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:319
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:315
 #, python-brace-format
 msgid ""
 "Only {available_memory} KiB of memory is available, need at least "
@@ -1817,11 +1819,11 @@ msgstr ""
 "\n"
 "Hãy thử lại sau khi đóng một số các ứng dụng hoặc khởi động lại máy."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:331
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:327
 msgid "Creating a partition for the Persistent Storage..."
 msgstr "Tạo ra một phân vùng bộ nhớ cho Ổ đĩa lưu trữ Bền vững..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:351
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:347
 msgid ""
 "Initializing the LUKS encryption... The computer might stop responding for a "
 "few seconds."
@@ -1829,23 +1831,23 @@ msgstr ""
 "Đang khởi tạo mã hoá LUKS... Máy tính có thể sẽ dừng phản hồi trong một vài "
 "giây."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:373
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:369
 msgid "Unlocking the encryption..."
 msgstr "Đang mở khoá mã hoá..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:381
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:377
 msgid "Formatting the file system..."
 msgstr "Đang Format hệ thống file tập tin..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:396
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:392
 msgid "Activating the Persistent Storage..."
 msgstr "Đang kích hoạt Ổ đĩa lưu trữ Bền vững..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:401
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:397
 msgid "Finishing setting up the Persistent Storage..."
 msgstr "Đang hoàn tất cài đặt thiết lập Ổ đĩa lưu trữ Bền vững..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:611
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:607
 msgid ""
 "Can't unmount Persistent Storage, some process is still using it. Please "
 "close all applications that could be accessing it and try again. If that "
@@ -1972,11 +1974,11 @@ msgstr "{app} (PIDs: {pids})"
 msgid "Change Passphrase"
 msgstr "Thay đổi cụm mật khẩu"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:83
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:85
 msgid "The current passphrase is incorrect"
 msgstr "Cụm mật khẩu hiện tại là không chính xác"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:92
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:94
 msgid "Changing the passphrase failed"
 msgstr "Việc thay đổi cụm mật khẩu đã thất bại"
 

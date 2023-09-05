@@ -16,12 +16,12 @@ import sys
 
 
 WARNINGS = [
-    re.compile('^[^\s]+\.po:[0-9]: warning:'),
-    re.compile('^msgfmt: [^\s]+\.po: warning:'),
-    re.compile('^\s*warning:'),
+    re.compile(r'^[^\s]+\.po:[0-9]: warning:'),
+    re.compile(r'^msgfmt: [^\s]+\.po: warning:'),
+    re.compile(r'^\s*warning:'),
 ]
 
-ERRORS = re.compile('^([^\s]+\.po):([0-9]+): ')
+ERRORS = re.compile(r'^([^\s]+\.po):([0-9]+): ')
 
 
 def find_context_start(msgstr_line, content):

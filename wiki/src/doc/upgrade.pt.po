@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
-"POT-Creation-Date: 2023-08-14 13:53+0200\n"
+"POT-Creation-Date: 2023-09-04 09:56+0200\n"
 "PO-Revision-Date: 2023-08-01 15:22+0000\n"
 "Last-Translator: drebs <drebs@riseup.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,8 +106,8 @@ msgstr "<h1 id=\"check-version\">Ver qual é a versão do Tails que você está 
 msgid ""
 "To check which version of Tails you are currently running, choose\n"
 "<span class=\"menuchoice\">\n"
-"  <span class=\"guimenu\">Applications</span>&nbsp;â¸\n"
-"  <span class=\"guisubmenu\">Tails</span>&nbsp;â¸\n"
+"  <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+"  <span class=\"guisubmenu\">Tails</span>&nbsp;▸\n"
 "  <span class=\"guimenuitem\">About Tails</span></span>.\n"
 msgstr ""
 "Para saber a versão do Tails que você está usando no momento, selecione:\n"
@@ -347,8 +347,9 @@ msgid "[[!img manual.svg link=\"no\" alt=\"\"]]\n"
 msgstr "[[!img manual.svg link=\"no\" alt=\"\"]]\n"
 
 #. type: Plain text
-#, no-wrap
-msgid "<h1 id=\"manual\">Manual upgrade using <i>Tails Installer</i></h1>\n"
+#, fuzzy, no-wrap
+#| msgid "<h1 id=\"manual\">Manual upgrade using <i>Tails Installer</i></h1>\n"
+msgid "<h1 id=\"manual\">Manual upgrade using <i>Tails Cloner</i></h1>\n"
 msgstr "<h1 id=\"manual\">Atualização manual usando o <i>Instalador Tails</i></h1>\n"
 
 #. type: Plain text
@@ -397,10 +398,14 @@ msgstr ""
 "internet."
 
 #. type: Plain text
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "After connecting to Tor, a dialog informs you if you have to\n"
+#| "upgrade your USB stick using <span class=\"application\">Tails Installer</span>\n"
+#| "to a newer version of Tails.\n"
 msgid ""
 "After connecting to Tor, a dialog informs you if you have to\n"
-"upgrade your USB stick using <span class=\"application\">Tails Installer</span>\n"
+"upgrade your USB stick using <span class=\"application\">Tails Cloner</span>\n"
 "to a newer version of Tails.\n"
 msgstr ""
 "Após se conectar ao Tor, um dialogo irá informar se você tem que\n"
@@ -464,7 +469,7 @@ msgstr ""
 #| "½ hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
 #| "pages=\"inc/stable_amd64_iso_size\" raw=\"yes\" sort=\"age\"]]</small>)"
 msgid ""
-"Â½ hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
+"½ hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
 "pages=\"inc/stable_amd64_iso_size\" raw=\"yes\" sort=\"age\"]]</small>)"
 msgstr ""
 "½ hora para baixar o Tails (<small class=\"remove-extra-space\">[[!inline "
@@ -473,7 +478,7 @@ msgstr ""
 #. type: Bullet: '- '
 #, fuzzy
 #| msgid "½ hour to upgrade"
-msgid "Â½ hour to upgrade"
+msgid "½ hour to upgrade"
 msgstr "½ hora para atualizar"
 
 #. type: Plain text
@@ -547,7 +552,7 @@ msgstr ""
 #| "- Your Tails USB stick - Another up-to-date Tails (USB stick or DVD)  - ¼ "
 #| "hour to upgrade"
 msgid ""
-"- Your Tails USB stick - Another up-to-date Tails (USB stick or DVD)  - Â¼ "
+"- Your Tails USB stick - Another up-to-date Tails (USB stick or DVD)  - ¼ "
 "hour to upgrade"
 msgstr ""
 "- Seu pendrive USB com Tails  - Outro Tails atualizado (pendrive USB ou DVD  "

@@ -92,7 +92,7 @@ Packages
 
 To release Tails you'll need some packages installed:
 
-* `gitlab-cli j2cli jq tidy libnotify-bin mktorrent podman python3-bs4 python3-debian python3-gitlab python3-jinja2 python3-html2text python3-voluptuous transmission-cli moreutils wl-clipboard`
+* `oathtool gitlab-cli j2cli jq tidy libnotify-bin mktorrent podman python3-bs4 python3-debian python3-gitlab python3-jinja2 python3-html2text python3-voluptuous transmission-cli moreutils wl-clipboard`
   - Note: if the Debian version you are running does not include all required
     Go packages, such as [[!debpts podman]], you should be able to install
     them from a more recent Debian release with APT pinning.
@@ -192,7 +192,7 @@ you need to set a bunch of environment variables.
 4. Generate the resulting environment variables and export them into your
    environment:
 
-        . $(./bin/rm-config generate-environment)
+        . $(./bin/rm-config generate-environment --stage base)
 
 ### Notes
 
@@ -250,7 +250,11 @@ and check that the jobs for the release branch have good enough results:
  - look at the last build of the corresponding `test_Tails_ISO_*` job;
    if anything looks unusual or fishy, check the few previous builds
    to see if it's a one-off robustness issue, a serious regression,
-   or what not.
+   or what not. In particular:
+   - Check the results of *Scenario: All packages are up-to-date*.
+     If it does not pass, evaluate whether the problems fixed in the missing
+     package update are worth delaying the release. If not, create an issue
+     to track them.
 
 Freeze
 ======
@@ -1068,7 +1072,7 @@ on <https://iso-history.tails.boum.org/?C=M&O=D>:
             sleep 10
         done
         echo "Dir created: ${dirurl}"
-        expected_size="$(stat -c %s "${isopath}")"
+        expected_size="$(stat -L -c %s "${isopath}")"
         while true
         do
             size=$(curl --silent --head "${isourl}" | grep -iPo '^content-length:\s*\K\d+')
@@ -1130,7 +1134,7 @@ Build the Incremental Upgrade Kits on Jenkins
           . $(./bin/rm-config generate-environment --stage built-iuks)
 
 5. Wait until the `build_IUKs` build completes successfully.
-   It should take about 20-25 minutes for each member of
+   It should take about 15 minutes for each member of
    the `$IUK_SOURCE_VERSIONS` list, distributed across `isoworkerN` workers.
 
    If you have a fast computer, you'll be waiting for Jenkins to be done, while
@@ -1955,7 +1959,19 @@ to the release notes:
 
     echo "Tails ${VERSION:?} is out: https://tails.net/news/version_${TAG:?}/"
 
-The credentials are in keyringer in `rm.git`.
+To login:
+
+ - Get username and password:
+
+      keyringer tails-rm decrypt credentials.asc | grep twitter.com
+
+ - Get the OTP code:
+
+    oathtool -b --totp \
+      "$(keyringer tails decrypt credentials.asc |
+         grep 'twitter OTP code' |
+         grep -Po 'otpauth://totp/.*[?]secret=\K[A-Z0-9]*' )"
+
 
 Request the publication of the Tor blog post
 --------------------------------------------

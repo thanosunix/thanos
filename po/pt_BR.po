@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tor Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 10:11+0200\n"
+"POT-Creation-Date: 2023-09-04 09:24+0200\n"
 "PO-Revision-Date: 2023-07-19 17:05+0000\n"
 "Last-Translator: Kaio <kaiod@riseup.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/tor/"
@@ -471,7 +471,8 @@ msgstr ""
 "não há nenhuma atualização automática em nosso website para essa versão"
 
 #: config/chroot_local-includes/usr/src/iuk/lib/Tails/IUK/Frontend.pm:364
-msgid "your device was not created using a USB image or Tails Installer"
+#, fuzzy
+msgid "your device was not created using a USB image or Tails Cloner"
 msgstr ""
 "seu dispositivo não foi criado usando uma imagem USB ou o Instalador Tails"
 
@@ -846,19 +847,19 @@ msgstr "Continuar sem armazenamento persistente"
 msgid "Error unlocking Persistent Storage: {}"
 msgstr "Erro ao desbloquear armazenamento persistente: {}"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:124
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:126
 #, fuzzy
 msgid "Error upgrading Persistent Storage: {}"
 msgstr "Erro ao desbloquear armazenamento persistente: {}"
 
 #. Translators: Don't translate {features}, it's a placeholder
 #. and will be replaced.
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:146
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
 #, fuzzy, python-brace-format
 msgid "Failed to activate some features of the Persistent Storage: {features}."
 msgstr "Falha ao configurar seu Armazenamento Persistente"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:151
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tailsgreeter/settings/persistence.py:156
 msgid "Error activating Persistent Storage: {}"
 msgstr "Erro ao ativar armazenamento persistente: {}"
 
@@ -1146,7 +1147,8 @@ msgstr "A instalação do Tails falhou!"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:296
 #: ../config/chroot_local-includes/usr/share/applications/tails-installer.desktop.in.h:1
-msgid "Tails Installer"
+#, fuzzy
+msgid "Tails Cloner"
 msgstr "Instalador Tails"
 
 #: config/chroot_local-includes/usr/lib/python3/dist-packages/tails_installer/gui.py:339
@@ -1850,7 +1852,7 @@ msgstr "Estado do Tor"
 msgid "Open Onion Circuits"
 msgstr "Abrir Circuitos Onion"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:319
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:315
 #, python-brace-format
 msgid ""
 "Only {available_memory} KiB of memory is available, need at least "
@@ -1859,37 +1861,37 @@ msgid ""
 "Try again after closing some applications or rebooting."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:331
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:327
 #, fuzzy
 msgid "Creating a partition for the Persistent Storage..."
 msgstr "Corrigindo as permissões do volume persistente."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:351
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:347
 msgid ""
 "Initializing the LUKS encryption... The computer might stop responding for a "
 "few seconds."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:373
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:369
 msgid "Unlocking the encryption..."
 msgstr ""
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:381
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:377
 #, fuzzy
 msgid "Formatting the file system..."
 msgstr "Verificando sistema de arquivos..."
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:396
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:392
 #, fuzzy
 msgid "Activating the Persistent Storage..."
 msgstr "Erro ao ativar armazenamento persistente: {}"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:401
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:397
 #, fuzzy
 msgid "Finishing setting up the Persistent Storage..."
 msgstr "Continuar sem armazenamento persistente"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:611
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps/device.py:607
 msgid ""
 "Can't unmount Persistent Storage, some process is still using it. Please "
 "close all applications that could be accessing it and try again. If that "
@@ -2010,12 +2012,12 @@ msgstr ""
 msgid "Change Passphrase"
 msgstr "Alterar Senha"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:83
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:85
 #, fuzzy
 msgid "The current passphrase is incorrect"
 msgstr "As senhas não coincidem"
 
-#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:92
+#: config/chroot_local-includes/usr/lib/python3/dist-packages/tps_frontend/change_passphrase_dialog.py:94
 #, fuzzy
 msgid "Changing the passphrase failed"
 msgstr "Alterar Senha"
