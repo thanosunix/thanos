@@ -1,3 +1,9 @@
+tails (5.18) UNRELEASED; urgency=medium
+
+  * Dummy entry for next release.
+
+ -- intrigeri <intrigeri@debian.org>  Tue, 05 Sep 2023 09:28:09 +0000
+
 tails (5.17) unstable; urgency=medium
 
   * Upgrade Thunderbird to 1:102.15.0-1~deb11u1
